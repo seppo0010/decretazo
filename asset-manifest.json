@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/decretazo/static/css/main.b33d19af.css",
+    "main.js": "/decretazo/static/js/main.241b5041.js",
+    "static/js/787.df3946e0.chunk.js": "/decretazo/static/js/787.df3946e0.chunk.js",
+    "index.html": "/decretazo/index.html",
+    "main.b33d19af.css.map": "/decretazo/static/css/main.b33d19af.css.map",
+    "main.241b5041.js.map": "/decretazo/static/js/main.241b5041.js.map",
+    "787.df3946e0.chunk.js.map": "/decretazo/static/js/787.df3946e0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b33d19af.css",
+    "static/js/main.241b5041.js"
+  ]
+}
