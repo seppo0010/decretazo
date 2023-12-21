@@ -384,9 +384,13 @@ CAPITULO II
 
 De las bolsas de trabajo a cargo de las asociaciones sindicales
 
-ARTICULO 69. — Bolsas de trabajo. Las bolsas de trabajo a cargo de las asociaciones sindicales de trabajadores con personería gremial proveerán a los empleadores del personal necesario para la realización de las tareas temporarias en las actividades contempladas en la presente ley, conforme las resoluciones que a tal efecto dicte la Comisión Nacional de Trabajo Agrario (CNTA).
+ARTÍCULO 69.- Bolsa de trabajo.
 
-Ello, sin perjuicio de la vigencia de las normas que actualmente prevén la obligatoriedad del uso de las bolsas de trabajo para el ámbito rural en determinadas actividades y jurisdicciones.
+Las bolsas de trabajo a cargo de las asociaciones sindicales de trabajadores con personería gremial podrán proponer a los empleadores un listado del personal necesario para la realización de tareas temporarias en las actividades contempladas en la presente Ley, conforme las resoluciones que a tal efecto dicte la Comisión de Trabajo Agrario.
+
+El empleador podrá contratar a la persona sugerida y/o a cualquier otra que disponga.
+
+Queda derogada toda norma que se oponga al presente artículo y/o a la libertad de contratación y elección del personal por parte del empleador
 
 ARTICULO 70. — Funcionamiento de las bolsas de trabajo. El funcionamiento de las bolsas de trabajo referidas en el artículo anterior se ajustará a lo dispuesto por el presente régimen, sus normas reglamentarias y las resoluciones dictadas por la Comisión Nacional de Trabajo Agrario (CNTA).
 

@@ -200,7 +200,7 @@ const text = [
             'Que, en línea con ello, deben eliminarse costos en el sector minero con la derogación de la Ley N° 24.523 del ' +
             'Sistema Nacional de Comercio Minero y la Ley N° 24.695 del Banco Nacional de Información Minera.\n' +
             'Que el sector energético es central para la reversión de la situación de crisis que atraviesa el país.\n' +
-            'Que deviene adecuado derogar la Ley N° 25.822 de Plan Federal de Transporte Eléctrico y los Decretos Nros. ' +
+            'Que deviene adecuado derogar la Ley N° 25.822 de Plan Federal de Transporte Eléctrico y los Decretos Nros.\n' +
             '1491 del 16 de agosto de 2002, 634 del 21 de agosto de 2003 y 311 del 21 de marzo de 2006.\n' +
             'Que la situación de emergencia también requiere la supresión de costos fiscales de baja productividad.\n' +
             'Que, en tal sentido, resulta imperioso una simplificación en la Ley N° 27.424 de energía distribuida, eliminando ' +
@@ -248,7 +248,7 @@ const text = [
             'Que, por eso, es imperativo un reordenamiento integral de la legislación aerocomercial para dotar al mercado de ' +
             'un entorno competitivo que otorgue la suficiente flexibilidad para llegar a todas las ciudades argentinas.\n' +
             'Que estos objetivos requieren derogar la Ley N° 19.030, el Decreto - Ley N° 12.507 del 12 de julio de 1956 y el ' +
-            'Decreto N° 1654 del 4 de septiembre de 2002, e introducir modificaciones en el CÓDIGO AERONÁUTICO; ' +
+            'Decreto N° 1654 del 4 de septiembre de 2002, e introducir modificaciones en el CÓDIGO AERONÁUTICO;\n' +
             'todo ello con el fin de mejorar radicalmente la competitividad en el sector.\n' +
             'Que, con el mismo objetivo, se introducen modificaciones a las Leyes Nros. 26.412 y 26.466 a los fines de ' +
             'permitir la transferencia de las acciones de AEROLÍNEAS ARGENTINAS SOCIEDAD ANÓNIMA a sus ' +
@@ -841,7 +841,7 @@ const text = [
                 '“ARTÍCULO 7° quáter.- En el supuesto de sentencia judicial firme que determine la existencia de una relación de ' +
                 'empleo no registrada, la autoridad judicial deberá poner en conocimiento de la entidad recaudadora de las ' +
                 'obligaciones de la seguridad social, dentro de los DIEZ (10) días hábiles siguientes a la fecha en que quede firme ' +
-                'y consentida la sentencia, todas las circunstancias que permitan la determinación de deuda existente, si la hubiera. ' +
+                'y consentida la sentencia, todas las circunstancias que permitan la determinación de deuda existente, si la hubiera.\n' +
                 'Si conforme sentencia judicial firme, la relación laboral se encontrara enmarcada erróneamente como contrato de ' +
                 'obra o servicios, de la deuda que determine el organismo recaudador, se deducirán los componentes ya ingresados ' +
                 'conforme al régimen del cual se trate, se establecerá un sistema de intereses menos gravoso y facilidades de ' +
@@ -1017,7 +1017,7 @@ const text = [
                 'posterior al parto. En caso de nacimiento pre-término se acumulará al descanso posterior todo el lapso de licencia ' +
                 'que no se hubiere gozado antes del parto, de modo de completar los noventa (90) días.\n' +
                 'La trabajadora o persona gestante deberá comunicar fehacientemente su embarazo al empleador, con presentación ' +
-                'de certificado médico en el que conste la fecha presunta del parto, o requerir su comprobación por el empleador. ' +
+                'de certificado médico en el que conste la fecha presunta del parto, o requerir su comprobación por el empleador.\n' +
                 'La misma conservará su empleo durante los períodos indicados, y gozará de las asignaciones que le confieren los ' +
                 'sistemas de seguridad social, que garantizarán a la misma la percepción de una suma igual a la retribución que ' +
                 'corresponda al período de licencia legal, todo de conformidad con las exigencias y demás requisitos que prevean ' +
@@ -1132,7 +1132,7 @@ const text = [
                 'devengados y correspondientes a la primera o única instancia, no excederán del veinticinco por ciento (25 %) del ' +
                 'monto de la sentencia, laudo, transacción o instrumento que ponga fin al diferendo. Si las regulaciones de ' +
                 'honorarios practicadas conforme a las leyes arancelarias o usos locales, correspondientes a todas las profesiones ' +
-                'y especialidades superaran dicho porcentaje, el juez procederá a prorratear los montos entre los beneficiarios. ' +
+                'y especialidades superaran dicho porcentaje, el juez procederá a prorratear los montos entre los beneficiarios.\n' +
                 'Para el cómputo del porcentaje indicado no se tendrá en cuenta el monto de los honorarios profesionales que ' +
                 'hubieren representado, patrocinado o asistido a la parte condenada en costas.”',
                 delta: {
@@ -1143,670 +1143,748 @@ const text = [
             },
         ],
     },
+    {
+        type: 'block',
+        title: 'Capítulo III – Convenciones Colectivas de Trabajo (Ley N° 14.250)',
+        articles: [
+            {
+                text: 'ARTÍCULO 86.- Sustitúyese el artículo 6° de la Ley N° 14.250, por el siguiente:\n' +
+                '“ARTÍCULO 6°.- Una convención colectiva de trabajo, cuyo término estuviere vencido, solamente mantendrá ' +
+                'subsistentes las normas referidas a las condiciones de trabajo establecidas en virtud de ellas (cláusulas ' +
+                'normativas) y hasta tanto entre en vigencia una nueva convención colectiva o exista un acuerdo de partes que la ' +
+                'prorrogue.\n' +
+                '\n' +
+                'El resto de las cláusulas (obligacionales) podrán mantener su vigencia, solo por acuerdo de partes o por la ' +
+                'específica prórroga dispuesta por el Poder Ejecutivo Nacional.”',
+                delta: {
+                    title: 'Ley N° 14.250 - Convenciones Colectivas de Trabajo',
+                    removed: require('./ley14250').default,
+                    added: require('./ley14250-new').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo IV - Asociaciones Sindicales (Ley N° 23.551)',
+        articles: [
+            {
+                text: 'ARTÍCULO 87.- Incorpórase como artículo 20 bis a la Ley N° 23.551, el siguiente:\n' +
+                '“ARTÍCULO 20 bis.- Derecho de realizar Asambleas, Congresos. Los representantes sindicales dentro de la ' +
+                'empresa, delegados, comisiones internas u organismos similares, así como las autoridades de las distintas ' +
+                'seccionales de las asociaciones sindicales tendrán derecho a convocar a asambleas y congresos de delegados sin ' +
+                'perjudicar las actividades normales de la empresa o afectar a terceros.”\n' +
+                'ARTÍCULO 88.- Incorpórase como artículo 20 ter a la Ley N° 23.551, el siguiente:\n' +
+                '“ARTÍCULO 20 ter - Acciones prohibidas. Las siguientes conductas están prohibidas y serán consideradas ' +
+                'infracciones muy graves:\n' +
+                'a. Afectar la libertad de trabajo de quienes no adhieran a una medida de fuerza, mediante actos, hechos, ' +
+                'intimidaciones o amenazas;\n' +
+                'b. Provocar el bloqueo o tomar un establecimiento; impedir u obstruir total o parcialmente el ingreso o egreso de ' +
+                'personas y/o cosas al establecimiento;\n' +
+                'c. Ocasionar daños en personas o en cosas de propiedad de la empresa o de terceros situadas en el establecimiento ' +
+                '(instalaciones, mercaderías, insumos y materias primas, herramientas, etc.) o retenerlas indebidamente.\n' +
+                'Verificadas dichas acciones como medidas de acción directa sindical, la entidad responsable será pasible de la ' +
+                'aplicación de las sanciones que establezca la reglamentación, una vez cumplimentado el procedimiento que se ' +
+                'disponga al efecto a cargo de la Autoridad de Aplicación, sin perjuicio de las responsabilidades civiles y/o ' +
+                'penales que pudieran corresponder.”',
+                delta: {
+                    title: 'Ley N° 23.551 - Asociaciones sindicales',
+                    removed: require('./ley23551').default,
+                    added: require('./ley23551-new').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo V - Régimen del Trabajo Agrario (Ley N° 26.727)',
+        articles: [
+            {
+                text: 'ARTÍCULO 89.- Sustitúyese el artículo 69 de la Ley Nº 26.727, por el siguiente:\n' +
+                '“ARTÍCULO 69.- Bolsa de trabajo. Las bolsas de trabajo a cargo de las asociaciones sindicales de trabajadores' +
+                'con personería gremial podrán proponer a los empleadores un listado del personal necesario para la realización de' +
+                'tareas temporarias en las actividades contempladas en la presente Ley, conforme las resoluciones que a tal efecto' +
+                'dicte la Comisión de Trabajo Agrario.\n' +
+                'El empleador podrá contratar a la persona sugerida y/o a cualquier otra que disponga.\n' +
+                'Queda derogada toda norma que se oponga al presente artículo y/o a la libertad de contratación y elección del' +
+                'personal por parte del empleador.”',
+                delta: {
+                    title: 'Ley N° 26.727 - Trabajo Agrario',
+                    removed: require('./ley26727').default,
+                    added: require('./ley26727-new').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo VI - Régimen del Viajante de Comercio (Ley N° 14.546)',
+        articles: [
+            {
+                text: 'ARTÍCULO 90.- Derógase la Ley N° 14.546.\n' +
+                'ARTÍCULO 91.- La derogación de la Ley N° 14.546 no afecta los derechos individuales de aquellos trabajadores ' +
+                'que se encuentren actualmente alcanzados por el Régimen establecido en la ley que se deroga.\n' +
+                'Las nuevas contrataciones producidas con posterioridad a la entrada en vigencia de esta Ley, se regirán por las ' +
+                'normas generales, contratos individuales y convenios colectivos que resulten aplicables.\n' +
+                'La representación sindical y empleadora deberán impulsar la negociación colectiva relativa con el fin de otorgar ' +
+                'el marco adicional que consideren menester adecuado a las circunstancias actuales si correspondiere.',
+                delta: {
+                    title: 'Ley N° 14.546 - Régimen del Viajante de Comercio',
+                    removed: require('./ley14546').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo VII - Régimen Legal del Contrato de teletrabajo (Ley N° 27.555)',
+        articles: [
+            {
+                text: 'ARTÍCULO 92.- Sustitúyese el artículo 6° de la Ley Nº 27.555, por el siguiente:\n' +
+                '“ARTÍCULO 6°.- Tareas de cuidados. Las personas que trabajen bajo esta modalidad y que acrediten tener a ' +
+                'cargo el cuidado de personas menores de trece (13) años, personas con discapacidad o adultas mayores que ' +
+                'convivan con la persona que trabaja y que requieran asistencia específica, tendrán derecho a coordinar con el ' +
+                'empleador, en tanto no afecte lo requerido de su trabajo, horarios compatibles a la tarea de cuidado a su cargo y/o ' +
+                'la interrupción esporádica de su jornada, compensado dichos períodos de tiempo de manera acorde con las tareas ' +
+                'asignadas.\n' +
+                'El presente artículo no será de aplicación cuando el empleador abonare alguna compensación legal, convencional ' +
+                'o contractual relativa a gastos por tareas de cuidado.\n' +
+                'Mediante negociación colectiva o en el ámbito de los contratos de trabajo podrán establecerse pautas específicas ' +
+                'para el ejercicio de este derecho.”\n' +
+                'ARTÍCULO 93.- Sustitúyese el artículo 8° de la Ley Nº 27.555, por el siguiente:\n' +
+                '“ARTÍCULO 8° - Reversibilidad. La solicitud o el consentimiento prestado por la persona que trabaja en una ' +
+                'posición presencial para pasar a la modalidad de teletrabajo, podrá ser revertido por acuerdo mutuo entre el ' +
+                'trabajador y el empleador, en tanto existan en las instalaciones de la empresa las condiciones para que la persona ' +
+                'pueda retomar su trabajo en forma presencial.\n' +
+                'En función de las necesidades propias de cada puesto de trabajo se podrá revertir la modalidad de teletrabajo por ' +
+                'la modalidad presencial, en los supuestos en que las propias características de la actividad así lo requieran.”\n' +
+                'ARTÍCULO 94.- Sustitúyese el artículo 17 de la Ley Nº 27.555, por el siguiente:\n' +
+                '“ARTÍCULO 17.- Prestaciones transnacionales. Cuando se trate de prestaciones transnacionales de teletrabajo, se ' +
+                'aplicará al contrato respectivo la ley del lugar de ejecución de las tareas por parte del trabajador.”\n' +
+                'ARTÍCULO 95.- Sustitúyese el artículo 18 de la Ley Nº 27.555, por el siguiente:\n' +
+                '“ARTÍCULO 18.- El Poder Ejecutivo Nacional establecerá un método simple, electrónico y automático de ' +
+                'registro de esta modalidad contractual al tiempo del alta o al momento de la incorporación del trabajador al ' +
+                'presente régimen.”',
+                delta: {
+                    title: 'Ley N° 27.555 - Régimen Legal del Contrato de Teletrabajo',
+                    removed: require('./ley27555').default,
+                    added: require('./ley27555-new').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo VIII - De los Trabajadores independientes con colaboradores',
+        articles: [
+            {
+                text: 'ARTÍCULO 96.- El trabajador independiente podrá contar con hasta otros CINCO (5) trabajadores ' +
+                'independientes para llevar adelante un emprendimiento productivo y podrá acogerse a un régimen especial ' +
+                'unificado que al efecto reglamentará el Poder Ejecutivo Nacional.\n' +
+                'El mismo estará basado en la relación autónoma, sin que exista vinculo de dependencia entre ellos, ni con las ' +
+                'personas contratantes de los servicios u obras, e incluirá, tanto para el trabajador independiente como para los ' +
+                'trabajadores colaboradores, el aporte individual de una cuota mensual que comprenda la cotización al Régimen ' +
+                'Previsional, al Régimen Nacional de Obras Sociales y Sistema Nacional del Seguro de Salud y al Régimen de ' +
+                'Riesgos del Trabajo, en las condiciones y requisitos que establezca la reglamentación.',
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo IX – Servicios esenciales (Ley N° 25.877)',
+        articles: [
+            {
+                text: 'ARTÍCULO 97.- Sustitúyese el artículo 24 de la Ley N° 25.877, por el siguiente:\n' +
+                '“ARTÍCULO 24.- Los conflictos colectivos que pudieren afectar la normal prestación de servicios esenciales o ' +
+                'actividades de importancia trascendental, quedan sujetos a las siguientes garantías de prestación de servicios ' +
+                'mínimos.\n' +
+                'En lo que respecta a la prestación de servicios mínimos, en el caso de los servicios esenciales, en ningún caso ' +
+                'podrá negociar o imponer a las partes una cobertura menor al SETENTA Y CINCO POR CIENTO (75%) de la ' +
+                'prestación normal del servicio de que se tratare.\n' +
+                'En el caso de las actividades o servicios de importancia trascendental, en ningún caso se podrá negociar o ' +
+                'imponer a las partes una cobertura menor al CINCUENTA POR CIENTO (50%).\n' +
+                'Se considerarán servicios esenciales en sentido estricto, las actividades siguientes:\n' +
+                'a. Los servicios sanitarios y hospitalarios, así como el transporte y distribución de medicamentos e insumos ' +
+                'hospitalarios y los servicios farmacéuticos;\n' +
+                'b. La producción, transporte y distribución y comercialización de agua potable, gas y otros combustibles y ' +
+                'energía eléctrica;\n' +
+                'c. Los servicios de telecomunicaciones, incluyendo internet y comunicaciones satelitales;\n' +
+                'd. La aeronáutica comercial y el control de tráfico aéreo y portuario; incluyendo balizamiento, dragado, ' +
+                'amarre, estiba y remolque de buques;\n' +
+                'e. servicios aduaneros y migratorios, y demás vinculados al comercio exterior; y\n' +
+                'f. cuidado de menores y educación de niveles guardería, preescolar, primario y secundario, así como la ' +
+                'educación especial.\n' +
+                'Se consideran actividades de importancia trascendental las siguientes:\n' +
+                'a. Producción de medicamentos y/o insumos hospitalarios;\n' +
+                'b. Transporte marítimo, fluvial, terrestre y subterráneo de personas y/o mercaderías a través de los distintos ' +
+                'medios que se utilicen para tal fin;\n' +
+                'c. Servicios de radio y televisión;\n' +
+                'd. Actividades industriales continuas, incluyendo siderurgia y la producción de aluminio, actividad química y la ' +
+                'actividad cementera;\n' +
+                'e. Industria alimenticia en toda su cadena de valor;\n' +
+                'f. La producción y distribución de materiales de la construcción, servicios de reparación de aeronaves y buques, ' +
+                'todos los servicios portuarios y aeroportuarios, servicios logísticos, actividad minera, actividad frigorífica, ' +
+                'correos, distribución y comercialización de alimentos y bebidas, actividad agropecuaria y su cadena de valor;\n' +
+                'g. Los servicios bancarios, financieros, servicios hoteleros y gastronómicos y el comercio electrónico; y\n' +
+                'h. La producción de bienes y/o servicios de toda actividad, que estuvieran afectados a compromisos de ' +
+                'exportación.\n' +
+                'Una comisión independiente y autónoma, denominada COMISIÓN DE GARANTÍAS, integrada según se ' +
+                'establezca en la reglamentación, por cinco (5) miembros de reconocida solvencia técnica, profesional o ' +
+                'académica en materia de relaciones del trabajo, del derecho laboral o de derecho constitucional y destacada ' +
+                'trayectoria, podrá, mediante resolución fundada, calificar como servicio esencial o servicio de importancia ' +
+                'trascendental una actividad no incluida en las enumeraciones precedentes, cuando se diere alguna de las ' +
+                'siguientes circunstancias:\n' +
+                'a) La extensión y duración de la interrupción de la actividad de que se tratare pudiere poner en peligro la vida, la ' +
+                'salud o la seguridad de la persona en toda o parte de la comunidad;\n' +
+                'b) La actividad afectada constituyere un servicio público de importancia trascendental o de utilidad pública;\n' +
+                'c) La interrupción o suspensión del servicio pudiere provocar una situación de crisis nacional aguda que hiciere ' +
+                'peligrar las condiciones normales o de existencia de parte de la población; y\n' +
+                'd) la interrupción o suspensión de la producción pudiere poner en peligro el adecuado abastecimiento de ' +
+                'productos críticos para la población y/o afectar metas de recaudación asociadas a las políticas de equilibrio fiscal.\n' +
+                'El Poder Ejecutivo Nacional dictará la reglamentación correspondiente y la Autoridad de Aplicación las normas ' +
+                'complementarias, aclaratorias y operativas que resulten necesarias.”',
+                delta: {
+                    title: 'Ley N° 25.877 - Régimen Laboral',
+                    removed: require('./ley25877').default,
+                    added: require('./ley25877-new').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Título V – COMERCIO EXTERIOR',
+        articles: [
+            {
+                text: 'ARTÍCULO 98.- Derógase la Ley N° 25.626.',
+                delta: {
+                    title: 'Ley N° 25.626 - Importaciones',
+                    removed: require('./ley25626').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo I - Código Aduanero (Ley N° 22.415)',
+        articles: [
+            {
+                text: 'ARTÍCULO 99.- Sustitúyese el artículo 37 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 37.- Las personas humanas o jurídicas podrán gestionar el despacho y la destinación de mercadería, ' +
+                'por sí o a través de persona autorizada, con la excepción de las funciones que este Código prevé para los agentes ' +
+                'de transporte aduanero y de aquellas facultades inherentes a la calidad de capitán de buque, comandante de ' +
+                'aeronave o, en general, conductor de los demás medios de transporte.”\n' +
+                'ARTÍCULO 100.- Sustitúyese el artículo 41 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 41.- No podrán desempeñarse como Despachantes de Aduana quienes estén comprendidos en ' +
+                'alguno de los siguientes supuestos:\n' +
+                '1°) haber sido condenado por algún delito aduanero o por la infracción de contrabando menor;\n' +
+                '2°) haber sido socio ilimitadamente responsable, director o administrador de cualquier sociedad o asociación\n' +
+                'cuando la sociedad o la asociación de que se tratare hubiera sido condenada por cualquiera de los ilícitos ' +
+                'mencionados en el punto 1). Cuando hubiese sido condenada por la infracción de contrabando menor, la ' +
+                'inhabilidad se extenderá hasta CINCO (5) años a contar desde que la condena hubiera quedado firme. Se exceptúa ' +
+                'de la inhabilitación a quienes probaren haber sido ajenos al acto o haberse opuesto a su realización;\n' +
+                '3°) haber sido condenado por delito reprimido con pena privativa de la libertad. Exceptúanse los delitos contra las ' +
+                'personas, el honor, la honestidad y el estado civil, cuando la sentencia hubiera concedido el beneficio de la ' +
+                'ejecución condicional de la pena;\n' +
+                '4°) contar con procesamiento judicial firme o encontrarse sumariado en jurisdicción aduanera por cualquiera de ' +
+                'los ilícitos indicados en los puntos 1) y 3), mientras no fuere sobreseído provisional o definitivamente o absuelto ' +
+                'por sentencia o resolución firme;\n' +
+                '5°) haber sido condenado con pena accesoria de inhabilitación para ejercer cargos públicos, hasta que se ' +
+                'produjere su rehabilitación;\n' +
+                '6°) ser fallido o concursado civil, hasta DOS (2) años después de su rehabilitación. No obstante, cuando se tratare ' +
+                'de quiebra o concurso culpable o fraudulento la inhabilidad se extenderá hasta CINCO (5) o DIEZ (10) años ' +
+                'después de su rehabilitación, respectivamente;\n' +
+                '7°) encontrarse en concurso preventivo o resolutorio, hasta que hubiere obtenido carta de pago o acreditare el ' +
+                'cumplimiento total del acuerdo respectivo;\n' +
+                '8°) estar inhibido judicialmente para administrar o disponer de sus bienes, mientras esta situación subsistiere;\n' +
+                '9°) ser deudor de obligación tributaria aduanera exigible o de obligación emergente de pena patrimonial aduanera ' +
+                'firme, o ser socio ilimitadamente responsable, director o administrador de cualquier sociedad o asociación, ' +
+                'cuando la sociedad o la asociación de que se tratare fuere deudora de alguna de las obligaciones mencionadas.\n' +
+                'Estas inhabilidades subsistirán hasta la extinción de la obligación.\n' +
+                '10) ser o haber sido agente aduanero, hasta después de UN (1) año de haber cesado como tal;\n' +
+                '11) haber sido exonerado como agente de la administración pública nacional, provincial de la CIUDAD ' +
+                'AUTÓNOMA DE BUENOS AIRES o municipal, hasta que se produjere su rehabilitación.\n' +
+                '12) quienes incurrieren en reiteración de inconductas o en una falta grave en el ejercicio de sus funciones, que ' +
+                'hicieren su permanencia incompatible con la seguridad del servicio aduanero.”\n' +
+                'ARTÍCULO 101.- Deróganse los artículos 42, 43, 44, 45 y 46 de la Ley N° 22.415 (Código Aduanero) y sus ' +
+                'modificatorias.\n' +
+                'ARTÍCULO 102.- Sustitúyese el artículo 47 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 47.- 1. Según la índole de la falta cometida, el perjuicio ocasionado o que hubiera podido ' +
+                'ocasionarse y los antecedentes del interesado, el servicio aduanero podrá aplicar a los despachantes de aduana las ' +
+                'siguientes sanciones:\n' +
+                'a) apercibimiento;\n' +
+                'b) suspensión o prohibición para actuar como despachante ante la Dirección General de Aduanas\n' +
+                '2. El apercibimiento será impuesto por el administrador de la aduana en cuya jurisdicción se hubiere cometido la ' +
+                'falta o por quien ejerciere sus funciones. Las sanciones de suspensión serán impuestas por el Director General de ' +
+                'Aduanas.”\n' +
+                'ARTÍCULO 103.- Sustitúyese el punto 1. del artículo 51 de la Ley N° 22.415 (Código Aduanero) y sus ' +
+                'modificatorias, por el siguiente:\n' +
+                '“1. En el marco de lo previsto en el inciso b) del artículo 47, el administrador de la aduana en cuya jurisdicción se ' +
+                'hubiere cometido la falta, o quien cumpliere sus funciones, deberá instruir el pertinente sumario administrativo, ' +
+                'en el que, cumplidas las diligencias de investigación que considerare necesarias, correrá vista al interesado por un ' +
+                'plazo de DIEZ (10) días, dentro del cual deberá ejercer su defensa y ofrecer las pruebas que hicieren a su ' +
+                'derecho.”\n' +
+                'ARTÍCULO 104.- Deróganse los artículos 55 y 56 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias.\n' +
+                'ARTÍCULO 105.- Sustitúyese el artículo 92 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 92.- Todas las personas humanas y jurídicas podrán solicitar destinaciones aduaneras y realizar ' +
+                'operaciones de comercio exterior sin necesidad de inscribirse en ningún registro.”\n' +
+                'ARTÍCULO 106.- Derógase el artículo 93 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias.\n' +
+                'ARTÍCULO 107.- Sustitúyese el artículo 94 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 94.- 1. No podrán realizar operaciones de exportación o importación las personas humanas que ' +
+                ' ' +
+                'estén comprendidas en algunos de los siguientes supuestos: 1°) haber sido condenado por algún delito aduanero, ' +
+                'impositivo o previsional, siempre que no haya transcurrido el doble del máximo de la pena prevista en la ley para ' +
+                'dicho delito desde el momento de cumplida la condena;\n' +
+                '2°) haber sido socio ilimitadamente responsable, director o administrador de cualquier sociedad o asociación, ' +
+                'cuando la sociedad o la asociación de que se tratare hubiera sido condenada por cualquiera de los ilícitos ' +
+                'mencionados en el punto 1). Se exceptúa de esta inhabilitación a quienes probaren haber sido ajenos al acto o ' +
+                'haberse opuesto a su realización;\n' +
+                '3°) contar con procesamiento firme o encontrarse sumariado en jurisdicción de la ADMINISTRACIÓN ' +
+                'FEDERAL DE INGRESOS PÚBLICOS, entidad autárquica en el ámbito del MINISTERIO DE ECONOMÍA, ' +
+                'por cualquiera de los ilícitos indicados en el punto 1) mientras no fuere sobreseído o absuelto por sentencia o ' +
+                'resolución firme. No obstante, podrán actuar en tal carácter si el servicio aduanero resuelve aceptar que la persona ' +
+                'otorgue garantías suficientes en resguardo del interés fiscal.\n' +
+                '4°) ser fallido;\n' +
+                '5°) estar inhibido judicialmente para administrar o disponer de sus bienes mientras esta situación subsistiere;\n' +
+                '2. Las personas jurídicas no podrán realizar operaciones de importación o exportación cuando:\n' +
+                'a) la sociedad, asociación o alguno de sus directores, administradores o socios ilimitadamente responsables, fuere ' +
+                'judicialmente procesado o condenado por algún delito aduanero, impositivo o previsional. Esta suspensión solo se ' +
+                'aplicará cuando el procesado o el condenado no cesare en su función dentro de los CUARENTA (40) días ' +
+                'siguientes a la intimación que a tal fin el servicio aduanero efectuare a la mencionada persona de existencia ideal ' +
+                'y subsistirá hasta que el procesado o el condenado cesare en sus funciones o hasta que fuere absuelto o ' +
+                'sobreseído. No obstante ello, podrán actuar en tal carácter si el servicio aduanero resuelve aceptar que la persona ' +
+                'jurídica otorgue garantías suficientes en resguardo del interés fiscal.\n' +
+                'b) hubieran sido declarados en quiebra;\n' +
+                'c) fueren sometidos a sumario administrativo, siempre que se lo estimare necesario por resolución fundada en la ' +
+                'gravedad de la falta investigada, en relación con la seguridad del servicio aduanero. Esta suspensión tendrá ' +
+                'carácter preventivo y no podrá exceder los CUARENTA Y CINCO (45) días prorrogables por única vez por otro ' +
+                'plazo igual, mediante decisión fundada, siempre que se mantuvieren las circunstancias que dieron origen a tal ' +
+                'medida, pero nunca más allá de la fecha en que quedare firme la resolución definitiva dictada en el sumario de ' +
+                'que se tratare. No obstante ello, podrán actuar en tal carácter si el servicio aduanero resuelve aceptar que la ' +
+                'persona jurídica otorgue garantías suficientes en resguardo del interés fiscal; d) incurrieren en reiteración de ' +
+                'inconductas sancionadas o en una falta grave en el ejercicio de su actividad que hiciere su permanencia ' +
+                'incompatible con la seguridad del servicio aduanero.”\n' +
+                'ARTÍCULO 108.- Deróganse los artículos 95, 96, 97, 98, 99 y 107 de la Ley N° 22.415 (Código Aduanero) y sus ' +
+                'modificatorias.\n' +
+                'ARTÍCULO 109.- Sustitúyese el artículo 100 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 100.- El Director General de Aduanas, según la índole de la falta cometida, el perjuicio ocasionado ' +
+                ' ' +
+                'o que hubiera podido ocasionarse y los antecedentes del interesado, podrá aplicarle las siguientes sanciones;\n' +
+                'a) apercibimiento;\n' +
+                'b) suspensión o prohibición para efectuar operaciones de comercio exterior.”\n' +
+                'ARTÍCULO 110.- Sustitúyese el punto 1 del artículo 103 de la Ley N° 22.415 (Código Aduanero) y sus ' +
+                'modificatorias, por el siguiente:\n' +
+                '“1. En el marco de lo establecido en el inciso b) del artículo 100, la Dirección General de Aduana deberá instruir ' +
+                'el pertinente sumario administrativo en el que, cumplidas las diligencias de investigación que considerare ' +
+                'necesarias, correrá vista al interesado por un plazo de DIEZ (10) días, dentro del cual éste deberá ejercer su ' +
+                'defensa y ofrecer las pruebas que hicieren a su derecho.”\n' +
+                'ARTÍCULO 111.- Sustitúyese el artículo 119 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 119.- 1. Cualquiera fuere la zona de que se tratare, los agentes del servicio aduanero y, dentro del ' +
+                'ámbito de sus respectivas competencias, los de las fuerzas de seguridad y policiales podrán proceder a la ' +
+                'identificación y registro de personas y mercadería, incluidos los medios de transporte, cuando mediaren sospechas ' +
+                'de la comisión de algún ilícito aduanero, así como también aprehender, secuestrar o interdictar la mercadería de ' +
+                'que se tratare poniendo la misma a disposición de la autoridad competente dentro de las CUARENTA Y OCHO ' +
+                '(48) horas.\n' +
+                '2. Los agentes del servicio aduanero y, en su caso, los de las fuerzas de seguridad y policiales que debieran operar ' +
+                'en materia de control aduanero, procurarán preservar la actividad y la continuidad de las operaciones de ' +
+                'importación o de exportación que se hallaren en curso. La eventual interrupción solo procederá ante la existencia ' +
+                'de elementos de convicción que condujeren a un razonable estado de presunción de la comisión o principio de ' +
+                'ejecución de un delito o de una infracción tipificada en este Código.\n' +
+                '3. Los agentes del servicio aduanero no podrán dejar en suspenso, ni demorar la aplicación de las disposiciones en ' +
+                'vigencia bajo el pretexto de pedir aclaración de sus términos.”\n' +
+                'ARTÍCULO 112.- Incorpórase como artículo 120 bis a la Ley N° 22.415 (Código Aduanero) y sus ' +
+                'modificatorias, el siguiente:\n' +
+                '“ARTÍCULO 120 bis.- 1. El PODER EJECUTIVO NACIONAL debe adoptar procedimientos y mecanismos que ' +
+                'simplifiquen el cumplimiento de sus obligaciones con los distintos actores involucrados en actividades de ' +
+                'comercio exterior, incluyendo la utilización extendida de tecnologías de información, automatización y ' +
+                'comunicaciones para el intercambio electrónico de información.\n' +
+                '2. Los procedimientos, solicitudes, tramitaciones necesarias para el cumplimiento de las formalidades, ' +
+                'operaciones u obligaciones aduaneras, incluyendo las destinaciones de importación y exportación, deberán ' +
+                'llevarse a cabo mediante el uso de los servicios informáticos electrónicos.\n' +
+                '3. En los casos excepcionales y fundamentados, la Dirección General de Aduana podrá autorizar la presentación ' +
+                'de trámites o documentación por medios físicos los cuales deberán ser digitalizados.\n' +
+                '4. La firma digital debidamente certificada o firma electrónica equivalen, para todos los efectos legales, a la firma ' +
+                ' ' +
+                'manuscrita de los funcionarios aduaneros y de las personas que intervienen en el proceso aduanero. A su vez, los ' +
+                'requisitos de firmas manuscritas podrán ser sustituidas por contraseñas o firma digital o electrónica, para ' +
+                'actuaciones de comercio exterior que se realicen por medios informáticos.\n' +
+                '5. La Dirección General de Aduanas establecerá procedimientos de contingencia de los servicios informáticos ' +
+                'electrónicos en los casos en que los Sistemas Informáticos queden, total o parcialmente, fuera de servicio. En ' +
+                'estos casos la Dirección General de Aduanas autorizará el trámite a un mecanismo o en forma manual, mediante ' +
+                'la presentación de documentos físicos, sin perjuicio de la obligación de incluir tal actuación en los servicios ' +
+                'informáticos electrónicos, una vez que se restablezca el servicio.\n' +
+                '6. La Dirección General de Aduanas y demás autoridades competentes dictarán las normas complementarias y ' +
+                'establecerá los procedimientos que regulen la emisión, transferencia, digitalización, uso y control de la ' +
+                'información, en relación con tales operaciones.”\n' +
+                'ARTÍCULO 113.- Incorpórase como artículo 120 ter a la Ley N° 22.415 (Código Aduanero) y sus modificatorias, ' +
+                'el siguiente:\n' +
+                '“ARTÍCULO 120 ter.- Publicación. Toda normativa relativa a operaciones de comercio exterior deberá:\n' +
+                '(a) publicarse en un medio oficial y electrónico;\n' +
+                '(b) prever un plazo suficiente entre la publicación y/o la publicación de las medidas, y la entrada en vigor de ' +
+                'dichas medidas.\n' +
+                'Se incluye dentro del término “normativa” a los dictámenes técnicos clasificatorios de la División Clasificación ' +
+                'Arancelaria, aprobado por el Jefe del Departamento Técnica de Nomenclatura y Clasificación Arancelaria y, ' +
+                'posteriormente, por la Dirección de Técnica de la Subdirección General de Legal y Técnica Aduanera, que se ' +
+                'adopten con carácter obligatorio en toda actuación infraccional ya aperturada. Tales publicaciones deberán ' +
+                'detallar al menos la mercadería y la posición arancelaria adoptada. La Dirección General de Aduanas podrá ' +
+                'resolver la publicación de otros actos que estime son necesarios para asegurar la transparencia y buenas prácticas ' +
+                'de la Administración, resguardando el secreto fiscal.”\n' +
+                'ARTÍCULO 114.- Incorpórase como artículo 120 quáter a la Ley N° 22.415 (Código Aduanero) y sus ' +
+                'modificatorias, el siguiente:\n' +
+                '“ARTÍCULO 120 quáter.- Trámites y requerimientos por terceros organismos.\n' +
+                '1. Los organismos comprendidos en los incisos a) y b) del artículo 8° de la Ley N° 24.156 y sus modificatorias, ' +
+                'deberán:\n' +
+                'A. Tramitar los permisos, autorizaciones y demás informaciones inherentes a las operaciones aduaneras que ' +
+                'dicten para regular el tráfico internacional de mercaderías, en cumplimiento de lo dispuesto por el artículo 11 y ' +
+                'sus modificaciones mediante la Ventanilla Única de Comercio Exterior Argentino (VUCEA) de forma ' +
+                'electrónica. La obligación comprenderá los procedimientos y trámites de declaraciones, permisos, certificaciones, ' +
+                'licencias y demás autorizaciones o gestiones necesarias para realizar operaciones de importación y/o exportación.\n' +
+                'B. Identificar las mercaderías conforme a las posiciones arancelarias de la Nomenclatura Común del ' +
+                'MERCOSUR (N.C.M.), en todo régimen que dicten para regular el tráfico internacional de mercaderías, en ' +
+                'cumplimiento de lo dispuesto por el artículo 11 y sus modificaciones. La obligación comprenderá los ' +
+                'procedimientos y trámites de declaraciones, permisos, certificaciones, licencias y demás autorizaciones o ' +
+                'gestiones necesarias para realizar operaciones de importación y/o exportación. De corresponder, cada organismo ' +
+                'deberá indicar las excepciones, requisitos, condiciones o reglas que resulten necesarias para identificar el universo ' +
+                'de mercaderías alcanzadas por la regulación de que se trate.\n' +
+                '2. Toda medida vinculada a la creación, modificación o eliminación de regímenes que regulen el tráfico ' +
+                'internacional de mercaderías deberá ser comunicada por la autoridad que la dictó a la Ventanilla Única de ' +
+                'Comercio Exterior Argentino (VUCEA), en el plazo de UN (1) día hábil, contado desde su determinación o ' +
+                'emisión, mediante el módulo “Comunicaciones Oficiales” del Sistema de Gestión Documental Electrónica -GDE3. La DIRECCIÓN GENERAL DE ADUANAS solo podrá controlar las tramitaciones debidamente incorporadas ' +
+                'a la Ventanilla Única de Comercio Exterior Argentino (VUCEA).”\n' +
+                'ARTÍCULO 115.- Incorpórase como artículo 120 quinquies a la Ley N° 22.415 (Código Aduanero) y sus ' +
+                'modificatorias, el siguiente:\n' +
+                '“ARTÍCULO 120 quinquies.- Profesionalización del personal. La profesionalización del personal dentro de un ' +
+                'marco transparencia es un principio que debe orientar en el desarrollo de las funciones de la Dirección General de ' +
+                'Aduanas. La Dirección General de Aduanas deberá impulsar procedimientos de contratación basados en los ' +
+                'principios de objetividad, neutralidad, mérito, capacidad, publicidad y transparencia, así como la profesionalidad ' +
+                'y la neutralidad del organismo, comité o personal que lleve adelante el proceso de selección.”\n' +
+                'ARTÍCULO 116.- Sustitúyese la denominación del Capítulo Cuarto del Título II de la Sección III de la Ley N° ' +
+                '22.415 (Código Aduanero) y sus modificatorias por la siguiente: “Despacho directo a plaza y Declaración ' +
+                'anticipada”\n' +
+                'ARTÍCULO 117.- Sustitúyese el artículo 130 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 130.- Sin perjuicio de lo dispuesto en leyes especiales, todo medio de transporte procedente del ' +
+                'exterior que arribare al territorio aduanero o que se detuviere en él, deberá:\n' +
+                'a) Hacerlo por o en los lugares habilitados y, en su caso, por las rutas y dentro de los horarios establecidos.\n' +
+                'b) Presentar en forma previa al arribo o inmediatamente después de su llegada o en la oportunidad en la que el ' +
+                'servicio aduanero ejerciere el derecho de visita, la documentación que en este título se exige y la que la ' +
+                'Administración Federal de Ingresos Públicos pudiere determinar, según la vía que se utilizare.”\n' +
+                'ARTÍCULO 118.- Sustitúyese el artículo 131 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 131.- La ADMINISTRACIÓN FEDERAL DE INGRESOS PÚBLICOS determinará las ' +
+                'formalidades a que habrá de ajustarse la confección, presentación y trámite de la documentación que deberá ' +
+                'acompañarse al tiempo de arribar el medio de transporte, incluidas las formalidades relativas al modo de ' +
+                'descripción de la mercadería.\n' +
+                'Las presentaciones deberán ser realizadas por medios electrónicos, a través del sistema informático establecido ' +
+                'por el servicio aduanero.”\n' +
+                'ARTÍCULO 119.- Sustitúyese el artículo 217 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 217.- El importador deberá solicitar la destinación de importación, ya sea en forma anticipada y ' +
+                'hasta el arribo del medio de transporte, mediante el despacho directo a plaza regido por el Artículo 278 y ' +
+                'siguientes de este Código; o dentro del plazo de QUINCE (15) días contados desde la fecha del arribo del medio ' +
+                'transportador.”\n' +
+                'ARTÍCULO 120.- Sustitúyese el artículo 226 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 226.- 1. La resolución anticipada es el acto administrativo, emitido por el servicio aduanero, a ' +
+                'petición del solicitante, antes de la importación de la mercadería, mediante el cual se establece el tratamiento ' +
+                'aduanero que se concederá a la mercadería en el momento de la importación, en relación al tema objeto de ' +
+                'consulta, de la manera que se indica en los apartados siguientes de este artículo.\n' +
+                '2. Si antes de solicitar una destinación de importación, el importador tuviere dudas en relación con el criterio que ' +
+                'el servicio aduanero pudiera adoptar respecto de la clasificación arancelaria, el origen o la valoración de la ' +
+                'mercadería, o en relación con los elementos que fueren necesarios para la correcta aplicación del régimen ' +
+                'tributario, de prohibiciones o restricciones, referidos a la mercadería de importación, podrá solicitar al servicio ' +
+                'aduanero que emita una resolución anticipada, debidamente fundada, que establezca el criterio aplicable al caso.\n' +
+                'En su solicitud el importador deberá proporcionar la información y la documentación que resultare necesaria, ' +
+                'además de su opinión técnica y jurídica sobre el tema consultado.\n' +
+                '3. Será válida y vinculante para el servicio aduanero, mientras no existiera una modificación de la ley, o se tratare ' +
+                'de hechos o circunstancias diferentes y que no admitieran su asimilación a aquellos en que se hubiere sustentado ' +
+                'la resolución.\n' +
+                '4. La reglamentación determinará los requisitos formales y la información que deberá presentar el importador, el ' +
+                'procedimiento de la resolución anticipada y el plazo dentro del cual la misma deberá ser emitida, el que no podrá ' +
+                'ser superior a treinta (30) días.\n' +
+                '5. Si el servicio aduanero no emitiere la resolución anticipada dentro del plazo establecido al efecto, el importador ' +
+                'podrá optar por solicitar la destinación de importación, en los términos propiciados al requerir la decisión, por ' +
+                'aplicación del artículo 234, apartados 3 y 4 del Código Aduanero, a cuyo efecto la reglamentación deberá arbitrar ' +
+                'los medios necesarios. En su caso, podrá exigirse la constitución de una garantía, en los términos previstos por el ' +
+                'régimen de garantía en la Sección V, Título III.\n' +
+                '6. Contra la resolución anticipada procederá la impugnación prevista en el artículo 1053 de este Código.”\n' +
+                'ARTÍCULO 121.- Sustitúyese el artículo 227 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 227.- 1. Si en sede aduanera hubiera en trámite alguna controversia, sumarial o no sumarial, ' +
+                'originada en la declaración de los elementos necesarios para la clasificación arancelaria, valoración o aplicación ' +
+                'de los tributos y prohibiciones referidos a una mercadería de importación, que fueren idénticos a aquellos que ' +
+                'hubieren de ser objetos de declaración, el interesado podrá comprometer esta última en forma supeditada a la del ' +
+                'antecedente. El pronunciamiento final que recayere en sede administrativa se hará extensivo a la declaración ' +
+                'supeditada, sin perjuicio de la eventual interposición de los recursos que, individualmente, pudieran corresponder ' +
+                'contra la decisión.\n' +
+                '2. En el supuesto previsto en el apartado 1, el servicio aduanero comprobará fehacientemente que existe identidad ' +
+                'de causa litigiosa, a cuyo fin, si la controversia lo requiriere para su decisión, se extraerán muestras ' +
+                'representativas de la mercadería en cuestión, con previa citación al interesado.”\n' +
+                'ARTÍCULO 122.- Sustitúyese el artículo 228 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 228.- Si el interesado declarare una mercadería de acuerdo a la forma prevista en el artículo 227, ' +
+                'con la comprobación del servicio aduanero contemplada en su apartado 2, no incurrirá en infracción aduanera por ' +
+                'la eventual declaración inexacta efectuada en la declaración supeditada.”\n' +
+                'ARTÍCULO 123.- Sustitúyese el artículo 245 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 245.- 1. El agente del servicio aduanero que en el curso del despacho comprobare prima facie la ' +
+                'comisión de algún ilícito aduanero procederá a formular la pertinente denuncia al administrador de la aduana o a ' +
+                'quien ejerciere sus funciones y, en caso de corresponder, a la extracción de las muestras representativas ' +
+                'necesarias para evaluar la seriedad o verosimilitud de la misma.\n' +
+                '2. Cumplido ello, se concederá el libramiento de la mercadería, remitiendo las actuaciones al administrador de la ' +
+                'Aduana en cuya jurisdicción se hubieran producido los hechos, quien podrá requerir la constitución de la garantía ' +
+                'en los términos del artículo 453, incisos a) y h). La falta de constitución de la garantía importará la inmediata ' +
+                'suspensión del importador, según la reglamentación que se emita.\n' +
+                '3. El libramiento no procederá cuando ocurra alguno de los siguientes supuestos:\n' +
+                'a) se tratare de mercadería necesaria para la decisión aduanera o la consideración de un recurso deducido contra la ' +
+                'misma, por resultar insuficiente a estos fines la extracción de muestras, fotografías, diagramas, croquis, análisis u ' +
+                'otros elementos de juicio igualmente idóneos, según el caso;\n' +
+                'b) se tratare de mercadería afectada a un sumario o proceso instruido por la presunta comisión de un ilícito ' +
+                'reprimido con pena de comiso;\n' +
+                'c) se procurase determinar la aplicación de una prohibición a la destinación de importación, una prohibición de la ' +
+                'mercadería cuyo libramiento se pretendiere o se tramitare un recurso contra una decisión que hubiera determinado ' +
+                'la aplicación de una prohibición.”\n' +
+                'ARTÍCULO 124.- Sustitúyese el artículo 248 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 248.- Efectuados los trámites relativos al despacho de la mercadería se procederá a su libramiento.\n' +
+                'De no cumplirse con el pago o con la garantía que correspondiere, se aplicará el procedimiento de ejecución ' +
+                'previsto en la Sección XIV, Título II, Capítulo Quinto.”\n' +
+                'ARTÍCULO 125.- Incorpórase como artículo 278 bis de la Ley N° 22.415 (Código Aduanero) y sus ' +
+                'modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 278 bis.- Declaración anticipada de arribo de la mercadería es el procedimiento por medio del cual ' +
+                'se podrá presentar la solicitud de destinación en forma previa al arribo del medio de transporte al territorio ' +
+                'aduanero.”\n' +
+                'ARTÍCULO 126.- Sustitúyese el artículo 279 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 279.- La solicitud de destinación de importación de la mercadería sujeta al procedimiento del ' +
+                'despacho directo puede ser presentada por el importador dentro de los CINCO (5) días anteriores al arribo del ' +
+                'medio de transporte.”\n' +
+                'ARTÍCULO 127.- Sustitúyese el artículo 280 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 280.- 1. La declaración anticipada de arribo de la mercadería es voluntaria por parte del importador ' +
+                'y podrá aplicarse a cualquier tipo de destinación aduanera de importación, salvo para aquélla mercadería que la ' +
+                'reglamentación excluya.\n' +
+                '2. Sin perjuicio de lo dispuesto en el apartado 1 precedente, deberá sujetarse al procedimiento de declaración ' +
+                'anticipada, la mercadería cuya permanencia en depósito implicare peligro para la integridad de las personas, para ' +
+                'la inalterabilidad de la propia mercadería o de la mercadería contigua, salvo que ingresare a depósitos ' +
+                'especialmente acondicionados para esa especie de mercadería. Asimismo, se aplicará este procedimiento cuando ' +
+                'se tratare de mercadería cuyo almacenamiento fuere sumamente dificultoso, o no exista depósito acondicionado ' +
+                'especialmente para la mercadería.”\n' +
+                'ARTÍCULO 128.- Sustitúyese el artículo 281 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 281.- La Dirección General de Aduanas establecerá, con alcance general, la nómina de la ' +
+                'mercadería prevista en el artículo 280, apartado 2, y podrá ampliarla cuando la naturaleza o condiciones ' +
+                'intrínsecas así lo aconsejaren.”\n' +
+                'ARTÍCULO 129.- Sustitúyese el artículo 282 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 282.- Si no se dispusiere de depósitos especialmente acondicionados para la especie de mercadería ' +
+                'indicada en los artículos 280, apartado 2, y 281, y no hubiere sido solicitada su destinación de importación con ' +
+                'anterioridad al arribo del medio de transporte, el servicio aduanero adoptará las medidas tendientes a evitar los ' +
+                'perjuicios emergentes de la naturaleza o condición de la mercadería de que se trate, por cuenta y bajo la ' +
+                'responsabilidad de quien correspondiere.”\n' +
+                'ARTÍCULO 130.- Sustitúyese el artículo 283 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 283.- En todos los casos el servicio aduanero podrá disponer que la mercadería sujeta a los ' +
+                'procedimientos de despacho previstos en este capítulo ingrese, total o parcialmente, a un lugar de depósito al solo ' +
+                'efecto de practicar una verificación exhaustiva.”\n' +
+                'ARTÍCULO 131.- Sustitúyese el artículo 284 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 284.- El procedimiento de declaración anticipada se encuentra autorizado para todo tipo de ' +
+                'destinación aduanera de importación.”\n' +
+                'ARTÍCULO 132.- Sustitúyese el artículo 323 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 323.- 1. La resolución anticipada es un acto administrativo, emitido por el servicio aduanero, a ' +
+                'petición del solicitante, antes de la exportación de la mercadería, mediante el cual se establece el tratamiento ' +
+                'aduanero que se concederá a la mercadería en el momento de la exportación, en relación al tema objeto de ' +
+                'consulta, de la manera que se indica en los apartados siguientes de este artículo.\n' +
+                '2. Si antes de solicitar una destinación de exportación, el exportador tuviere dudas en relación con el criterio que ' +
+                'el servicio aduanero pudiera adoptar respecto de la clasificación arancelaria, el origen o la valoración de la ' +
+                'mercadería, o en relación con los elementos que fueren necesarios para la correcta aplicación del régimen ' +
+                'tributario, de estímulos, o de prohibiciones o restricciones, referidos a la mercadería de exportación, podrá ' +
+                'solicitar al servicio aduanero que emita una resolución anticipada, debidamente fundada, que establezca el criterio ' +
+                'aplicable al caso. En su solicitud el exportador deberá proporcionar la información y documentación que resultare ' +
+                'necesaria, además de su opinión técnica y jurídica sobre el tema consultado.\n' +
+                '3. Será válida y vinculante para el servicio aduanero mientras no existiera una modificación de la ley, o se ' +
+                'trataren de hechos o circunstancias diferentes, que no admitieran su asimilación a aquellos en que se hubiere ' +
+                'sustentado la resolución.\n' +
+                '4. La reglamentación determinará los requisitos formales y la información que deberá presentar el exportador, el ' +
+                'procedimiento de la resolución anticipada y el plazo dentro del cual la misma deberá ser emitida, el que no podrá ' +
+                'ser superior a TREINTA (30) días.\n' +
+                '5. Si el servicio aduanero no emitiere la resolución anticipada dentro del plazo establecido al efecto, el exportador ' +
+                'podrá optar por solicitar la destinación de exportación, en los términos propiciados al requerir la decisión, por ' +
+                'aplicación del artículo 332, apartados 3 y 4 de este Código a cuyo efecto la reglamentación deberá arbitrar los ' +
+                'medios necesarios. En su caso, podrá exigirse la constitución de una garantía, en los términos previstos por el ' +
+                'régimen de garantía en la Sección V, Título III.\n' +
+                '6. Contra la resolución anticipada procederá la impugnación prevista en el artículo 1053 de este Código.”\n' +
+                'ARTÍCULO 133.- Sustitúyese el artículo 324 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 324.- 1. Si en sede aduanera hubiera en trámite alguna controversia, sumarial o no sumarial, ' +
+                'originada en la declaración de los elementos necesarios para la clasificación arancelaria, valoración o aplicación ' +
+                'de los tributos, prohibiciones y estímulos a la exportación, referidos a una mercadería de exportación, que fueren ' +
+                'idénticos, a aquellos que hubieren de ser objeto de declaración, el interesado podrá comprometer esta última en ' +
+                'forma supeditada a la del antecedente. El pronunciamiento final que recayere en sede administrativa se hará ' +
+                'extensivo a la declaración supeditada, sin perjuicio de la eventual interposición de los recursos que, ' +
+                'individualmente, pudieran corresponder contra la decisión.\n' +
+                '2. En el supuesto previsto en el apartado 1, el servicio aduanero comprobará fehacientemente que existe identidad ' +
+                'de causa litigiosa, a cuyo fin, si la controversia lo requiriere para su decisión, se extraerán muestras ' +
+                'representativas de la mercadería en cuestión, con previa citación al interesado.”\n' +
+                'ARTÍCULO 134.- Sustitúyese el artículo 325 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 325.- Si el interesado declarare una mercadería de acuerdo a la forma prevista en el artículo 324 ' +
+                'con la comprobación del servicio aduanero contemplada en su apartado 2, no incurrirá en infracción aduanera por ' +
+                'la eventual declaración inexacta efectuada en la declaración supeditada.”\n' +
+                'ARTÍCULO 135.- Sustitúyese el artículo 326 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 326.- En el supuesto previsto en el artículo 324, se suspende el curso de la prescripción de las ' +
+                'acciones que le pudieren corresponder al fisco con relación a la declaración supeditada desde la fecha en que se ' +
+                'comprometiere la misma hasta que recayere la decisión allí mencionada.”\n' +
+                'ARTÍCULO 136.- Sustitúyese el artículo 343 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 343.- 1. El agente del servicio aduanero que en el curso del despacho comprobare prima facie la ' +
+                'comisión de algún ilícito aduanero procederá a formular la pertinente denuncia al administrador de la aduana o a ' +
+                'quien ejerciere sus funciones y, en caso de corresponder, a la extracción de las muestras representativas ' +
+                'necesarias para evaluar la seriedad o verosimilitud de la misma.\n' +
+                '2. Cumplido ello, se concederá el libramiento de la mercadería, remitiendo las actuaciones al administrador de la ' +
+                'Aduana en cuya jurisdicción se hubieran producido los hechos, quien podrá requerir la constitución de la garantía ' +
+                'en los términos del artículo 453 incisos a) y h). La falta de constitución de la garantía importará la inmediata ' +
+                'suspensión del exportador, según la reglamentación que se emita.\n' +
+                '3. El libramiento no procederá cuando ocurra alguno de los siguientes supuestos:\n' +
+                'a) se tratare de mercadería necesaria para la decisión aduanera o la consideración de un recurso deducido contra la ' +
+                'misma, por resultar insuficiente a estos fines la extracción de muestras, fotografías, diagramas, croquis, análisis u ' +
+                'otros elementos de juicio igualmente idóneos, según el caso;\n' +
+                'b) se tratare de mercadería afectada a un sumario o proceso instruido por la presunta comisión de un ilícito ' +
+                'reprimido con pena de comiso;\n' +
+                'c) se procurase determinar la aplicación de una prohibición a la destinación de exportación de que se tratare, de la ' +
+                'mercadería cuyo libramiento se pretendiere o se tramitare un recurso contra una decisión que hubiera determinado ' +
+                'la aplicación de dicha prohibición.”\n' +
+                'ARTÍCULO 137.- Sustitúyese el artículo 357 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 357.- Cuando la mercadería hubiera sido objeto de una transformación, elaboración, combinación, ' +
+                'mezcla, reparación o cualquier otro perfeccionamiento o beneficio, su retorno está sujeto al pago de los tributos ' +
+                'que gravaren la importación para consumo, los que se aplicarán sobre el mayor valor de la mercadería al ' +
+                'momento de su reimportación.”\n' +
+                'ARTÍCULO 138.- Sustitúyense los incisos a) y h) del artículo 453 de la Ley N° 22.415 (Código Aduanero) y sus ' +
+                'modificatorias por los siguientes:\n' +
+                '"a) el resguardo de la eventual exigencia por diferencias de tributos que el servicio aduanero advirtiera respecto ' +
+                'de la liquidación contenida en una destinación de importación o exportación. En este supuesto, la garantía deberá ' +
+                'cubrir la diferencia entre esa cantidad y el máximo que el servicio aduanero razonablemente considere que ' +
+                'pudiere adeudarse en tal concepto;”\n' +
+                '“h) el resguardo del cobro de la eventual multa que pudiera corresponder por la presunta comisión de un ilícito ' +
+                'aduanero. La garantía, en el supuesto de importación, debe cubrir el importe equivalente al del valor en aduana de ' +
+                'la mercadería que hubiere sido objeto de la presunta infracción, salvo que el máximo de la multa eventualmente ' +
+                'aplicable fuere inferior, caso en el cual bastará garantizar este último importe. Si la destinación solicitada ' +
+                'estuviere gravada con algún tributo deben además garantizarse el importe previsto en el inciso a). En el supuesto ' +
+                'de exportación, la garantía debe cubrir el importe equivalente al del valor en plaza de la mercadería que hubiere ' +
+                'sido objeto de la presunta infracción, con deducción de los tributos que debieren ser pagados. Cuando el máximo ' +
+                'de la multa eventualmente aplicable adicionado a la diferencia de tributos que pudiere resultar exigible fuere un ' +
+                'importe inferior, bastará con garantizar el de la multa y además garantizarse el importe previsto en el inciso a).”\n' +
+                'ARTÍCULO 139.- Incorpóranse el numeral 1. al primer párrafo del artículo 453 y como apartado 2. del citado ' +
+                'artículo 453 a la Ley N° 22.415 (Código Aduanero) y sus modificatorias, el siguiente:\n' +
+                '“2. La reglamentación podrá determinar otros supuestos de utilización del régimen bajo los recaudos y en las ' +
+                'condiciones que en ella se establecieren." ' +
+                'ARTÍCULO 140.- Sustitúyese el artículo 459 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 459.- La resolución que autorizare o denegare la utilización del régimen de garantía deberá dictarse ' +
+                'dentro de un plazo que no podrá exceder de cinco días contados desde la fecha de presentación prevista en el ' +
+                'artículo 454. En caso de hacerse lugar a dicha utilización, el acto no implicará prejuzgamiento respecto de la ' +
+                'decisión que en definitiva recayere ni renuncia alguna relativa a los derechos controvertidos.”\n' +
+                'ARTÍCULO 141.- Sustitúyese el artículo 463 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 463.- 1. Contra la resolución que denegare el otorgamiento del régimen de garantía, o contra la que ' +
+                'exigiere su constitución, o fijare su importe o determinare su forma, podrá interponerse demanda ante la justicia o ' +
+                'recurso de apelación ante el Tribunal Fiscal por el procedimiento previsto en la Sección XIV, Título III. La ' +
+                'constitución de la garantía exigida por el servicio aduanero no obstará a la interposición de la demanda o del ' +
+                'recurso previsto, y, en su caso, no significará desistimiento de los que se hubieren interpuesto.\n' +
+                '2. También procederá la demanda ante la justicia o el recurso de apelación ante el Tribunal Fiscal cuando el ' +
+                'servicio aduanero no se expidiera dentro del plazo previsto en el artículo 459 con relación al pedido de ' +
+                'otorgamiento del régimen de garantía presentado por el interesado.”\n' +
+                'ARTÍCULO 142.- Sustitúyese el artículo 609 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 609.- El Poder Ejecutivo Nacional no podrá establecer prohibiciones ni restricciones a las ' +
+                'exportaciones o importaciones por motivos económicos. Solo se podrán realizar por Ley.\n' +
+                'Son económicas las prohibiciones establecidas con cualquiera de los siguientes fines:\n' +
+                'a) asegurar un adecuado ingreso para el trabajo nacional o combatir la desocupación;\n' +
+                'b) ejecutar la política monetaria, cambiaria o de comercio exterior;\n' +
+                'c) promover, proteger o conservar las actividades nacionales productivas de bienes o servicios, así como dichos ' +
+                'bienes y servicios, los recursos naturales o vegetales;\n' +
+                'd) estabilizar los precios internos a niveles convenientes o mantener un volumen de oferta adecuado a las ' +
+                'necesidades de abastecimiento del mercado interno;\n' +
+                'e) atender las necesidades de las finanzas públicas;\n' +
+                'f) proteger los derechos de la propiedad intelectual, industrial o comercial;\n' +
+                'g) resguardar la buena fe comercial, a fin de impedir las prácticas que pudieren inducir a error a los ' +
+                'consumidores.”\n' +
+                'ARTÍCULO 143.- Deróganse los artículos 613, 614, 615, 616, 617, 618, 619, 620, 622, 623, 632 y 633 de la Ley ' +
+                'N° 22.415 (Código Aduanero) y sus modificatorias.\n' +
+                'ARTÍCULO 144.- Sustitúyese el artículo 610 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 610.- Las prohibiciones pueden ser establecidas por cualquiera de las razones siguientes:\n' +
+                'a) afirmación de la soberanía nacional o defensa de las instituciones políticas del Estado;\n' +
+                'b) política internacional;\n' +
+                'c) seguridad pública o defensa nacional;\n' +
+                'd) salud pública o sanidad animal o vegetal;\n' +
+                'e) protección del patrimonio artístico, histórico, arqueológico o científico;\n' +
+                'f) conservación de las especies animales o vegetales.\n' +
+                'g) Preservación del ambiente, conservación de los recursos naturales y prevención de la contaminación.\n' +
+                'El Poder Ejecutivo Nacional no podrá establecer prohibiciones o cupos a las exportaciones ni importaciones por ' +
+                'motivos o fundamentos económicos.”\n' +
+                'ARTÍCULO 145.- Deróganse los artículos 663, 665 y 666 de la Ley N° 22.415 (Código Aduanero) y sus ' +
+                'modificatorias.\n' +
+                'ARTÍCULO 146.- Deróganse los artículos 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685 y 686 ' +
+                'de la Ley N° 22.415 (Código Aduanero) y sus modificatorias.\n' +
+                'ARTÍCULO 147.- Deróganse los artículos 756, 757 y 758 de la Ley N° 22.415 (Código Aduanero) y sus ' +
+                'modificatorias.\n' +
+                'ARTÍCULO 148.- Sustitúyese el artículo 789 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 789.- El pago de la obligación tributaria aduanera debe ser efectuado antes del libramiento de la ' +
+                'mercadería quedando exceptuados los casos en que el libramiento fuere autorizado bajo el régimen de garantía o ' +
+                'aquellos regímenes especiales respecto de los cuales la Administración Federal de Ingresos Públicos determinara ' +
+                'lo contrario.\n' +
+                'En los supuestos previstos en los artículos 245 y 343, no constituirá requisito necesario para el libramiento de la ' +
+                'mercadería el pago o garantía de diferencias tributarias o multas." ' +
+                'ARTÍCULO 149.- Sustitúyese el artículo 960 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el ' +
+                'siguiente:\n' +
+                '"ARTÍCULO 960.- Cuando en cualquier destinación de importación o de exportación se declarare una mercadería ' +
+                'en forma supeditada, en los términos previstos en los artículos 227 y 324, respectivamente, la eventual ' +
+                'declaración inexacta efectuada en la declaración supeditada no será punible".\n' +
+                'ARTÍCULO 150.- Sustitúyese el artículo 1024 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por ' +
+                'el siguiente:\n' +
+                '“ARTÍCULO 1024.- Corresponderá conocer y decidir en forma originaria en el procedimiento de ejecución en ' +
+                'sede judicial y en las demandas contenciosas que se interpusieren contra las resoluciones definitivas dictadas por ' +
+                'el administrador en los procedimientos de repetición y para las infracciones, así como en el supuesto de retardo ' +
+                'por no dictarse resolución en estos dos últimos procedimientos dentro de los plazos señalados al efecto en este ' +
+                'Código, y en los previstos en el artículo 463, en la Capital Federal a los jueces nacionales en lo contencioso ' +
+                'administrativo federal y en el interior del país a los jueces federales, dentro de sus respectivas competencias ' +
+                'territoriales siempre que se cuestionare una suma mayor de 1.000 UVA.”\n' +
+                'ARTÍCULO 151.- Incorpórase como inciso f) del apartado 1 del artículo 1025 a la Ley N° 22.415 (Código ' +
+                'Aduanero) y sus modificatorias, el siguiente:\n' +
+                '“f) de los recursos de apelación previstos en el artículo 463.”\n' +
+                'ARTÍCULO 152.- Incorpóranse como incisos m) y n) del artículo 1037 de la Ley N° 22.415 (Código Aduanero) y ' +
+                'sus modificatorias, los siguientes:\n' +
+                '“m) el dictado del auto por el cual se ordenare la apertura del sumario;\n' +
+                'n) el dictado de la resolución condenatoria en sede aduanera.”\n' +
+                'ARTÍCULO 153.- El Poder Ejecutivo Nacional debe procurar la adhesión a convenios internacionales existentes ' +
+                'que signifiquen para el sector aduanero una innovación y desburocratización de procedimientos administrativos y ' +
+                'de control, con el objetivo de reducir costos y fomentar la inclusión Argentina en el mercado internacional.',
+                delta: {
+                    title: 'Ley N° 22.415 - Código Aduanero',
+                    added: require('./ley22415-new').default,
+                    removed: require('./ley22415').default,
+                },
+            },
+        ],
+    },
 ]
     /*
 
 
 
-
-
-Capítulo III – Convenciones Colectivas de Trabajo (Ley N° 14.250)
-ARTÍCULO 86.- Sustitúyese el artículo 6° de la Ley N° 14.250, por el siguiente:
-“ARTÍCULO 6°.- Una convención colectiva de trabajo, cuyo término estuviere vencido, solamente mantendrá
-subsistentes las normas referidas a las condiciones de trabajo establecidas en virtud de ellas (cláusulas
-normativas) y hasta tanto entre en vigencia una nueva convención colectiva o exista un acuerdo de partes que la
-prorrogue.
-
-El resto de las cláusulas (obligacionales) podrán mantener su vigencia, solo por acuerdo de partes o por la
-específica prórroga dispuesta por el Poder Ejecutivo Nacional.”
-
-Capítulo IV - Asociaciones Sindicales (Ley N° 23.551)
-ARTÍCULO 87.- Incorpórase como artículo 20 bis a la Ley N° 23.551, el siguiente:
-“ARTÍCULO 20 bis.- Derecho de realizar Asambleas, Congresos. Los representantes sindicales dentro de la
-empresa, delegados, comisiones internas u organismos similares, así como las autoridades de las distintas
-seccionales de las asociaciones sindicales tendrán derecho a convocar a asambleas y congresos de delegados sin
-perjudicar las actividades normales de la empresa o afectar a terceros.”
-ARTÍCULO 88.- Incorpórase como artículo 20 ter a la Ley N° 23.551, el siguiente:
-“ARTÍCULO 20 ter - Acciones prohibidas. Las siguientes conductas están prohibidas y serán consideradas
-infracciones muy graves:
-a. Afectar la libertad de trabajo de quienes no adhieran a una medida de fuerza, mediante actos, hechos,
-intimidaciones o amenazas;
-b. Provocar el bloqueo o tomar un establecimiento; impedir u obstruir total o parcialmente el ingreso o egreso de
-personas y/o cosas al establecimiento;
-c. Ocasionar daños en personas o en cosas de propiedad de la empresa o de terceros situadas en el establecimiento
-(instalaciones, mercaderías, insumos y materias primas, herramientas, etc.) o retenerlas indebidamente.
-Verificadas dichas acciones como medidas de acción directa sindical, la entidad responsable será pasible de la
-aplicación de las sanciones que establezca la reglamentación, una vez cumplimentado el procedimiento que se
-disponga al efecto a cargo de la Autoridad de Aplicación, sin perjuicio de las responsabilidades civiles y/o
-penales que pudieran corresponder.”
-
-Capítulo V - Régimen del Trabajo Agrario (Ley N° 26.727)
-ARTÍCULO 89.- Sustitúyese el artículo 69 de la Ley Nº 26.727, por el siguiente:
-“ARTÍCULO 69.- Bolsa de trabajo. Las bolsas de trabajo a cargo de las asociaciones sindicales de trabajadores
-con personería gremial podrán proponer a los empleadores un listado del personal necesario para la realización de
-tareas temporarias en las actividades contempladas en la presente Ley, conforme las resoluciones que a tal efecto
-dicte la Comisión de Trabajo Agrario.
-El empleador podrá contratar a la persona sugerida y/o a cualquier otra que disponga.
-Queda derogada toda norma que se oponga al presente artículo y/o a la libertad de contratación y elección del
-personal por parte del empleador.”
-
-Capítulo VI - Régimen del Viajante de Comercio (Ley N° 14.546)
-ARTÍCULO 90.- Derógase la Ley N° 14.546.
-ARTÍCULO 91.- La derogación de la Ley N° 14.546 no afecta los derechos individuales de aquellos trabajadores
-que se encuentren actualmente alcanzados por el Régimen establecido en la ley que se deroga.
-Las nuevas contrataciones producidas con posterioridad a la entrada en vigencia de esta Ley, se regirán por las
-normas generales, contratos individuales y convenios colectivos que resulten aplicables.
-La representación sindical y empleadora deberán impulsar la negociación colectiva relativa con el fin de otorgar
-el marco adicional que consideren menester adecuado a las circunstancias actuales si correspondiere.
-
-Capítulo VII - Régimen Legal del Contrato de teletrabajo (Ley N° 27.555)
-ARTÍCULO 92.- Sustitúyese el artículo 6° de la Ley Nº 27.555, por el siguiente:
-“ARTÍCULO 6°.- Tareas de cuidados. Las personas que trabajen bajo esta modalidad y que acrediten tener a
-cargo el cuidado de personas menores de trece (13) años, personas con discapacidad o adultas mayores que
-convivan con la persona que trabaja y que requieran asistencia específica, tendrán derecho a coordinar con el
-empleador, en tanto no afecte lo requerido de su trabajo, horarios compatibles a la tarea de cuidado a su cargo y/o
-la interrupción esporádica de su jornada, compensado dichos períodos de tiempo de manera acorde con las tareas
-asignadas.
-El presente artículo no será de aplicación cuando el empleador abonare alguna compensación legal, convencional
-o contractual relativa a gastos por tareas de cuidado.
-Mediante negociación colectiva o en el ámbito de los contratos de trabajo podrán establecerse pautas específicas
-para el ejercicio de este derecho.”
-ARTÍCULO 93.- Sustitúyese el artículo 8° de la Ley Nº 27.555, por el siguiente:
-“ARTÍCULO 8° - Reversibilidad. La solicitud o el consentimiento prestado por la persona que trabaja en una
-posición presencial para pasar a la modalidad de teletrabajo, podrá ser revertido por acuerdo mutuo entre el
-trabajador y el empleador, en tanto existan en las instalaciones de la empresa las condiciones para que la persona
-pueda retomar su trabajo en forma presencial.
-En función de las necesidades propias de cada puesto de trabajo se podrá revertir la modalidad de teletrabajo por
-la modalidad presencial, en los supuestos en que las propias características de la actividad así lo requieran.”
-ARTÍCULO 94.- Sustitúyese el artículo 17 de la Ley Nº 27.555, por el siguiente:
-“ARTÍCULO 17.- Prestaciones transnacionales. Cuando se trate de prestaciones transnacionales de teletrabajo, se
-aplicará al contrato respectivo la ley del lugar de ejecución de las tareas por parte del trabajador.”
-ARTÍCULO 95.- Sustitúyese el artículo 18 de la Ley Nº 27.555, por el siguiente:
-“ARTÍCULO 18.- El Poder Ejecutivo Nacional establecerá un método simple, electrónico y automático de
-
-registro de esta modalidad contractual al tiempo del alta o al momento de la incorporación del trabajador al
-presente régimen.”
-
-Capítulo VIII - De los Trabajadores independientes con colaboradores
-ARTÍCULO 96.- El trabajador independiente podrá contar con hasta otros CINCO (5) trabajadores
-independientes para llevar adelante un emprendimiento productivo y podrá acogerse a un régimen especial
-unificado que al efecto reglamentará el Poder Ejecutivo Nacional.
-El mismo estará basado en la relación autónoma, sin que exista vinculo de dependencia entre ellos, ni con las
-personas contratantes de los servicios u obras, e incluirá, tanto para el trabajador independiente como para los
-trabajadores colaboradores, el aporte individual de una cuota mensual que comprenda la cotización al Régimen
-Previsional, al Régimen Nacional de Obras Sociales y Sistema Nacional del Seguro de Salud y al Régimen de
-Riesgos del Trabajo, en las condiciones y requisitos que establezca la reglamentación.
-
-Capítulo IX – Servicios esenciales (Ley N° 25.877)
-ARTÍCULO 97.- Sustitúyese el artículo 24 de la Ley N° 25.877, por el siguiente:
-“ARTÍCULO 24.- Los conflictos colectivos que pudieren afectar la normal prestación de servicios esenciales o
-actividades de importancia trascendental, quedan sujetos a las siguientes garantías de prestación de servicios
-mínimos.
-En lo que respecta a la prestación de servicios mínimos, en el caso de los servicios esenciales, en ningún caso
-podrá negociar o imponer a las partes una cobertura menor al SETENTA Y CINCO POR CIENTO (75%) de la
-prestación normal del servicio de que se tratare.
-En el caso de las actividades o servicios de importancia trascendental, en ningún caso se podrá negociar o
-imponer a las partes una cobertura menor al CINCUENTA POR CIENTO (50%).
-Se considerarán servicios esenciales en sentido estricto, las actividades siguientes:
-a. Los servicios sanitarios y hospitalarios, así como el transporte y distribución de medicamentos e insumos
-hospitalarios y los servicios farmacéuticos;
-b. La producción, transporte y distribución y comercialización de agua potable, gas y otros combustibles y
-energía eléctrica;
-c. Los servicios de telecomunicaciones, incluyendo internet y comunicaciones satelitales;
-d. La aeronáutica comercial y el control de tráfico aéreo y portuario; incluyendo balizamiento, dragado,
-amarre, estiba y remolque de buques;
-e. servicios aduaneros y migratorios, y demás vinculados al comercio exterior; y
-f. cuidado de menores y educación de niveles guardería, preescolar, primario y secundario, así como la
-educación especial.
-Se consideran actividades de importancia trascendental las siguientes:
-
-a. Producción de medicamentos y/o insumos hospitalarios;
-b. Transporte marítimo, fluvial, terrestre y subterráneo de personas y/o mercaderías a través de los distintos
-medios que se utilicen para tal fin;
-c. Servicios de radio y televisión;
-d. Actividades industriales continuas, incluyendo siderurgia y la producción de aluminio, actividad química y la
-actividad cementera;
-e. Industria alimenticia en toda su cadena de valor;
-f. La producción y distribución de materiales de la construcción, servicios de reparación de aeronaves y buques,
-todos los servicios portuarios y aeroportuarios, servicios logísticos, actividad minera, actividad frigorífica,
-correos, distribución y comercialización de alimentos y bebidas, actividad agropecuaria y su cadena de valor;
-g. Los servicios bancarios, financieros, servicios hoteleros y gastronómicos y el comercio electrónico; y
-h. La producción de bienes y/o servicios de toda actividad, que estuvieran afectados a compromisos de
-exportación.
-Una comisión independiente y autónoma, denominada COMISIÓN DE GARANTÍAS, integrada según se
-establezca en la reglamentación, por cinco (5) miembros de reconocida solvencia técnica, profesional o
-académica en materia de relaciones del trabajo, del derecho laboral o de derecho constitucional y destacada
-trayectoria, podrá, mediante resolución fundada, calificar como servicio esencial o servicio de importancia
-trascendental una actividad no incluida en las enumeraciones precedentes, cuando se diere alguna de las
-siguientes circunstancias:
-a) La extensión y duración de la interrupción de la actividad de que se tratare pudiere poner en peligro la vida, la
-salud o la seguridad de la persona en toda o parte de la comunidad;
-b) La actividad afectada constituyere un servicio público de importancia trascendental o de utilidad pública;
-c) La interrupción o suspensión del servicio pudiere provocar una situación de crisis nacional aguda que hiciere
-peligrar las condiciones normales o de existencia de parte de la población; y
-d) la interrupción o suspensión de la producción pudiere poner en peligro el adecuado abastecimiento de
-productos críticos para la población y/o afectar metas de recaudación asociadas a las políticas de equilibrio fiscal.
-El Poder Ejecutivo Nacional dictará la reglamentación correspondiente y la Autoridad de Aplicación las normas
-complementarias, aclaratorias y operativas que resulten necesarias.”
-
-Título V – COMERCIO EXTERIOR
-ARTÍCULO 98.- Derógase la Ley N° 25.626.
-
-Capítulo I - Código Aduanero (Ley N° 22.415)
-ARTÍCULO 99.- Sustitúyese el artículo 37 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el
-siguiente:
-“ARTÍCULO 37.- Las personas humanas o jurídicas podrán gestionar el despacho y la destinación de mercadería,
-por sí o a través de persona autorizada, con la excepción de las funciones que este Código prevé para los agentes
-de transporte aduanero y de aquellas facultades inherentes a la calidad de capitán de buque, comandante de
-aeronave o, en general, conductor de los demás medios de transporte.”
-ARTÍCULO 100.- Sustitúyese el artículo 41 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el
-siguiente:
-“ARTÍCULO 41.- No podrán desempeñarse como Despachantes de Aduana quienes estén comprendidos en
-alguno de los siguientes supuestos:
-1°) haber sido condenado por algún delito aduanero o por la infracción de contrabando menor;
-2°) haber sido socio ilimitadamente responsable, director o administrador de cualquier sociedad o asociación
-cuando la sociedad o la asociación de que se tratare hubiera sido condenada por cualquiera de los ilícitos
-mencionados en el punto 1). Cuando hubiese sido condenada por la infracción de contrabando menor, la
-inhabilidad se extenderá hasta CINCO (5) años a contar desde que la condena hubiera quedado firme. Se exceptúa
-de la inhabilitación a quienes probaren haber sido ajenos al acto o haberse opuesto a su realización;
-3°) haber sido condenado por delito reprimido con pena privativa de la libertad. Exceptúanse los delitos contra las
-personas, el honor, la honestidad y el estado civil, cuando la sentencia hubiera concedido el beneficio de la
-ejecución condicional de la pena;
-4°) contar con procesamiento judicial firme o encontrarse sumariado en jurisdicción aduanera por cualquiera de
-los ilícitos indicados en los puntos 1) y 3), mientras no fuere sobreseído provisional o definitivamente o absuelto
-por sentencia o resolución firme;
-5°) haber sido condenado con pena accesoria de inhabilitación para ejercer cargos públicos, hasta que se
-produjere su rehabilitación;
-6°) ser fallido o concursado civil, hasta DOS (2) años después de su rehabilitación. No obstante, cuando se tratare
-de quiebra o concurso culpable o fraudulento la inhabilidad se extenderá hasta CINCO (5) o DIEZ (10) años
-después de su rehabilitación, respectivamente;
-7°) encontrarse en concurso preventivo o resolutorio, hasta que hubiere obtenido carta de pago o acreditare el
-cumplimiento total del acuerdo respectivo;
-8°) estar inhibido judicialmente para administrar o disponer de sus bienes, mientras esta situación subsistiere;
-9°) ser deudor de obligación tributaria aduanera exigible o de obligación emergente de pena patrimonial aduanera
-firme, o ser socio ilimitadamente responsable, director o administrador de cualquier sociedad o asociación,
-cuando la sociedad o la asociación de que se tratare fuere deudora de alguna de las obligaciones mencionadas.
-Estas inhabilidades subsistirán hasta la extinción de la obligación.
-
-10) ser o haber sido agente aduanero, hasta después de UN (1) año de haber cesado como tal;
-11) haber sido exonerado como agente de la administración pública nacional, provincial de la CIUDAD
-AUTÓNOMA DE BUENOS AIRES o municipal, hasta que se produjere su rehabilitación.
-12) quienes incurrieren en reiteración de inconductas o en una falta grave en el ejercicio de sus funciones, que
-hicieren su permanencia incompatible con la seguridad del servicio aduanero.”
-ARTÍCULO 101.- Deróganse los artículos 42, 43, 44, 45 y 46 de la Ley N° 22.415 (Código Aduanero) y sus
-modificatorias.
-ARTÍCULO 102.- Sustitúyese el artículo 47 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el
-siguiente:
-“ARTÍCULO 47.- 1. Según la índole de la falta cometida, el perjuicio ocasionado o que hubiera podido
-ocasionarse y los antecedentes del interesado, el servicio aduanero podrá aplicar a los despachantes de aduana las
-siguientes sanciones:
-a) apercibimiento;
-b) suspensión o prohibición para actuar como despachante ante la Dirección General de Aduanas
-2. El apercibimiento será impuesto por el administrador de la aduana en cuya jurisdicción se hubiere cometido la
-falta o por quien ejerciere sus funciones. Las sanciones de suspensión serán impuestas por el Director General de
-Aduanas.”
-ARTÍCULO 103.- Sustitúyese el punto 1. del artículo 51 de la Ley N° 22.415 (Código Aduanero) y sus
-modificatorias, por el siguiente:
-“1. En el marco de lo previsto en el inciso b) del artículo 47, el administrador de la aduana en cuya jurisdicción se
-hubiere cometido la falta, o quien cumpliere sus funciones, deberá instruir el pertinente sumario administrativo,
-en el que, cumplidas las diligencias de investigación que considerare necesarias, correrá vista al interesado por un
-plazo de DIEZ (10) días, dentro del cual deberá ejercer su defensa y ofrecer las pruebas que hicieren a su
-derecho.”
-ARTÍCULO 104.- Deróganse los artículos 55 y 56 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias.
-ARTÍCULO 105.- Sustitúyese el artículo 92 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el
-siguiente:
-“ARTÍCULO 92.- Todas las personas humanas y jurídicas podrán solicitar destinaciones aduaneras y realizar
-operaciones de comercio exterior sin necesidad de inscribirse en ningún registro.”
-ARTÍCULO 106.- Derógase el artículo 93 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias.
-ARTÍCULO 107.- Sustitúyese el artículo 94 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el
-siguiente:
-“ARTÍCULO 94.- 1. No podrán realizar operaciones de exportación o importación las personas humanas que
-
-estén comprendidas en algunos de los siguientes supuestos: 1°) haber sido condenado por algún delito aduanero,
-impositivo o previsional, siempre que no haya transcurrido el doble del máximo de la pena prevista en la ley para
-dicho delito desde el momento de cumplida la condena;
-2°) haber sido socio ilimitadamente responsable, director o administrador de cualquier sociedad o asociación,
-cuando la sociedad o la asociación de que se tratare hubiera sido condenada por cualquiera de los ilícitos
-mencionados en el punto 1). Se exceptúa de esta inhabilitación a quienes probaren haber sido ajenos al acto o
-haberse opuesto a su realización;
-3°) contar con procesamiento firme o encontrarse sumariado en jurisdicción de la ADMINISTRACIÓN
-FEDERAL DE INGRESOS PÚBLICOS, entidad autárquica en el ámbito del MINISTERIO DE ECONOMÍA,
-por cualquiera de los ilícitos indicados en el punto 1) mientras no fuere sobreseído o absuelto por sentencia o
-resolución firme. No obstante, podrán actuar en tal carácter si el servicio aduanero resuelve aceptar que la persona
-otorgue garantías suficientes en resguardo del interés fiscal.
-4°) ser fallido;
-5°) estar inhibido judicialmente para administrar o disponer de sus bienes mientras esta situación subsistiere;
-2. Las personas jurídicas no podrán realizar operaciones de importación o exportación cuando:
-a) la sociedad, asociación o alguno de sus directores, administradores o socios ilimitadamente responsables, fuere
-judicialmente procesado o condenado por algún delito aduanero, impositivo o previsional. Esta suspensión solo se
-aplicará cuando el procesado o el condenado no cesare en su función dentro de los CUARENTA (40) días
-siguientes a la intimación que a tal fin el servicio aduanero efectuare a la mencionada persona de existencia ideal
-y subsistirá hasta que el procesado o el condenado cesare en sus funciones o hasta que fuere absuelto o
-sobreseído. No obstante ello, podrán actuar en tal carácter si el servicio aduanero resuelve aceptar que la persona
-jurídica otorgue garantías suficientes en resguardo del interés fiscal.
-b) hubieran sido declarados en quiebra;
-c) fueren sometidos a sumario administrativo, siempre que se lo estimare necesario por resolución fundada en la
-gravedad de la falta investigada, en relación con la seguridad del servicio aduanero. Esta suspensión tendrá
-carácter preventivo y no podrá exceder los CUARENTA Y CINCO (45) días prorrogables por única vez por otro
-plazo igual, mediante decisión fundada, siempre que se mantuvieren las circunstancias que dieron origen a tal
-medida, pero nunca más allá de la fecha en que quedare firme la resolución definitiva dictada en el sumario de
-que se tratare. No obstante ello, podrán actuar en tal carácter si el servicio aduanero resuelve aceptar que la
-persona jurídica otorgue garantías suficientes en resguardo del interés fiscal; d) incurrieren en reiteración de
-inconductas sancionadas o en una falta grave en el ejercicio de su actividad que hiciere su permanencia
-incompatible con la seguridad del servicio aduanero.”
-ARTÍCULO 108.- Deróganse los artículos 95, 96, 97, 98, 99 y 107 de la Ley N° 22.415 (Código Aduanero) y sus
-modificatorias.
-ARTÍCULO 109.- Sustitúyese el artículo 100 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el
-siguiente:
-“ARTÍCULO 100.- El Director General de Aduanas, según la índole de la falta cometida, el perjuicio ocasionado
-
-o que hubiera podido ocasionarse y los antecedentes del interesado, podrá aplicarle las siguientes sanciones;
-a) apercibimiento;
-b) suspensión o prohibición para efectuar operaciones de comercio exterior.”
-ARTÍCULO 110.- Sustitúyese el punto 1 del artículo 103 de la Ley N° 22.415 (Código Aduanero) y sus
-modificatorias, por el siguiente:
-“1. En el marco de lo establecido en el inciso b) del artículo 100, la Dirección General de Aduana deberá instruir
-el pertinente sumario administrativo en el que, cumplidas las diligencias de investigación que considerare
-necesarias, correrá vista al interesado por un plazo de DIEZ (10) días, dentro del cual éste deberá ejercer su
-defensa y ofrecer las pruebas que hicieren a su derecho.”
-ARTÍCULO 111.- Sustitúyese el artículo 119 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el
-siguiente:
-“ARTÍCULO 119.- 1. Cualquiera fuere la zona de que se tratare, los agentes del servicio aduanero y, dentro del
-ámbito de sus respectivas competencias, los de las fuerzas de seguridad y policiales podrán proceder a la
-identificación y registro de personas y mercadería, incluidos los medios de transporte, cuando mediaren sospechas
-de la comisión de algún ilícito aduanero, así como también aprehender, secuestrar o interdictar la mercadería de
-que se tratare poniendo la misma a disposición de la autoridad competente dentro de las CUARENTA Y OCHO
-(48) horas.
-2. Los agentes del servicio aduanero y, en su caso, los de las fuerzas de seguridad y policiales que debieran operar
-en materia de control aduanero, procurarán preservar la actividad y la continuidad de las operaciones de
-importación o de exportación que se hallaren en curso. La eventual interrupción solo procederá ante la existencia
-de elementos de convicción que condujeren a un razonable estado de presunción de la comisión o principio de
-ejecución de un delito o de una infracción tipificada en este Código.
-3. Los agentes del servicio aduanero no podrán dejar en suspenso, ni demorar la aplicación de las disposiciones en
-vigencia bajo el pretexto de pedir aclaración de sus términos.”
-ARTÍCULO 112.- Incorpórase como artículo 120 bis a la Ley N° 22.415 (Código Aduanero) y sus
-modificatorias, el siguiente:
-“ARTÍCULO 120 bis.- 1. El PODER EJECUTIVO NACIONAL debe adoptar procedimientos y mecanismos que
-simplifiquen el cumplimiento de sus obligaciones con los distintos actores involucrados en actividades de
-comercio exterior, incluyendo la utilización extendida de tecnologías de información, automatización y
-comunicaciones para el intercambio electrónico de información.
-2. Los procedimientos, solicitudes, tramitaciones necesarias para el cumplimiento de las formalidades,
-operaciones u obligaciones aduaneras, incluyendo las destinaciones de importación y exportación, deberán
-llevarse a cabo mediante el uso de los servicios informáticos electrónicos.
-3. En los casos excepcionales y fundamentados, la Dirección General de Aduana podrá autorizar la presentación
-de trámites o documentación por medios físicos los cuales deberán ser digitalizados.
-4. La firma digital debidamente certificada o firma electrónica equivalen, para todos los efectos legales, a la firma
-
-manuscrita de los funcionarios aduaneros y de las personas que intervienen en el proceso aduanero. A su vez, los
-requisitos de firmas manuscritas podrán ser sustituidas por contraseñas o firma digital o electrónica, para
-actuaciones de comercio exterior que se realicen por medios informáticos.
-5. La Dirección General de Aduanas establecerá procedimientos de contingencia de los servicios informáticos
-electrónicos en los casos en que los Sistemas Informáticos queden, total o parcialmente, fuera de servicio. En
-estos casos la Dirección General de Aduanas autorizará el trámite a un mecanismo o en forma manual, mediante
-la presentación de documentos físicos, sin perjuicio de la obligación de incluir tal actuación en los servicios
-informáticos electrónicos, una vez que se restablezca el servicio.
-6. La Dirección General de Aduanas y demás autoridades competentes dictarán las normas complementarias y
-establecerá los procedimientos que regulen la emisión, transferencia, digitalización, uso y control de la
-información, en relación con tales operaciones.”
-ARTÍCULO 113.- Incorpórase como artículo 120 ter a la Ley N° 22.415 (Código Aduanero) y sus modificatorias,
-el siguiente:
-“ARTÍCULO 120 ter.- Publicación. Toda normativa relativa a operaciones de comercio exterior deberá:
-(a) publicarse en un medio oficial y electrónico;
-(b) prever un plazo suficiente entre la publicación y/o la publicación de las medidas, y la entrada en vigor de
-dichas medidas.
-Se incluye dentro del término “normativa” a los dictámenes técnicos clasificatorios de la División Clasificación
-Arancelaria, aprobado por el Jefe del Departamento Técnica de Nomenclatura y Clasificación Arancelaria y,
-posteriormente, por la Dirección de Técnica de la Subdirección General de Legal y Técnica Aduanera, que se
-adopten con carácter obligatorio en toda actuación infraccional ya aperturada. Tales publicaciones deberán
-detallar al menos la mercadería y la posición arancelaria adoptada. La Dirección General de Aduanas podrá
-resolver la publicación de otros actos que estime son necesarios para asegurar la transparencia y buenas prácticas
-de la Administración, resguardando el secreto fiscal.”
-ARTÍCULO 114.- Incorpórase como artículo 120 quáter a la Ley N° 22.415 (Código Aduanero) y sus
-modificatorias, el siguiente:
-“ARTÍCULO 120 quáter.- Trámites y requerimientos por terceros organismos.
-1. Los organismos comprendidos en los incisos a) y b) del artículo 8° de la Ley N° 24.156 y sus modificatorias,
-deberán:
-A. Tramitar los permisos, autorizaciones y demás informaciones inherentes a las operaciones aduaneras que
-dicten para regular el tráfico internacional de mercaderías, en cumplimiento de lo dispuesto por el artículo 11 y
-sus modificaciones mediante la Ventanilla Única de Comercio Exterior Argentino (VUCEA) de forma
-electrónica. La obligación comprenderá los procedimientos y trámites de declaraciones, permisos, certificaciones,
-licencias y demás autorizaciones o gestiones necesarias para realizar operaciones de importación y/o exportación.
-B. Identificar las mercaderías conforme a las posiciones arancelarias de la Nomenclatura Común del
-MERCOSUR (N.C.M.), en todo régimen que dicten para regular el tráfico internacional de mercaderías, en
-
-cumplimiento de lo dispuesto por el artículo 11 y sus modificaciones. La obligación comprenderá los
-procedimientos y trámites de declaraciones, permisos, certificaciones, licencias y demás autorizaciones o
-gestiones necesarias para realizar operaciones de importación y/o exportación. De corresponder, cada organismo
-deberá indicar las excepciones, requisitos, condiciones o reglas que resulten necesarias para identificar el universo
-de mercaderías alcanzadas por la regulación de que se trate.
-2. Toda medida vinculada a la creación, modificación o eliminación de regímenes que regulen el tráfico
-internacional de mercaderías deberá ser comunicada por la autoridad que la dictó a la Ventanilla Única de
-Comercio Exterior Argentino (VUCEA), en el plazo de UN (1) día hábil, contado desde su determinación o
-emisión, mediante el módulo “Comunicaciones Oficiales” del Sistema de Gestión Documental Electrónica -GDE3. La DIRECCIÓN GENERAL DE ADUANAS solo podrá controlar las tramitaciones debidamente incorporadas
-a la Ventanilla Única de Comercio Exterior Argentino (VUCEA).”
-ARTÍCULO 115.- Incorpórase como artículo 120 quinquies a la Ley N° 22.415 (Código Aduanero) y sus
-modificatorias, el siguiente:
-“ARTÍCULO 120 quinquies.- Profesionalización del personal. La profesionalización del personal dentro de un
-marco transparencia es un principio que debe orientar en el desarrollo de las funciones de la Dirección General de
-Aduanas. La Dirección General de Aduanas deberá impulsar procedimientos de contratación basados en los
-principios de objetividad, neutralidad, mérito, capacidad, publicidad y transparencia, así como la profesionalidad
-y la neutralidad del organismo, comité o personal que lleve adelante el proceso de selección.”
-ARTÍCULO 116.- Sustitúyese la denominación del Capítulo Cuarto del Título II de la Sección III de la Ley N°
-22.415 (Código Aduanero) y sus modificatorias por la siguiente: “Despacho directo a plaza y Declaración
-anticipada”
-ARTÍCULO 117.- Sustitúyese el artículo 130 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 130.- Sin perjuicio de lo dispuesto en leyes especiales, todo medio de transporte procedente del
-exterior que arribare al territorio aduanero o que se detuviere en él, deberá:
-a) Hacerlo por o en los lugares habilitados y, en su caso, por las rutas y dentro de los horarios establecidos.
-b) Presentar en forma previa al arribo o inmediatamente después de su llegada o en la oportunidad en la que el
-servicio aduanero ejerciere el derecho de visita, la documentación que en este título se exige y la que la
-Administración Federal de Ingresos Públicos pudiere determinar, según la vía que se utilizare.”
-ARTÍCULO 118.- Sustitúyese el artículo 131 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 131.- La ADMINISTRACIÓN FEDERAL DE INGRESOS PÚBLICOS determinará las
-formalidades a que habrá de ajustarse la confección, presentación y trámite de la documentación que deberá
-acompañarse al tiempo de arribar el medio de transporte, incluidas las formalidades relativas al modo de
-descripción de la mercadería.
-Las presentaciones deberán ser realizadas por medios electrónicos, a través del sistema informático establecido
-
-por el servicio aduanero.”
-ARTÍCULO 119.- Sustitúyese el artículo 217 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 217.- El importador deberá solicitar la destinación de importación, ya sea en forma anticipada y
-hasta el arribo del medio de transporte, mediante el despacho directo a plaza regido por el Artículo 278 y
-siguientes de este Código; o dentro del plazo de QUINCE (15) días contados desde la fecha del arribo del medio
-transportador.”
-ARTÍCULO 120.- Sustitúyese el artículo 226 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 226.- 1. La resolución anticipada es el acto administrativo, emitido por el servicio aduanero, a
-petición del solicitante, antes de la importación de la mercadería, mediante el cual se establece el tratamiento
-aduanero que se concederá a la mercadería en el momento de la importación, en relación al tema objeto de
-consulta, de la manera que se indica en los apartados siguientes de este artículo.
-2. Si antes de solicitar una destinación de importación, el importador tuviere dudas en relación con el criterio que
-el servicio aduanero pudiera adoptar respecto de la clasificación arancelaria, el origen o la valoración de la
-mercadería, o en relación con los elementos que fueren necesarios para la correcta aplicación del régimen
-tributario, de prohibiciones o restricciones, referidos a la mercadería de importación, podrá solicitar al servicio
-aduanero que emita una resolución anticipada, debidamente fundada, que establezca el criterio aplicable al caso.
-En su solicitud el importador deberá proporcionar la información y la documentación que resultare necesaria,
-además de su opinión técnica y jurídica sobre el tema consultado.
-3. Será válida y vinculante para el servicio aduanero, mientras no existiera una modificación de la ley, o se tratare
-de hechos o circunstancias diferentes y que no admitieran su asimilación a aquellos en que se hubiere sustentado
-la resolución.
-4. La reglamentación determinará los requisitos formales y la información que deberá presentar el importador, el
-procedimiento de la resolución anticipada y el plazo dentro del cual la misma deberá ser emitida, el que no podrá
-ser superior a treinta (30) días.
-5. Si el servicio aduanero no emitiere la resolución anticipada dentro del plazo establecido al efecto, el importador
-podrá optar por solicitar la destinación de importación, en los términos propiciados al requerir la decisión, por
-aplicación del artículo 234, apartados 3 y 4 del Código Aduanero, a cuyo efecto la reglamentación deberá arbitrar
-los medios necesarios. En su caso, podrá exigirse la constitución de una garantía, en los términos previstos por el
-régimen de garantía en la Sección V, Título III.
-6. Contra la resolución anticipada procederá la impugnación prevista en el artículo 1053 de este Código.”
-ARTÍCULO 121.- Sustitúyese el artículo 227 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 227.- 1. Si en sede aduanera hubiera en trámite alguna controversia, sumarial o no sumarial,
-originada en la declaración de los elementos necesarios para la clasificación arancelaria, valoración o aplicación
-
-de los tributos y prohibiciones referidos a una mercadería de importación, que fueren idénticos a aquellos que
-hubieren de ser objetos de declaración, el interesado podrá comprometer esta última en forma supeditada a la del
-antecedente. El pronunciamiento final que recayere en sede administrativa se hará extensivo a la declaración
-supeditada, sin perjuicio de la eventual interposición de los recursos que, individualmente, pudieran corresponder
-contra la decisión.
-2. En el supuesto previsto en el apartado 1, el servicio aduanero comprobará fehacientemente que existe identidad
-de causa litigiosa, a cuyo fin, si la controversia lo requiriere para su decisión, se extraerán muestras
-representativas de la mercadería en cuestión, con previa citación al interesado.”
-ARTÍCULO 122.- Sustitúyese el artículo 228 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 228.- Si el interesado declarare una mercadería de acuerdo a la forma prevista en el artículo 227,
-con la comprobación del servicio aduanero contemplada en su apartado 2, no incurrirá en infracción aduanera por
-la eventual declaración inexacta efectuada en la declaración supeditada.”
-ARTÍCULO 123.- Sustitúyese el artículo 245 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 245.- 1. El agente del servicio aduanero que en el curso del despacho comprobare prima facie la
-comisión de algún ilícito aduanero procederá a formular la pertinente denuncia al administrador de la aduana o a
-quien ejerciere sus funciones y, en caso de corresponder, a la extracción de las muestras representativas
-necesarias para evaluar la seriedad o verosimilitud de la misma.
-2. Cumplido ello, se concederá el libramiento de la mercadería, remitiendo las actuaciones al administrador de la
-Aduana en cuya jurisdicción se hubieran producido los hechos, quien podrá requerir la constitución de la garantía
-en los términos del artículo 453, incisos a) y h). La falta de constitución de la garantía importará la inmediata
-suspensión del importador, según la reglamentación que se emita.
-3. El libramiento no procederá cuando ocurra alguno de los siguientes supuestos:
-a) se tratare de mercadería necesaria para la decisión aduanera o la consideración de un recurso deducido contra la
-misma, por resultar insuficiente a estos fines la extracción de muestras, fotografías, diagramas, croquis, análisis u
-otros elementos de juicio igualmente idóneos, según el caso;
-b) se tratare de mercadería afectada a un sumario o proceso instruido por la presunta comisión de un ilícito
-reprimido con pena de comiso;
-c) se procurase determinar la aplicación de una prohibición a la destinación de importación, una prohibición de la
-mercadería cuyo libramiento se pretendiere o se tramitare un recurso contra una decisión que hubiera determinado
-la aplicación de una prohibición.”
-ARTÍCULO 124.- Sustitúyese el artículo 248 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 248.- Efectuados los trámites relativos al despacho de la mercadería se procederá a su libramiento.
-De no cumplirse con el pago o con la garantía que correspondiere, se aplicará el procedimiento de ejecución
-
-previsto en la Sección XIV, Título II, Capítulo Quinto.”
-ARTÍCULO 125.- Incorpórase como artículo 278 bis de la Ley N° 22.415 (Código Aduanero) y sus
-modificatorias por el siguiente:
-“ARTÍCULO 278 bis.- Declaración anticipada de arribo de la mercadería es el procedimiento por medio del cual
-se podrá presentar la solicitud de destinación en forma previa al arribo del medio de transporte al territorio
-aduanero.”
-ARTÍCULO 126.- Sustitúyese el artículo 279 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 279.- La solicitud de destinación de importación de la mercadería sujeta al procedimiento del
-despacho directo puede ser presentada por el importador dentro de los CINCO (5) días anteriores al arribo del
-medio de transporte.”
-ARTÍCULO 127.- Sustitúyese el artículo 280 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 280.- 1. La declaración anticipada de arribo de la mercadería es voluntaria por parte del importador
-y podrá aplicarse a cualquier tipo de destinación aduanera de importación, salvo para aquélla mercadería que la
-reglamentación excluya.
-2. Sin perjuicio de lo dispuesto en el apartado 1 precedente, deberá sujetarse al procedimiento de declaración
-anticipada, la mercadería cuya permanencia en depósito implicare peligro para la integridad de las personas, para
-la inalterabilidad de la propia mercadería o de la mercadería contigua, salvo que ingresare a depósitos
-especialmente acondicionados para esa especie de mercadería. Asimismo, se aplicará este procedimiento cuando
-se tratare de mercadería cuyo almacenamiento fuere sumamente dificultoso, o no exista depósito acondicionado
-especialmente para la mercadería.”
-ARTÍCULO 128.- Sustitúyese el artículo 281 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 281.- La Dirección General de Aduanas establecerá, con alcance general, la nómina de la
-mercadería prevista en el artículo 280, apartado 2, y podrá ampliarla cuando la naturaleza o condiciones
-intrínsecas así lo aconsejaren.”
-ARTÍCULO 129.- Sustitúyese el artículo 282 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 282.- Si no se dispusiere de depósitos especialmente acondicionados para la especie de mercadería
-indicada en los artículos 280, apartado 2, y 281, y no hubiere sido solicitada su destinación de importación con
-anterioridad al arribo del medio de transporte, el servicio aduanero adoptará las medidas tendientes a evitar los
-perjuicios emergentes de la naturaleza o condición de la mercadería de que se trate, por cuenta y bajo la
-responsabilidad de quien correspondiere.”
-ARTÍCULO 130.- Sustitúyese el artículo 283 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-
-“ARTÍCULO 283.- En todos los casos el servicio aduanero podrá disponer que la mercadería sujeta a los
-procedimientos de despacho previstos en este capítulo ingrese, total o parcialmente, a un lugar de depósito al solo
-efecto de practicar una verificación exhaustiva.”
-ARTÍCULO 131.- Sustitúyese el artículo 284 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 284.- El procedimiento de declaración anticipada se encuentra autorizado para todo tipo de
-destinación aduanera de importación.”
-ARTÍCULO 132.- Sustitúyese el artículo 323 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 323.- 1. La resolución anticipada es un acto administrativo, emitido por el servicio aduanero, a
-petición del solicitante, antes de la exportación de la mercadería, mediante el cual se establece el tratamiento
-aduanero que se concederá a la mercadería en el momento de la exportación, en relación al tema objeto de
-consulta, de la manera que se indica en los apartados siguientes de este artículo.
-2. Si antes de solicitar una destinación de exportación, el exportador tuviere dudas en relación con el criterio que
-el servicio aduanero pudiera adoptar respecto de la clasificación arancelaria, el origen o la valoración de la
-mercadería, o en relación con los elementos que fueren necesarios para la correcta aplicación del régimen
-tributario, de estímulos, o de prohibiciones o restricciones, referidos a la mercadería de exportación, podrá
-solicitar al servicio aduanero que emita una resolución anticipada, debidamente fundada, que establezca el criterio
-aplicable al caso. En su solicitud el exportador deberá proporcionar la información y documentación que resultare
-necesaria, además de su opinión técnica y jurídica sobre el tema consultado.
-3. Será válida y vinculante para el servicio aduanero mientras no existiera una modificación de la ley, o se
-trataren de hechos o circunstancias diferentes, que no admitieran su asimilación a aquellos en que se hubiere
-sustentado la resolución.
-4. La reglamentación determinará los requisitos formales y la información que deberá presentar el exportador, el
-procedimiento de la resolución anticipada y el plazo dentro del cual la misma deberá ser emitida, el que no podrá
-ser superior a TREINTA (30) días.
-5. Si el servicio aduanero no emitiere la resolución anticipada dentro del plazo establecido al efecto, el exportador
-podrá optar por solicitar la destinación de exportación, en los términos propiciados al requerir la decisión, por
-aplicación del artículo 332, apartados 3 y 4 de este Código a cuyo efecto la reglamentación deberá arbitrar los
-medios necesarios. En su caso, podrá exigirse la constitución de una garantía, en los términos previstos por el
-régimen de garantía en la Sección V, Título III.
-6. Contra la resolución anticipada procederá la impugnación prevista en el artículo 1053 de este Código.”
-ARTÍCULO 133.- Sustitúyese el artículo 324 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 324.- 1. Si en sede aduanera hubiera en trámite alguna controversia, sumarial o no sumarial,
-originada en la declaración de los elementos necesarios para la clasificación arancelaria, valoración o aplicación
-de los tributos, prohibiciones y estímulos a la exportación, referidos a una mercadería de exportación, que fueren
-
-idénticos, a aquellos que hubieren de ser objeto de declaración, el interesado podrá comprometer esta última en
-forma supeditada a la del antecedente. El pronunciamiento final que recayere en sede administrativa se hará
-extensivo a la declaración supeditada, sin perjuicio de la eventual interposición de los recursos que,
-individualmente, pudieran corresponder contra la decisión.
-2. En el supuesto previsto en el apartado 1, el servicio aduanero comprobará fehacientemente que existe identidad
-de causa litigiosa, a cuyo fin, si la controversia lo requiriere para su decisión, se extraerán muestras
-representativas de la mercadería en cuestión, con previa citación al interesado.”
-ARTÍCULO 134.- Sustitúyese el artículo 325 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 325.- Si el interesado declarare una mercadería de acuerdo a la forma prevista en el artículo 324
-con la comprobación del servicio aduanero contemplada en su apartado 2, no incurrirá en infracción aduanera por
-la eventual declaración inexacta efectuada en la declaración supeditada.”
-ARTÍCULO 135.- Sustitúyese el artículo 326 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 326.- En el supuesto previsto en el artículo 324, se suspende el curso de la prescripción de las
-acciones que le pudieren corresponder al fisco con relación a la declaración supeditada desde la fecha en que se
-comprometiere la misma hasta que recayere la decisión allí mencionada.”
-ARTÍCULO 136.- Sustitúyese el artículo 343 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 343.- 1. El agente del servicio aduanero que en el curso del despacho comprobare prima facie la
-comisión de algún ilícito aduanero procederá a formular la pertinente denuncia al administrador de la aduana o a
-quien ejerciere sus funciones y, en caso de corresponder, a la extracción de las muestras representativas
-necesarias para evaluar la seriedad o verosimilitud de la misma.
-2. Cumplido ello, se concederá el libramiento de la mercadería, remitiendo las actuaciones al administrador de la
-Aduana en cuya jurisdicción se hubieran producido los hechos, quien podrá requerir la constitución de la garantía
-en los términos del artículo 453 incisos a) y h). La falta de constitución de la garantía importará la inmediata
-suspensión del exportador, según la reglamentación que se emita.
-3. El libramiento no procederá cuando ocurra alguno de los siguientes supuestos:
-a) se tratare de mercadería necesaria para la decisión aduanera o la consideración de un recurso deducido contra la
-misma, por resultar insuficiente a estos fines la extracción de muestras, fotografías, diagramas, croquis, análisis u
-otros elementos de juicio igualmente idóneos, según el caso;
-b) se tratare de mercadería afectada a un sumario o proceso instruido por la presunta comisión de un ilícito
-reprimido con pena de comiso;
-c) se procurase determinar la aplicación de una prohibición a la destinación de exportación de que se tratare, de la
-mercadería cuyo libramiento se pretendiere o se tramitare un recurso contra una decisión que hubiera determinado
-la aplicación de dicha prohibición.”
-
-ARTÍCULO 137.- Sustitúyese el artículo 357 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 357.- Cuando la mercadería hubiera sido objeto de una transformación, elaboración, combinación,
-mezcla, reparación o cualquier otro perfeccionamiento o beneficio, su retorno está sujeto al pago de los tributos
-que gravaren la importación para consumo, los que se aplicarán sobre el mayor valor de la mercadería al
-momento de su reimportación.”
-ARTÍCULO 138.- Sustitúyense los incisos a) y h) del artículo 453 de la Ley N° 22.415 (Código Aduanero) y sus
-modificatorias por los siguientes:
-"a) el resguardo de la eventual exigencia por diferencias de tributos que el servicio aduanero advirtiera respecto
-de la liquidación contenida en una destinación de importación o exportación. En este supuesto, la garantía deberá
-cubrir la diferencia entre esa cantidad y el máximo que el servicio aduanero razonablemente considere que
-pudiere adeudarse en tal concepto;”
-“h) el resguardo del cobro de la eventual multa que pudiera corresponder por la presunta comisión de un ilícito
-aduanero. La garantía, en el supuesto de importación, debe cubrir el importe equivalente al del valor en aduana de
-la mercadería que hubiere sido objeto de la presunta infracción, salvo que el máximo de la multa eventualmente
-aplicable fuere inferior, caso en el cual bastará garantizar este último importe. Si la destinación solicitada
-estuviere gravada con algún tributo deben además garantizarse el importe previsto en el inciso a). En el supuesto
-de exportación, la garantía debe cubrir el importe equivalente al del valor en plaza de la mercadería que hubiere
-sido objeto de la presunta infracción, con deducción de los tributos que debieren ser pagados. Cuando el máximo
-de la multa eventualmente aplicable adicionado a la diferencia de tributos que pudiere resultar exigible fuere un
-importe inferior, bastará con garantizar el de la multa y además garantizarse el importe previsto en el inciso a).”
-ARTÍCULO 139.- Incorpóranse el numeral 1. al primer párrafo del artículo 453 y como apartado 2. del citado
-artículo 453 a la Ley N° 22.415 (Código Aduanero) y sus modificatorias, el siguiente:
-“2. La reglamentación podrá determinar otros supuestos de utilización del régimen bajo los recaudos y en las
-condiciones que en ella se establecieren."
-ARTÍCULO 140.- Sustitúyese el artículo 459 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 459.- La resolución que autorizare o denegare la utilización del régimen de garantía deberá dictarse
-dentro de un plazo que no podrá exceder de cinco días contados desde la fecha de presentación prevista en el
-artículo 454. En caso de hacerse lugar a dicha utilización, el acto no implicará prejuzgamiento respecto de la
-decisión que en definitiva recayere ni renuncia alguna relativa a los derechos controvertidos.”
-ARTÍCULO 141.- Sustitúyese el artículo 463 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 463.- 1. Contra la resolución que denegare el otorgamiento del régimen de garantía, o contra la que
-exigiere su constitución, o fijare su importe o determinare su forma, podrá interponerse demanda ante la justicia o
-recurso de apelación ante el Tribunal Fiscal por el procedimiento previsto en la Sección XIV, Título III. La
-constitución de la garantía exigida por el servicio aduanero no obstará a la interposición de la demanda o del
-recurso previsto, y, en su caso, no significará desistimiento de los que se hubieren interpuesto.
-
-2. También procederá la demanda ante la justicia o el recurso de apelación ante el Tribunal Fiscal cuando el
-servicio aduanero no se expidiera dentro del plazo previsto en el artículo 459 con relación al pedido de
-otorgamiento del régimen de garantía presentado por el interesado.”
-ARTÍCULO 142.- Sustitúyese el artículo 609 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias por el
-siguiente:
-“ARTÍCULO 609.- El Poder Ejecutivo Nacional no podrá establecer prohibiciones ni restricciones a las
-exportaciones o importaciones por motivos económicos. Solo se podrán realizar por Ley.
-Son económicas las prohibiciones establecidas con cualquiera de los siguientes fines:
-a) asegurar un adecuado ingreso para el trabajo nacional o combatir la desocupación;
-b) ejecutar la política monetaria, cambiaria o de comercio exterior;
-c) promover, proteger o conservar las actividades nacionales productivas de bienes o servicios, así como dichos
-bienes y servicios, los recursos naturales o vegetales;
-d) estabilizar los precios internos a niveles convenientes o mantener un volumen de oferta adecuado a las
-necesidades de abastecimiento del mercado interno;
-e) atender las necesidades de las finanzas públicas;
-f) proteger los derechos de la propiedad intelectual, industrial o comercial;
-g) resguardar la buena fe comercial, a fin de impedir las prácticas que pudieren inducir a error a los
-consumidores.”
-ARTÍCULO 143.- Deróganse los artículos 613, 614, 615, 616, 617, 618, 619, 620, 622, 623, 632 y 633 de la Ley
-N° 22.415 (Código Aduanero) y sus modificatorias.
-ARTÍCULO 144.- Sustitúyese el artículo 610 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el
-siguiente:
-“ARTÍCULO 610.- Las prohibiciones pueden ser establecidas por cualquiera de las razones siguientes:
-a) afirmación de la soberanía nacional o defensa de las instituciones políticas del Estado;
-b) política internacional;
-c) seguridad pública o defensa nacional;
-d) salud pública o sanidad animal o vegetal;
-e) protección del patrimonio artístico, histórico, arqueológico o científico;
-f) conservación de las especies animales o vegetales.
-g) Preservación del ambiente, conservación de los recursos naturales y prevención de la contaminación.
-
-El Poder Ejecutivo Nacional no podrá establecer prohibiciones o cupos a las exportaciones ni importaciones por
-motivos o fundamentos económicos.”
-ARTÍCULO 145.- Deróganse los artículos 663, 665 y 666 de la Ley N° 22.415 (Código Aduanero) y sus
-modificatorias.
-ARTÍCULO 146.- Deróganse los artículos 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685 y 686
-de la Ley N° 22.415 (Código Aduanero) y sus modificatorias.
-ARTÍCULO 147.- Deróganse los artículos 756, 757 y 758 de la Ley N° 22.415 (Código Aduanero) y sus
-modificatorias.
-ARTÍCULO 148.- Sustitúyese el artículo 789 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el
-siguiente:
-“ARTÍCULO 789.- El pago de la obligación tributaria aduanera debe ser efectuado antes del libramiento de la
-mercadería quedando exceptuados los casos en que el libramiento fuere autorizado bajo el régimen de garantía o
-aquellos regímenes especiales respecto de los cuales la Administración Federal de Ingresos Públicos determinara
-lo contrario.
-En los supuestos previstos en los artículos 245 y 343, no constituirá requisito necesario para el libramiento de la
-mercadería el pago o garantía de diferencias tributarias o multas."
-ARTÍCULO 149.- Sustitúyese el artículo 960 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el
-siguiente:
-"ARTÍCULO 960.- Cuando en cualquier destinación de importación o de exportación se declarare una mercadería
-en forma supeditada, en los términos previstos en los artículos 227 y 324, respectivamente, la eventual
-declaración inexacta efectuada en la declaración supeditada no será punible".
-ARTÍCULO 150.- Sustitúyese el artículo 1024 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por
-el siguiente:
-“ARTÍCULO 1024.- Corresponderá conocer y decidir en forma originaria en el procedimiento de ejecución en
-sede judicial y en las demandas contenciosas que se interpusieren contra las resoluciones definitivas dictadas por
-el administrador en los procedimientos de repetición y para las infracciones, así como en el supuesto de retardo
-por no dictarse resolución en estos dos últimos procedimientos dentro de los plazos señalados al efecto en este
-Código, y en los previstos en el artículo 463, en la Capital Federal a los jueces nacionales en lo contencioso
-administrativo federal y en el interior del país a los jueces federales, dentro de sus respectivas competencias
-territoriales siempre que se cuestionare una suma mayor de 1.000 UVA.”
-ARTÍCULO 151.- Incorpórase como inciso f) del apartado 1 del artículo 1025 a la Ley N° 22.415 (Código
-Aduanero) y sus modificatorias, el siguiente:
-“f) de los recursos de apelación previstos en el artículo 463.”
-ARTÍCULO 152.- Incorpóranse como incisos m) y n) del artículo 1037 de la Ley N° 22.415 (Código Aduanero) y
-sus modificatorias, los siguientes:
-
-“m) el dictado del auto por el cual se ordenare la apertura del sumario;
-n) el dictado de la resolución condenatoria en sede aduanera.”
-ARTÍCULO 153.- El Poder Ejecutivo Nacional debe procurar la adhesión a convenios internacionales existentes
-que signifiquen para el sector aduanero una innovación y desburocratización de procedimientos administrativos y
-de control, con el objetivo de reducir costos y fomentar la inclusión Argentina en el mercado internacional.
 
 Título VI – BIOECONOMÍA
 ARTÍCULO 154.- Derógase la Ley N° 26.737.
