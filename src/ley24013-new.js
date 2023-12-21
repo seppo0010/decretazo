@@ -69,13 +69,13 @@ Capítulo 1
 
 Empleo no registrado
 
-ARTICULO 7° — Se entiende que la relación o contrato de trabajo ha sido registrado cuando el empleador hubiere inscripto al trabajador:
+ARTÍCULO 7°.- Se entiende que la relación o el contrato de trabajo se encuentran registrados cuando el trabajador esté inscripto en las formas y condiciones que establezca la reglamentación que determine el Poder Ejecutivo. Dicha registración deberá ser simple, inmediata, expeditiva, y realizarse a través de medios electrónicos.
 
-a) En el libro especial del artículo 52 de la Ley de Contrato de Trabajo (t.o. 1976) o en la documentación laboral que haga sus veces, según lo previsto en los regímenes jurídicos particulares;
+ARTÍCULO 7° bis - En virtud de lo establecido en los artículos 29 y 30 de la Ley N° 20.744, la registración efectuada en los términos del artículo 7° se considera plenamente eficaz cuando hubiera sido realizada por cualquiera de las personas intervinientes, humanas o jurídicas.
 
-b) En los registros mencionados en el artículo 18, inciso a).
+ARTÍCULO 7° ter - El trabajador podrá denunciar la falta de registración laboral ante la Autoridad de Aplicación, que deberá ofrecer un medio electrónico a tal efecto, ante la Administración Federal de Ingresos Públicos, entidad autárquica en el ámbito del Ministerio de Economía, o ante las autoridades administrativas del trabajo locales.
 
-Las relaciones laborales que no cumplieren con los requisitos fijados en los incisos precedentes se considerarán no registradas.
+ARTÍCULO 7° quáter.- En el supuesto de sentencia judicial firme que determine la existencia de una relación de empleo no registrada, la autoridad judicial deberá poner en conocimiento de la entidad recaudadora de las obligaciones de la seguridad social, dentro de los DIEZ (10) días hábiles siguientes a la fecha en que quede firme y consentida la sentencia, todas las circunstancias que permitan la determinación de deuda existente, si la hubiera. Si conforme sentencia judicial firme, la relación laboral se encontrara enmarcada erróneamente como contrato de obra o servicios, de la deuda que determine el organismo recaudador, se deducirán los componentes ya ingresados conforme al régimen del cual se trate, se establecerá un sistema de intereses menos gravoso y facilidades de pago.”
 
 ARTICULO 8° — El empleador que no registrare una relación laboral abonará al trabajador afectado una indemnización equivalente a una cuarta parte de las remuneraciones devengadas desde el comienzo de la vinculación, computadas a valores reajustados de acuerdo a la normativa vigente.
 
@@ -139,13 +139,11 @@ Capítulo 2
 
 Del Sistema Unico de Registro Laboral
 
-ARTICULO 18. — El Sistema Unico de Registro Laboral concentrará los siguientes registros:
+ARTÍCULO 18.- El Sistema Único de Registro Laboral concentrará los siguientes registros:
 
-a) la inscripción del empleador y la afiliación del trabajador al Instituto Nacional de Previsión Social, a las cajas de subsidios familiares y a la obra social correspondiente;
+a) la inscripción del empleador y la afiliación del trabajador al Instituto Nacional de Previsión Social, a las cajas de subsidios familiares y al prestador del sistema nacional de salud elegido por el trabajador;
 
-b) (Inciso derogado por art. 21 de la Ley N° 25.013 B.O. 24/9/1998)
-
-c) el registro de los trabajadores beneficiarios del sistema integral de prestaciones por desempleo.
+b) el registro de los trabajadores beneficiarios del sistema integral de prestaciones por desempleo.
 
 ARTICULO 19. — El Poder Ejecutivo Nacional, a través del Ministerio de Trabajo y Seguridad Social, tendrá a su cargo la organización, conducción y supervisión del Sistema Unico de Registro Laboral, a cuyo fin tendrá las siguientes atribuciones:
 
@@ -574,6 +572,8 @@ f. Expiración del tiempo convenido, realización de la obra, tarea asignada o d
 g. Muerte, jubilación o invalidez del empleador o de la empleadora cuando estas determinen la extinción del contrato;
 
 h. No reiniciación o interrupción del contrato de trabajo de temporada por causas ajenas al trabajador o a la trabajadora.
+
+i) Extinción por mutuo acuerdo de las partes en los términos del artículo 241 de la Ley N° 20.744
 
 Si hubiere duda sobre la existencia de relación laboral o la justa causa del despido se requerirá actuación administrativa del MINISTERIO DE TRABAJO, EMPLEO Y SEGURIDAD SOCIAL de la Nación, de los organismos provinciales o municipales del trabajo o de la Ciudad Autónoma de Buenos Aires para que determinen sumariamente la verosimilitud de la situación invocada. Dicha actuación no podrá hacerse valer en juicio laboral.
 

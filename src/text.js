@@ -777,327 +777,378 @@ const text = [
                     added: require('./ley24013-new').default,
                 },
             },
+            {
+                text: 'ARTÍCULO 54.- Derógase el artículo 9° de la Ley N° 25.013.',
+                delta: {
+                    title: 'Ley N° 25.013 - Reforma laboral',
+                    removed: require('./ley25013').default,
+                    added: require('./ley25013-new').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 55.- Derógase la Ley N° 25.323.',
+                delta: {
+                    title: 'Ley N° 25.323 - Indemnizaciones laborales',
+                    removed: require('./ley25323').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 56.- Deróganse los artículos 43 a 48 de la Ley N° 25.345.',
+                delta: {
+                    title: 'Ley N° 25.345 - Prevención de la Evasión Fiscal',
+                    added: require('./ley25345-new').default,
+                    removed: require('./ley25345').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 57.- Derógase el artículo 15 de la Ley N° 26.727.',
+                delta: {
+                    title: 'Ley N° 26.727 - Trabajo Agrario',
+                    added: require('./ley26727-new').default,
+                    removed: require('./ley26727').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 58.- Derógase el artículo 50 de la Ley N° 26.844.',
+                delta: {
+                    title: 'Ley N° 26.844 - Servicio Doméstico',
+                    added: require('./ley26844-new').default,
+                    removed: require('./ley26844').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo I - Registro Laboral (Ley N° 24.013)',
+        articles: [
+            {
+                text: 'ARTÍCULO 59.- Sustitúyese el artículo 7° de la Ley N° 24.013 por el siguiente:\n' +
+                '“ARTÍCULO 7°.- Se entiende que la relación o el contrato de trabajo se encuentran registrados cuando el ' +
+                'trabajador esté inscripto en las formas y condiciones que establezca la reglamentación que determine el Poder ' +
+                'Ejecutivo.\n' +
+                'Dicha registración deberá ser simple, inmediata, expeditiva, y realizarse a través de medios electrónicos.”\n' +
+                'ARTÍCULO 60.- Incorpórase como artículo 7° bis de la Ley N° 24.013, el siguiente:\n' +
+                '“ARTÍCULO 7° bis - En virtud de lo establecido en los artículos 29 y 30 de la Ley N° 20.744, la registración ' +
+                'efectuada en los términos del artículo 7° se considera plenamente eficaz cuando hubiera sido realizada por ' +
+                'cualquiera de las personas intervinientes, humanas o jurídicas.”\n' +
+                'ARTÍCULO 61.- Incorpórase como artículo 7° ter de la Ley N° 24.013, el siguiente:\n' +
+                '“ARTÍCULO 7° ter - El trabajador podrá denunciar la falta de registración laboral ante la Autoridad de ' +
+                'Aplicación, que deberá ofrecer un medio electrónico a tal efecto, ante la Administración Federal de Ingresos ' +
+                'Públicos, entidad autárquica en el ámbito del Ministerio de Economía, o ante las autoridades administrativas del ' +
+                'trabajo locales."\n' +
+                'ARTÍCULO 62.- Incorpórase como artículo 7° quáter de la Ley N° 24.013, el siguiente:\n' +
+                '“ARTÍCULO 7° quáter.- En el supuesto de sentencia judicial firme que determine la existencia de una relación de ' +
+                'empleo no registrada, la autoridad judicial deberá poner en conocimiento de la entidad recaudadora de las ' +
+                'obligaciones de la seguridad social, dentro de los DIEZ (10) días hábiles siguientes a la fecha en que quede firme ' +
+                'y consentida la sentencia, todas las circunstancias que permitan la determinación de deuda existente, si la hubiera. ' +
+                'Si conforme sentencia judicial firme, la relación laboral se encontrara enmarcada erróneamente como contrato de ' +
+                'obra o servicios, de la deuda que determine el organismo recaudador, se deducirán los componentes ya ingresados ' +
+                'conforme al régimen del cual se trate, se establecerá un sistema de intereses menos gravoso y facilidades de ' +
+                'pago.”\n' +
+                'ARTÍCULO 63.- Sustitúyese el artículo 18 de la Ley N° 24.013, por el siguiente:\n' +
+                '“ARTÍCULO 18.- El Sistema Único de Registro Laboral concentrará los siguientes registros:\n' +
+                'a) la inscripción del empleador y la afiliación del trabajador al Instituto Nacional de Previsión Social, a las cajas ' +
+                'de subsidios familiares y al prestador del sistema nacional de salud elegido por el trabajador;\n' +
+                'b) el registro de los trabajadores beneficiarios del sistema integral de prestaciones por desempleo.”\n' +
+                'ARTÍCULO 64.- Incorpórase como inciso i) al artículo 114 de la Ley N° 24.013, el siguiente:\n' +
+                '“i) Extinción por mutuo acuerdo de las partes en los términos del artículo 241 de la Ley N° 20.744”.',
+                delta: {
+                    title: 'Ley N° 24.013 - Empleo',
+                    removed: require('./ley24013').default,
+                    added: require('./ley24013-new').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo II – Ley de contrato de trabajo – Ley N° 20.744 (t.o. 1976)',
+        articles: [
+            {
+                text: 'ARTÍCULO 65.- Sustitúyese el artículo 2° de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 2°.- Ámbito de Aplicación. La vigencia de esta Ley quedará condicionada a que la aplicación de ' +
+                'sus disposiciones resulte compatible con la naturaleza y modalidades de la actividad de que se trate y con el ' +
+                'específico régimen jurídico a que se halle sujeta. Las disposiciones de esta Ley no serán aplicables:\n' +
+                'a. A los dependientes de la Administración Pública Nacional, Provincial, de la Ciudad Autónoma de Buenos ' +
+                'Aires o Municipal, excepto que por acto expreso se los incluya en la misma o en el régimen de las convenciones ' +
+                'colectivas de trabajo.\n' +
+                'b. Al personal de casas particulares, sin perjuicio que las disposiciones de la presente Ley serán de aplicación en ' +
+                'todo lo que resulte compatible y no se oponga a la naturaleza y modalidades propias del régimen específico o ' +
+                'cuando así se lo disponga expresamente.\n' +
+                'c. A los trabajadores agrarios, sin perjuicio de las disposiciones de la presente Ley serán de aplicación supletoria ' +
+                'en todo lo que resulte compatible y no se oponga a la naturaleza y modalidades propias del Régimen de Trabajo ' +
+                'Agrario.\n' +
+                'd. A las contrataciones de obra, servicios, agencia y todas las reguladas en el Código Civil y Comercial de la ' +
+                'Nación.”\n' +
+                'ARTÍCULO 66.- Sustitúyese el artículo 9° de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 9°.- El principio de la norma más favorable para el trabajador.\n' +
+                'En caso de duda sobre la aplicación de normas legales o convencionales prevalecerá la más favorable al ' +
+                'trabajador, considerándose la norma o conjuntos de normas que rija cada una de las instituciones del derecho del ' +
+                'trabajo.\n' +
+                'Si la duda recayese en la interpretación o alcance de la ley, o en la apreciación de la prueba, en los casos ' +
+                'concretos, los jueces o encargados de aplicarla se decidirán en el sentido más favorable al trabajador, cuando ' +
+                'hubieran agotado todos los medios de investigación a su alcance y persistiera duda probatoria insuperable, ' +
+                'valorando los principios de congruencia y defensa en juicio.\n' +
+                'En tal sentido se aplicará la regla general procesal, en virtud de la cual los hechos deben ser probados por quien ' +
+                'los invoca, con plena vigencia de la facultad de los magistrados en la obtención de la verdad objetiva y el respeto ' +
+                'a la seguridad jurídica.”\n' +
+                'ARTÍCULO 67.- Sustitúyese el artículo 12 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 12 - Protección de los trabajadores. Irrenunciabilidad. Será nula y sin valor toda convención de ' +
+                'partes que suprima o reduzca los derechos previstos en esta ley, los estatutos profesionales y las convenciones ' +
+                'colectivas de trabajo, ya sea al tiempo de su celebración o de su ejecución, o del ejercicio de derechos ' +
+                'provenientes de su extinción.\n' +
+                'Cuando se celebren acuerdos relativos a modificaciones de elementos esenciales del contrato de trabajo o de ' +
+                'desvinculación en los términos del artículo 241 de esta Ley, las partes podrán solicitar a la autoridad de aplicación ' +
+                'su homologación en los términos del artículo 15 de la presente Ley.”\n' +
+                'ARTÍCULO 68.- Sustitúyese el artículo 23 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 23.- Presunción de la existencia del contrato de trabajo. El hecho de la prestación de servicios hace ' +
+                'presumir la existencia de un contrato de trabajo, salvo que, por las circunstancias, las relaciones o causas que lo ' +
+                'motiven se demostrase lo contrario.\n' +
+                'La presunción contenida en el presente artículo no será de aplicación cuando la relación se trate de contrataciones ' +
+                'de obras o de servicios profesionales o de oficios y se emitan los recibos o facturas correspondientes a dichas ' +
+                'formas de contratación o el pago se realice conforme los sistemas bancarios determinados por la reglamentación ' +
+                'correspondiente. Dicha ausencia de presunción se extenderá a todos los efectos, inclusive a la Seguridad Social.”\n' +
+                'ARTÍCULO 69.- Sustitúyese el artículo 29 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 29.- Mediación. Intermediación. Solidaridad. Subsidiariedad. Los trabajadores serán considerados ' +
+                'empleados directos de aquellos que registren la relación laboral, sin perjuicio de haber sido contratados con vistas ' +
+                'a utilizar su prestación o de proporcionarlos a terceras empresas. La empresa usuaria será responsable solidaria ' +
+                'por las obligaciones laborales y de la seguridad social respecto de los trabajadores proporcionados.”\n' +
+                'ARTÍCULO 70.- Sustitúyese el artículo 80 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, por el siguiente:\n' +
+                '“ARTÍCULO 80.- Entrega de certificados. El Poder Ejecutivo Nacional establecerá en orden a la obligación de ' +
+                'entrega de los certificados del artículo 80 de la Ley N° 20.744, un mecanismo opcional de cumplimiento de ' +
+                'entrega a través de una plataforma virtual.\n' +
+                'Se considera efectivamente cumplida dicha obligación por parte de los empleadores cuando se hubieran ' +
+                'incorporado a la plataforma virtual los certificados pertinentes. Asimismo, también se considera cumplimentada ' +
+                'cuando la información se encuentre actualizada y disponible para el trabajador a través de la página web del ' +
+                'organismo de la seguridad social”.\n' +
+                'ARTÍCULO 71.- Sustitúyese el artículo 92 bis de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 92 bis.- Período de prueba. El contrato de trabajo por tiempo indeterminado, excepto el referido en ' +
+                'el artículo 96, se entenderá celebrado a prueba durante los primeros OCHO (8) meses de vigencia. Cualquiera de ' +
+                'las partes podrá extinguir la relación durante ese lapso sin expresión de causa, sin derecho a indemnización con ' +
+                'motivo de la extinción, pero con obligación de preavisar según lo establecido en los artículos 231 y 232.\n' +
+                'El período de prueba se regirá por las siguientes reglas:\n' +
+                '1. Un empleador no puede contratar a un mismo trabajador, más de una vez, utilizando el período de prueba. De ' +
+                'hacerlo, se considerará de pleno derecho, que el empleador ha renunciado al período de prueba.\n' +
+                '2. El uso abusivo del período de prueba con el objeto de evitar la efectivización de trabajadores será pasible de las ' +
+                'sanciones previstas en los regímenes sobre infracciones a las leyes de trabajo. En especial, se considerará abusiva ' +
+                'la conducta del empleador que contratare sucesivamente a distintos trabajadores para un mismo puesto de trabajo ' +
+                'de naturaleza permanente.\n' +
+                '3. Las partes tienen los derechos y las obligaciones propias de la relación laboral, con las excepciones que se ' +
+                'establecen en este artículo. Tal reconocimiento respecto del trabajador incluye los derechos sindicales.\n' +
+                '4. Las partes están obligadas al pago de los aportes y contribuciones a la Seguridad Social, con los beneficios ' +
+                'establecidos en cada caso.\n' +
+                '5. El trabajador tiene derecho, durante el período de prueba, a las prestaciones por accidente o enfermedad del ' +
+                'trabajo. También por accidente o enfermedad inculpable, que perdurará exclusivamente hasta la finalización del ' +
+                'período de prueba si el empleador rescindiere el contrato de trabajo durante ese lapso. Queda excluida la ' +
+                'aplicación de lo prescripto en el cuarto párrafo del artículo 212.”\n' +
+                'ARTÍCULO 72.- Sustitúyese el artículo 124 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 124.- Las remuneraciones en dinero debidas al trabajador deberán pagarse, bajo pena de nulidad, en ' +
+                'efectivo, cheque a la orden del trabajador para ser cobrado personalmente por este o quien él indique o mediante ' +
+                'la acreditación en cuenta abierta a su nombre en entidad bancaria, en institución de ahorro oficial o en otras ' +
+                'categorías de entidades que la autoridad de aplicación del sistema de pagos considere aptas, seguras, ' +
+                'interoperables y competitivas.”\n' +
+                'ARTÍCULO 73.- Sustitúyese el inciso c) del artículo 132 de la Ley de Contrato de Trabajo Nº 20.744 (t.o 1976) y ' +
+                'sus modificatorias, por el siguiente:\n' +
+                '“inciso c).- pago de cuotas, aportes periódicos o contribuciones a que estuviesen obligados los trabajadores en ' +
+                'virtud de normas legales o provenientes de las convenciones colectivas de trabajo o que resulte de su carácter de ' +
+                'afiliados a asociaciones profesionales de trabajadores con personería gremial o de miembros de sociedades ' +
+                'mutuales o cooperativas así como por servicios sociales y demás prestaciones que otorguen dichas entidades, solo ' +
+                'si existe un consentimiento explícito del empleado autorizando el mismo.”\n' +
+                'ARTÍCULO 74.- Sustitúyese el artículo 136 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 136.- Contratistas e intermediarios. Sin perjuicio de la facultad de retención establecida en el art. 30 ' +
+                'de esta ley, los trabajadores contratados por contratistas o intermediarios tendrán derecho a solicitar al empleador ' +
+                'principal para los cuales dichos contratistas o intermediarios presten servicios o ejecuten obras, que retengan, de ' +
+                'lo que deben percibir estos, y den en pago por cuenta y orden de su empleador, los importes adeudados en ' +
+                'concepto de remuneraciones, indemnizaciones u otros derechos apreciables en dinero provenientes de la relación ' +
+                'laboral.\n' +
+                'Conforme lo dispuesto en el artículo 30 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, el principal estará ' +
+                'facultado a retener sin preaviso, de lo que deben percibir los contratistas o intermediarios, los importes que estos ' +
+                'adeuden a los organismos de seguridad social con motivo de la relación laboral mantenida con los trabajadores ' +
+                'contratados por dichos contratistas o intermediarios. Dichas sumas deberán depositarse a la orden de los ' +
+                'correspondientes organismos en las formas y condiciones que determine la reglamentación.\n' +
+                'La ADMINISTRACIÓN FEDERAL DE INGRESOS PÚBLICOS, dentro de los NOVENTA (90) días de ' +
+                'sancionada la presente ley establecerá un mecanismo simplificado a fin de poder efectivizar la retención ' +
+                'correspondiente a la seguridad social establecida en el presente artículo.”\n' +
+                'ARTÍCULO 75.- Sustitúyese el artículo 139 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 139.- Modalidad. El recibo será confeccionado por el empleador debiendo hacer entrega de una ' +
+                'copia fiel del original al trabajador la que podrá ser instrumentada de forma electrónica.”\n' +
+                'ARTÍCULO 76.- Sustitúyese el artículo 140 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 140.- Contenido necesario. El recibo de pago deberá necesariamente contener, como mínimo, las ' +
+                'siguientes enunciaciones:\n' +
+                'a) Nombre íntegro o razón social del empleador y su domicilio y su Clave Única de Identificación Tributaria ' +
+                '(C.U.I.T);\n' +
+                'b) Nombre y apellido del trabajador y su calificación profesional y su Código Único de Identificación Laboral ' +
+                '(C.U.I.L.);\n' +
+                'c) Total de remuneración que perciba, con indicación substancial de su determinación. Si se tratase de porcentajes ' +
+                'o comisiones de ventas, se indicarán los importes totales de estas últimas, y el porcentaje o comisión asignada al ' +
+                'trabajador.\n' +
+                'd) Los requisitos del artículo 12 del Decreto-Ley N° 17.250/67.\n' +
+                'e) Total bruto de la remuneración básica o fija y porcentual devengado y tiempo que corresponda. En los trabajos ' +
+                'remunerados a jornal o por hora, el número de jornadas u horas trabajadas, y si se tratase de remuneración por ' +
+                'pieza o medida, número de estas, importe por unidad adoptado y monto global correspondiente al lapso liquidado.\n' +
+                'f) Importe de las deducciones que se efectúan por aportes jubilatorios u otras autorizadas por esta ley; embargos y ' +
+                'demás descuentos que legalmente correspondan.\n' +
+                'g) Importe neto percibido, expresado en números y letras.\n' +
+                'h) En el caso de los artículos 124 y 129 de esta ley, firma y sello de los funcionarios o agentes dependientes de la ' +
+                'autoridad, la que podrá ser electrónica y supervisión de los pagos.\n' +
+                'i) Fecha de ingreso o antigüedad reconocida y tarea cumplida o categoría en que efectivamente se desempeñó ' +
+                'durante el período de pago.\n' +
+                'j) Total de contribuciones abonadas por el empleador por disposición legal”.\n' +
+                'ARTÍCULO 77.- Sustitúyese el artículo 143 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 143.- Conservación - Plazo. El empleador deberá conservar los recibos y otras constancias de pago ' +
+                'durante todo el plazo correspondiente a la prescripción liberatoria del beneficio de que se trate.\n' +
+                'A efectos de la conservación de los recibos y otras constancias de pago, los mismos podrán ser digitalizados, los ' +
+                'cuales tendrán la misma validez que en formato papel.\n' +
+                'El pago hecho por un último o ulteriores períodos no hace presumir el pago de los anteriores.”\n' +
+                'ARTÍCULO 78.- Sustitúyese el artículo 177 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, por el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 177.- Prohibición de trabajar. Conservación del Empleo. Queda prohibido el trabajo del personal ' +
+                'femenino o persona gestante durante los cuarenta y cinco (45) días anteriores al parto y hasta cuarenta y cinco ' +
+                '(45) días después del mismo.\n' +
+                'Sin embargo, la persona interesada podrá optar por que se le reduzca la licencia anterior al parto, que en tal caso ' +
+                'no podrá ser inferior a diez (10) días; el resto del período total de licencia se acumulará al período de descanso ' +
+                'posterior al parto. En caso de nacimiento pre-término se acumulará al descanso posterior todo el lapso de licencia ' +
+                'que no se hubiere gozado antes del parto, de modo de completar los noventa (90) días.\n' +
+                'La trabajadora o persona gestante deberá comunicar fehacientemente su embarazo al empleador, con presentación ' +
+                'de certificado médico en el que conste la fecha presunta del parto, o requerir su comprobación por el empleador. ' +
+                'La misma conservará su empleo durante los períodos indicados, y gozará de las asignaciones que le confieren los ' +
+                'sistemas de seguridad social, que garantizarán a la misma la percepción de una suma igual a la retribución que ' +
+                'corresponda al período de licencia legal, todo de conformidad con las exigencias y demás requisitos que prevean ' +
+                'las reglamentaciones respectivas.\n' +
+                'Garantízase a toda mujer o persona gestante durante la gestación el derecho a la estabilidad en el empleo, el que ' +
+                'tendrá carácter de derecho adquirido a partir del momento en que la misma practique la notificación a que se ' +
+                'refiere el párrafo anterior.\n' +
+                'En caso de permanecer ausente de su trabajo durante un tiempo mayor, a consecuencia de enfermedad que según ' +
+                'certificación médica deba su origen al embarazo o parto y la incapacite para reanudarlo vencidos aquellos plazos, ' +
+                'la mujer o persona gestante será acreedora a los beneficios previstos en el artículo 208 de esta ley.”\n' +
+                'ARTÍCULO 79.- Incorpórase como artículo 197 bis de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, el ' +
+                'siguiente texto:\n' +
+                '“ARTÍCULO 197 bis.- Las convenciones colectivas de trabajo, respetando los mínimos indisponibles de 12 horas ' +
+                'de descanso entre jornada y jornada por razones de salud y seguridad en el trabajo, así como los límites legales ' +
+                'conforme la naturaleza de cada actividad, podrán establecer regímenes que se adecuen a los cambios en las ' +
+                'modalidades de producción, las condiciones propias de cada actividad, contemplando especialmente el beneficio ' +
+                'e interés de los trabajadores.\n' +
+                'A tal efecto, se podrá disponer colectivamente del régimen de horas extras, banco de horas, francos ' +
+                'compensatorios, entre otros institutos relativos a la jornada laboral.”\n' +
+                'ARTÍCULO 80.- Sustitúyese el artículo 242 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 242.- Justa causa. Una de las partes podrá hacer denuncia del contrato de trabajo en caso de ' +
+                'inobservancia por parte de la otra de las obligaciones resultantes del mismo que configuren injuria y que, por su ' +
+                'gravedad, no consientan la prosecución de la relación.\n' +
+                'La valoración deberá ser hecha prudencialmente por los jueces, teniendo en consideración el carácter de las ' +
+                'relaciones que resulta de un contrato de trabajo, según lo dispuesto en la presente ley, y las modalidades y ' +
+                'circunstancias personales en cada caso.\n' +
+                'Configura injuria laboral grave la participación en bloqueos o tomas de establecimiento. Se presume que existe ' +
+                'injuria grave cuando durante una medida de acción directa:\n' +
+                'a.- Se afecte la libertad de trabajo de quienes no adhieran a la medida de fuerza, mediante actos, hechos, ' +
+                'intimidaciones o amenazas;\n' +
+                'b.- Se impida u obstruya total o parcialmente el ingreso o egreso de personas y/o cosas al establecimiento;\n' +
+                'c.- Se ocasionen daños en personas o en cosas de propiedad de la empresa o de terceros situadas en el ' +
+                'establecimiento (instalaciones, mercaderías, insumos y materias primas, herramientas, etc.) o se las retenga ' +
+                'indebidamente.\n' +
+                'Previo al distracto el empleador debe intimar al trabajador al cese de la conducta injuriosa, excepto en el supuesto ' +
+                'de daños a las personas o cosas previsto en el inciso c), donde la producción del daño torna inoficiosa la ' +
+                'intimación.”\n' +
+                'ARTÍCULO 81.- Sustitúyese el artículo 245 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 245.- Indemnización por antigüedad o despido. En los casos de despido dispuesto por el empleador ' +
+                'sin justa causa, habiendo o no mediado preaviso y luego de transcurrido el periodo de prueba, se deberá abonar al ' +
+                'trabajador una indemnización equivalente a UN (1) mes de sueldo por cada año de servicio o fracción mayor de ' +
+                'TRES (3) meses, tomando como base de cálculo la mejor remuneración mensual, normal y habitual devengada ' +
+                'durante el último año o durante el tiempo de prestación de servicios si este fuera menor. La base de cálculo de ' +
+                'esta indemnización no incluirá el Sueldo Anual Complementario, ni conceptos de pago semestral o anual.\n' +
+                'Para aquellos trabajadores remunerados a comisión o con remuneraciones mensuales variables, será de aplicación ' +
+                'el promedio de los últimos SEIS (6) meses, o del último año si fuera más favorable al trabajador.\n' +
+                'Dicha base no podrá exceder el equivalente de TRES (3) veces el importe mensual de la suma que resulte del ' +
+                'promedio de todas las remuneraciones previstas en el convenio colectivo de trabajo aplicable al trabajador, al ' +
+                'momento del despido, por la jornada legal o convencional, excluida la antigüedad. Le corresponderá a la ' +
+                'Autoridad de Aplicación fijar y publicar el promedio resultante, conjuntamente con las escalas salariales de cada ' +
+                'convenio colectivo de trabajo.\n' +
+                'Para aquellos trabajadores excluidos de todo convenio colectivo de trabajo, el tope establecido en el párrafo ' +
+                'anterior será el del convenio aplicable al establecimiento donde preste servicios o al convenio más favorable, en ' +
+                'el caso de que hubiera más de uno.\n' +
+                'La base de cálculo de la indemnización no podrá en ningún caso ser inferior al SESENTA Y SIETE POR ' +
+                'CIENTO (67 %) del importe correspondiente a UN (1) mes de sueldo, obtenido conforme el método descripto en ' +
+                'el primer y segundo párrafo del presente.\n' +
+                'La indemnización en ningún caso podrá ser inferior a UN (1) mes de sueldo calculado sobre la base del sistema ' +
+                'establecido en el primer y segundo párrafo del presente.\n' +
+                'Mediante convenio colectivo de trabajo, las partes podrán sustituir el presente régimen indemnizatorio por un ' +
+                'fondo o sistema de cese laboral cuyo costo estará siempre a cargo del empleador, con un aporte mensual que no ' +
+                'podrá ser superior al OCHO POR CIENTO (8%) de la remuneración computable.\n' +
+                'Por su parte, los empleadores podrán optar por contratar un sistema privado de capitalización a su costo, a fin de ' +
+                'solventar la indemnización prevista en el presente artículo y/o la suma que libremente se pacte entre las partes ' +
+                'para el supuesto de desvinculación por mutuo acuerdo conforme artículo 241 de la presente ley.”\n' +
+                'ARTÍCULO 82.- Incorpórase como artículo 245 bis a la Ley N° 20.744 (t.o. 1976) y sus modificatorias, el ' +
+                'siguiente:\n' +
+                '“ARTÍCULO 245 bis.- Agravamiento indemnizatorio por despido motivado por un acto discriminatorio. Será ' +
+                'considerado despido por un acto de discriminación aquel originado por motivos de etnia, raza, nacionalidad, sexo, ' +
+                'identidad de género, orientación sexual, religión, ideología, u opinión política o gremial.\n' +
+                'En este supuesto la prueba estará a cargo de quien invoque la causal, y en caso de sentencia judicial que corrobore ' +
+                'el origen discriminatorio del despido, corresponderá el pago de una indemnización agravada especial que ' +
+                'ascenderá a un monto equivalente al 50% de la establecida por el artículo 245 de la Ley N° 20.744 (t.o. 1976) y ' +
+                'sus modificatorias o de la indemnización por antigüedad del régimen especial aplicable al caso.\n' +
+                'Según la gravedad de los hechos, los jueces podrán incrementar esta indemnización hasta el 100%, conforme los ' +
+                'parámetros referidos anteriormente.\n' +
+                'La indemnización prevista en el presente artículo no será acumulable con ningún otro régimen especial que ' +
+                'establezca agravamientos indemnizatorios.\n' +
+                'El despido dispuesto, en todos los casos, producirá la extinción del vínculo laboral a todos los efectos.”\n' +
+                'ARTÍCULO 83.- Sustitúyese el artículo 255 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 255.- Reingreso del trabajador. Deducción de las indemnizaciones percibidas.\n' +
+                'La antigüedad del trabajador se establecerá conforme a lo dispuesto en los artículos 18 y 19 de esta ley, pero si ' +
+                'hubiera mediado reingreso a las órdenes del mismo empleador se deducirá de las indemnizaciones de los artículos ' +
+                '245, 246, 247, 250, 251, 253 y 254 lo pagado oportunamente, actualizado por el Índice de Precios al Consumidor ' +
+                '(IPC) con más una tasa de interés pura del 3% anual, por la causal de cese anterior.\n' +
+                'En ningún caso la indemnización resultante podrá ser inferior a la que hubiera correspondido al trabajador si su ' +
+                'período de servicios hubiera sido solo el último y con prescindencia de los períodos anteriores al reingreso.”\n' +
+                'ARTÍCULO 84.- Sustitúyese el artículo 276 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 276.- Actualización y repotenciación de los créditos laborales por depreciación monetaria. Los ' +
+                'créditos provenientes de las relaciones individuales de trabajo serán actualizados y/o repotenciados y/o ' +
+                'devengarán intereses.\n' +
+                'La suma que resulte de dicha actualización y/o repotenciación y/o aplicación de intereses en ningún caso podrá ' +
+                'ser superior a la que resulte de calcular el capital histórico actualizado por el Índice de Precios al Consumidor ' +
+                '(IPC) con más una tasa de interés pura del 3% anual.\n' +
+                'La presente disposición es de orden público federal y será aplicada por los jueces o por la autoridad ' +
+                'administrativa, de oficio o a petición de parte, incluso en los casos de concurso del deudor, así como también, ' +
+                'después de la declaración de quiebra.”\n' +
+                'ARTÍCULO 85.- Sustitúyese el artículo 277 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 277.- Pago en juicio. Todo pago que deba realizarse en los juicios laborales se efectivizará ' +
+                'mediante depósito bancario en autos a la orden del Tribunal interviniente y giro judicial personal al titular del ' +
+                'crédito o sus derecho-habientes, aún en el supuesto de haber otorgado poder.\n' +
+                'Queda prohibido el pacto de cuota litis que exceda del veinte por ciento (20%) el que, en cada caso, requerirá ' +
+                'ratificación personal y homologación judicial.\n' +
+                'Las personas humanas y las personas jurídicas alcanzadas por la Ley N° 24.467, ante una sentencia judicial ' +
+                'condenatoria, podrán acogerse al pago total de la misma en hasta un máximo de doce (12) cuotas mensuales ' +
+                'consecutivas, las que serán ajustadas conforme la pauta establecida en el artículo 276 de la presente Ley.\n' +
+                'El desistimiento por el trabajador de acciones y derechos se ratificará personalmente en el juicio y requerirá ' +
+                'homologación.\n' +
+                'Todo pago realizado sin observar lo prescripto, así como el pacto de cuota litis o el desistimiento no ' +
+                'homologados, serán nulos de pleno derecho.\n' +
+                'La responsabilidad por el pago de las costas procesales, incluidos los honorarios profesionales de todo tipo allí ' +
+                'devengados y correspondientes a la primera o única instancia, no excederán del veinticinco por ciento (25 %) del ' +
+                'monto de la sentencia, laudo, transacción o instrumento que ponga fin al diferendo. Si las regulaciones de ' +
+                'honorarios practicadas conforme a las leyes arancelarias o usos locales, correspondientes a todas las profesiones ' +
+                'y especialidades superaran dicho porcentaje, el juez procederá a prorratear los montos entre los beneficiarios. ' +
+                'Para el cómputo del porcentaje indicado no se tendrá en cuenta el monto de los honorarios profesionales que ' +
+                'hubieren representado, patrocinado o asistido a la parte condenada en costas.”',
+                delta: {
+                    title: 'Ley N° 20.744 - Régimen de Contrato de trabajo',
+                    removed: require('./ley20744').default,
+                    added: require('./ley20744-new').default,
+                },
+            },
         ],
     },
 ]
     /*
-ARTÍCULO 54.- Derógase el artículo 9° de la Ley N° 25.013.
-ARTÍCULO 55.- Derógase la Ley N° 25.323.
 
-ARTÍCULO 56.- Deróganse los artículos 43 a 48 de la Ley N° 25.345.
-ARTÍCULO 57.- Derógase el artículo 15 de la Ley N° 26.727.
-ARTÍCULO 58.- Derógase el artículo 50 de la Ley N° 26.844.
 
-Capítulo I - Registro Laboral (Ley N° 24.013)
-ARTÍCULO 59.- Sustitúyese el artículo 7° de la Ley N° 24.013 por el siguiente:
-“ARTÍCULO 7°.- Se entiende que la relación o el contrato de trabajo se encuentran registrados cuando el
-trabajador esté inscripto en las formas y condiciones que establezca la reglamentación que determine el Poder
-Ejecutivo.
-Dicha registración deberá ser simple, inmediata, expeditiva, y realizarse a través de medios electrónicos.”
-ARTÍCULO 60.- Incorpórase como artículo 7° bis de la Ley N° 24.013, el siguiente:
-“ARTÍCULO 7° bis - En virtud de lo establecido en los artículos 29 y 30 de la Ley N° 20.744, la registración
-efectuada en los términos del artículo 7° se considera plenamente eficaz cuando hubiera sido realizada por
-cualquiera de las personas intervinientes, humanas o jurídicas.”
-ARTÍCULO 61.- Incorpórase como artículo 7° ter de la Ley N° 24.013, el siguiente:
-“ARTÍCULO 7° ter - El trabajador podrá denunciar la falta de registración laboral ante la Autoridad de
-Aplicación, que deberá ofrecer un medio electrónico a tal efecto, ante la Administración Federal de Ingresos
-Públicos, entidad autárquica en el ámbito del Ministerio de Economía, o ante las autoridades administrativas del
-trabajo locales."
-ARTÍCULO 62.- Incorpórase como artículo 7° quáter de la Ley N° 24.013, el siguiente:
-“ARTÍCULO 7° quáter.- En el supuesto de sentencia judicial firme que determine la existencia de una relación de
-empleo no registrada, la autoridad judicial deberá poner en conocimiento de la entidad recaudadora de las
-obligaciones de la seguridad social, dentro de los DIEZ (10) días hábiles siguientes a la fecha en que quede firme
-y consentida la sentencia, todas las circunstancias que permitan la determinación de deuda existente, si la hubiera.
-Si conforme sentencia judicial firme, la relación laboral se encontrara enmarcada erróneamente como contrato de
-obra o servicios, de la deuda que determine el organismo recaudador, se deducirán los componentes ya ingresados
-conforme al régimen del cual se trate, se establecerá un sistema de intereses menos gravoso y facilidades de
-pago.”
-ARTÍCULO 63.- Sustitúyese el artículo 18 de la Ley N° 24.013, por el siguiente:
-“ARTÍCULO 18.- El Sistema Único de Registro Laboral concentrará los siguientes registros:
-a) la inscripción del empleador y la afiliación del trabajador al Instituto Nacional de Previsión Social, a las cajas
-de subsidios familiares y al prestador del sistema nacional de salud elegido por el trabajador;
 
-b) el registro de los trabajadores beneficiarios del sistema integral de prestaciones por desempleo.”
-ARTÍCULO 64.- Incorpórase como inciso i) al artículo 114 de la Ley N° 24.013, el siguiente:
-“i) Extinción por mutuo acuerdo de las partes en los términos del artículo 241 de la Ley N° 20.744”.
 
-Capítulo II – Ley de contrato de trabajo – Ley N° 20.744 (t.o. 1976)
-ARTÍCULO 65.- Sustitúyese el artículo 2° de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:
-“ARTÍCULO 2°.- Ámbito de Aplicación. La vigencia de esta Ley quedará condicionada a que la aplicación de
-sus disposiciones resulte compatible con la naturaleza y modalidades de la actividad de que se trate y con el
-específico régimen jurídico a que se halle sujeta. Las disposiciones de esta Ley no serán aplicables:
-a. A los dependientes de la Administración Pública Nacional, Provincial, de la Ciudad Autónoma de Buenos
-Aires o Municipal, excepto que por acto expreso se los incluya en la misma o en el régimen de las convenciones
-colectivas de trabajo.
-b. Al personal de casas particulares, sin perjuicio que las disposiciones de la presente Ley serán de aplicación en
-todo lo que resulte compatible y no se oponga a la naturaleza y modalidades propias del régimen específico o
-cuando así se lo disponga expresamente.
-c. A los trabajadores agrarios, sin perjuicio de las disposiciones de la presente Ley serán de aplicación supletoria
-en todo lo que resulte compatible y no se oponga a la naturaleza y modalidades propias del Régimen de Trabajo
-Agrario.
-d. A las contrataciones de obra, servicios, agencia y todas las reguladas en el Código Civil y Comercial de la
-Nación.”
-ARTÍCULO 66.- Sustitúyese el artículo 9° de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:
-“ARTÍCULO 9°.- El principio de la norma más favorable para el trabajador.
-En caso de duda sobre la aplicación de normas legales o convencionales prevalecerá la más favorable al
-trabajador, considerándose la norma o conjuntos de normas que rija cada una de las instituciones del derecho del
-trabajo.
-Si la duda recayese en la interpretación o alcance de la ley, o en la apreciación de la prueba, en los casos
-concretos, los jueces o encargados de aplicarla se decidirán en el sentido más favorable al trabajador, cuando
-hubieran agotado todos los medios de investigación a su alcance y persistiera duda probatoria insuperable,
-valorando los principios de congruencia y defensa en juicio.
-En tal sentido se aplicará la regla general procesal, en virtud de la cual los hechos deben ser probados por quien
-los invoca, con plena vigencia de la facultad de los magistrados en la obtención de la verdad objetiva y el respeto
-a la seguridad jurídica.”
-ARTÍCULO 67.- Sustitúyese el artículo 12 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:
-
-“ARTÍCULO 12 - Protección de los trabajadores. Irrenunciabilidad. Será nula y sin valor toda convención de
-partes que suprima o reduzca los derechos previstos en esta ley, los estatutos profesionales y las convenciones
-colectivas de trabajo, ya sea al tiempo de su celebración o de su ejecución, o del ejercicio de derechos
-provenientes de su extinción.
-Cuando se celebren acuerdos relativos a modificaciones de elementos esenciales del contrato de trabajo o de
-desvinculación en los términos del artículo 241 de esta Ley, las partes podrán solicitar a la autoridad de aplicación
-su homologación en los términos del artículo 15 de la presente Ley.”
-ARTÍCULO 68.- Sustitúyese el artículo 23 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:
-“ARTÍCULO 23.- Presunción de la existencia del contrato de trabajo. El hecho de la prestación de servicios hace
-presumir la existencia de un contrato de trabajo, salvo que, por las circunstancias, las relaciones o causas que lo
-motiven se demostrase lo contrario.
-La presunción contenida en el presente artículo no será de aplicación cuando la relación se trate de contrataciones
-de obras o de servicios profesionales o de oficios y se emitan los recibos o facturas correspondientes a dichas
-formas de contratación o el pago se realice conforme los sistemas bancarios determinados por la reglamentación
-correspondiente. Dicha ausencia de presunción se extenderá a todos los efectos, inclusive a la Seguridad Social.”
-ARTÍCULO 69.- Sustitúyese el artículo 29 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:
-“ARTÍCULO 29.- Mediación. Intermediación. Solidaridad. Subsidiariedad. Los trabajadores serán considerados
-empleados directos de aquellos que registren la relación laboral, sin perjuicio de haber sido contratados con vistas
-a utilizar su prestación o de proporcionarlos a terceras empresas. La empresa usuaria será responsable solidaria
-por las obligaciones laborales y de la seguridad social respecto de los trabajadores proporcionados.”
-ARTÍCULO 70.- Sustitúyese el artículo 80 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, por el siguiente:
-“ARTÍCULO 80.- Entrega de certificados. El Poder Ejecutivo Nacional establecerá en orden a la obligación de
-entrega de los certificados del artículo 80 de la Ley N° 20.744, un mecanismo opcional de cumplimiento de
-entrega a través de una plataforma virtual.
-Se considera efectivamente cumplida dicha obligación por parte de los empleadores cuando se hubieran
-incorporado a la plataforma virtual los certificados pertinentes. Asimismo, también se considera cumplimentada
-cuando la información se encuentre actualizada y disponible para el trabajador a través de la página web del
-organismo de la seguridad social”.
-ARTÍCULO 71.- Sustitúyese el artículo 92 bis de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, por el
-siguiente:
-“ARTÍCULO 92 bis.- Período de prueba. El contrato de trabajo por tiempo indeterminado, excepto el referido en
-el artículo 96, se entenderá celebrado a prueba durante los primeros OCHO (8) meses de vigencia. Cualquiera de
-las partes podrá extinguir la relación durante ese lapso sin expresión de causa, sin derecho a indemnización con
-motivo de la extinción, pero con obligación de preavisar según lo establecido en los artículos 231 y 232.
-El período de prueba se regirá por las siguientes reglas:
-1. Un empleador no puede contratar a un mismo trabajador, más de una vez, utilizando el período de prueba. De
-
-hacerlo, se considerará de pleno derecho, que el empleador ha renunciado al período de prueba.
-2. El uso abusivo del período de prueba con el objeto de evitar la efectivización de trabajadores será pasible de las
-sanciones previstas en los regímenes sobre infracciones a las leyes de trabajo. En especial, se considerará abusiva
-la conducta del empleador que contratare sucesivamente a distintos trabajadores para un mismo puesto de trabajo
-de naturaleza permanente.
-3. Las partes tienen los derechos y las obligaciones propias de la relación laboral, con las excepciones que se
-establecen en este artículo. Tal reconocimiento respecto del trabajador incluye los derechos sindicales.
-4. Las partes están obligadas al pago de los aportes y contribuciones a la Seguridad Social, con los beneficios
-establecidos en cada caso.
-5. El trabajador tiene derecho, durante el período de prueba, a las prestaciones por accidente o enfermedad del
-trabajo. También por accidente o enfermedad inculpable, que perdurará exclusivamente hasta la finalización del
-período de prueba si el empleador rescindiere el contrato de trabajo durante ese lapso. Queda excluida la
-aplicación de lo prescripto en el cuarto párrafo del artículo 212.”
-ARTÍCULO 72.- Sustitúyese el artículo 124 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, por el
-siguiente:
-“ARTÍCULO 124.- Las remuneraciones en dinero debidas al trabajador deberán pagarse, bajo pena de nulidad, en
-efectivo, cheque a la orden del trabajador para ser cobrado personalmente por este o quien él indique o mediante
-la acreditación en cuenta abierta a su nombre en entidad bancaria, en institución de ahorro oficial o en otras
-categorías de entidades que la autoridad de aplicación del sistema de pagos considere aptas, seguras,
-interoperables y competitivas.”
-ARTÍCULO 73.- Sustitúyese el inciso c) del artículo 132 de la Ley de Contrato de Trabajo Nº 20.744 (t.o 1976) y
-sus modificatorias, por el siguiente:
-“inciso c).- pago de cuotas, aportes periódicos o contribuciones a que estuviesen obligados los trabajadores en
-virtud de normas legales o provenientes de las convenciones colectivas de trabajo o que resulte de su carácter de
-afiliados a asociaciones profesionales de trabajadores con personería gremial o de miembros de sociedades
-mutuales o cooperativas así como por servicios sociales y demás prestaciones que otorguen dichas entidades, solo
-si existe un consentimiento explícito del empleado autorizando el mismo.”
-ARTÍCULO 74.- Sustitúyese el artículo 136 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, por el
-siguiente:
-“ARTÍCULO 136.- Contratistas e intermediarios. Sin perjuicio de la facultad de retención establecida en el art. 30
-de esta ley, los trabajadores contratados por contratistas o intermediarios tendrán derecho a solicitar al empleador
-principal para los cuales dichos contratistas o intermediarios presten servicios o ejecuten obras, que retengan, de
-lo que deben percibir estos, y den en pago por cuenta y orden de su empleador, los importes adeudados en
-concepto de remuneraciones, indemnizaciones u otros derechos apreciables en dinero provenientes de la relación
-laboral.
-Conforme lo dispuesto en el artículo 30 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, el principal estará
-facultado a retener sin preaviso, de lo que deben percibir los contratistas o intermediarios, los importes que estos
-
-adeuden a los organismos de seguridad social con motivo de la relación laboral mantenida con los trabajadores
-contratados por dichos contratistas o intermediarios. Dichas sumas deberán depositarse a la orden de los
-correspondientes organismos en las formas y condiciones que determine la reglamentación.
-La ADMINISTRACIÓN FEDERAL DE INGRESOS PÚBLICOS, dentro de los NOVENTA (90) días de
-sancionada la presente ley establecerá un mecanismo simplificado a fin de poder efectivizar la retención
-correspondiente a la seguridad social establecida en el presente artículo.”
-ARTÍCULO 75.- Sustitúyese el artículo 139 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, por el
-siguiente:
-“ARTÍCULO 139.- Modalidad. El recibo será confeccionado por el empleador debiendo hacer entrega de una
-copia fiel del original al trabajador la que podrá ser instrumentada de forma electrónica.”
-ARTÍCULO 76.- Sustitúyese el artículo 140 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, por el
-siguiente:
-“ARTÍCULO 140.- Contenido necesario. El recibo de pago deberá necesariamente contener, como mínimo, las
-siguientes enunciaciones:
-a) Nombre íntegro o razón social del empleador y su domicilio y su Clave Única de Identificación Tributaria
-(C.U.I.T);
-b) Nombre y apellido del trabajador y su calificación profesional y su Código Único de Identificación Laboral
-(C.U.I.L.);
-c) Total de remuneración que perciba, con indicación substancial de su determinación. Si se tratase de porcentajes
-o comisiones de ventas, se indicarán los importes totales de estas últimas, y el porcentaje o comisión asignada al
-trabajador.
-d) Los requisitos del artículo 12 del Decreto-Ley N° 17.250/67.
-e) Total bruto de la remuneración básica o fija y porcentual devengado y tiempo que corresponda. En los trabajos
-remunerados a jornal o por hora, el número de jornadas u horas trabajadas, y si se tratase de remuneración por
-pieza o medida, número de estas, importe por unidad adoptado y monto global correspondiente al lapso liquidado.
-f) Importe de las deducciones que se efectúan por aportes jubilatorios u otras autorizadas por esta ley; embargos y
-demás descuentos que legalmente correspondan.
-g) Importe neto percibido, expresado en números y letras.
-h) En el caso de los artículos 124 y 129 de esta ley, firma y sello de los funcionarios o agentes dependientes de la
-autoridad, la que podrá ser electrónica y supervisión de los pagos.
-i) Fecha de ingreso o antigüedad reconocida y tarea cumplida o categoría en que efectivamente se desempeñó
-durante el período de pago.
-j) Total de contribuciones abonadas por el empleador por disposición legal”.
-
-ARTÍCULO 77.- Sustitúyese el artículo 143 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, por el
-siguiente:
-“ARTÍCULO 143.- Conservación - Plazo. El empleador deberá conservar los recibos y otras constancias de pago
-durante todo el plazo correspondiente a la prescripción liberatoria del beneficio de que se trate.
-A efectos de la conservación de los recibos y otras constancias de pago, los mismos podrán ser digitalizados, los
-cuales tendrán la misma validez que en formato papel.
-El pago hecho por un último o ulteriores períodos no hace presumir el pago de los anteriores.”
-ARTÍCULO 78.- Sustitúyese el artículo 177 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, por el
-siguiente:
-“ARTÍCULO 177.- Prohibición de trabajar. Conservación del Empleo. Queda prohibido el trabajo del personal
-femenino o persona gestante durante los cuarenta y cinco (45) días anteriores al parto y hasta cuarenta y cinco
-(45) días después del mismo.
-Sin embargo, la persona interesada podrá optar por que se le reduzca la licencia anterior al parto, que en tal caso
-no podrá ser inferior a diez (10) días; el resto del período total de licencia se acumulará al período de descanso
-posterior al parto. En caso de nacimiento pre-término se acumulará al descanso posterior todo el lapso de licencia
-que no se hubiere gozado antes del parto, de modo de completar los noventa (90) días.
-La trabajadora o persona gestante deberá comunicar fehacientemente su embarazo al empleador, con presentación
-de certificado médico en el que conste la fecha presunta del parto, o requerir su comprobación por el empleador.
-La misma conservará su empleo durante los períodos indicados, y gozará de las asignaciones que le confieren los
-sistemas de seguridad social, que garantizarán a la misma la percepción de una suma igual a la retribución que
-corresponda al período de licencia legal, todo de conformidad con las exigencias y demás requisitos que prevean
-las reglamentaciones respectivas.
-Garantízase a toda mujer o persona gestante durante la gestación el derecho a la estabilidad en el empleo, el que
-tendrá carácter de derecho adquirido a partir del momento en que la misma practique la notificación a que se
-refiere el párrafo anterior.
-En caso de permanecer ausente de su trabajo durante un tiempo mayor, a consecuencia de enfermedad que según
-certificación médica deba su origen al embarazo o parto y la incapacite para reanudarlo vencidos aquellos plazos,
-la mujer o persona gestante será acreedora a los beneficios previstos en el artículo 208 de esta ley.”
-ARTÍCULO 79.- Incorpórase como artículo 197 bis de la Ley N° 20.744 (t.o. 1976) y sus modificatorias, el
-siguiente texto:
-“ARTÍCULO 197 bis.- Las convenciones colectivas de trabajo, respetando los mínimos indisponibles de 12 horas
-de descanso entre jornada y jornada por razones de salud y seguridad en el trabajo, así como los límites legales
-conforme la naturaleza de cada actividad, podrán establecer regímenes que se adecuen a los cambios en las
-modalidades de producción, las condiciones propias de cada actividad, contemplando especialmente el beneficio
-e interés de los trabajadores.
-A tal efecto, se podrá disponer colectivamente del régimen de horas extras, banco de horas, francos
-
-compensatorios, entre otros institutos relativos a la jornada laboral.”
-ARTÍCULO 80.- Sustitúyese el artículo 242 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:
-“ARTÍCULO 242.- Justa causa. Una de las partes podrá hacer denuncia del contrato de trabajo en caso de
-inobservancia por parte de la otra de las obligaciones resultantes del mismo que configuren injuria y que, por su
-gravedad, no consientan la prosecución de la relación.
-La valoración deberá ser hecha prudencialmente por los jueces, teniendo en consideración el carácter de las
-relaciones que resulta de un contrato de trabajo, según lo dispuesto en la presente ley, y las modalidades y
-circunstancias personales en cada caso.
-Configura injuria laboral grave la participación en bloqueos o tomas de establecimiento. Se presume que existe
-injuria grave cuando durante una medida de acción directa:
-a.- Se afecte la libertad de trabajo de quienes no adhieran a la medida de fuerza, mediante actos, hechos,
-intimidaciones o amenazas;
-b.- Se impida u obstruya total o parcialmente el ingreso o egreso de personas y/o cosas al establecimiento;
-c.- Se ocasionen daños en personas o en cosas de propiedad de la empresa o de terceros situadas en el
-establecimiento (instalaciones, mercaderías, insumos y materias primas, herramientas, etc.) o se las retenga
-indebidamente.
-Previo al distracto el empleador debe intimar al trabajador al cese de la conducta injuriosa, excepto en el supuesto
-de daños a las personas o cosas previsto en el inciso c), donde la producción del daño torna inoficiosa la
-intimación.”
-ARTÍCULO 81.- Sustitúyese el artículo 245 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:
-“ARTÍCULO 245.- Indemnización por antigüedad o despido. En los casos de despido dispuesto por el empleador
-sin justa causa, habiendo o no mediado preaviso y luego de transcurrido el periodo de prueba, se deberá abonar al
-trabajador una indemnización equivalente a UN (1) mes de sueldo por cada año de servicio o fracción mayor de
-TRES (3) meses, tomando como base de cálculo la mejor remuneración mensual, normal y habitual devengada
-durante el último año o durante el tiempo de prestación de servicios si este fuera menor. La base de cálculo de
-esta indemnización no incluirá el Sueldo Anual Complementario, ni conceptos de pago semestral o anual.
-Para aquellos trabajadores remunerados a comisión o con remuneraciones mensuales variables, será de aplicación
-el promedio de los últimos SEIS (6) meses, o del último año si fuera más favorable al trabajador.
-Dicha base no podrá exceder el equivalente de TRES (3) veces el importe mensual de la suma que resulte del
-promedio de todas las remuneraciones previstas en el convenio colectivo de trabajo aplicable al trabajador, al
-momento del despido, por la jornada legal o convencional, excluida la antigüedad. Le corresponderá a la
-Autoridad de Aplicación fijar y publicar el promedio resultante, conjuntamente con las escalas salariales de cada
-convenio colectivo de trabajo.
-Para aquellos trabajadores excluidos de todo convenio colectivo de trabajo, el tope establecido en el párrafo
-anterior será el del convenio aplicable al establecimiento donde preste servicios o al convenio más favorable, en
-el caso de que hubiera más de uno.
-
-La base de cálculo de la indemnización no podrá en ningún caso ser inferior al SESENTA Y SIETE POR
-CIENTO (67 %) del importe correspondiente a UN (1) mes de sueldo, obtenido conforme el método descripto en
-el primer y segundo párrafo del presente.
-La indemnización en ningún caso podrá ser inferior a UN (1) mes de sueldo calculado sobre la base del sistema
-establecido en el primer y segundo párrafo del presente.
-Mediante convenio colectivo de trabajo, las partes podrán sustituir el presente régimen indemnizatorio por un
-fondo o sistema de cese laboral cuyo costo estará siempre a cargo del empleador, con un aporte mensual que no
-podrá ser superior al OCHO POR CIENTO (8%) de la remuneración computable.
-Por su parte, los empleadores podrán optar por contratar un sistema privado de capitalización a su costo, a fin de
-solventar la indemnización prevista en el presente artículo y/o la suma que libremente se pacte entre las partes
-para el supuesto de desvinculación por mutuo acuerdo conforme artículo 241 de la presente ley.”
-ARTÍCULO 82.- Incorpórase como artículo 245 bis a la Ley N° 20.744 (t.o. 1976) y sus modificatorias, el
-siguiente:
-“ARTÍCULO 245 bis.- Agravamiento indemnizatorio por despido motivado por un acto discriminatorio. Será
-considerado despido por un acto de discriminación aquel originado por motivos de etnia, raza, nacionalidad, sexo,
-identidad de género, orientación sexual, religión, ideología, u opinión política o gremial.
-En este supuesto la prueba estará a cargo de quien invoque la causal, y en caso de sentencia judicial que corrobore
-el origen discriminatorio del despido, corresponderá el pago de una indemnización agravada especial que
-ascenderá a un monto equivalente al 50% de la establecida por el artículo 245 de la Ley N° 20.744 (t.o. 1976) y
-sus modificatorias o de la indemnización por antigüedad del régimen especial aplicable al caso.
-Según la gravedad de los hechos, los jueces podrán incrementar esta indemnización hasta el 100%, conforme los
-parámetros referidos anteriormente.
-La indemnización prevista en el presente artículo no será acumulable con ningún otro régimen especial que
-establezca agravamientos indemnizatorios.
-El despido dispuesto, en todos los casos, producirá la extinción del vínculo laboral a todos los efectos.”
-ARTÍCULO 83.- Sustitúyese el artículo 255 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:
-“ARTÍCULO 255.- Reingreso del trabajador. Deducción de las indemnizaciones percibidas.
-La antigüedad del trabajador se establecerá conforme a lo dispuesto en los artículos 18 y 19 de esta ley, pero si
-hubiera mediado reingreso a las órdenes del mismo empleador se deducirá de las indemnizaciones de los artículos
-245, 246, 247, 250, 251, 253 y 254 lo pagado oportunamente, actualizado por el Índice de Precios al Consumidor
-(IPC) con más una tasa de interés pura del 3% anual, por la causal de cese anterior.
-En ningún caso la indemnización resultante podrá ser inferior a la que hubiera correspondido al trabajador si su
-período de servicios hubiera sido solo el último y con prescindencia de los períodos anteriores al reingreso.”
-ARTÍCULO 84.- Sustitúyese el artículo 276 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:
-
-“ARTÍCULO 276.- Actualización y repotenciación de los créditos laborales por depreciación monetaria. Los
-créditos provenientes de las relaciones individuales de trabajo serán actualizados y/o repotenciados y/o
-devengarán intereses.
-La suma que resulte de dicha actualización y/o repotenciación y/o aplicación de intereses en ningún caso podrá
-ser superior a la que resulte de calcular el capital histórico actualizado por el Índice de Precios al Consumidor
-(IPC) con más una tasa de interés pura del 3% anual.
-La presente disposición es de orden público federal y será aplicada por los jueces o por la autoridad
-administrativa, de oficio o a petición de parte, incluso en los casos de concurso del deudor, así como también,
-después de la declaración de quiebra.”
-ARTÍCULO 85.- Sustitúyese el artículo 277 de la Ley N° 20.744 (t.o. 1976) y sus modificatorias por el siguiente:
-“ARTÍCULO 277.- Pago en juicio. Todo pago que deba realizarse en los juicios laborales se efectivizará
-mediante depósito bancario en autos a la orden del Tribunal interviniente y giro judicial personal al titular del
-crédito o sus derecho-habientes, aún en el supuesto de haber otorgado poder.
-Queda prohibido el pacto de cuota litis que exceda del veinte por ciento (20%) el que, en cada caso, requerirá
-ratificación personal y homologación judicial.
-Las personas humanas y las personas jurídicas alcanzadas por la Ley N° 24.467, ante una sentencia judicial
-condenatoria, podrán acogerse al pago total de la misma en hasta un máximo de doce (12) cuotas mensuales
-consecutivas, las que serán ajustadas conforme la pauta establecida en el artículo 276 de la presente Ley.
-El desistimiento por el trabajador de acciones y derechos se ratificará personalmente en el juicio y requerirá
-homologación.
-Todo pago realizado sin observar lo prescripto, así como el pacto de cuota litis o el desistimiento no
-homologados, serán nulos de pleno derecho.
-La responsabilidad por el pago de las costas procesales, incluidos los honorarios profesionales de todo tipo allí
-devengados y correspondientes a la primera o única instancia, no excederán del veinticinco por ciento (25 %) del
-monto de la sentencia, laudo, transacción o instrumento que ponga fin al diferendo. Si las regulaciones de
-honorarios practicadas conforme a las leyes arancelarias o usos locales, correspondientes a todas las profesiones
-y especialidades superaran dicho porcentaje, el juez procederá a prorratear los montos entre los beneficiarios.
-Para el cómputo del porcentaje indicado no se tendrá en cuenta el monto de los honorarios profesionales que
-hubieren representado, patrocinado o asistido a la parte condenada en costas.”
 
 Capítulo III – Convenciones Colectivas de Trabajo (Ley N° 14.250)
 ARTÍCULO 86.- Sustitúyese el artículo 6° de la Ley N° 14.250, por el siguiente:
