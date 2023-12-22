@@ -1,6 +1,7 @@
 const text = [
     {
-        type: "header",
+        type: "text",
+        title: 'Encabezado',
         blocks: [
             'República Argentina - Poder Ejecutivo Nacional',
             '1983/2023 - 40 AÑOS DE DEMOCRACIA',
@@ -2548,862 +2549,985 @@ const text = [
             },
         ],
     },
+    {
+        type: 'block',
+        title: 'Capítulo II – Rescate de Aerolíneas Argentinas y Austral Líneas Aéreas por el Estado Nacional (Ley N° 26.412)',
+        articles: [
+            {
+                text: 'ARTÍCULO 246.- Sustitúyese el artículo 4° de la Ley N° 26.412 y sus normas modificatorias y complementarias.\n' +
+                '“ARTICULO 4º.- Autorízase la cesión, parcial o total, del paquete accionario de Aerolíneas Argentinas S.A. y ' +
+                'Austral Líneas Aéreas - Cielos del Sur S.A. y de sus empresas controladas, a los empleados de las respectivas ' +
+                'empresas de conformidad con el Programa de Propiedad Participada.”\n' +
+                'ARTÍCULO 247.- Derógase el artículo 9° de la Ley N° 26.412.',
+                delta: {
+                    title: 'Ley N° 26.412 - Transporte Aerocomercial',
+                    added: require('./ley26412-new').default,
+                    removed: require('./ley26412').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo III – Utilidad Pública de Aerolíneas Argentinas (Ley N° 26.466)',
+        articles: [
+            {
+                text: 'ARTÍCULO 248.- Sustitúyese el artículo 5° de la Ley N° 26.466, por el siguiente:\n' +
+                '“ARTÍCULO 5º.- Autorízase la cesión total o parcial de las acciones representativas del capital social a los ' +
+                'trabajadores de las empresas Aerolíneas Argentinas Sociedad Anónima y Austral Líneas Aéreas - Cielos del Sur ' +
+                'Sociedad Anónima y de sus empresas controladas (Optar S.A., Jet Paq S.A., Aerohandling S.A.) de conformidad ' +
+                'con el Programa de Propiedad Participada. La cesión de los nuevos derechos se prorrateará entre los empleados ' +
+                'que decidan participar en dicho programa de ampliación. Los empleados que participen de más de una de estas ' +
+                'empresas deberán optar por su participación en una de ellas.”',
+                delta: {
+                    title: 'Ley N° 26.466 - Transporte Aerocomercial',
+                    added: require('./ley26466-new').default,
+                    removed: require('./ley26466').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'TÍTULO X- JUSTICIA',
+        articles: [
+            {
+                text: 'ARTÍCULO 249.- Derógase la Ley N° 27.551.',
+                delta: {
+                    title: 'Ley N° 27.551 - Reformas al Código Civil y Comercial de la Nación',
+                    removed: require('./ley27551').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo I - Código Civil y Comercial de la Nación (Ley N° 26.994)',
+        articles: [
+            {
+                text: 'ARTÍCULO 250.- Sustitúyese el artículo 765 del Código Civil y Comercial de la Nación aprobado por la Ley N° ' +
+                '26.994 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 765.- Concepto. La obligación es de dar dinero si el deudor debe cierta cantidad de moneda, ' +
+                'determinada o determinable, al momento de constitución de la obligación, sea o no de curso legal en el país. El ' +
+                'deudor solo se libera si entrega las cantidades comprometidas en la moneda pactada. Los jueces no pueden ' +
+                'modificar la forma de pago o la moneda pactada por las partes.”\n' +
+                'ARTÍCULO 251.- Sustitúyese el artículo 766 del Código Civil y Comercial de la Nación aprobado por la Ley N° ' +
+                '26.994 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 766.- Obligación del deudor. El deudor debe entregar la cantidad correspondiente de la especie ' +
+                'designada, tanto si la moneda tiene curso legal en la República como si no lo tiene.”\n' +
+                'ARTÍCULO 252.- Sustitúyese el artículo 958 del Código Civil y Comercial de la Nación aprobado por la Ley N° ' +
+                '26.994 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 958.- Libertad de contratación. Las partes son libres para celebrar un contrato y determinar su ' +
+                'contenido, dentro de los límites impuestos por la ley o el orden público. Las normas legales siempre son de ' +
+                'aplicación supletoria a la voluntad de las partes expresada en el contrato, aunque la ley no lo determine en forma ' +
+                'expresa para un tipo contractual determinado, salvo que la norma sea expresamente imperativa, y siempre con ' +
+                'interpretación restrictiva.”\n' +
+                'ARTÍCULO 253.- Sustitúyese el artículo 960 del Código Civil y Comercial de la Nación aprobado por la Ley N° ' +
+                '26.994 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 960.- Facultades de los jueces. Los jueces no tienen facultades para modificar las estipulaciones de ' +
+                'los contratos, excepto que sea a pedido de una de las partes cuando lo autoriza la ley.”\n' +
+                'ARTÍCULO 254.- Sustitúyese el artículo 989 del Código Civil y Comercial de la Nación aprobado por la Ley N° ' +
+                '26.994 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 989.- Control judicial de las cláusulas abusivas. La aprobación administrativa de las cláusulas ' +
+                'generales no obsta a su control judicial.”\n' +
+                'ARTÍCULO 255.- Sustitúyese el artículo 1196 del Código Civil y Comercial de la Nación aprobado por la Ley ' +
+                'N° 26.994 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 1196.- Fianza, garantía y periodicidad del pago. Las partes pueden determinar libremente las ' +
+                'cantidades y moneda entregadas en concepto de fianza o depósito en garantía, y la forma en que serán devueltas ' +
+                'al finalizar la locación.\n' +
+                'Las partes pactaran libremente la periodicidad del pago, que no podrá ser inferior a mensual.”\n' +
+                'ARTÍCULO 256.- Sustitúyese el artículo 1198 del Código Civil y Comercial de la Nación aprobado por la Ley ' +
+                'N° 26.994 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 1198. Plazo de la locación de inmueble. El plazo de las locaciones con cualquier destino será el que ' +
+                'las partes hayan establecido.\n' +
+                'En caso que no se haya establecido plazo, (i) en los casos de locación temporal, se estará al que establezcan los ' +
+                'usos y costumbres del lugar donde se asiente el inmueble locado, (ii) en los contratos de locación con destino a ' +
+                'vivienda permanente, con o sin muebles, será de dos (2) años y (iii) para los restantes destinos será de tres (3) ' +
+                'años.”\n' +
+                'ARTÍCULO 257.- Sustitúyese el artículo 1199 del Código Civil y Comercial de la Nación aprobado por la Ley ' +
+                'N° 26.994 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 1199. Moneda de pago y actualización. Los alquileres podrán establecerse en moneda de curso ' +
+                'legal o en moneda extranjera, al libre arbitrio de las partes. El locatario no podrá exigir que se le acepte el pago en ' +
+                'una moneda diferente a la establecida en el contrato.\n' +
+                'Las partes podrán pactar el ajuste del valor de los alquileres. Será válido el uso de cualquier índice pactado por las ' +
+                'partes, público o privado, expresado en la misma moneda en la que se pactaron los alquileres. Si el índice elegido ' +
+                'dejara de publicarse durante la vigencia del contrato, se utilizará un índice oficial de características similares que ' +
+                'publique el Instituto Nacional de Estadística y Censos si el precio estuviera fijado en moneda nacional, o el que ' +
+                'cumpla las mismas funciones en el país que emita la moneda de pago pactada.\n' +
+                'No será de aplicación a los contratos incluidos en este Capítulo el artículo 10 de la Ley N° 23.928.” ' +
+                'ARTÍCULO 258.- Derógase el artículo 1202 del Código Civil y Comercial de la Nación aprobado por la Ley N° ' +
+                '26.994 y sus modificatorias.\n' +
+                'ARTÍCULO 259.- Deróganse los artículos 1204 y 1204 bis del Código Civil y Comercial de la Nación aprobado ' +
+                'por la Ley N° 26.994 y sus modificatorias.\n' +
+                'ARTÍCULO 260.- Incorpórase como inciso d) del artículo 1219 al Código Civil y Comercial de la Nación ' +
+                'aprobado por la Ley N° 26.994 y sus modificatorias, el siguiente:\n' +
+                '“d) por cualquier causa fijada en el contrato.”\n' +
+                'ARTÍCULO 261.- Sustitúyese el artículo 1220 del Código Civil y Comercial de la Nación aprobado por la Ley ' +
+                'N° 26.994 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 1220.- Resolución imputable al locador. El locatario puede resolver el contrato si el locador ' +
+                'incumple:\n' +
+                'a) la obligación de conservar la cosa con aptitud para el uso y goce convenido, salvo cuando el daño haya sido ' +
+                'ocasionado directa o indirectamente por el locatario;\n' +
+                'b) la garantía de evicción o la de vicios redhibitorios.”\n' +
+                'ARTÍCULO 262.- Sustitúyese el artículo 1221 del Código Civil y Comercial de la Nación aprobado por la Ley ' +
+                'N° 26.994 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 1221. Resolución anticipada. El locatario podrá, en cualquier momento, resolver la contratación ' +
+                'abonando el equivalente al diez por ciento (10%) del saldo del canon locativo futuro, calculado desde la fecha de ' +
+                'la notificación de la rescisión hasta la fecha de finalización pactada en el contrato.”\n' +
+                'ARTÍCULO 263.- Derógase el artículo 1221 bis del Código Civil y Comercial de la Nación aprobado por la Ley ' +
+                'N° 26.994 y sus modificatorias.',
+                delta: {
+                    title: 'Ley N° 26.994 - Código Civil y Comercial de la Nación',
+                    added: require('./ley26994-new').default,
+                    removed: require('./ley26994').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Título XI – SALUD',
+        articles: [
+            {
+                text: 'ARTÍCULO 264.- Derógase la Ley N° 27.113.',
+                delta: {
+                    title: 'Ley N° 27.113 - Medicamentos',
+                    removed: require('./ley27113').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 265.- Derógase el Decreto N° 743/22.',
+                delta: {
+                    title: 'Decreto N° 743/22 - Medicina prepaga',
+                    removed: require('./decreto-743-22').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo I – Utilización de medicamentos por su nombre genérico (Ley N° 25.649)',
+        articles: [
+            {
+                text: 'ARTÍCULO 266.- Sustitúyese el artículo 2° de la Ley N° 25.649 por el siguiente:\n' +
+                '“ARTÍCULO 2°.- Toda receta o prescripción médica deberá efectuarse en forma obligatoria expresando ' +
+                'exclusivamente el nombre genérico del medicamento o denominación común internacional que se indique, ' +
+                'seguida de forma farmacéutica y dosis/unidad, con detalle del grado de concentración.\n' +
+                'El farmacéutico, debidamente autorizado por la autoridad competente, es el único responsable y capacitado para ' +
+                'la debida dispensa de especialidades farmacéuticas que requieran recetas en cualquiera de sus modalidades.”',
+                delta: {
+                    title: 'Ley N° 25.649 - Especialidades Medicinales',
+                    added: require('./ley25649-new').default,
+                    removed: require('./ley25649').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo II – Marco regulatorio de la Medicina Prepaga (Ley N° 26.682)',
+        articles: [
+            {
+                text: 'ARTÍCULO 267.- Deróganse los artículos 5°, incisos g) y m), 6°, 18, 19, 25 inciso a) y 27 de la Ley N° 26.682.\n' +
+                'ARTÍCULO 268.- Incorpórase a la Ley N° 26.682 como artículo 30 bis, el siguiente:\n' +
+                '“ARTÍCULO 30 bis.- Las disposiciones de esta ley son aplicables únicamente a los asociados voluntarios cuyo ' +
+                'vínculo con el asegurador esté fuera del marco de la Ley N° 23.660.”\n' +
+                'ARTÍCULO 269.- Sustitúyese el artículo 17 de la Ley N° 26.682, por el siguiente:\n' +
+                '“ARTÍCULO 17.- Cuotas de Planes. Los sujetos comprendidos en el artículo 1º de la presente ley pueden ' +
+                'establecer precios diferenciales para los planes prestacionales, al momento de su contratación, según franjas ' +
+                'etarias con una variación máxima de TRES (3) veces entre el precio de la primera y la última franja etaria.”',
+                delta: {
+                    title: 'Ley N° 26.682 - Medicina Prepaga',
+                    added: require('./ley26682-new').default,
+                    removed: require('./ley26682').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo III – Obras sociales (Ley N° 23.660)',
+        articles: [
+            {
+                text: 'ARTÍCULO 270.- Incorpórase como inciso i) del artículo 1° a la Ley N° 23.660, el siguiente:\n' +
+                '“i) Todas las entidades comprendidas en el artículo 1° de la Ley N° 26.682.”\n' +
+                'ARTÍCULO 271.- Sustitúyese el artículo 2° de la Ley N° 23.660 por el siguiente:\n' +
+                '“ARTÍCULO 2°.- Las entidades comprendidas en los incisos c), d) y h) del artículo 1° funcionarán como ' +
+                'entidades de derecho público no estatal, con individualidad jurídica, financiera y administrativa y tendrán el ' +
+                'carácter de sujeto de derecho, con el alcance que el Código Civil y Comercial de la Nación establece para las ' +
+                'personas jurídicas; las entidades señaladas en los incisos a), e) y f) de dicho artículo funcionarán con ' +
+                'individualidad administrativa, contable y financiera y tendrán el carácter de sujeto de derecho con el alcance que ' +
+                'el Código Civil y Comercial de la Nación establece en el artículo 148.\n' +
+                'Las entidades señaladas en el inciso b) del artículo 1°, creadas por leyes especiales al efecto, vigentes a la sanción ' +
+                'de la presente ley, mantendrán sus modalidades administrativas, contables y financieras conforme a las leyes que ' +
+                'le dieron origen, con las salvedades especificadas en los artículos 37, 38, 39 y 40 de la presente ley.”\n' +
+                'ARTÍCULO 272.- Sustitúyese el artículo 3° de la Ley N° 23.660 por el siguiente:\n' +
+                '“ARTÍCULO 3°.- Las entidades del artículo 1° destinarán sus recursos en forma prioritaria a prestaciones de ' +
+                'salud. Deberán, asimismo, brindar otras prestaciones sociales.\n' +
+                'En lo referente a las prestaciones de salud formarán parte del Sistema Nacional del Seguro de Salud -en calidad ' +
+                'de agentes naturales del mismo- sujetos a las disposiciones y normativas que lo regulan.”\n' +
+                'ARTÍCULO 273.- Sustitúyese el artículo 4° de la Ley N° 23.660 por el siguiente:\n' +
+                '“ARTÍCULO 4°.- Las entidades, cualquiera sea su naturaleza y forma de administración, presentarán anualmente, ' +
+                'en lo referente a su responsabilidad como agentes del seguro, la siguiente documentación ante la ' +
+                'Superintendencia de Servicios de Salud (SSS):\n' +
+                'a) Programa de prestaciones médico-asistenciales para sus beneficiarios;\n' +
+                'b) Presupuesto de gastos y recursos para su funcionamiento y la ejecución del programa;\n' +
+                'c) Memoria general y balance de ingresos y egresos financieros del período anterior;\n' +
+                'd) Registro electrónico de todos los contratos de prestaciones de salud que celebre durante el mismo período, a ' +
+                'efectos de confeccionar un registro de los mismos.”\n' +
+                'ARTÍCULO 274.- Derógase el artículo 5° de la Ley N° 23.660.\n' +
+                'ARTÍCULO 275.- Sustitúyese el artículo 6° de la Ley N° 23.660 por el siguiente:\n' +
+                '“ARTÍCULO 6°.- Las entidades comprendidas en el régimen de la presente ley, como agentes del Seguro de ' +
+                'Salud, deberán inscribirse en el registro que funcionará en el ámbito de la SSS y en las condiciones que establezca ' +
+                'la ley del Sistema Nacional del Seguro de Salud y su decreto reglamentario.\n' +
+                'El cumplimiento de este requisito será condición necesaria para aplicar los fondos percibidos con destino a las ' +
+                'prestaciones de salud.”\n' +
+                'ARTÍCULO 276.- Sustitúyese el artículo 7° de la Ley N° 23.660 por el siguiente:\n' +
+                '“ARTÍCULO 7°.- Las resoluciones que adopten el MINISTERIO DE SALUD y la Superintendencia de Servicios ' +
+                'de Salud (SSS), en ejercicio de las funciones, atribuciones y facultades otorgadas por la legislación, serán de ' +
+                'cumplimiento obligatorio para las entidades, exclusivamente en lo que atañe a su condición de agentes del Seguro ' +
+                'de Salud.”\n' +
+                'ARTÍCULO 277.- Sustitúyese el artículo 8° de la Ley N° 23.660 por el siguiente:\n' +
+                '“ARTÍCULO 8°.- Quedan obligatoriamente incluidos en calidad de beneficiarios de las entidades:\n' +
+                'a) Los trabajadores que presten servicios en relación de dependencia, sea en el ámbito privado o en el sector ' +
+                'público.\n' +
+                'b) Los jubilados y pensionados nacionales;\n' +
+                'c) Los beneficiarios de prestaciones no contributivas nacionales.”\n' +
+                'ARTÍCULO 278.- Sustitúyese el último párrafo del artículo 9° de la Ley N° 23.660 por el siguiente:\n' +
+                '“La Superintendencia de Servicios de Salud (SSS) podrá autorizar, con los requisitos que ella establezca, la ' +
+                'inclusión como beneficiarios, de otros ascendientes o descendientes por consanguinidad del beneficiario titular y ' +
+                'que se encuentren a su cargo, en cuyo caso se fija un aporte adicional del uno y medio por ciento (1,5%) por cada ' +
+                'una de las personas que se incluyan.”\n' +
+                'ARTÍCULO 279.- Sustitúyese el inciso e) del artículo 10 de la Ley N° 23.660 por el siguiente:\n' +
+                '“e) Los trabajadores de temporada podrán optar por mantener el carácter de beneficiarios durante el período de ' +
+                'inactividad y mientras subsista el contrato de trabajo cumpliendo durante ese período con las obligaciones del ' +
+                'aporte a su cargo y de la contribución a cargo del empleador que establece la presente ley. Este derecho cesará a ' +
+                'partir del momento en que, en razón de otro contrato de trabajo, pasen a ser beneficiarios titulares en los términos ' +
+                'previstos en el artículo 8 de la presente ley.”\n' +
+                'ARTÍCULO 280.- Derógase el inciso f) del artículo 10 de la Ley N° 23.660.\n' +
+                'ARTÍCULO 281.- Sustitúyese el artículo 11 de la Ley N° 23.660 por el siguiente:\n' +
+                '“ARTÍCULO 11.- Cada entidad elaborará su propio estatuto conforme con la presente ley y las normas que se ' +
+                'dicten en consecuencia, el que presentará ante la Superintendencia de Servicios de Salud (SSS).”\n' +
+                'ARTÍCULO 282.- Sustitúyese el inciso h) del artículo 12 de la Ley N° 23.660 por el siguiente:\n' +
+                '“h) Las obras sociales y otras entidades que adhieran a la presente ley mantendrán su propio régimen de ' +
+                'administración y gobierno.”\n' +
+                'ARTÍCULO 283.- Sustitúyese el artículo 15 de la Ley N° 23.660 por el siguiente:\n' +
+                '“ARTÍCULO 15.- Cuando la Superintendencia de Servicios de Salud (SSS) realice tareas de control y ' +
+                'fiscalización en las obras sociales, en ejercicio y dentro de las facultades comprendidas por los artículos 7°, 8°, ' +
+                '9°, 21 y concordantes de la Ley del Sistema Nacional del Seguro Salud, aquéllas facilitarán el personal y ' +
+                'elementos necesarios para el cumplimiento de la aludida misión.”\n' +
+                'ARTÍCULO 284.- Sustitúyese el artículo 19 de la Ley N° 23.660 por el siguiente:\n' +
+                '“ARTÍCULO 19.- Los empleadores, dadores de trabajo o equivalentes en su carácter de agentes de retención ' +
+                'deberán depositar la contribución a su cargo junto con los aportes que hubieran debido retener -al personal a su ' +
+                'cargo-, dentro de los QUINCE (15) días corridos contados a partir de la fecha en que se deba abonar la ' +
+                'remuneración a la entidad seleccionada por el beneficiario y a través del mecanismo correspondiente del ' +
+                'organismo responsable de recaudación de fondos.\n' +
+                'a) Para el caso de las Obras Sociales, el NOVENTA POR CIENTO (90%) de la suma de la contribución y los ' +
+                'aportes que prevén los incisos a) y b) del artículo 16 de esta Ley, cuando las remuneraciones brutas mensuales ' +
+                'sean de hasta PESOS UN MIL ($ 1.000.-) inclusive, y del OCHENTA Y CINCO POR CIENTO (85%) cuando ' +
+                'dichas remuneraciones superen los PESOS UN MIL ($ 1.000.-). Para el caso de las Obras Sociales del Personal ' +
+                'de Dirección y de las Asociaciones Profesionales de Empresarios o de otras entidades mencionadas en el inciso i ' +
+                'del artículo 1°, dicho porcentaje será del OCHENTA Y CINCO POR CIENTO (85 %) cuando las remuneraciones ' +
+                'brutas mensuales sean de hasta PESOS UN MIL ($ 1.000.-) inclusive, y del OCHENTA POR CIENTO (80 %) ' +
+                'cuando superen ese tope;\n' +
+                'b) Conforme los niveles remunerativos mencionados, el DIEZ POR CIENTO (10 %) o el QUINCE POR ' +
+                'CIENTO (15 %), respectivamente, de la suma de la contribución y los aportes que prevén los incisos a) y b) del ' +
+                'artículo 16 de esta Ley, y cuando se trate de las Obras Sociales del Personal de Dirección y de las Asociaciones ' +
+                'Profesionales de Empresarios o de otras entidades mencionadas en el inciso i del artículo 1°, el QUINCE POR ' +
+                'CIENTO (15 %) o el VEINTE POR CIENTO (20 %), respectivamente, de la suma a depositarse se destinarán al ' +
+                'Fondo Solidario de Redistribución, a la orden de las cuentas recaudadoras que determine la reglamentación.\n' +
+                'c) El cincuenta por ciento (50 %) de los recursos de distinta naturaleza que prevé la presente ley en su artículo 16, ' +
+                'a la orden de la obra social correspondiente;\n' +
+                'd) El cincuenta por ciento (50 %) de los recursos de distinta naturaleza que prevé la presente ley en su artículo 16 ' +
+                'a la orden de la SUPERINTENDENCIA DE SERVICIOS DE SALUD (SSS), en los mismos términos que los ' +
+                'indicados en el inciso b) precedente;\n' +
+                'e) Cuando las modalidades de la actividad laboral lo hagan conveniente, la autoridad de aplicación podrá ' +
+                'constituir a entidades en agentes de retención de contribuciones y aportes calculados sobre la producción, que ' +
+                'equivalgan y reemplacen a los calculados sobre el salario, a cuyo efecto aprobará los convenios de ' +
+                'corresponsabilidad suscriptos entre dichas entidades y las respectivas obras sociales.”\n' +
+                'ARTÍCULO 285.- Incorpórase como artículo 19 bis a la Ley N° 23.660, el siguiente:\n' +
+                '“ARTÍCULO 19 bis.- Cuando las entidades reciban aportes adicionales a los de la suma de la contribución y los ' +
+                'aportes que prevén los incisos a) y b) del artículo 16 de esta Ley, deberán depositar el VEINTE (20 %) al Fondo ' +
+                'Solidario de Redistribución.”\n' +
+                'ARTÍCULO 286.- Sustitúyese el artículo 21 de la Ley N° 23.660 por el siguiente:\n' +
+                '“ARTÍCULO 21.- Para la fiscalización y verificación de las obligaciones emergentes de la presente ley por parte ' +
+                'de los responsables y obligados, los funcionarios e inspectores de la SUPERINTENDENCIA DE SERVICIOS ' +
+                'DE SALUD (SSS) y de las entidades tendrán, en lo pertinente, las facultades y atribuciones que la ley asigna a los ' +
+                'de la Dirección Nacional de Recaudación Previsional.\n' +
+                'Las actas de inspección labradas por los funcionarios e inspectores mencionados en el párrafo anterior hacen ' +
+                'presumir, a todos los efectos legales, la veracidad de su contenido.”\n' +
+                'ARTÍCULO 287.- Sustitúyese el primer párrafo del artículo 23 de la Ley N° 23.660 por el siguiente:\n' +
+                '“Los fondos previstos por la presente ley como también los que por cualquier motivo correspondan a las ' +
+                'entidades deberán depositarse en instituciones bancarias y serán destinados exclusivamente a la atención de las ' +
+                'prestaciones y demás obligaciones de las mismas y de los gastos administrativos que demande su ' +
+                'funcionamiento.”\n' +
+                'ARTÍCULO 288.- Sustitúyese el primer párrafo del artículo 24 de la Ley N° 23.660 por el siguiente:\n' +
+                '“El cobro judicial de los aportes, contribuciones, recargos, intereses y actualizaciones adeudados a las entidades, ' +
+                'y de las multas establecidas en la presente ley se hará por la vía de apremio prevista en el Código Procesal Civil y ' +
+                'Comercial de la Nación, sirviendo de suficiente título ejecutivo el certificado de deuda expedido por las entidades ' +
+                'o los funcionarios en que aquéllas hubieran delegado esa facultad.”\n' +
+                'ARTÍCULO 289.- Sustitúyese el artículo 25 de la Ley N° 23.660 por el siguiente:\n' +
+                '“ARTÍCULO 25.- La SUPERINTENDENCIA DE SERVICIOS DE SALUD (SSS) actuará como Autoridad de ' +
+                'Aplicación de la presente ley, con jurisdicción sobre las entidades del artículo 1°.”\n' +
+                'ARTÍCULO 290.- Sustitúyese el artículo 26 de la Ley N° 23.660 por el siguiente:\n' +
+                '“ARTÍCULO 26.- La SUPERINTENDENCIA DE SERVICIOS DE SALUD (SSS) tendrá como fin promover, ' +
+                'coordinar e integrar las actividades de las entidades en todo aquello que no se encuentren obligadas por la Ley del ' +
+                'Sistema Nacional del Seguro de Salud. Actuará también como organismo de control para los aspectos ' +
+                'administrativos y contables de las obras sociales.”\n' +
+                'ARTÍCULO 291.- Sustitúyese el artículo 27 de la Ley N° 23.660 por el siguiente:\n' +
+                '“ARTÍCULO 27.- Para el cumplimiento de estos fines tendrá las siguientes atribuciones:\n' +
+                '1° Requerirá y aprobará la memoria anual y balances de las obras sociales.\n' +
+                '2° Requerirá y suministrará información adecuada para el mejor contralor de las obras sociales y otras entidades a ' +
+                'la Dirección Nacional de Recaudación Previsional.\n' +
+                '3° Propondrá al Poder Ejecutivo Nacional la intervención de las obras sociales cuando se acrediten ' +
+                'irregularidades o graves deficiencias en su funcionamiento.\n' +
+                'En este caso, cuando la denuncia provenga de la SUPERINTENDENCIA DE SERVICIOS DE SALUD (SSS), ' +
+                'por incumplimiento de sus obligaciones como agentes del seguro, se instrumentarán mecanismos sumarios para ' +
+                'asegurar las prestaciones de salud garantizadas por la ley del Sistema Nacional del Seguro de Salud.\n' +
+                '4° Llevará un Registro de las entidades en el que deberán inscribirse todas las entidades comprendidas en la ' +
+                'presente ley, con los recaudos que establezca la autoridad de aplicación.\n' +
+                '5° A los efectos de la verificación del cumplimiento de las disposiciones establecidas en la presente ley y demás ' +
+                'normas complementarias, la SUPERINTENDENCIA DE SERVICIOS DE SALUD (SSS) podrá solicitar de las ' +
+                'entidades la información necesaria, su ampliación y/o aclaraciones. Sin perjuicio de ello podrá requerir la ' +
+                'colaboración de su sindicatura para que, constituida en la entidad, constate y/u obtenga la información.\n' +
+                '6° Resolver los conflictos sobre encuadramiento de los beneficiarios de las entidades, determinando el destino de ' +
+                'los aportes y contribuciones.”\n' +
+                'ARTÍCULO 292.- Incorpórase como artículo 28 bis a la Ley N° 23.660, el siguiente:\n' +
+                '“ARTÍCULO 28 bis.- Para las entidades comprendidas en el inciso i) del artículo 1° de esta Ley regirá el régimen ' +
+                'sancionatorio de la Ley N° 26.682.”\n' +
+                'ARTÍCULO 293.- Sustitúyese el último párrafo del artículo 40 de la Ley N° 23.660 por el siguiente:\n' +
+                '“El síndico será designado por el MINISTERIO DE SALUD a propuesta de la SUPERINTENDENCIA DE ' +
+                'SERVICIOS DE SALUD (SSS).”\n' +
+                'ARTÍCULO 294.- Derógase el artículo 42 de la Ley N° 23.660.',
+                delta: {
+                    title: 'Ley N° 23.660 - Obras sociales',
+                    added: require('./ley23660-new').default,
+                    removed: require('./ley23660').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo IV – Sistema Nacional del Seguro de Salud (Ley N° 23.661)',
+        articles: [
+            {
+                text: 'ARTÍCULO 295.- Sustitúyese el último párrafo del artículo 2° de la Ley N° 23.661 por el siguiente:\n' +
+                '“Se consideran agentes del seguro a las obras sociales nacionales, cualquiera sea su naturaleza o denominación, ' +
+                'las obras sociales de otras jurisdicciones, las entidades incorporadas al inciso i) del artículo 1° de la Ley N° ' +
+                '23.660 y demás entidades que adhieran al sistema que se constituye, las que deberán adecuar sus prestaciones de ' +
+                'salud a las normas que se dicten y se regirán por lo establecido en la presente ley, su reglamentación y la ley de ' +
+                'Obras Sociales, en lo pertinente”.\n' +
+                'ARTÍCULO 296.- Sustitúyese el inciso a) del artículo 5° de la Ley N° 23.661 por el siguiente:\n' +
+                '“a) Todos los beneficiarios comprendidos en la Ley 23.660.”\n' +
+                'ARTÍCULO 297.- Sustitúyese el artículo 15 de la Ley N° 23.661 por el siguiente:\n' +
+                '“ARTÍCULO 15.- Las entidades comprendidas en la Ley N° 23.660 serán agentes naturales del seguro, así como ' +
+                'aquellas otras obras sociales que adhieran al régimen de la presente ley.”\n' +
+                'ARTÍCULO 298.- Sustitúyese el inciso a) del artículo 17 de la Ley N° 23.661 por el siguiente:\n' +
+                '“a) A las entidades comprendidas en la Ley N° 23.660.”\n' +
+                'ARTÍCULO 299.- Sustitúyese el último párrafo del artículo 17 de la Ley N° 23.661 por el siguiente:\n' +
+                '“La inscripción, habilitará el agente para aplicar los recursos destinados a las prestaciones de salud, previstos en ' +
+                'la Ley N° 23.660.”\n' +
+                'ARTÍCULO 300.- Sustitúyese el inciso a) del artículo 21 de la Ley N° 23.661 por el siguiente:\n' +
+                '“a) La cobertura de prestaciones que tienen que dar a sus beneficiarios las entidades comprendidas en la Ley N° ' +
+                '23.660.”\n' +
+                'ARTÍCULO 301.- Sustitúyase el inciso a) del artículo 22 de la Ley N° 23.661 por el siguiente:\n' +
+                '“a) los previstos en la Ley N° 23.660 y sus modificaciones.”',
+                delta: {
+                    title: 'Ley N° 23.661 - Sistema Nacional del Seguro de Salud',
+                    added: require('./ley23661-new').default,
+                    removed: require('./ley23661').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo V – Régimen de Trazabilidad y Verificación de Aptitud Técnica de los Productos Médicos Activos de Salud en Uso. (Ley N° 26.906)',
+        articles: [
+            {
+                text: 'ARTÍCULO 302.- Deróganse los artículos 6°, 7°, 8° y 11 de la Ley N° 26.906.\n' +
+                'ARTÍCULO 303.- Incorpóranse como artículo 5° bis y artículo 5° ter a la Ley N° 26.906, los siguientes:\n' +
+                '“ARTÍCULO 5° bis.- La Autoridad de Aplicación determinará los productos médicos activos autorizados para su ' +
+                'uso en el territorio nacional. No podrán ser utilizados los productos activos que no hayan sido autorizados por la ' +
+                'Autoridad de Aplicación.\n' +
+                'ARTÍCULO 5° ter.- Los usuarios de productos médicos activos deberán informar la instalación y uso de los ' +
+                'mismos a la autoridad de aplicación. La Autoridad de Aplicación determinará los requisitos y procedimientos ' +
+                'para el uso de productos médicos activos. Y se reserva el derecho de auditar su cumplimiento.”\n' +
+                'ARTÍCULO 304.- Sustitúyese el artículo 9° de la Ley N° 26.906, por el siguiente:\n' +
+                '“ARTÍCULO 9º.- Requisitos. La autorización de uso se debe otorgar en forma individual a cada producto médico ' +
+                'activo, cuando sea ensayado según las normas técnicas aplicables.\n' +
+                'Los ensayos de verificación técnica deben ser realizados in situ por el Servicio de Tecnología Biomédica del ' +
+                'establecimiento de salud, región sanitaria o jurisdicción. En el caso exclusivo de no contar con los recursos ' +
+                'necesarios, la autoridad jurisdiccional debe designar la forma y medios para realizarla. A tal efecto podrá contar ' +
+                'con los laboratorios acreditados por el Organismo Argentino de Acreditación (O.A.A), el Instituto Nacional de ' +
+                'Tecnología Industrial (I.N.T.I.) o laboratorios asociados al I.N.T.I., o laboratorios de universidades públicas.”\n' +
+                'ARTÍCULO 305.- Sustitúyase el inciso f) del artículo 15 de la Ley N° 26.906, por el siguiente:\n' +
+                '“f) Brindar asesoramiento en lo que respecta a la instalación, puesta en marcha y mantenimiento de los servicios ' +
+                'asociados al equipamiento médico y el óptimo funcionamiento de los mismos a los fines de cumplir las ' +
+                'especificaciones técnicas establecidas por la autoridad de aplicación.”\n' +
+                'ARTÍCULO 306.- Sustitúyese el artículo 16 de la Ley N° 26.906, por el siguiente:\n' +
+                '“ARTÍCULO 16.- Funciones. Son funciones de la autoridad de aplicación:\n' +
+                'a) Establecer el mecanismo identificatorio para la trazabilidad de los productos médicos activos y de sus ' +
+                'mediciones así como autorizarlos para su uso en todo el territorio nacional;\n' +
+                'b) Definir las condiciones de uso de cada producto medico activo autorizado.\n' +
+                'c) Promover la creación o fortalecimiento de los Servicios de Tecnología Biomédica, en todo el territorio de la ' +
+                'Nación;\n' +
+                'd) Establecer las Buenas Prácticas de Funcionamiento de los Prestadores de Servicios de Reparaciones y ' +
+                'Mantenimiento de Productos Médicos Activos;\n' +
+                'e) Coordinar con las autoridades sanitarias jurisdiccionales, las verificaciones técnicas de los productos médicos ' +
+                'activos en uso, que considere necesarias;\n' +
+                'f) Promover la creación de un Registro Nacional de Productos Médicos Activos, en coordinación con las ' +
+                'autoridades jurisdiccionales y según los criterios establecidos por la Disposición N° 2318/02, texto ordenado ' +
+                'según Disposición N° 1285/04, de la Administración Nacional de Medicamentos, Alimentos y Tecnología ' +
+                'Médica, ANMAT, o la que en el futuro se dicte.”',
+                delta: {
+                    title: 'Ley N° 26.906 - Productos Médicos',
+                    added: require('./ley26906-new').default,
+                    removed: require('./ley26906').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo VI – Recetas electrónicas o digitales (Ley N° 27.553)',
+        articles: [
+            {
+                text: 'ARTÍCULO 307.- Sustitúyese el artículo 1° de la Ley N° 27.553 por el siguiente:\n' +
+                '“ARTÍCULO 1°.- La presente ley tiene por objeto:\n' +
+                'Establecer que la prescripción y dispensación de medicamentos, y toda otra prescripción, solo puedan ser ' +
+                'redactadas y firmadas a través de plataformas electrónicas habilitadas a tal fin.\n' +
+                'Establecer que puedan utilizarse plataformas de teleasistencia en salud, en todo el territorio nacional, de ' +
+                'conformidad con la Ley N° 25.326 de Protección de los Datos Personales y la Ley N° 26.529 de Derechos del ' +
+                'Paciente.”\n' +
+                'ARTÍCULO 308.- Sustitúyese el artículo 3° de la Ley N° 27.553 por el siguiente:\n' +
+                '“ARTÍCULO 3°.- La Autoridad de Aplicación de la presente ley será establecida por el Poder Ejecutivo nacional, ' +
+                'coordinando su accionar con las autoridades jurisdiccionales competentes y los organismos con incumbencia en la ' +
+                'materia que dichas autoridades determinen.\n' +
+                'El Poder Ejecutivo Nacional establece los plazos necesarios para alcanzar la digitalización total en prescripción y ' +
+                'dispensación de medicamentos y toda otra prescripción, el cual no podrá superar el 1° de julio de 2024, y regular ' +
+                'el uso de plataformas de teleasistencia en salud.\n' +
+                'El INSTITUTO NACIONAL DE SERVICIOS SOCIALES PARA JUBILADOS Y PENSIONADOS deberá ser ' +
+                'convocado por la autoridad de aplicación a los fines de colaborar en la reglamentación que se dicte a tal efecto.”\n' +
+                'ARTÍCULO 309.- Sustitúyese el artículo 13 de la Ley N° 27.553 por el siguiente:\n' +
+                '“ARTÍCULO 13.- Los sistemas aludidos en la presente ley deben contemplar el cumplimiento de todas las ' +
+                'normativas vigentes que regulan toda la cadena de comercialización de medicamentos incluyendo los requisitos ' +
+                'de trazabilidad de éstos y de la firma electrónica o digital. También debe contemplarse la emisión de constancia ' +
+                'de teleasistencia, prescripción y dispensación para los pacientes, por vía informatizada o impresión de dicha ' +
+                'constancia y la posibilidad de bloqueo por el farmacéutico cuando exista error manifiesto en la prescripción, para ' +
+                'que el prescriptor pueda revisar, anular o reactivar según el caso.”',
+                delta: {
+                    title: 'Ley N° 27.553 - Recetas electrónicas o digitales',
+                    added: require('./ley27553-new').default,
+                    removed: require('./ley27553').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo VII – Ejercicio de la medicina, odontología y actividades de colaboración (Ley N° 17.132)',
+        articles: [
+            {
+                text: 'ARTÍCULO 310.- Sustitúyese el inciso 7°) del artículo 19 de la Ley N° 17.132 por el siguiente:\n' +
+                '“7°) Prescribir o certificar en recetas cargadas en formularios electrónicos o digitales, en las que debe constar la ' +
+                'siguiente información en idioma nacional: nombre, apellido, profesión, número de matrícula, domicilio, número ' +
+                'telefónico y correo electrónico cuando corresponda. Solo podrán anunciarse cargos técnicos o títulos que consten ' +
+                'registrados en la autoridad competente y en las condiciones que se reglamenten. Las prescripciones y/o recetas ' +
+                'deberán ser formuladas en idioma nacional, fechadas y firmadas.\n' +
+                'La prescripción podrá consignar únicamente con el nombre genérico del medicamento o denominación común ' +
+                'internacional.”',
+                delta: {
+                    title: 'Ley N° 17.132 - Arte de curar',
+                    added: require('./ley17132-new').default,
+                    removed: require('./ley17132').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo VIII – Reglamentación del derecho de opción de cambio (Decreto N° 504/98)',
+        articles: [
+            {
+                text: 'ARTÍCULO 311.- Sustitúyese el artículo 13 del Decreto Nº 504 del 12 de mayo de 1998 y sus modificatorios, por ' +
+                'el siguiente:\n' +
+                '“ARTÍCULO 13.- Los trabajadores que inicien una relación laboral podrán ejercer el derecho de elección de ' +
+                'agente del seguro de la Ley N° 23.661”.\n' +
+                'ARTÍCULO 312.- Sustitúyese el artículo 14 del Decreto Nº 504 del 12 de mayo de 1998 y sus modificatorios, por ' +
+                'el siguiente:\n' +
+                '“ARTÍCULO 14.- Los afiliados que hubieren cambiado de agente de seguro deberán permanecer en ella el ' +
+                'tiempo mínimo que determine la Autoridad de Aplicación, el que nunca podrá ser superior a UN (1) año, y ' +
+                'vencido ese plazo, podrán volver a ejercer esa opción.”',
+                delta: {
+                    title: 'Ley N° 17.132 - Obras sociales',
+                    added: require('./decreto-504-98-new').default,
+                    removed: require('./decreto-504-98').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo IX – Régimen legal del ejercicio de la actividad farmacéutica y de la habilitación de las farmacias, droguerías y herboristerías (Ley N° 17.565)',
+        articles: [
+            {
+                text: 'ARTÍCULO 313.- Sustitúyense el primer y el segundo párrafo del artículo 1° de la Ley N° 17.565 por el siguiente ' +
+                'texto:\n' +
+                '“ARTÍCULO 1°.- La preparación de recetas, la dispensa de drogas, medicamentos, y de especialidades ' +
+                'farmacéuticas que requieren recetas, solo podrán ser efectuadas en todo el territorio de la Nación en farmacias ' +
+                'habilitadas.\n' +
+                'La autoridad sanitaria competente podrá disponer la incorporación de otro tipo de productos al presente régimen.”\n' +
+                'ARTÍCULO 314.- Incorpórase como último párrafo al artículo 2° de la Ley N° 17.565, el siguiente:\n' +
+                '“Las farmacias podrán constituirse mediante cualquier figura jurídica permitida por la legislación vigente.”\n' +
+                'ARTÍCULO 315.- Sustitúyese el artículo 4° de la Ley N° 17.565 por el siguiente:\n' +
+                '“ARTÍCULO 4°.- Una vez acordada la habilitación a que se refieren los artículos precedentes, en las farmacias no ' +
+                'se podrá introducir modificación en las modalidades de sus prestaciones, sin autorización previa de la autoridad ' +
+                'sanitaria. Los cambios en denominación o razón social deberán ser notificados a la autoridad sanitaria.”\n' +
+                'ARTÍCULO 316.- Sustitúyese el artículo 6° de la Ley N° 17.565, por el siguiente:\n' +
+                '“ARTÍCULO 6°.- Las farmacias podrán operar en los horarios que decidan sin restricción alguna, sin más ' +
+                'obligación que la de comunicarlos a la autoridad sanitaria y respetar los horarios comunicados.\n' +
+                'Deberá efectuarse despacho nocturno al público, cuando les sea requerido por casos de urgencia. La autoridad ' +
+                'sanitaria podrá establecer turnos de cumplimiento obligatorio, nocturnos o para días feriados, cuando lo estime ' +
+                'conveniente.\n' +
+                'Cuando por razones de turno, esté cerrada la farmacia, deberá colocarse en lugar visible un cartel en el que ' +
+                'consten las más próximas que se encuentren de guardia.”\n' +
+                'ARTÍCULO 317.- Sustitúyese el artículo 9° de la Ley N° 17.565 por el siguiente:\n' +
+                '“ARTÍCULO 9°.- En las farmacias el expendio de drogas, medicamentos o especialidades medicinales se ajusta a ' +
+                'las siguientes formas de acuerdo a lo que establezca la legislación vigente o determine la autoridad sanitaria:\n' +
+                '1. Expendio legalmente restringido;\n' +
+                '2. Expendio bajo receta archivada;\n' +
+                '3. Expendio bajo receta;\n' +
+                'Deben conservarse las recetas correspondientes a los puntos 1 y 2, en formato digital, durante un plazo no menor ' +
+                'de tres (3) años, después de dicho plazo pueden ser borradas, previa comunicación a la autoridad sanitaria.”\n' +
+                'ARTÍCULO 318.- Sustitúyese el artículo 10 de la Ley N° 17.565 por el siguiente:\n' +
+                'ARTÍCULO 10.- En las farmacias deben llevarse los siguientes archivos digitales habilitados por la autoridad ' +
+                'sanitaria:\n' +
+                'a) Recetario;\n' +
+                'b) Contralor de estupefacientes;\n' +
+                'c) Contralor de psicotrópicos;\n' +
+                'd) Inspecciones;\n' +
+                'e) Otros archivos digitales que la autoridad competente estime pertinentes. Éstos deben ser aprobados por la ' +
+                'autoridad sanitaria.\n' +
+                'Los libros electrónicos, la firma electrónica o digital y los demás requisitos técnicos y legales deben adecuarse a ' +
+                'lo que establezca la autoridad de aplicación, asegurando la inalterabilidad de los registros.”\n' +
+                'ARTÍCULO 319.- Deróganse los artículos 13, 20, 27, 40, 41, 42, 43 y 44 de la Ley N° 17.565.\n' +
+                'ARTÍCULO 320.- Sustitúyese el artículo 25 de la Ley N° 17.565 por el siguiente:\n' +
+                '“ARTÍCULO 25.- Cuando un profesional farmacéutico sea director técnico de más de una farmacia, estará ' +
+                'obligado a vigilar la preparación y expendio de los medicamentos en todos los locales a su cargo, debiendo firmar ' +
+                'diariamente el libro recetario al final de la última receta despachada.”\n' +
+                'ARTÍCULO 321.- Sustitúyese el artículo 26 de la Ley N° 17.565 por el siguiente:\n' +
+                '“ARTÍCULO 26.- Toda vez que el director técnico no esté presente en la farmacia, la atención de las farmacias ' +
+                'podrá quedar a cargo de:\n' +
+                'a) farmacéuticos auxiliares, pudiéndose en estos casos despachar recetas médicas:\n' +
+                'b) auxiliares de despacho, en estos solo podrán despachar recetas médicas con la autorización del director técnico, ' +
+                'conforme lo establezca la reglamentación.”\n' +
+                'ARTÍCULO 322.- Sustitúyese el inciso d) del artículo 28 de la Ley N° 17.565 por el siguiente:\n' +
+                '“d) tener las constancias de la habilitación del establecimiento.”\n' +
+                'ARTÍCULO 323.- Sustitúyese el artículo 36 de la Ley N° 17.565 por el siguiente:\n' +
+                '“ARTÍCULO 36. Las droguerías podrán despachar recetas. En caso de hacerlo quedarán sujetas en un todo a lo ' +
+                'estipulado por los títulos I, II y III de esta norma. La venta de especialidades, drogas y medicamentos a farmacias ' +
+                'y laboratorios será efectuada dentro de las condiciones que establezca la autoridad sanitaria.”\n' +
+                'ARTÍCULO 324.- Sustitúyese el inciso a) del artículo 38 de la Ley N° 17.565 por el siguiente:\n' +
+                '“a) que las drogas y productos que sean objeto de las actividades del establecimiento, sean adquiridos ' +
+                'exclusivamente a personas autorizadas para su expendio y a su vez expendidos únicamente a farmacias y ' +
+                'laboratorios o directamente al público si deciden también constituirse como farmacias de venta al público.”\n' +
+                'ARTÍCULO 325.- Sustitúyese el último párrafo del artículo 40 de la Ley N° 17.565 por el siguiente:\n' +
+                '“Estos libros deberán ser electrónicos, sin alterar el orden de los asientos de las ventas efectuadas.”',
+                delta: {
+                    title: 'Ley N° 17.565 - Farmacias',
+                    added: require('./ley17565-new').default,
+                    removed: require('./ley17565').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Título XII – COMUNICACIÓN',
+        articles: [
+            {
+                text: '',
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo I - Ley de Servicios de Comunicación Audiovisual (Ley N° 26.522)',
+        articles: [
+            {
+                text: 'ARTÍCULO 326.- Sustitúyese el artículo 45 de la Ley Nº 26.522, modificado por el Decreto 267 del 29 de ' +
+                'diciembre de 2015, por el siguiente:\n' +
+                '“ARTICULO 45.- Multiplicidad de Licencias. A fin de garantizar los principios de diversidad, pluralidad y ' +
+                'respeto por lo local las personas humanas o jurídicas podrán ser titulares o tener participación en sociedades ' +
+                'titulares de licencias de servicios de comunicación audiovisual, con sujeción a los siguientes límites, en el orden ' +
+                'local:\n' +
+                'a) UNA (1) licencia de radiodifusión sonora por modulación de amplitud (AM);\n' +
+                'b) UNA (1) licencia de radiodifusión sonora por modulación de frecuencia (FM) o hasta DOS (2) licencias ' +
+                'cuando existan más de OCHO (8) licencias en el área primaria de servicio;\n' +
+                'c) UNA (1) licencia de radiodifusión televisiva abierta.\n' +
+                'En ningún caso la suma total de licencias otorgadas en la misma área primaria de servicio o conjunto de ellas que ' +
+                'se superpongan de modo mayoritario podrá exceder la cantidad de CUATRO (4) licencias.”\n' +
+                'ARTÍCULO 327.- Derógase el artículo 46 de la Ley Nº 26.522.',
+                delta: {
+                    title: 'Ley N° 26.522 - Ley de Servicios de Comunicación Audiovisual',
+                    added: require('./ley26522-new').default,
+                    removed: require('./ley26522').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo II – Argentina Digital (Ley N° 27.078)',
+        articles: [
+            {
+                text: 'ARTÍCULO 328.- Sustitúyese el inciso a) del artículo 6º de la Ley Nº 27.078, modificado por el Decreto Nº 267 ' +
+                'del 29 de diciembre de 2015, por el siguiente:\n' +
+                '“a) Radiodifusión por suscripción: Toda forma de comunicación primordialmente unidireccional destinada a la ' +
+                'transmisión de señales para ser recibidas por público determinable, mediante la utilización del espectro ' +
+                'radioeléctrico o mediante vinculo físico o satelital, indistintamente. Incluye el servicio de radiodifusión ofrecido ' +
+                'por un prestador de servicios TIC que utilice la tecnología de transmisión de contenidos audiovisuales basados en ' +
+                'el protocolo IP (IPTV), para el acceso de los programas en vivo y/o televisión lineal.”\n' +
+                'ARTÍCULO 329.- Sustituyese el artículo 10 de la Ley Nº 27.078, modificado por el Decreto Nº 267 del 29 de ' +
+                'diciembre de 2015, por el siguiente:\n' +
+                '“ARTÍCULO 10. - Incorpórase como servicio que podrán registrar los prestadores de TIC, al servicio de ' +
+                'Radiodifusión por suscripción mediante cualquier vínculo. El servicio de Radiodifusión por suscripción se regirá ' +
+                'por los requisitos que establecen los artículos siguientes de la presente ley y los demás que establezca la ' +
+                'reglamentación, no resultándole aplicables las disposiciones de la Ley N° 26.522.\n' +
+                'El plazo de otorgamiento del uso de las frecuencias del espectro radioeléctrico de los titulares de licencias de ' +
+                'Radiodifusión por Suscripción conferidas bajo las Leyes Nros. 22.285 y 26.522 será el de su título original, o de ' +
+                'DIEZ (10) años contados a partir del 1° de enero de 2016, siempre el que sea mayor para aquellos que tuvieren a ' +
+                'dicha fecha una licencia vigente.”\n' +
+                'ARTÍCULO 330.- Sustitúyese el artículo 34 de la Ley Nº 27.078, modificado por Decreto Nº 267 del 29 de ' +
+                'diciembre de 2015, por el siguiente:\n' +
+                '“ARTÍCULO 34.- Registro. La provisión de facilidades de los sistemas satelitales de comunicaciones será libre.\n' +
+                'Se requerirá a los titulares de tales sistemas el correspondiente registro para su operación, al solo efecto de ' +
+                'coordinar el uso de las frecuencias radioeléctricas y evitar interferencias sobre otros sistemas conforme a la ' +
+                'reglamentación que dicte la Autoridad de Aplicación. La prestación de cualquier Servicio de TIC por satélite ' +
+                'estará sometida al régimen general de prestación de Servicios de TIC establecido en la presente ley.”',
+                delta: {
+                    title: 'Ley N° 27.078 - Argentina Digital',
+                    added: require('./ley27078-new').default,
+                    removed: require('./ley27078').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Título XIII – LEY DE DEPORTES (Ley N° 20.655)',
+        articles: [
+            {
+                text: 'ARTÍCULO 331.- Sustitúyese el segundo párrafo del artículo 16 de la Ley N° 20.655, por el siguiente:\n' +
+                '“Los sujetos de tales recursos podrán ser las organizaciones deportivas previstas en el artículo 19 bis de la ' +
+                'presente ley, los clubes de barrio y de pueblo previstos en la Ley Nº 27.098, las Provincias, la Ciudad Autónoma ' +
+                'de Buenos Aires y los Municipios, los atletas, técnicos/as y entrenadores/as y demás profesionales previstos en la ' +
+                'presente ley, que en todos los casos reúnan los requisitos formales y sustanciales establecidos en las disposiciones ' +
+                'legales respectivas.”\n' +
+                'ARTÍCULO 332.- Sustitúyese el artículo 17 de la Ley N° 20.655, por el siguiente:\n' +
+                '“ARTÍCULO 17.- Las personas que desempeñen cargos directivos y de fiscalización en las organizaciones ' +
+                'deportivas contraerán responsabilidad personal y solidaria por las rendiciones de cuentas de los recursos previstos ' +
+                'en el artículo 15 de la presente ley, como también por el cumplimiento de los fines para los cuales fueron ' +
+                'concedidos los mismos.”\n' +
+                'ARTÍCULO 333.- Sustitúyese el artículo 19 de la Ley N° 20.655, por el siguiente:\n' +
+                '“ARTÍCULO 19.- A los fines de la presente ley, se entiende por Sistema Institucional del Deporte y la Actividad ' +
+                'Física al conjunto de organizaciones deportivas incluidas en la presente ley, estructuras asociativas intermedias y ' +
+                'superiores y normas y procesos organizativos que interactúan coordinadamente a fin de coadyuvar a la práctica, ' +
+                'desarrollo, sostenimiento, organización y representación del deporte y la actividad física, a las cuales se denomina ' +
+                'en la presente ley como organizaciones deportivas.\n' +
+                'Sólo podrán ser sujeto de las medidas de promoción, asistencia y ordenamiento de las actividades físicas y ' +
+                'deportivas y de los beneficios impositivos y previsionales previstos en la presente ley, en la Ley N° 26.573 y en ' +
+                'las normas de esa materia, las organizaciones que integran el Sistema Institucional del Deporte y la Actividad ' +
+                'Física.”\n' +
+                'ARTÍCULO 334.- Sustitúyese el artículo 19 bis de la Ley N° 20.655 por el siguiente:\n' +
+                '“ARTÍCULO 19 bis.- Se consideran asociaciones civiles deportivas integrantes del Sistema Institucional del ' +
+                'Deporte y la Actividad Física, a las:\n' +
+                'a) Personas jurídicas previstas en el artículo 168 del Código Civil y Comercial de la Nación, que tienen como ' +
+                'objeto la práctica, desarrollo, sostenimiento, organización o representación del deporte y la actividad física, de ' +
+                'acuerdo con los principios generales enunciados en el Capítulo I de la presente ley y reúnen las características que ' +
+                'se indican en los artículos 20 y 20 bis;\n' +
+                'b) Personas jurídicas constituidas como sociedades anónimas reguladas en la Sección V de la Ley N° 19.550 y ' +
+                'sus modificatorias, que tienen como objeto social la práctica, desarrollo, sostenimiento, organización o ' +
+                'representación del deporte y la actividad física, de acuerdo con los principios generales enunciados en el Capítulo ' +
+                'I de la presente ley.”\n' +
+                'ARTÍCULO 335.- Incorpórase como artículo 19 ter a la Ley N° 20.655, el siguiente:\n' +
+                '“ARTÍCULO 19 ter.- No podrá impedirse, dificultarse, privarse o menoscabarse cualquier derecho a una ' +
+                'organización deportiva, incluyendo su derecho de afiliación a una confederación, federación, asociación, liga o ' +
+                'unión, con fundamento en su forma jurídica, si la misma está reconocida en esta ley y normas complementarias.” ' +
+                'ARTÍCULO 336.- Sustitúyense los párrafos primero y segundo del artículo 20 de la Ley N° 20.655 por los ' +
+                'siguientes:\n' +
+                '“ARTÍCULO 20.- El Sistema Institucional del Deporte y la Actividad Física se estructura con las organizaciones ' +
+                'integrantes clasificadas como de primer grado, de segundo grado, de representación nacional y superiores. ' +
+                'Las organizaciones de primer grado son entidades que tienen como finalidad esencial o subsidiaria la práctica, ' +
+                'desarrollo, sostenimiento u organización del deporte y la actividad física y que se clasifican, según el objeto al ' +
+                'que se dirigen sus acciones, en deporte educativo, deporte social y comunitario, deporte para adultos mayores, ' +
+                'deporte de ámbito laboral, deporte universitario, deporte federado, deporte militar, deporte de alto rendimiento, o ' +
+                'deporte adaptado.”\n' +
+                'ARTÍCULO 337.- Sustitúyese el inciso a) del artículo 33 de la Ley N° 20.655 por el siguiente:\n' +
+                '“a) Un (1) subsistema de acreditación de los integrantes del Sistema Institucional del Deporte y la Actividad ' +
+                'Física;”\n' +
+                'ARTÍCULO 338.- Sustitúyese el artículo 34 de la Ley N° 20.655, por el siguiente:\n' +
+                '“ARTÍCULO 34.- El subsistema de acreditación de organizaciones deportivas es el proceso mediante el cual se ' +
+                'evalúa si una institución reúne las características estipuladas en la presente ley y se le otorga un reconocimiento ' +
+                'formal de su integración al Sistema Institucional del Deporte y la Actividad Física.\n' +
+                'Las instituciones acreditadas y los integrantes de sus comisiones directivas o directorios serán incorporados al ' +
+                'Registro permanente del Sistema Institucional del Deporte y la Actividad Física que prevé el inciso b) del artículo ' +
+                '33 de la presente ley.”\n' +
+                'ARTÍCULO 339.- Sustitúyese el artículo 35 de la Ley N° 20.655, por el siguiente:\n' +
+                '“ARTÍCULO 35.- El censo de atletas federados/as, árbitros/as, técnicos/as y entrenadores/as consiste en un ' +
+                'conjunto de actividades estadísticas, coordinadas entre los organismos competentes y los integrantes del Sistema ' +
+                'Institucional del Deporte y la Actividad Física, tendientes a asegurar un padrón permanente de las personas atletas ' +
+                'vinculadas a través de una ficha federativa con los árbitros/as, técnicos/as y entrenadores/as que se encuentren ' +
+                'relacionados con las organizaciones deportivas que integran el Sistema Institucional del Deporte y la Actividad ' +
+                'Física. Las fichas federativas serán incorporadas al Registro permanente que prevé el inciso d) del artículo 34 de ' +
+                'la presente ley, con excepción de los contratos deportivos profesionales, los que se regirán por las normas del ' +
+                'derecho común o las que regulen esa actividad deportiva.”\n' +
+                'ARTÍCULO 340.- Sustitúyese el artículo 39 de la Ley N° 20.655 por el siguiente:\n' +
+                '“ARTÍCULO 39.- Pueden ser sujetos beneficiarios del régimen promocional previsto en el presente capítulo, los ' +
+                'integrantes del Sistema Institucional del Deporte y la Actividad Física, establecidas en el Capítulo VII y los ' +
+                'agentes del deporte y la actividad física.”\n' +
+                'ARTÍCULO 341.- Sustitúyese el artículo 41 de la Ley N° 20.655 por el siguiente:\n' +
+                '“ARTÍCULO 41.- Los atletas que perciban las becas que prevé el Capítulo VI de la presente ley, revestirán, a los ' +
+                'efectos del Sistema Integrado Previsional Argentino la categoría de pequeño contribuyente adherido al Régimen ' +
+                'Simplificado para Pequeños Contribuyentes aprobado por el artículo 1° de la ley 24.977 y sus modificatorias, que ' +
+                'prevé el artículo 39 del citado régimen y cotizarán al Sistema Integrado Previsional Argentino (SIPA), mediante ' +
+                'el aporte contemplado en los incisos a) y b) del artículo 39 de la Ley N° 24.977 y sus modificatorias, cuyo pago ' +
+                'estará a cargo de los respectivos organismos subvencionantes, a excepción de aquellos atletas que perciban becas ' +
+                'otorgadas por el Ente Nacional de Alto Rendimiento Deportivo (ENARD), quienes deberán ingresarlo en forma ' +
+                'directa, conforme lo establecen los incisos a) y b) del artículo 39 de la Ley N° 24.977 y sus modificatorias, ' +
+                'eximiéndolos del ingreso del componente impositivo del régimen.\n' +
+                'Las personas atletas no becadas que se encuentren relacionadas con organizaciones integrantes del Sistema ' +
+                'Institucional del Deporte y la Actividad Física, a través de una ficha federativa, que no estén incluidos en una ' +
+                'convención colectiva de trabajo o un régimen especial de seguridad social o de salud y participen en campeonatos ' +
+                'argentinos, campeonatos clasificatorios para campeonatos argentinos, en las divisiones o categorías superiores de ' +
+                'los campeonatos anuales regulares de deportes por equipo o en las divisiones o categorías de ascensos de estos ' +
+                'campeonatos, revestirán por propia elección, a los efectos del Sistema Integrado Previsional Argentino, la ' +
+                'categoría prevista en el párrafo anterior y deberán ingresar el aporte allí contemplado, excepto que percibieran ' +
+                'retribuciones que excedan el Régimen Simplificado para Pequeños Contribuyentes, caso en el cual revestirán la ' +
+                'categoría de autónomos, con las obligaciones correspondientes a ese régimen. El pago de los aportes previstos en ' +
+                'los incisos a) y b) del artículo 39 de la Ley N° 24.977 y sus modificatorias, estará a cargo de los propios atletas ' +
+                'quedando exceptuados del componente impositivo. A los fines de la presente ley, se entiende por ficha federativa ' +
+                'al instrumento que acredita la titularidad registral que tiene una organización integrante del Sistema Institucional ' +
+                'del Deporte y la Actividad Física de primer grado frente a una asociación civil deportiva de segundo grado o una ' +
+                'asociación civil deportiva de representación nacional, respecto de un atleta, para que este participe en ' +
+                'determinada competencia oficial, en nombre y representación de aquella entidad.”\n' +
+                'ARTÍCULO 342.- Sustitúyese en el artículo 42 de la Ley N° 20.655 la frase “asociaciones civiles deportivas” por ' +
+                '“organizaciones integrantes”.\n' +
+                'ARTÍCULO 343.- Sustitúyese en el artículo 43 de la Ley N° 20.655 la frase “asociaciones civiles deportivas que ' +
+                'integran el Sistema Institucional del Deporte y la Actividad Física” por “organizaciones integrantes del Sistema ' +
+                'Institucional del Deporte y la Actividad Física”.\n' +
+                'ARTÍCULO 344.- Sustitúyese el artículo 44 de la Ley N° 20.655 por el siguiente:\n' +
+                '“ARTÍCULO 44.- Conforme los incisos b), c) y d) del artículo 40 de la presente ley, se fijará una escala de ' +
+                'reducción de VEINTICINCO POR CIENTO (25%) a CIEN POR CIENTO (100%) de las contribuciones ' +
+                'patronales del régimen general de las organizaciones integrantes del Sistema Institucional del Deporte y la ' +
+                'Actividad Física de acuerdo al coeficiente que establezca la reglamentación de la presente ley.”\n' +
+                'ARTÍCULO 345.- CLÁUSULA TRANSITORIA. Las asociaciones, federaciones y confederaciones deportivas ' +
+                'dispondrán de un año, contado a partir de la reglamentación del presente, para modificar sus estatutos a efectos de ' +
+                'adecuarse a los términos previstos por aquel, lo que deberá ser aplicado sin perjuicio del cumplimiento de los ' +
+                'mandatos preexistentes.',
+                delta: {
+                    title: 'Ley N° 20.655 - Ley del Deporte',
+                    added: require('./ley20655-new').default,
+                    removed: require('./ley20655').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Título XIV – LEY GENERAL DE SOCIEDADES N° 19.550, T.O. 1984 Y SUS MODIFICATORIAS',
+        articles: [
+            {
+                text: 'ARTÍCULO 346.- Sustitúyese el artículo 30 de la Ley General de Sociedades N° 19.550, T.O. 1984 y sus ' +
+                'modificatorias, por el siguiente:\n' +
+                '“ARTÍCULO 30.- Las sociedades anónimas y en comandita por acciones solo pueden formar parte de sociedades ' +
+                'por acciones y de responsabilidad limitada. Las asociaciones y entidades sin fines de lucro sólo pueden formar ' +
+                'parte de sociedades anónimas. Podrán ser parte de cualquier contrato asociativo.”\n' +
+                'ARTÍCULO 347.- Sustitúyese el inciso 1) del artículo 77 de la Ley General de Sociedades N° 19.550, T.O. 1984 ' +
+                'y sus modificatorias por el siguiente:\n' +
+                '“1) Cuando se tratare de sociedades comerciales, acuerdo unánime de los socios, salvo pacto en contrario a lo ' +
+                'dispuesto para algunos tipos societarios. Cuando se tratare de asociación civil que se transformare en sociedad ' +
+                'comercial o resolviera ser socia de sociedades anónimas, voto de los dos tercios de los asociados;”',
+                delta: {
+                    title: 'Ley N° 19.550 - Ley de Sociedades',
+                    added: require('./ley19550-new').default,
+                    removed: require('./ley19550').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Título XV – TURISMO',
+        articles: [
+            {
+                text: 'ARTÍCULO 348.- Derógase Ley N° 18.828.',
+                delta: {
+                    title: 'Ley N° 18.828 - Reglamentación hotelera',
+                    removed: require('./ley18828').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 349.- Derógase Ley N° 18.829.',
+                delta: {
+                    title: 'Ley N° 18.829 - Agencias de Viaje',
+                    removed: require('./ley18829').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 350.- Derógase Ley N° 26.356.',
+                delta: {
+                    title: 'Ley N° 26.356 - Sistemas Turísticos de Tiempo Compartido',
+                    removed: require('./ley26356').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Título XVI – REGISTRO AUTOMOTOR (Decreto - Ley N° 6582/58 ratificado por la Ley N° 14.467 (t.o. 1997) y sus modificatorias)',
+        articles: [
+            {
+                text: 'ARTÍCULO 351.- Deróganse los artículos 11, 12 y 21 del Decreto-Ley Nº 6582/58 ratificado por la Ley N° ' +
+                '14.467 (t.o. 1997) y sus modificatorias.\n' +
+                'ARTÍCULO 352.- Sustitúyese el tercer párrafo del artículo 6° del Decreto-Ley Nº 6582/58 ratificado por la Ley ' +
+                'N° 14.467 (t.o. 1997) y sus modificatorias por el siguiente:\n' +
+                '“A todo automotor se le asignará al inscribirse en el Registro por primera vez un documento individualizante en ' +
+                'formato físico o digital que será expedido por el Registro respectivo y se denominará "Título del Automotor".\n' +
+                'Este tendrá carácter de instrumento público respecto de la individualización del automotor y de la existencia en el ' +
+                'Registro de las inscripciones que en él se consignen, pero solo acreditará las condiciones del dominio y de los ' +
+                'gravámenes que afecten al automotor, hasta la fecha de anotación de dichas constancias en el mismo.”\n' +
+                'ARTÍCULO 353.- Sustitúyese el cuarto párrafo del artículo 7° del Decreto-Ley Nº 6582/58 ratificado por la Ley ' +
+                'N° 14.467 (t.o. 1997) y sus modificatorias por los siguientes:\n' +
+                '“Dichas inscripciones o anotaciones también podrán realizarse directamente ante la Dirección Nacional, que ' +
+                'deberá establecer a tal efecto un servicio de inscripción remoto, abierto, accesible y estandarizado, bajo ' +
+                'jurisdicción nacional, que permita las inscripciones o anotaciones ordenadas por los titulares o por intermediarios ' +
+                'autorizados de manera fehaciente por ellos. A tal efecto, el Poder Ejecutivo Nacional dictará la reglamentación ' +
+                'correspondiente.\n' +
+                'La Dirección Nacional recabará toda la información necesaria para poner en funcionamiento ese registro tanto a ' +
+                'automotores por registrarse como a los ya registrados.\n' +
+                'El Poder Ejecutivo Nacional podrá disponer que determinadas inscripciones y anotaciones se cumplan ' +
+                'únicamente ante la Dirección Nacional cuando fuere aconsejable para el mejor funcionamiento del sistema ' +
+                'registral.”\n' +
+                'ARTÍCULO 354.- Sustitúyese el artículo 8° del Decreto-Ley Nº 6582/58 ratificado por la Ley N° 14.467 (t.o. ' +
+                '1997) y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 8º.- La Dirección Nacional controlará el funcionamiento de los Registros Seccionales, realizará las ' +
+                'tareas registrales específicas que determine la reglamentación, y dispondrá el archivo ordenado de copias de los ' +
+                'instrumentos que se registren. Dicho registro será electrónico y de acceso público.”\n' +
+                'ARTÍCULO 355.- Sustitúyese el artículo 9° del Decreto-Ley Nº 6582/58 ratificado por la Ley N° 14.467 (t.o. ' +
+                '1997) y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 9º.- Los trámites que se realicen ante los Registros Seccionales de la Propiedad del Automotor ' +
+                'deberán abonar el arancel que fije el Poder Ejecutivo Nacional, salvo los casos expresamente exceptuados por ' +
+                'esta norma y la reglamentación.\n' +
+                'Los aranceles que establezca el Poder Ejecutivo Nacional para los trámites digitales ante la Dirección Nacional no ' +
+                'podrán superar el valor del arancel a que se refiere el párrafo anterior.\n' +
+                'No podrá restringirse o limitarse la inmediata inscripción del dominio de los automotores o de sus transmisiones ' +
+                'por normas de carácter administrativo ajenas a los aranceles del Registro. La existencia de deudas en situación ' +
+                'regular por multas o patentes tampoco podrá impedir la inscripción o transmisión de automotores en el Registro.\n' +
+                'Las personas humanas o jurídicas registradas en el Organismo de Aplicación como comerciantes habituales en la ' +
+                'compraventa de automotores deberán inscribir a su nombre los automotores usados que adquieran para la reventa ' +
+                'posterior.\n' +
+                'El Organismo de Aplicación establecerá los requisitos que deberán cumplir los interesados para inscribirse como ' +
+                'comerciantes habituales en la compraventa de automotores y las causas por las cuales se suspenderá o cancelará ' +
+                'esa inscripción.”\n' +
+                'ARTÍCULO 356.- Sustitúyese el artículo 10 del Decreto-Ley Nº 6582/58 ratificado por la Ley N° 14.467 (t.o. ' +
+                '1997) y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 10.- En las inscripciones de dominio de automotores armados fuera de fábrica, o de sus plantas de ' +
+                'montaje, deberá justificarse fehacientemente el origen de los elementos utilizados, los que podrán ser de ' +
+                'fabricación artesanal, en la forma en que lo determine el organismo de aplicación, quien resolverá en definitiva ' +
+                'acerca de la procedencia o no de las inscripciones de estos tipos de automotores.\n' +
+                'El titular que transfiera un automotor podrá asimismo dejar sentado en el Registro el cumplimiento de las ' +
+                'condiciones de seguridad activa y pasiva para circular en la forma que determine la normativa específica en la ' +
+                'materia. La ausencia de esta anotación en ningún caso podrá impedir la inscripción o transferencia del ' +
+                'automotor.”\n' +
+                'ARTÍCULO 357.- Sustitúyese el párrafo primero del artículo 13 del Decreto-Ley Nº 6582/58 ratificado por la ' +
+                'Ley N° 14.467 (t.o. 1997) y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 13.- Los pedidos de inscripción o anotación en el Registro, y en general los trámites que se realicen ' +
+                'ante él, solo podrán efectuarse mediante la utilización de las solicitudes tipo que determine el Organismo de ' +
+                'Aplicación, el que fijará su contenido y demás requisitos de validez. Estos documentos podrán ser de carácter ' +
+                'electrónico.”\n' +
+                'ARTÍCULO 358.- Sustitúyese el artículo 14 del Decreto-Ley Nº 6582/58 ratificado por la Ley N° 14.467 (t.o. ' +
+                '1997) y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 14.- Los contratos de transferencia de automotores que se formalicen por instrumento privado se ' +
+                'inscribirán en el Registro mediante la utilización de las solicitudes tipo mencionadas en el artículo anterior, ' +
+                'suscriptos por las partes.\n' +
+                'Cuando la transferencia se formalice por instrumento público o haya sido dispuesta por orden judicial o ' +
+                'administrativa, se presentará para su inscripción junto con el testimonio u oficio correspondiente, la solicitud tipo ' +
+                'de inscripción suscripta por el autorizante o por la autoridad judicial o administrativa.\n' +
+                'En todos los casos se presentará el título de propiedad del automotor, en forma física o digital.\n' +
+                'En las transferencias dispuestas por autoridad judicial, se transcribirá textualmente la parte pertinente del auto que ' +
+                'la ordena.\n' +
+                'La Municipalidad en donde se domicilie la persona humana o jurídica titular del automotor inscripto será ' +
+                'notificada del contrato de transferencia.”\n' +
+                'ARTÍCULO 359.- Sustitúyese el artículo 16 del Decreto-Ley Nº 6582/58 ratificado por la Ley N° 14.467 (t.o. ' +
+                '1997) y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 16.- A los efectos de la buena fe previstos en los artículos 2º, 3º y 4º del presente, se presume que ' +
+                'los que adquieren derechos sobre un automotor, conocen las constancias de su inscripción y de las demás ' +
+                'anotaciones que respecto de aquel obran en el Registro de la Propiedad del Automotor, aun cuando no hayan ' +
+                'exigido del titular o del disponente del bien, la exhibición del certificado de dominio que se establece en este ' +
+                'artículo.\n' +
+                'Durante un período de QUINCE (15) días los embargos y demás anotaciones que se soliciten con respecto al ' +
+                'automotor tendrán carácter condicional y solo quedarán firmes y producirán sus efectos legales una vez vencido ' +
+                'dicho plazo, siempre que no hayan modificado el dominio o la situación jurídica del automotor.”\n' +
+                'ARTÍCULO 360.- Sustitúyense los incisos d) y e) del artículo 19 del Decreto-Ley Nº 6582/58 ratificado por la ' +
+                'Ley N° 14.467 (t.o. 1997) y sus modificatorias por los siguientes:\n' +
+                '“d) La anotación de los endosos de contratos de prenda podrá hacerse en cualquier Registro Seccional o ' +
+                'directamente en el servicio de inscripción remoto de la Dirección Nacional;\n' +
+                'e) Los trámites ulteriores correspondientes a contratos de prenda inscriptos hasta el día anterior al cambio de ' +
+                'régimen que disponga el Poder Ejecutivo Nacional seguirán a cargo del Registro Nacional de Créditos ' +
+                'Prendarios.”\n' +
+                'ARTÍCULO 361.- Sustitúyese el artículo 22 del Decreto-Ley Nº 6582/58 ratificado por la Ley N° 14.467 (t.o. ' +
+                '1997) y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 22.- Sin perjuicio de la expedición del título a que se refiere el artículo 20, juntamente con la ' +
+                'inscripción originaria, o con cada una de las correspondientes a las sucesivas transferencias de dominio, el ' +
+                'Registro entregará al titular del automotor una o más cédulas de identificación de este, en las que se consignarán ' +
+                'los datos que, con respecto al automotor y a su propietario, establezca la autoridad de aplicación.\n' +
+                'Las cédulas se entregarán digitalmente, las que tendrán la misma validez que las físicas. El adquirente podrá pedir ' +
+                'una o varias cédulas físicas las que podrán tener un costo. Dichas cédulas deberán ser devueltas por el enajenante ' +
+                'del automotor, expidiéndose nuevas para el adquirente.\n' +
+                'Su tenencia acreditará derecho o autorización para usar el automotor, pero no eximirá de la obligación de ' +
+                'justificar la habilitación personal para conducir. La cédula, la licencia para conducir y el comprobante de pago de ' +
+                'patente son los únicos documentos exigibles para circular con el automotor, y las autoridades provinciales o ' +
+                'municipales no podrán establecer otros requisitos para su uso legítimo.\n' +
+                'Será obligatorio exhibir esos documentos a la autoridad competente, pero no podrán ser retenidos si no mediare ' +
+                'denuncia de hurto o robo del automotor u orden de autoridad judicial.”\n' +
+                'ARTÍCULO 362.- Sustitúyese el párrafo primero del artículo 23 del Decreto-Ley Nº 6582/58 ratificado por la ' +
+                'Ley N° 14.467 (t.o. 1997) y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 23.- El Organismo de Aplicación determinará los distintos tipos de cédulas que se expedirán, las ' +
+                'cuales no caducarán mientras no haya cambios en la titularidad del vehículo. También podrá requerir la ' +
+                'colaboración de las autoridades que determine el Poder Ejecutivo Nacional para controlar que los automotores ' +
+                'circulen con la documentación correspondiente, para verificar cambios o adulteraciones en las partes que lo ' +
+                'conforman como tal, y para fiscalizar que las transferencias se inscriban en el Registro dentro del término fijado ' +
+                'por esta ley. Asimismo, podrá disponer la exhibición de los automotores y su documentación y la presentación de ' +
+                'declaraciones juradas al respecto.”\n' +
+                'ARTÍCULO 363.- Sustitúyese el párrafo quinto del artículo 27 del Decreto-Ley Nº 6582/58 ratificado por la Ley ' +
+                'N° 14.467 (t.o. 1997) y sus modificatorias por el siguiente:\n' +
+                '“Efectuada la denuncia de la tradición del automotor, se procederá a la sustitución del sujeto obligado al tributo ' +
+                '(patente, impuestos, multas, etcétera) desde la fecha de la denuncia, desligando a partir de la misma al titular ' +
+                'transmitente de todo tipo de responsabilidad legal sobre el mismo.”\n' +
+                'ARTÍCULO 364.- Incorpórase la siguiente Cláusula Transitoria al Decreto-Ley Nº 6582/58 ratificado por la Ley ' +
+                'N° 14.467 (t.o. 1997) y sus modificatorias:\n' +
+                '“Cláusula transitoria. La Dirección Nacional deberá hacer efectiva la puesta en marcha de su registro remoto, ' +
+                'abierto, estandarizado y accesible a más tardar el 2 de mayo de 2024.”',
+                delta: {
+                    title: 'Decreto - Ley N° 6582/58',
+                    added: require('./decreto-6582-58-new').default,
+                    removed: require('./decreto-6582-58').default,
+                },
+            },
+        ],
+    },
+    {
+        type: "text",
+        title: 'Píe',
+        blocks: [
+            'ARTÍCULO 365.- Dese cuenta a la COMISIÓN BICAMERAL PERMANENTE del HONORABLE',
+            'CONGRESO DE LA NACIÓN.',
+            'ARTÍCULO 366.- Comuníquese, publíquese, dese a la DIRECCIÓN NACIONAL DEL REGISTRO OFICIAL y',
+            'archívese.',
+        ]
+    },
 ]
-/*
-Capítulo II – Rescate de Aerolíneas Argentinas y Austral Líneas Aéreas por el Estado Nacional (Ley N°
-26.412)
-ARTÍCULO 246.- Sustitúyese el artículo 4° de la Ley N° 26.412 y sus normas modificatorias y complementarias.
-“ARTICULO 4º.- Autorízase la cesión, parcial o total, del paquete accionario de Aerolíneas Argentinas S.A. y
-Austral Líneas Aéreas - Cielos del Sur S.A. y de sus empresas controladas, a los empleados de las respectivas
-empresas de conformidad con el Programa de Propiedad Participada.”
-ARTÍCULO 247.- Derógase el artículo 9° de la Ley N° 26.412.
-
-Capítulo III – Utilidad Pública de Aerolíneas Argentinas (Ley N° 26.466)
-ARTÍCULO 248.- Sustitúyese el artículo 5° de la Ley N° 26.466, por el siguiente:
-“ARTÍCULO 5º.- Autorízase la cesión total o parcial de las acciones representativas del capital social a los
-trabajadores de las empresas Aerolíneas Argentinas Sociedad Anónima y Austral Líneas Aéreas - Cielos del Sur
-Sociedad Anónima y de sus empresas controladas (Optar S.A., Jet Paq S.A., Aerohandling S.A.) de conformidad
-con el Programa de Propiedad Participada. La cesión de los nuevos derechos se prorrateará entre los empleados
-que decidan participar en dicho programa de ampliación. Los empleados que participen de más de una de estas
-empresas deberán optar por su participación en una de ellas.”
-
-TÍTULO X- JUSTICIA
-ARTÍCULO 249.- Derógase la Ley N° 27.551.
-
-Capítulo I - Código Civil y Comercial de la Nación (Ley N° 26.994)
-ARTÍCULO 250.- Sustitúyese el artículo 765 del Código Civil y Comercial de la Nación aprobado por la Ley N°
-26.994 y sus modificatorias por el siguiente:
-“ARTÍCULO 765.- Concepto. La obligación es de dar dinero si el deudor debe cierta cantidad de moneda,
-determinada o determinable, al momento de constitución de la obligación, sea o no de curso legal en el país. El
-deudor solo se libera si entrega las cantidades comprometidas en la moneda pactada. Los jueces no pueden
-modificar la forma de pago o la moneda pactada por las partes.”
-ARTÍCULO 251.- Sustitúyese el artículo 766 del Código Civil y Comercial de la Nación aprobado por la Ley N°
-26.994 y sus modificatorias por el siguiente:
-“ARTÍCULO 766.- Obligación del deudor. El deudor debe entregar la cantidad correspondiente de la especie
-designada, tanto si la moneda tiene curso legal en la República como si no lo tiene.”
-ARTÍCULO 252.- Sustitúyese el artículo 958 del Código Civil y Comercial de la Nación aprobado por la Ley N°
-26.994 y sus modificatorias por el siguiente:
-“ARTÍCULO 958.- Libertad de contratación. Las partes son libres para celebrar un contrato y determinar su
-contenido, dentro de los límites impuestos por la ley o el orden público. Las normas legales siempre son de
-
-aplicación supletoria a la voluntad de las partes expresada en el contrato, aunque la ley no lo determine en forma
-expresa para un tipo contractual determinado, salvo que la norma sea expresamente imperativa, y siempre con
-interpretación restrictiva.”
-ARTÍCULO 253.- Sustitúyese el artículo 960 del Código Civil y Comercial de la Nación aprobado por la Ley N°
-26.994 y sus modificatorias por el siguiente:
-“ARTÍCULO 960.- Facultades de los jueces. Los jueces no tienen facultades para modificar las estipulaciones de
-los contratos, excepto que sea a pedido de una de las partes cuando lo autoriza la ley.”
-ARTÍCULO 254.- Sustitúyese el artículo 989 del Código Civil y Comercial de la Nación aprobado por la Ley N°
-26.994 y sus modificatorias por el siguiente:
-“ARTÍCULO 989.- Control judicial de las cláusulas abusivas. La aprobación administrativa de las cláusulas
-generales no obsta a su control judicial.”
-ARTÍCULO 255.- Sustitúyese el artículo 1196 del Código Civil y Comercial de la Nación aprobado por la Ley
-N° 26.994 y sus modificatorias por el siguiente:
-“ARTÍCULO 1196.- Fianza, garantía y periodicidad del pago. Las partes pueden determinar libremente las
-cantidades y moneda entregadas en concepto de fianza o depósito en garantía, y la forma en que serán devueltas
-al finalizar la locación.
-Las partes pactaran libremente la periodicidad del pago, que no podrá ser inferior a mensual.”
-ARTÍCULO 256.- Sustitúyese el artículo 1198 del Código Civil y Comercial de la Nación aprobado por la Ley
-N° 26.994 y sus modificatorias por el siguiente:
-“ARTÍCULO 1198. Plazo de la locación de inmueble. El plazo de las locaciones con cualquier destino será el que
-las partes hayan establecido.
-En caso que no se haya establecido plazo, (i) en los casos de locación temporal, se estará al que establezcan los
-usos y costumbres del lugar donde se asiente el inmueble locado, (ii) en los contratos de locación con destino a
-vivienda permanente, con o sin muebles, será de dos (2) años y (iii) para los restantes destinos será de tres (3)
-años.”
-ARTÍCULO 257.- Sustitúyese el artículo 1199 del Código Civil y Comercial de la Nación aprobado por la Ley
-N° 26.994 y sus modificatorias por el siguiente:
-“ARTÍCULO 1199. Moneda de pago y actualización. Los alquileres podrán establecerse en moneda de curso
-legal o en moneda extranjera, al libre arbitrio de las partes. El locatario no podrá exigir que se le acepte el pago en
-una moneda diferente a la establecida en el contrato.
-Las partes podrán pactar el ajuste del valor de los alquileres. Será válido el uso de cualquier índice pactado por las
-partes, público o privado, expresado en la misma moneda en la que se pactaron los alquileres. Si el índice elegido
-dejara de publicarse durante la vigencia del contrato, se utilizará un índice oficial de características similares que
-publique el Instituto Nacional de Estadística y Censos si el precio estuviera fijado en moneda nacional, o el que
-cumpla las mismas funciones en el país que emita la moneda de pago pactada.
-
-No será de aplicación a los contratos incluidos en este Capítulo el artículo 10 de la Ley N° 23.928.”
-ARTÍCULO 258.- Derógase el artículo 1202 del Código Civil y Comercial de la Nación aprobado por la Ley N°
-26.994 y sus modificatorias.
-ARTÍCULO 259.- Deróganse los artículos 1204 y 1204 bis del Código Civil y Comercial de la Nación aprobado
-por la Ley N° 26.994 y sus modificatorias.
-ARTÍCULO 260.- Incorpórase como inciso d) del artículo 1219 al Código Civil y Comercial de la Nación
-aprobado por la Ley N° 26.994 y sus modificatorias, el siguiente:
-“d) por cualquier causa fijada en el contrato.”
-ARTÍCULO 261.- Sustitúyese el artículo 1220 del Código Civil y Comercial de la Nación aprobado por la Ley
-N° 26.994 y sus modificatorias por el siguiente:
-“ARTÍCULO 1220.- Resolución imputable al locador. El locatario puede resolver el contrato si el locador
-incumple:
-a) la obligación de conservar la cosa con aptitud para el uso y goce convenido, salvo cuando el daño haya sido
-ocasionado directa o indirectamente por el locatario;
-b) la garantía de evicción o la de vicios redhibitorios.”
-ARTÍCULO 262.- Sustitúyese el artículo 1221 del Código Civil y Comercial de la Nación aprobado por la Ley
-N° 26.994 y sus modificatorias por el siguiente:
-“ARTÍCULO 1221. Resolución anticipada. El locatario podrá, en cualquier momento, resolver la contratación
-abonando el equivalente al diez por ciento (10%) del saldo del canon locativo futuro, calculado desde la fecha de
-la notificación de la rescisión hasta la fecha de finalización pactada en el contrato.”
-ARTÍCULO 263.- Derógase el artículo 1221 bis del Código Civil y Comercial de la Nación aprobado por la Ley
-N° 26.994 y sus modificatorias.
-
-Título XI – SALUD
-ARTÍCULO 264.- Derógase la Ley N° 27.113.
-ARTÍCULO 265.- Derógase el Decreto N° 743/22.
-
-Capítulo I – Utilización de medicamentos por su nombre genérico (Ley N° 25.649)
-ARTÍCULO 266.- Sustitúyese el artículo 2° de la Ley N° 25.649 por el siguiente:
-“ARTÍCULO 2°.- Toda receta o prescripción médica deberá efectuarse en forma obligatoria expresando
-exclusivamente el nombre genérico del medicamento o denominación común internacional que se indique,
-
-seguida de forma farmacéutica y dosis/unidad, con detalle del grado de concentración.
-El farmacéutico, debidamente autorizado por la autoridad competente, es el único responsable y capacitado para
-la debida dispensa de especialidades farmacéuticas que requieran recetas en cualquiera de sus modalidades.”
-
-Capítulo II – Marco regulatorio de la Medicina Prepaga (Ley N° 26.682)
-ARTÍCULO 267.- Deróganse los artículos 5°, incisos g) y m), 6°, 18, 19, 25 inciso a) y 27 de la Ley N° 26.682.
-ARTÍCULO 268.- Incorpórase a la Ley N° 26.682 como artículo 30 bis, el siguiente:
-“ARTÍCULO 30 bis.- Las disposiciones de esta ley son aplicables únicamente a los asociados voluntarios cuyo
-vínculo con el asegurador esté fuera del marco de la Ley N° 23.660.”
-ARTÍCULO 269.- Sustitúyese el artículo 17 de la Ley N° 26.682, por el siguiente:
-“ARTÍCULO 17.- Cuotas de Planes. Los sujetos comprendidos en el artículo 1º de la presente ley pueden
-establecer precios diferenciales para los planes prestacionales, al momento de su contratación, según franjas
-etarias con una variación máxima de TRES (3) veces entre el precio de la primera y la última franja etaria.”
-
-Capítulo III – Obras sociales (Ley N° 23.660)
-ARTÍCULO 270.- Incorpórase como inciso i) del artículo 1° a la Ley N° 23.660, el siguiente:
-“i) Todas las entidades comprendidas en el artículo 1° de la Ley N° 26.682.”
-ARTÍCULO 271.- Sustitúyese el artículo 2° de la Ley N° 23.660 por el siguiente:
-“ARTÍCULO 2°.- Las entidades comprendidas en los incisos c), d) y h) del artículo 1° funcionarán como
-entidades de derecho público no estatal, con individualidad jurídica, financiera y administrativa y tendrán el
-carácter de sujeto de derecho, con el alcance que el Código Civil y Comercial de la Nación establece para las
-personas jurídicas; las entidades señaladas en los incisos a), e) y f) de dicho artículo funcionarán con
-individualidad administrativa, contable y financiera y tendrán el carácter de sujeto de derecho con el alcance que
-el Código Civil y Comercial de la Nación establece en el artículo 148.
-Las entidades señaladas en el inciso b) del artículo 1°, creadas por leyes especiales al efecto, vigentes a la sanción
-de la presente ley, mantendrán sus modalidades administrativas, contables y financieras conforme a las leyes que
-le dieron origen, con las salvedades especificadas en los artículos 37, 38, 39 y 40 de la presente ley.”
-ARTÍCULO 272.- Sustitúyese el artículo 3° de la Ley N° 23.660 por el siguiente:
-“ARTÍCULO 3°.- Las entidades del artículo 1° destinarán sus recursos en forma prioritaria a prestaciones de
-salud. Deberán, asimismo, brindar otras prestaciones sociales.
-En lo referente a las prestaciones de salud formarán parte del Sistema Nacional del Seguro de Salud -en calidad
-de agentes naturales del mismo- sujetos a las disposiciones y normativas que lo regulan.”
-
-ARTÍCULO 273.- Sustitúyese el artículo 4° de la Ley N° 23.660 por el siguiente:
-“ARTÍCULO 4°.- Las entidades, cualquiera sea su naturaleza y forma de administración, presentarán anualmente,
-en lo referente a su responsabilidad como agentes del seguro, la siguiente documentación ante la
-Superintendencia de Servicios de Salud (SSS):
-a) Programa de prestaciones médico-asistenciales para sus beneficiarios;
-b) Presupuesto de gastos y recursos para su funcionamiento y la ejecución del programa;
-c) Memoria general y balance de ingresos y egresos financieros del período anterior;
-d) Registro electrónico de todos los contratos de prestaciones de salud que celebre durante el mismo período, a
-efectos de confeccionar un registro de los mismos.”
-ARTÍCULO 274.- Derógase el artículo 5° de la Ley N° 23.660.
-ARTÍCULO 275.- Sustitúyese el artículo 6° de la Ley N° 23.660 por el siguiente:
-“ARTÍCULO 6°.- Las entidades comprendidas en el régimen de la presente ley, como agentes del Seguro de
-Salud, deberán inscribirse en el registro que funcionará en el ámbito de la SSS y en las condiciones que establezca
-la ley del Sistema Nacional del Seguro de Salud y su decreto reglamentario.
-El cumplimiento de este requisito será condición necesaria para aplicar los fondos percibidos con destino a las
-prestaciones de salud.”
-ARTÍCULO 276.- Sustitúyese el artículo 7° de la Ley N° 23.660 por el siguiente:
-“ARTÍCULO 7°.- Las resoluciones que adopten el MINISTERIO DE SALUD y la Superintendencia de Servicios
-de Salud (SSS), en ejercicio de las funciones, atribuciones y facultades otorgadas por la legislación, serán de
-cumplimiento obligatorio para las entidades, exclusivamente en lo que atañe a su condición de agentes del Seguro
-de Salud.”
-ARTÍCULO 277.- Sustitúyese el artículo 8° de la Ley N° 23.660 por el siguiente:
-“ARTÍCULO 8°.- Quedan obligatoriamente incluidos en calidad de beneficiarios de las entidades:
-a) Los trabajadores que presten servicios en relación de dependencia, sea en el ámbito privado o en el sector
-público.
-b) Los jubilados y pensionados nacionales;
-c) Los beneficiarios de prestaciones no contributivas nacionales.”
-ARTÍCULO 278.- Sustitúyese el último párrafo del artículo 9° de la Ley N° 23.660 por el siguiente:
-“La Superintendencia de Servicios de Salud (SSS) podrá autorizar, con los requisitos que ella establezca, la
-inclusión como beneficiarios, de otros ascendientes o descendientes por consanguinidad del beneficiario titular y
-que se encuentren a su cargo, en cuyo caso se fija un aporte adicional del uno y medio por ciento (1,5%) por cada
-una de las personas que se incluyan.”
-
-ARTÍCULO 279.- Sustitúyese el inciso e) del artículo 10 de la Ley N° 23.660 por el siguiente:
-“e) Los trabajadores de temporada podrán optar por mantener el carácter de beneficiarios durante el período de
-inactividad y mientras subsista el contrato de trabajo cumpliendo durante ese período con las obligaciones del
-aporte a su cargo y de la contribución a cargo del empleador que establece la presente ley. Este derecho cesará a
-partir del momento en que, en razón de otro contrato de trabajo, pasen a ser beneficiarios titulares en los términos
-previstos en el artículo 8 de la presente ley.”
-ARTÍCULO 280.- Derógase el inciso f) del artículo 10 de la Ley N° 23.660.
-ARTÍCULO 281.- Sustitúyese el artículo 11 de la Ley N° 23.660 por el siguiente:
-“ARTÍCULO 11.- Cada entidad elaborará su propio estatuto conforme con la presente ley y las normas que se
-dicten en consecuencia, el que presentará ante la Superintendencia de Servicios de Salud (SSS).”
-ARTÍCULO 282.- Sustitúyese el inciso h) del artículo 12 de la Ley N° 23.660 por el siguiente:
-“h) Las obras sociales y otras entidades que adhieran a la presente ley mantendrán su propio régimen de
-administración y gobierno.”
-ARTÍCULO 283.- Sustitúyese el artículo 15 de la Ley N° 23.660 por el siguiente:
-“ARTÍCULO 15.- Cuando la Superintendencia de Servicios de Salud (SSS) realice tareas de control y
-fiscalización en las obras sociales, en ejercicio y dentro de las facultades comprendidas por los artículos 7°, 8°,
-9°, 21 y concordantes de la Ley del Sistema Nacional del Seguro Salud, aquéllas facilitarán el personal y
-elementos necesarios para el cumplimiento de la aludida misión.”
-ARTÍCULO 284.- Sustitúyese el artículo 19 de la Ley N° 23.660 por el siguiente:
-“ARTÍCULO 19.- Los empleadores, dadores de trabajo o equivalentes en su carácter de agentes de retención
-deberán depositar la contribución a su cargo junto con los aportes que hubieran debido retener -al personal a su
-cargo-, dentro de los QUINCE (15) días corridos contados a partir de la fecha en que se deba abonar la
-remuneración a la entidad seleccionada por el beneficiario y a través del mecanismo correspondiente del
-organismo responsable de recaudación de fondos.
-a) Para el caso de las Obras Sociales, el NOVENTA POR CIENTO (90%) de la suma de la contribución y los
-aportes que prevén los incisos a) y b) del artículo 16 de esta Ley, cuando las remuneraciones brutas mensuales
-sean de hasta PESOS UN MIL ($ 1.000.-) inclusive, y del OCHENTA Y CINCO POR CIENTO (85%) cuando
-dichas remuneraciones superen los PESOS UN MIL ($ 1.000.-). Para el caso de las Obras Sociales del Personal
-de Dirección y de las Asociaciones Profesionales de Empresarios o de otras entidades mencionadas en el inciso i
-del artículo 1°, dicho porcentaje será del OCHENTA Y CINCO POR CIENTO (85 %) cuando las remuneraciones
-brutas mensuales sean de hasta PESOS UN MIL ($ 1.000.-) inclusive, y del OCHENTA POR CIENTO (80 %)
-cuando superen ese tope;
-b) Conforme los niveles remunerativos mencionados, el DIEZ POR CIENTO (10 %) o el QUINCE POR
-CIENTO (15 %), respectivamente, de la suma de la contribución y los aportes que prevén los incisos a) y b) del
-artículo 16 de esta Ley, y cuando se trate de las Obras Sociales del Personal de Dirección y de las Asociaciones
-Profesionales de Empresarios o de otras entidades mencionadas en el inciso i del artículo 1°, el QUINCE POR
-
-CIENTO (15 %) o el VEINTE POR CIENTO (20 %), respectivamente, de la suma a depositarse se destinarán al
-Fondo Solidario de Redistribución, a la orden de las cuentas recaudadoras que determine la reglamentación.
-c) El cincuenta por ciento (50 %) de los recursos de distinta naturaleza que prevé la presente ley en su artículo 16,
-a la orden de la obra social correspondiente;
-d) El cincuenta por ciento (50 %) de los recursos de distinta naturaleza que prevé la presente ley en su artículo 16
-a la orden de la SUPERINTENDENCIA DE SERVICIOS DE SALUD (SSS), en los mismos términos que los
-indicados en el inciso b) precedente;
-e) Cuando las modalidades de la actividad laboral lo hagan conveniente, la autoridad de aplicación podrá
-constituir a entidades en agentes de retención de contribuciones y aportes calculados sobre la producción, que
-equivalgan y reemplacen a los calculados sobre el salario, a cuyo efecto aprobará los convenios de
-corresponsabilidad suscriptos entre dichas entidades y las respectivas obras sociales.”
-ARTÍCULO 285.- Incorpórase como artículo 19 bis a la Ley N° 23.660, el siguiente:
-“ARTÍCULO 19 bis.- Cuando las entidades reciban aportes adicionales a los de la suma de la contribución y los
-aportes que prevén los incisos a) y b) del artículo 16 de esta Ley, deberán depositar el VEINTE (20 %) al Fondo
-Solidario de Redistribución.”
-ARTÍCULO 286.- Sustitúyese el artículo 21 de la Ley N° 23.660 por el siguiente:
-“ARTÍCULO 21.- Para la fiscalización y verificación de las obligaciones emergentes de la presente ley por parte
-de los responsables y obligados, los funcionarios e inspectores de la SUPERINTENDENCIA DE SERVICIOS
-DE SALUD (SSS) y de las entidades tendrán, en lo pertinente, las facultades y atribuciones que la ley asigna a los
-de la Dirección Nacional de Recaudación Previsional.
-Las actas de inspección labradas por los funcionarios e inspectores mencionados en el párrafo anterior hacen
-presumir, a todos los efectos legales, la veracidad de su contenido.”
-ARTÍCULO 287.- Sustitúyese el primer párrafo del artículo 23 de la Ley N° 23.660 por el siguiente:
-“Los fondos previstos por la presente ley como también los que por cualquier motivo correspondan a las
-entidades deberán depositarse en instituciones bancarias y serán destinados exclusivamente a la atención de las
-prestaciones y demás obligaciones de las mismas y de los gastos administrativos que demande su
-funcionamiento.”
-ARTÍCULO 288.- Sustitúyese el primer párrafo del artículo 24 de la Ley N° 23.660 por el siguiente:
-“El cobro judicial de los aportes, contribuciones, recargos, intereses y actualizaciones adeudados a las entidades,
-y de las multas establecidas en la presente ley se hará por la vía de apremio prevista en el Código Procesal Civil y
-Comercial de la Nación, sirviendo de suficiente título ejecutivo el certificado de deuda expedido por las entidades
-o los funcionarios en que aquéllas hubieran delegado esa facultad.”
-ARTÍCULO 289.- Sustitúyese el artículo 25 de la Ley N° 23.660 por el siguiente:
-“ARTÍCULO 25.- La SUPERINTENDENCIA DE SERVICIOS DE SALUD (SSS) actuará como Autoridad de
-Aplicación de la presente ley, con jurisdicción sobre las entidades del artículo 1°.”
-
-ARTÍCULO 290.- Sustitúyese el artículo 26 de la Ley N° 23.660 por el siguiente:
-“ARTÍCULO 26.- La SUPERINTENDENCIA DE SERVICIOS DE SALUD (SSS) tendrá como fin promover,
-coordinar e integrar las actividades de las entidades en todo aquello que no se encuentren obligadas por la Ley del
-Sistema Nacional del Seguro de Salud. Actuará también como organismo de control para los aspectos
-administrativos y contables de las obras sociales.”
-ARTÍCULO 291.- Sustitúyese el artículo 27 de la Ley N° 23.660 por el siguiente:
-“ARTÍCULO 27.- Para el cumplimiento de estos fines tendrá las siguientes atribuciones:
-1° Requerirá y aprobará la memoria anual y balances de las obras sociales.
-2° Requerirá y suministrará información adecuada para el mejor contralor de las obras sociales y otras entidades a
-la Dirección Nacional de Recaudación Previsional.
-3° Propondrá al Poder Ejecutivo Nacional la intervención de las obras sociales cuando se acrediten
-irregularidades o graves deficiencias en su funcionamiento.
-En este caso, cuando la denuncia provenga de la SUPERINTENDENCIA DE SERVICIOS DE SALUD (SSS),
-por incumplimiento de sus obligaciones como agentes del seguro, se instrumentarán mecanismos sumarios para
-asegurar las prestaciones de salud garantizadas por la ley del Sistema Nacional del Seguro de Salud.
-4° Llevará un Registro de las entidades en el que deberán inscribirse todas las entidades comprendidas en la
-presente ley, con los recaudos que establezca la autoridad de aplicación.
-5° A los efectos de la verificación del cumplimiento de las disposiciones establecidas en la presente ley y demás
-normas complementarias, la SUPERINTENDENCIA DE SERVICIOS DE SALUD (SSS) podrá solicitar de las
-entidades la información necesaria, su ampliación y/o aclaraciones. Sin perjuicio de ello podrá requerir la
-colaboración de su sindicatura para que, constituida en la entidad, constate y/u obtenga la información.
-6° Resolver los conflictos sobre encuadramiento de los beneficiarios de las entidades, determinando el destino de
-los aportes y contribuciones.”
-ARTÍCULO 292.- Incorpórase como artículo 28 bis a la Ley N° 23.660, el siguiente:
-“ARTÍCULO 28 bis.- Para las entidades comprendidas en el inciso i) del artículo 1° de esta Ley regirá el régimen
-sancionatorio de la Ley N° 26.682.”
-ARTÍCULO 293.- Sustitúyese el último párrafo del artículo 40 de la Ley N° 23.660 por el siguiente:
-“El síndico será designado por el MINISTERIO DE SALUD a propuesta de la SUPERINTENDENCIA DE
-SERVICIOS DE SALUD (SSS).”
-ARTÍCULO 294.- Derógase el artículo 42 de la Ley N° 23.660.
-
-Capítulo IV – Sistema Nacional del Seguro de Salud (Ley N° 23.661)
-
-ARTÍCULO 295.- Sustitúyese el último párrafo del artículo 2° de la Ley N° 23.661 por el siguiente:
-“Se consideran agentes del seguro a las obras sociales nacionales, cualquiera sea su naturaleza o denominación,
-las obras sociales de otras jurisdicciones, las entidades incorporadas al inciso i) del artículo 1° de la Ley N°
-23.660 y demás entidades que adhieran al sistema que se constituye, las que deberán adecuar sus prestaciones de
-salud a las normas que se dicten y se regirán por lo establecido en la presente ley, su reglamentación y la ley de
-Obras Sociales, en lo pertinente”.
-ARTÍCULO 296.- Sustitúyese el inciso a) del artículo 5° de la Ley N° 23.661 por el siguiente:
-“a) Todos los beneficiarios comprendidos en la Ley 23.660.”
-ARTÍCULO 297.- Sustitúyese el artículo 15 de la Ley N° 23.661 por el siguiente:
-“ARTÍCULO 15.- Las entidades comprendidas en la Ley N° 23.660 serán agentes naturales del seguro, así como
-aquellas otras obras sociales que adhieran al régimen de la presente ley.”
-ARTÍCULO 298.- Sustitúyese el inciso a) del artículo 17 de la Ley N° 23.661 por el siguiente:
-“a) A las entidades comprendidas en la Ley N° 23.660.”
-ARTÍCULO 299.- Sustitúyese el último párrafo del artículo 17 de la Ley N° 23.661 por el siguiente:
-“La inscripción, habilitará el agente para aplicar los recursos destinados a las prestaciones de salud, previstos en
-la Ley N° 23.660.”
-ARTÍCULO 300.- Sustitúyese el inciso a) del artículo 21 de la Ley N° 23.661 por el siguiente:
-“a) La cobertura de prestaciones que tienen que dar a sus beneficiarios las entidades comprendidas en la Ley N°
-23.660.”
-ARTÍCULO 301.- Sustitúyase el inciso a) del artículo 22 de la Ley N° 23.661 por el siguiente:
-“a) los previstos en la Ley N° 23.660 y sus modificaciones.”
-
-Capítulo V – Régimen de Trazabilidad y Verificación de Aptitud Técnica de los Productos Médicos Activos
-de Salud en Uso. (Ley N° 26.906)
-ARTÍCULO 302.- Deróganse los artículos 6°, 7°, 8° y 11 de la Ley N° 26.906.
-ARTÍCULO 303.- Incorpóranse como artículo 5° bis y artículo 5° ter a la Ley N° 26.906, los siguientes:
-“ARTÍCULO 5° bis.- La Autoridad de Aplicación determinará los productos médicos activos autorizados para su
-uso en el territorio nacional. No podrán ser utilizados los productos activos que no hayan sido autorizados por la
-Autoridad de Aplicación.
-ARTÍCULO 5° ter.- Los usuarios de productos médicos activos deberán informar la instalación y uso de los
-mismos a la autoridad de aplicación. La Autoridad de Aplicación determinará los requisitos y procedimientos
-
-para el uso de productos médicos activos. Y se reserva el derecho de auditar su cumplimiento.”
-ARTÍCULO 304.- Sustitúyese el artículo 9° de la Ley N° 26.906, por el siguiente:
-“ARTÍCULO 9º.- Requisitos. La autorización de uso se debe otorgar en forma individual a cada producto médico
-activo, cuando sea ensayado según las normas técnicas aplicables.
-Los ensayos de verificación técnica deben ser realizados in situ por el Servicio de Tecnología Biomédica del
-establecimiento de salud, región sanitaria o jurisdicción. En el caso exclusivo de no contar con los recursos
-necesarios, la autoridad jurisdiccional debe designar la forma y medios para realizarla. A tal efecto podrá contar
-con los laboratorios acreditados por el Organismo Argentino de Acreditación (O.A.A), el Instituto Nacional de
-Tecnología Industrial (I.N.T.I.) o laboratorios asociados al I.N.T.I., o laboratorios de universidades públicas.”
-ARTÍCULO 305.- Sustitúyase el inciso f) del artículo 15 de la Ley N° 26.906, por el siguiente:
-“f) Brindar asesoramiento en lo que respecta a la instalación, puesta en marcha y mantenimiento de los servicios
-asociados al equipamiento médico y el óptimo funcionamiento de los mismos a los fines de cumplir las
-especificaciones técnicas establecidas por la autoridad de aplicación.”
-ARTÍCULO 306.- Sustitúyese el artículo 16 de la Ley N° 26.906, por el siguiente:
-“ARTÍCULO 16.- Funciones. Son funciones de la autoridad de aplicación:
-a) Establecer el mecanismo identificatorio para la trazabilidad de los productos médicos activos y de sus
-mediciones así como autorizarlos para su uso en todo el territorio nacional;
-b) Definir las condiciones de uso de cada producto medico activo autorizado.
-c) Promover la creación o fortalecimiento de los Servicios de Tecnología Biomédica, en todo el territorio de la
-Nación;
-d) Establecer las Buenas Prácticas de Funcionamiento de los Prestadores de Servicios de Reparaciones y
-Mantenimiento de Productos Médicos Activos;
-e) Coordinar con las autoridades sanitarias jurisdiccionales, las verificaciones técnicas de los productos médicos
-activos en uso, que considere necesarias;
-f) Promover la creación de un Registro Nacional de Productos Médicos Activos, en coordinación con las
-autoridades jurisdiccionales y según los criterios establecidos por la Disposición N° 2318/02, texto ordenado
-según Disposición N° 1285/04, de la Administración Nacional de Medicamentos, Alimentos y Tecnología
-Médica, ANMAT, o la que en el futuro se dicte.”
-
-Capítulo VI – Recetas electrónicas o digitales (Ley N° 27.553)
-ARTÍCULO 307.- Sustitúyese el artículo 1° de la Ley N° 27.553 por el siguiente:
-“ARTÍCULO 1°.- La presente ley tiene por objeto:
-
-Establecer que la prescripción y dispensación de medicamentos, y toda otra prescripción, solo puedan ser
-redactadas y firmadas a través de plataformas electrónicas habilitadas a tal fin.
-Establecer que puedan utilizarse plataformas de teleasistencia en salud, en todo el territorio nacional, de
-conformidad con la Ley N° 25.326 de Protección de los Datos Personales y la Ley N° 26.529 de Derechos del
-Paciente.”
-ARTÍCULO 308.- Sustitúyese el artículo 3° de la Ley N° 27.553 por el siguiente:
-“ARTÍCULO 3°.- La Autoridad de Aplicación de la presente ley será establecida por el Poder Ejecutivo nacional,
-coordinando su accionar con las autoridades jurisdiccionales competentes y los organismos con incumbencia en la
-materia que dichas autoridades determinen.
-El Poder Ejecutivo Nacional establece los plazos necesarios para alcanzar la digitalización total en prescripción y
-dispensación de medicamentos y toda otra prescripción, el cual no podrá superar el 1° de julio de 2024, y regular
-el uso de plataformas de teleasistencia en salud.
-El INSTITUTO NACIONAL DE SERVICIOS SOCIALES PARA JUBILADOS Y PENSIONADOS deberá ser
-convocado por la autoridad de aplicación a los fines de colaborar en la reglamentación que se dicte a tal efecto.”
-ARTÍCULO 309.- Sustitúyese el artículo 13 de la Ley N° 27.553 por el siguiente:
-“ARTÍCULO 13.- Los sistemas aludidos en la presente ley deben contemplar el cumplimiento de todas las
-normativas vigentes que regulan toda la cadena de comercialización de medicamentos incluyendo los requisitos
-de trazabilidad de éstos y de la firma electrónica o digital. También debe contemplarse la emisión de constancia
-de teleasistencia, prescripción y dispensación para los pacientes, por vía informatizada o impresión de dicha
-constancia y la posibilidad de bloqueo por el farmacéutico cuando exista error manifiesto en la prescripción, para
-que el prescriptor pueda revisar, anular o reactivar según el caso.”
-
-Capítulo VII – Ejercicio de la medicina, odontología y actividades de colaboración (Ley N° 17.132)
-ARTÍCULO 310.- Sustitúyese el inciso 7°) del artículo 19 de la Ley N° 17.132 por el siguiente:
-“7°) Prescribir o certificar en recetas cargadas en formularios electrónicos o digitales, en las que debe constar la
-siguiente información en idioma nacional: nombre, apellido, profesión, número de matrícula, domicilio, número
-telefónico y correo electrónico cuando corresponda. Solo podrán anunciarse cargos técnicos o títulos que consten
-registrados en la autoridad competente y en las condiciones que se reglamenten. Las prescripciones y/o recetas
-deberán ser formuladas en idioma nacional, fechadas y firmadas.
-La prescripción podrá consignar únicamente con el nombre genérico del medicamento o denominación común
-internacional.”
-
-Capítulo VIII – Reglamentación del derecho de opción de cambio (Decreto N° 504/98)
-ARTÍCULO 311.- Sustitúyese el artículo 13 del Decreto Nº 504 del 12 de mayo de 1998 y sus modificatorios, por
-
-el siguiente:
-“ARTÍCULO 13.- Los trabajadores que inicien una relación laboral podrán ejercer el derecho de elección de
-agente del seguro de la Ley N° 23.661”.
-ARTÍCULO 312.- Sustitúyese el artículo 14 del Decreto Nº 504 del 12 de mayo de 1998 y sus modificatorios, por
-el siguiente:
-“ARTÍCULO 14.- Los afiliados que hubieren cambiado de agente de seguro deberán permanecer en ella el
-tiempo mínimo que determine la Autoridad de Aplicación, el que nunca podrá ser superior a UN (1) año, y
-vencido ese plazo, podrán volver a ejercer esa opción.”
-
-Capítulo IX – Régimen legal del ejercicio de la actividad farmacéutica y de la habilitación de las farmacias,
-droguerías y herboristerías (Ley N° 17.565)
-ARTÍCULO 313.- Sustitúyense el primer y el segundo párrafo del artículo 1° de la Ley N° 17.565 por el siguiente
-texto:
-“ARTÍCULO 1°.- La preparación de recetas, la dispensa de drogas, medicamentos, y de especialidades
-farmacéuticas que requieren recetas, solo podrán ser efectuadas en todo el territorio de la Nación en farmacias
-habilitadas.
-La autoridad sanitaria competente podrá disponer la incorporación de otro tipo de productos al presente régimen.”
-ARTÍCULO 314.- Incorpórase como último párrafo al artículo 2° de la Ley N° 17.565, el siguiente:
-“Las farmacias podrán constituirse mediante cualquier figura jurídica permitida por la legislación vigente.”
-ARTÍCULO 315.- Sustitúyese el artículo 4° de la Ley N° 17.565 por el siguiente:
-“ARTÍCULO 4°.- Una vez acordada la habilitación a que se refieren los artículos precedentes, en las farmacias no
-se podrá introducir modificación en las modalidades de sus prestaciones, sin autorización previa de la autoridad
-sanitaria. Los cambios en denominación o razón social deberán ser notificados a la autoridad sanitaria.”
-ARTÍCULO 316.- Sustitúyese el artículo 6° de la Ley N° 17.565, por el siguiente:
-“ARTÍCULO 6°.- Las farmacias podrán operar en los horarios que decidan sin restricción alguna, sin más
-obligación que la de comunicarlos a la autoridad sanitaria y respetar los horarios comunicados.
-Deberá efectuarse despacho nocturno al público, cuando les sea requerido por casos de urgencia. La autoridad
-sanitaria podrá establecer turnos de cumplimiento obligatorio, nocturnos o para días feriados, cuando lo estime
-conveniente.
-Cuando por razones de turno, esté cerrada la farmacia, deberá colocarse en lugar visible un cartel en el que
-consten las más próximas que se encuentren de guardia.”
-ARTÍCULO 317.- Sustitúyese el artículo 9° de la Ley N° 17.565 por el siguiente:
-
-“ARTÍCULO 9°.- En las farmacias el expendio de drogas, medicamentos o especialidades medicinales se ajusta a
-las siguientes formas de acuerdo a lo que establezca la legislación vigente o determine la autoridad sanitaria:
-1. Expendio legalmente restringido;
-2. Expendio bajo receta archivada;
-3. Expendio bajo receta;
-Deben conservarse las recetas correspondientes a los puntos 1 y 2, en formato digital, durante un plazo no menor
-de tres (3) años, después de dicho plazo pueden ser borradas, previa comunicación a la autoridad sanitaria.”
-ARTÍCULO 318.- Sustitúyese el artículo 10 de la Ley N° 17.565 por el siguiente:
-ARTÍCULO 10.- En las farmacias deben llevarse los siguientes archivos digitales habilitados por la autoridad
-sanitaria:
-a) Recetario;
-b) Contralor de estupefacientes;
-c) Contralor de psicotrópicos;
-d) Inspecciones;
-e) Otros archivos digitales que la autoridad competente estime pertinentes. Éstos deben ser aprobados por la
-autoridad sanitaria.
-Los libros electrónicos, la firma electrónica o digital y los demás requisitos técnicos y legales deben adecuarse a
-lo que establezca la autoridad de aplicación, asegurando la inalterabilidad de los registros.”
-ARTÍCULO 319.- Deróganse los artículos 13, 20, 27, 40, 41, 42, 43 y 44 de la Ley N° 17.565.
-ARTÍCULO 320.- Sustitúyese el artículo 25 de la Ley N° 17.565 por el siguiente:
-“ARTÍCULO 25.- Cuando un profesional farmacéutico sea director técnico de más de una farmacia, estará
-obligado a vigilar la preparación y expendio de los medicamentos en todos los locales a su cargo, debiendo firmar
-diariamente el libro recetario al final de la última receta despachada.”
-ARTÍCULO 321.- Sustitúyese el artículo 26 de la Ley N° 17.565 por el siguiente:
-“ARTÍCULO 26.- Toda vez que el director técnico no esté presente en la farmacia, la atención de las farmacias
-podrá quedar a cargo de:
-a) farmacéuticos auxiliares, pudiéndose en estos casos despachar recetas médicas:
-b) auxiliares de despacho, en estos solo podrán despachar recetas médicas con la autorización del director técnico,
-conforme lo establezca la reglamentación.”
-ARTÍCULO 322.- Sustitúyese el inciso d) del artículo 28 de la Ley N° 17.565 por el siguiente:
-
-“d) tener las constancias de la habilitación del establecimiento.”
-ARTÍCULO 323.- Sustitúyese el artículo 36 de la Ley N° 17.565 por el siguiente:
-“ARTÍCULO 36. Las droguerías podrán despachar recetas. En caso de hacerlo quedarán sujetas en un todo a lo
-estipulado por los títulos I, II y III de esta norma. La venta de especialidades, drogas y medicamentos a farmacias
-y laboratorios será efectuada dentro de las condiciones que establezca la autoridad sanitaria.”
-ARTÍCULO 324.- Sustitúyese el inciso a) del artículo 38 de la Ley N° 17.565 por el siguiente:
-“a) que las drogas y productos que sean objeto de las actividades del establecimiento, sean adquiridos
-exclusivamente a personas autorizadas para su expendio y a su vez expendidos únicamente a farmacias y
-laboratorios o directamente al público si deciden también constituirse como farmacias de venta al público.”
-ARTÍCULO 325.- Sustitúyese el último párrafo del artículo 40 de la Ley N° 17.565 por el siguiente:
-“Estos libros deberán ser electrónicos, sin alterar el orden de los asientos de las ventas efectuadas.”
-
-Título XII – COMUNICACIÓN
-Capítulo I - Ley de Servicios de Comunicación Audiovisual (Ley N° 26.522)
-ARTÍCULO 326.- Sustitúyese el artículo 45 de la Ley Nº 26.522, modificado por el Decreto 267 del 29 de
-diciembre de 2015, por el siguiente:
-“ARTICULO 45.- Multiplicidad de Licencias. A fin de garantizar los principios de diversidad, pluralidad y
-respeto por lo local las personas humanas o jurídicas podrán ser titulares o tener participación en sociedades
-titulares de licencias de servicios de comunicación audiovisual, con sujeción a los siguientes límites, en el orden
-local:
-a)
-
-UNA (1) licencia de radiodifusión sonora por modulación de amplitud (AM);
-
-b)
-UNA (1) licencia de radiodifusión sonora por modulación de frecuencia (FM) o hasta DOS (2) licencias
-cuando existan más de OCHO (8) licencias en el área primaria de servicio;
-c)
-
-UNA (1) licencia de radiodifusión televisiva abierta.
-
-En ningún caso la suma total de licencias otorgadas en la misma área primaria de servicio o conjunto de ellas que
-se superpongan de modo mayoritario podrá exceder la cantidad de CUATRO (4) licencias.”
-ARTÍCULO 327.- Derógase el artículo 46 de la Ley Nº 26.522.
-
-Capítulo II – Argentina Digital (Ley N° 27.078)
-ARTÍCULO 328.- Sustitúyese el inciso a) del artículo 6º de la Ley Nº 27.078, modificado por el Decreto Nº 267
-del 29 de diciembre de 2015, por el siguiente:
-
-“a) Radiodifusión por suscripción: Toda forma de comunicación primordialmente unidireccional destinada a la
-transmisión de señales para ser recibidas por público determinable, mediante la utilización del espectro
-radioeléctrico o mediante vinculo físico o satelital, indistintamente. Incluye el servicio de radiodifusión ofrecido
-por un prestador de servicios TIC que utilice la tecnología de transmisión de contenidos audiovisuales basados en
-el protocolo IP (IPTV), para el acceso de los programas en vivo y/o televisión lineal.”
-ARTÍCULO 329.- Sustituyese el artículo 10 de la Ley Nº 27.078, modificado por el Decreto Nº 267 del 29 de
-diciembre de 2015, por el siguiente:
-“ARTÍCULO 10. - Incorpórase como servicio que podrán registrar los prestadores de TIC, al servicio de
-Radiodifusión por suscripción mediante cualquier vínculo. El servicio de Radiodifusión por suscripción se regirá
-por los requisitos que establecen los artículos siguientes de la presente ley y los demás que establezca la
-reglamentación, no resultándole aplicables las disposiciones de la Ley N° 26.522.
-El plazo de otorgamiento del uso de las frecuencias del espectro radioeléctrico de los titulares de licencias de
-Radiodifusión por Suscripción conferidas bajo las Leyes Nros. 22.285 y 26.522 será el de su título original, o de
-DIEZ (10) años contados a partir del 1° de enero de 2016, siempre el que sea mayor para aquellos que tuvieren a
-dicha fecha una licencia vigente.”
-ARTÍCULO 330.- Sustitúyese el artículo 34 de la Ley Nº 27.078, modificado por Decreto Nº 267 del 29 de
-diciembre de 2015, por el siguiente:
-“ARTÍCULO 34.- Registro. La provisión de facilidades de los sistemas satelitales de comunicaciones será libre.
-Se requerirá a los titulares de tales sistemas el correspondiente registro para su operación, al solo efecto de
-coordinar el uso de las frecuencias radioeléctricas y evitar interferencias sobre otros sistemas conforme a la
-reglamentación que dicte la Autoridad de Aplicación. La prestación de cualquier Servicio de TIC por satélite
-estará sometida al régimen general de prestación de Servicios de TIC establecido en la presente ley.”
-
-Título XIII – LEY DE DEPORTES (Ley N° 20.655)
-ARTÍCULO 331.- Sustitúyese el segundo párrafo del artículo 16 de la Ley N° 20.655, por el siguiente:
-“Los sujetos de tales recursos podrán ser las organizaciones deportivas previstas en el artículo 19 bis de la
-presente ley, los clubes de barrio y de pueblo previstos en la Ley Nº 27.098, las Provincias, la Ciudad Autónoma
-de Buenos Aires y los Municipios, los atletas, técnicos/as y entrenadores/as y demás profesionales previstos en la
-presente ley, que en todos los casos reúnan los requisitos formales y sustanciales establecidos en las disposiciones
-legales respectivas.”
-ARTÍCULO 332.- Sustitúyese el artículo 17 de la Ley N° 20.655, por el siguiente:
-“ARTÍCULO 17.- Las personas que desempeñen cargos directivos y de fiscalización en las organizaciones
-deportivas contraerán responsabilidad personal y solidaria por las rendiciones de cuentas de los recursos previstos
-en el artículo 15 de la presente ley, como también por el cumplimiento de los fines para los cuales fueron
-concedidos los mismos.”
-ARTÍCULO 333.- Sustitúyese el artículo 19 de la Ley N° 20.655, por el siguiente:
-
-“ARTÍCULO 19.- A los fines de la presente ley, se entiende por Sistema Institucional del Deporte y la Actividad
-Física al conjunto de organizaciones deportivas incluidas en la presente ley, estructuras asociativas intermedias y
-superiores y normas y procesos organizativos que interactúan coordinadamente a fin de coadyuvar a la práctica,
-desarrollo, sostenimiento, organización y representación del deporte y la actividad física, a las cuales se denomina
-en la presente ley como organizaciones deportivas.
-Sólo podrán ser sujeto de las medidas de promoción, asistencia y ordenamiento de las actividades físicas y
-deportivas y de los beneficios impositivos y previsionales previstos en la presente ley, en la Ley N° 26.573 y en
-las normas de esa materia, las organizaciones que integran el Sistema Institucional del Deporte y la Actividad
-Física.”
-ARTÍCULO 334.- Sustitúyese el artículo 19 bis de la Ley N° 20.655 por el siguiente:
-“ARTÍCULO 19 bis.- Se consideran asociaciones civiles deportivas integrantes del Sistema Institucional del
-Deporte y la Actividad Física, a las:
-a) Personas jurídicas previstas en el artículo 168 del Código Civil y Comercial de la Nación, que tienen como
-objeto la práctica, desarrollo, sostenimiento, organización o representación del deporte y la actividad física, de
-acuerdo con los principios generales enunciados en el Capítulo I de la presente ley y reúnen las características que
-se indican en los artículos 20 y 20 bis;
-b) Personas jurídicas constituidas como sociedades anónimas reguladas en la Sección V de la Ley N° 19.550 y
-sus modificatorias, que tienen como objeto social la práctica, desarrollo, sostenimiento, organización o
-representación del deporte y la actividad física, de acuerdo con los principios generales enunciados en el Capítulo
-I de la presente ley.”
-ARTÍCULO 335.- Incorpórase como artículo 19 ter a la Ley N° 20.655, el siguiente:
-“ARTÍCULO 19 ter.- No podrá impedirse, dificultarse, privarse o menoscabarse cualquier derecho a una
-organización deportiva, incluyendo su derecho de afiliación a una confederación, federación, asociación, liga o
-unión, con fundamento en su forma jurídica, si la misma está reconocida en esta ley y normas complementarias.”
-ARTÍCULO 336.- Sustitúyense los párrafos primero y segundo del artículo 20 de la Ley N° 20.655 por los
-siguientes:
-“ARTÍCULO 20.- El Sistema Institucional del Deporte y la Actividad Física se estructura con las organizaciones
-integrantes clasificadas como de primer grado, de segundo grado, de representación nacional y superiores.
-Las organizaciones de primer grado son entidades que tienen como finalidad esencial o subsidiaria la práctica,
-desarrollo, sostenimiento u organización del deporte y la actividad física y que se clasifican, según el objeto al
-que se dirigen sus acciones, en deporte educativo, deporte social y comunitario, deporte para adultos mayores,
-deporte de ámbito laboral, deporte universitario, deporte federado, deporte militar, deporte de alto rendimiento, o
-deporte adaptado.”
-ARTÍCULO 337.- Sustitúyese el inciso a) del artículo 33 de la Ley N° 20.655 por el siguiente:
-“a) Un (1) subsistema de acreditación de los integrantes del Sistema Institucional del Deporte y la Actividad
-Física;”
-
-ARTÍCULO 338.- Sustitúyese el artículo 34 de la Ley N° 20.655, por el siguiente:
-“ARTÍCULO 34.- El subsistema de acreditación de organizaciones deportivas es el proceso mediante el cual se
-evalúa si una institución reúne las características estipuladas en la presente ley y se le otorga un reconocimiento
-formal de su integración al Sistema Institucional del Deporte y la Actividad Física.
-Las instituciones acreditadas y los integrantes de sus comisiones directivas o directorios serán incorporados al
-Registro permanente del Sistema Institucional del Deporte y la Actividad Física que prevé el inciso b) del artículo
-33 de la presente ley.”
-ARTÍCULO 339.- Sustitúyese el artículo 35 de la Ley N° 20.655, por el siguiente:
-“ARTÍCULO 35.- El censo de atletas federados/as, árbitros/as, técnicos/as y entrenadores/as consiste en un
-conjunto de actividades estadísticas, coordinadas entre los organismos competentes y los integrantes del Sistema
-Institucional del Deporte y la Actividad Física, tendientes a asegurar un padrón permanente de las personas atletas
-vinculadas a través de una ficha federativa con los árbitros/as, técnicos/as y entrenadores/as que se encuentren
-relacionados con las organizaciones deportivas que integran el Sistema Institucional del Deporte y la Actividad
-Física. Las fichas federativas serán incorporadas al Registro permanente que prevé el inciso d) del artículo 34 de
-la presente ley, con excepción de los contratos deportivos profesionales, los que se regirán por las normas del
-derecho común o las que regulen esa actividad deportiva.”
-ARTÍCULO 340.- Sustitúyese el artículo 39 de la Ley N° 20.655 por el siguiente:
-“ARTÍCULO 39.- Pueden ser sujetos beneficiarios del régimen promocional previsto en el presente capítulo, los
-integrantes del Sistema Institucional del Deporte y la Actividad Física, establecidas en el Capítulo VII y los
-agentes del deporte y la actividad física.”
-ARTÍCULO 341.- Sustitúyese el artículo 41 de la Ley N° 20.655 por el siguiente:
-“ARTÍCULO 41.- Los atletas que perciban las becas que prevé el Capítulo VI de la presente ley, revestirán, a los
-efectos del Sistema Integrado Previsional Argentino la categoría de pequeño contribuyente adherido al Régimen
-Simplificado para Pequeños Contribuyentes aprobado por el artículo 1° de la ley 24.977 y sus modificatorias, que
-prevé el artículo 39 del citado régimen y cotizarán al Sistema Integrado Previsional Argentino (SIPA), mediante
-el aporte contemplado en los incisos a) y b) del artículo 39 de la Ley N° 24.977 y sus modificatorias, cuyo pago
-estará a cargo de los respectivos organismos subvencionantes, a excepción de aquellos atletas que perciban becas
-otorgadas por el Ente Nacional de Alto Rendimiento Deportivo (ENARD), quienes deberán ingresarlo en forma
-directa, conforme lo establecen los incisos a) y b) del artículo 39 de la Ley N° 24.977 y sus modificatorias,
-eximiéndolos del ingreso del componente impositivo del régimen.
-Las personas atletas no becadas que se encuentren relacionadas con organizaciones integrantes del Sistema
-Institucional del Deporte y la Actividad Física, a través de una ficha federativa, que no estén incluidos en una
-convención colectiva de trabajo o un régimen especial de seguridad social o de salud y participen en campeonatos
-argentinos, campeonatos clasificatorios para campeonatos argentinos, en las divisiones o categorías superiores de
-los campeonatos anuales regulares de deportes por equipo o en las divisiones o categorías de ascensos de estos
-campeonatos, revestirán por propia elección, a los efectos del Sistema Integrado Previsional Argentino, la
-categoría prevista en el párrafo anterior y deberán ingresar el aporte allí contemplado, excepto que percibieran
-retribuciones que excedan el Régimen Simplificado para Pequeños Contribuyentes, caso en el cual revestirán la
-categoría de autónomos, con las obligaciones correspondientes a ese régimen. El pago de los aportes previstos en
-
-los incisos a) y b) del artículo 39 de la Ley N° 24.977 y sus modificatorias, estará a cargo de los propios atletas
-quedando exceptuados del componente impositivo. A los fines de la presente ley, se entiende por ficha federativa
-al instrumento que acredita la titularidad registral que tiene una organización integrante del Sistema Institucional
-del Deporte y la Actividad Física de primer grado frente a una asociación civil deportiva de segundo grado o una
-asociación civil deportiva de representación nacional, respecto de un atleta, para que este participe en
-determinada competencia oficial, en nombre y representación de aquella entidad.”
-ARTÍCULO 342.- Sustitúyese en el artículo 42 de la Ley N° 20.655 la frase “asociaciones civiles deportivas” por
-“organizaciones integrantes”.
-ARTÍCULO 343.- Sustitúyese en el artículo 43 de la Ley N° 20.655 la frase “asociaciones civiles deportivas que
-integran el Sistema Institucional del Deporte y la Actividad Física” por “organizaciones integrantes del Sistema
-Institucional del Deporte y la Actividad Física”.
-ARTÍCULO 344.- Sustitúyese el artículo 44 de la Ley N° 20.655 por el siguiente:
-“ARTÍCULO 44.- Conforme los incisos b), c) y d) del artículo 40 de la presente ley, se fijará una escala de
-reducción de VEINTICINCO POR CIENTO (25%) a CIEN POR CIENTO (100%) de las contribuciones
-patronales del régimen general de las organizaciones integrantes del Sistema Institucional del Deporte y la
-Actividad Física de acuerdo al coeficiente que establezca la reglamentación de la presente ley.”
-ARTÍCULO 345.- CLÁUSULA TRANSITORIA. Las asociaciones, federaciones y confederaciones deportivas
-dispondrán de un año, contado a partir de la reglamentación del presente, para modificar sus estatutos a efectos de
-adecuarse a los términos previstos por aquel, lo que deberá ser aplicado sin perjuicio del cumplimiento de los
-mandatos preexistentes.
-
-Título XIV – LEY GENERAL DE SOCIEDADES N° 19.550, T.O. 1984 Y SUS MODIFICATORIAS
-ARTÍCULO 346.- Sustitúyese el artículo 30 de la Ley General de Sociedades N° 19.550, T.O. 1984 y sus
-modificatorias, por el siguiente:
-“ARTÍCULO 30.- Las sociedades anónimas y en comandita por acciones solo pueden formar parte de sociedades
-por acciones y de responsabilidad limitada. Las asociaciones y entidades sin fines de lucro sólo pueden formar
-parte de sociedades anónimas. Podrán ser parte de cualquier contrato asociativo.”
-ARTÍCULO 347.- Sustitúyese el inciso 1) del artículo 77 de la Ley General de Sociedades N° 19.550, T.O. 1984
-y sus modificatorias por el siguiente:
-“1) Cuando se tratare de sociedades comerciales, acuerdo unánime de los socios, salvo pacto en contrario a lo
-dispuesto para algunos tipos societarios. Cuando se tratare de asociación civil que se transformare en sociedad
-comercial o resolviera ser socia de sociedades anónimas, voto de los dos tercios de los asociados;”
-
-Título XV – TURISMO
-ARTÍCULO 348.- Derógase Ley N° 18.828.
-
-ARTÍCULO 349.- Derógase Ley N° 18.829.
-ARTÍCULO 350.- Derógase Ley N° 26.356.
-
-Título XVI – REGISTRO AUTOMOTOR (Decreto - Ley N° 6582/58 ratificado por la Ley N° 14.467 (t.o.
-1997) y sus modificatorias)
-ARTÍCULO 351.- Deróganse los artículos 11, 12 y 21 del Decreto-Ley Nº 6582/58 ratificado por la Ley N°
-14.467 (t.o. 1997) y sus modificatorias.
-ARTÍCULO 352.- Sustitúyese el tercer párrafo del artículo 6° del Decreto-Ley Nº 6582/58 ratificado por la Ley
-N° 14.467 (t.o. 1997) y sus modificatorias por el siguiente:
-“A todo automotor se le asignará al inscribirse en el Registro por primera vez un documento individualizante en
-formato físico o digital que será expedido por el Registro respectivo y se denominará "Título del Automotor".
-Este tendrá carácter de instrumento público respecto de la individualización del automotor y de la existencia en el
-Registro de las inscripciones que en él se consignen, pero solo acreditará las condiciones del dominio y de los
-gravámenes que afecten al automotor, hasta la fecha de anotación de dichas constancias en el mismo.”
-ARTÍCULO 353.- Sustitúyese el cuarto párrafo del artículo 7° del Decreto-Ley Nº 6582/58 ratificado por la Ley
-N° 14.467 (t.o. 1997) y sus modificatorias por los siguientes:
-“Dichas inscripciones o anotaciones también podrán realizarse directamente ante la Dirección Nacional, que
-deberá establecer a tal efecto un servicio de inscripción remoto, abierto, accesible y estandarizado, bajo
-jurisdicción nacional, que permita las inscripciones o anotaciones ordenadas por los titulares o por intermediarios
-autorizados de manera fehaciente por ellos. A tal efecto, el Poder Ejecutivo Nacional dictará la reglamentación
-correspondiente.
-La Dirección Nacional recabará toda la información necesaria para poner en funcionamiento ese registro tanto a
-automotores por registrarse como a los ya registrados.
-El Poder Ejecutivo Nacional podrá disponer que determinadas inscripciones y anotaciones se cumplan
-únicamente ante la Dirección Nacional cuando fuere aconsejable para el mejor funcionamiento del sistema
-registral.”
-ARTÍCULO 354.- Sustitúyese el artículo 8° del Decreto-Ley Nº 6582/58 ratificado por la Ley N° 14.467 (t.o.
-1997) y sus modificatorias por el siguiente:
-“ARTÍCULO 8º.- La Dirección Nacional controlará el funcionamiento de los Registros Seccionales, realizará las
-tareas registrales específicas que determine la reglamentación, y dispondrá el archivo ordenado de copias de los
-instrumentos que se registren. Dicho registro será electrónico y de acceso público.”
-ARTÍCULO 355.- Sustitúyese el artículo 9° del Decreto-Ley Nº 6582/58 ratificado por la Ley N° 14.467 (t.o.
-1997) y sus modificatorias por el siguiente:
-“ARTÍCULO 9º.- Los trámites que se realicen ante los Registros Seccionales de la Propiedad del Automotor
-deberán abonar el arancel que fije el Poder Ejecutivo Nacional, salvo los casos expresamente exceptuados por
-
-esta norma y la reglamentación.
-Los aranceles que establezca el Poder Ejecutivo Nacional para los trámites digitales ante la Dirección Nacional no
-podrán superar el valor del arancel a que se refiere el párrafo anterior.
-No podrá restringirse o limitarse la inmediata inscripción del dominio de los automotores o de sus transmisiones
-por normas de carácter administrativo ajenas a los aranceles del Registro. La existencia de deudas en situación
-regular por multas o patentes tampoco podrá impedir la inscripción o transmisión de automotores en el Registro.
-Las personas humanas o jurídicas registradas en el Organismo de Aplicación como comerciantes habituales en la
-compraventa de automotores deberán inscribir a su nombre los automotores usados que adquieran para la reventa
-posterior.
-El Organismo de Aplicación establecerá los requisitos que deberán cumplir los interesados para inscribirse como
-comerciantes habituales en la compraventa de automotores y las causas por las cuales se suspenderá o cancelará
-esa inscripción.”
-ARTÍCULO 356.- Sustitúyese el artículo 10 del Decreto-Ley Nº 6582/58 ratificado por la Ley N° 14.467 (t.o.
-1997) y sus modificatorias por el siguiente:
-“ARTÍCULO 10.- En las inscripciones de dominio de automotores armados fuera de fábrica, o de sus plantas de
-montaje, deberá justificarse fehacientemente el origen de los elementos utilizados, los que podrán ser de
-fabricación artesanal, en la forma en que lo determine el organismo de aplicación, quien resolverá en definitiva
-acerca de la procedencia o no de las inscripciones de estos tipos de automotores.
-El titular que transfiera un automotor podrá asimismo dejar sentado en el Registro el cumplimiento de las
-condiciones de seguridad activa y pasiva para circular en la forma que determine la normativa específica en la
-materia. La ausencia de esta anotación en ningún caso podrá impedir la inscripción o transferencia del
-automotor.”
-ARTÍCULO 357.- Sustitúyese el párrafo primero del artículo 13 del Decreto-Ley Nº 6582/58 ratificado por la
-Ley N° 14.467 (t.o. 1997) y sus modificatorias por el siguiente:
-“ARTÍCULO 13.- Los pedidos de inscripción o anotación en el Registro, y en general los trámites que se realicen
-ante él, solo podrán efectuarse mediante la utilización de las solicitudes tipo que determine el Organismo de
-Aplicación, el que fijará su contenido y demás requisitos de validez. Estos documentos podrán ser de carácter
-electrónico.”
-ARTÍCULO 358.- Sustitúyese el artículo 14 del Decreto-Ley Nº 6582/58 ratificado por la Ley N° 14.467 (t.o.
-1997) y sus modificatorias por el siguiente:
-“ARTÍCULO 14.- Los contratos de transferencia de automotores que se formalicen por instrumento privado se
-inscribirán en el Registro mediante la utilización de las solicitudes tipo mencionadas en el artículo anterior,
-suscriptos por las partes.
-Cuando la transferencia se formalice por instrumento público o haya sido dispuesta por orden judicial o
-administrativa, se presentará para su inscripción junto con el testimonio u oficio correspondiente, la solicitud tipo
-de inscripción suscripta por el autorizante o por la autoridad judicial o administrativa.
-
-En todos los casos se presentará el título de propiedad del automotor, en forma física o digital.
-En las transferencias dispuestas por autoridad judicial, se transcribirá textualmente la parte pertinente del auto que
-la ordena.
-La Municipalidad en donde se domicilie la persona humana o jurídica titular del automotor inscripto será
-notificada del contrato de transferencia.”
-ARTÍCULO 359.- Sustitúyese el artículo 16 del Decreto-Ley Nº 6582/58 ratificado por la Ley N° 14.467 (t.o.
-1997) y sus modificatorias por el siguiente:
-“ARTÍCULO 16.- A los efectos de la buena fe previstos en los artículos 2º, 3º y 4º del presente, se presume que
-los que adquieren derechos sobre un automotor, conocen las constancias de su inscripción y de las demás
-anotaciones que respecto de aquel obran en el Registro de la Propiedad del Automotor, aun cuando no hayan
-exigido del titular o del disponente del bien, la exhibición del certificado de dominio que se establece en este
-artículo.
-Durante un período de QUINCE (15) días los embargos y demás anotaciones que se soliciten con respecto al
-automotor tendrán carácter condicional y solo quedarán firmes y producirán sus efectos legales una vez vencido
-dicho plazo, siempre que no hayan modificado el dominio o la situación jurídica del automotor.”
-ARTÍCULO 360.- Sustitúyense los incisos d) y e) del artículo 19 del Decreto-Ley Nº 6582/58 ratificado por la
-Ley N° 14.467 (t.o. 1997) y sus modificatorias por los siguientes:
-“d) La anotación de los endosos de contratos de prenda podrá hacerse en cualquier Registro Seccional o
-directamente en el servicio de inscripción remoto de la Dirección Nacional;
-e) Los trámites ulteriores correspondientes a contratos de prenda inscriptos hasta el día anterior al cambio de
-régimen que disponga el Poder Ejecutivo Nacional seguirán a cargo del Registro Nacional de Créditos
-Prendarios.”
-ARTÍCULO 361.- Sustitúyese el artículo 22 del Decreto-Ley Nº 6582/58 ratificado por la Ley N° 14.467 (t.o.
-1997) y sus modificatorias por el siguiente:
-“ARTÍCULO 22.- Sin perjuicio de la expedición del título a que se refiere el artículo 20, juntamente con la
-inscripción originaria, o con cada una de las correspondientes a las sucesivas transferencias de dominio, el
-Registro entregará al titular del automotor una o más cédulas de identificación de este, en las que se consignarán
-los datos que, con respecto al automotor y a su propietario, establezca la autoridad de aplicación.
-Las cédulas se entregarán digitalmente, las que tendrán la misma validez que las físicas. El adquirente podrá pedir
-una o varias cédulas físicas las que podrán tener un costo. Dichas cédulas deberán ser devueltas por el enajenante
-del automotor, expidiéndose nuevas para el adquirente.
-Su tenencia acreditará derecho o autorización para usar el automotor, pero no eximirá de la obligación de
-justificar la habilitación personal para conducir. La cédula, la licencia para conducir y el comprobante de pago de
-patente son los únicos documentos exigibles para circular con el automotor, y las autoridades provinciales o
-municipales no podrán establecer otros requisitos para su uso legítimo.
-Será obligatorio exhibir esos documentos a la autoridad competente, pero no podrán ser retenidos si no mediare
-
-denuncia de hurto o robo del automotor u orden de autoridad judicial.”
-ARTÍCULO 362.- Sustitúyese el párrafo primero del artículo 23 del Decreto-Ley Nº 6582/58 ratificado por la
-Ley N° 14.467 (t.o. 1997) y sus modificatorias por el siguiente:
-“ARTÍCULO 23.- El Organismo de Aplicación determinará los distintos tipos de cédulas que se expedirán, las
-cuales no caducarán mientras no haya cambios en la titularidad del vehículo. También podrá requerir la
-colaboración de las autoridades que determine el Poder Ejecutivo Nacional para controlar que los automotores
-circulen con la documentación correspondiente, para verificar cambios o adulteraciones en las partes que lo
-conforman como tal, y para fiscalizar que las transferencias se inscriban en el Registro dentro del término fijado
-por esta ley. Asimismo, podrá disponer la exhibición de los automotores y su documentación y la presentación de
-declaraciones juradas al respecto.”
-ARTÍCULO 363.- Sustitúyese el párrafo quinto del artículo 27 del Decreto-Ley Nº 6582/58 ratificado por la Ley
-N° 14.467 (t.o. 1997) y sus modificatorias por el siguiente:
-“Efectuada la denuncia de la tradición del automotor, se procederá a la sustitución del sujeto obligado al tributo
-(patente, impuestos, multas, etcétera) desde la fecha de la denuncia, desligando a partir de la misma al titular
-transmitente de todo tipo de responsabilidad legal sobre el mismo.”
-ARTÍCULO 364.- Incorpórase la siguiente Cláusula Transitoria al Decreto-Ley Nº 6582/58 ratificado por la Ley
-N° 14.467 (t.o. 1997) y sus modificatorias:
-“Cláusula transitoria. La Dirección Nacional deberá hacer efectiva la puesta en marcha de su registro remoto,
-abierto, estandarizado y accesible a más tardar el 2 de mayo de 2024.”
-ARTÍCULO 365.- Dese cuenta a la COMISIÓN BICAMERAL PERMANENTE del HONORABLE
-CONGRESO DE LA NACIÓN.
-ARTÍCULO 366.- Comuníquese, publíquese, dese a la DIRECCIÓN NACIONAL DEL REGISTRO OFICIAL y
-archívese.
-
-Digitally signed by MONDINO Diana Elena
-Date: 2023.12.20 12:46:48 ART
-Location: Ciudad Autónoma de Buenos Aires
-
-Digitally signed by RUSSO Mario Antonio
-Date: 2023.12.20 12:48:21 ART
-Location: Ciudad Autónoma de Buenos Aires
-
-Diana Mondino
-Ministro
-Ministerio de Relaciones Exteriores, Comercio Internacional y Culto
-
-Mario Antonio Russo
-Ministro
-Ministerio de Salud
-
-Digitally signed by CUNEO LIBARONA Mariano
-Date: 2023.12.20 12:48:54 ART
-Location: Ciudad Autónoma de Buenos Aires
-
-Digitally signed by CAPUTO Luis Andres
-Date: 2023.12.20 12:52:45 ART
-Location: Ciudad Autónoma de Buenos Aires
-
-Mariano Cúneo Libarona
-Ministro
-Ministerio de Justicia
-
-Luis Andres Caputo
-Ministro
-Ministerio de Economía
-
-Digitally signed by FRANCOS Guillermo Alberto
-Date: 2023.12.20 12:56:59 ART
-Location: Ciudad Autónoma de Buenos Aires
-
-Digitally signed by PETTOVELLO Sandra Viviana
-Date: 2023.12.20 12:57:31 ART
-Location: Ciudad Autónoma de Buenos Aires
-
-Guillermo Francos
-Ministro
-Ministerio del Interior
-
-Sandra Pettovello
-Ministra
-Ministerio de Capital Humano
-
-Digitally signed by BULLRICH Patricia
-Date: 2023.12.20 13:09:29 ART
-Location: Ciudad Autónoma de Buenos Aires
-
-Digitally signed by FERRARO Guillermo Jose
-Date: 2023.12.20 13:17:31 ART
-Location: Ciudad Autónoma de Buenos Aires
-
-Patricia Bullrich
-Ministra
-Ministerio de Seguridad
-
-Guillermo José Ferraro
-Ministro
-Ministerio de Infraestructura
-
-Digitally signed by POSSE Nicolas José
-Date: 2023.12.20 13:20:50 ART
-Location: Ciudad Autónoma de Buenos Aires
-
-Digitally signed by PETRI Luis Alfonso
-Date: 2023.12.20 13:21:34 ART
-Location: Ciudad Autónoma de Buenos Aires
-
-Nicolás Posse
-Jefe de Gabinete de Ministros
-Jefatura de Gabinete de Ministros
-
-Luis Petri
-Ministro
-Ministerio de Defensa
-
-Digitally signed by MILEI Javier Gerardo
-Date: 2023.12.20 20:58:16 ART
-Location: Ciudad Autónoma de Buenos Aires
-
-Javier Milei
-Presidente
-Presidencia de la Nación
-
-Digitally signed by GESTION DOCUMENTAL
-ELECTRONICA - GDE
-Date: 2023.12.20 21:00:09 -03:00
-
-*/
 export { text };

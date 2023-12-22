@@ -298,9 +298,9 @@ ARTICULO 29. — Sin perjuicio de la transformación de la sociedad en una de ti
 
 Sociedad socia.
 
-ARTICULO 30. — Las sociedades anónimas y en comandita por acciones solo pueden formar parte de sociedades por acciones y de responsabilidad limitada. Podrán ser parte de cualquier contrato asociativo.
+ARTICULO 30. — Las sociedades anónimas y en comandita por acciones solo pueden formar parte de sociedades por acciones y de responsabilidad limitada. Las asociaciones y entidades sin fines de lucro sólo pueden formar parte de sociedades anónimas. Podrán ser parte de cualquier contrato asociativo.
 
-(Artículo sustituido por punto 2.17 del Anexo II de la Ley N° 26.994 B.O. 08/10/2014 Suplemento. Vigencia: 1° de agosto de 2015, texto según art. 1° de la Ley N° 27.077 B.O. 19/12/2014)
+(Artículo sustituido por art. 346 del Decreto N° 70/2023 B.O. 21/12/2023.)
 
 Participaciones en otra sociedad: Limitaciones.
 
@@ -780,7 +780,9 @@ Requisitos.
 
 ARTICULO 77. — La transformación exige el cumplimiento de los siguientes requisitos:
 
-1) Acuerdo unánime de los socios, salvo pacto en contrario a lo dispuesto para algunos tipos societarios;
+1) Cuando se tratare de sociedades comerciales, acuerdo unánime de los socios, salvo pacto en contrario a lo dispuesto para algunos tipos societarios. Cuando se tratare de asociación civil que se transformare en sociedad comercial o resolviera ser socia de sociedades anónimas, voto de los dos tercios de los asociados;
+
+(Inciso sustituido por art. 347 del Decreto N° 70/2023 B.O. 21/12/2023.)
 
 2) Confección de un balance especial, cerrado a una fecha que no exceda de un (1) mes a la del acuerdo de transformación y puesto a disposición de los socios en la sede social con no menos de quince (15) días de anticipación a dicho acuerdo. Se requieren las mismas mayorías establecidas para la aprobación de los balances de ejercicio;
 

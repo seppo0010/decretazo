@@ -38,11 +38,11 @@ function renderArticle(article) {
 }
 
 function renderBlock(block) {
-  if (block.type === 'header') {
+  if (block.type === 'text') {
     return (
       <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          Encabezado
+          {block.title}
         </AccordionSummary>
         <AccordionDetails>
           <div style={{whiteSpace: "pre-wrap"}}>
