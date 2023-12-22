@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/decretazo/static/css/main.e4e072af.css",
-    "main.js": "/decretazo/static/js/main.b0550a86.js",
+    "main.js": "/decretazo/static/js/main.2b7f82fd.js",
     "static/js/787.df3946e0.chunk.js": "/decretazo/static/js/787.df3946e0.chunk.js",
     "index.html": "/decretazo/index.html",
     "main.e4e072af.css.map": "/decretazo/static/css/main.e4e072af.css.map",
-    "main.b0550a86.js.map": "/decretazo/static/js/main.b0550a86.js.map",
+    "main.2b7f82fd.js.map": "/decretazo/static/js/main.2b7f82fd.js.map",
     "787.df3946e0.chunk.js.map": "/decretazo/static/js/787.df3946e0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e4e072af.css",
-    "static/js/main.b0550a86.js"
+    "static/js/main.2b7f82fd.js"
   ]
 }
