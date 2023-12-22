@@ -1436,7 +1436,6 @@ const text = [
                 'ARTÍCULO 107.- Sustitúyese el artículo 94 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el ' +
                 'siguiente:\n' +
                 '“ARTÍCULO 94.- 1. No podrán realizar operaciones de exportación o importación las personas humanas que ' +
-                ' ' +
                 'estén comprendidas en algunos de los siguientes supuestos: 1°) haber sido condenado por algún delito aduanero, ' +
                 'impositivo o previsional, siempre que no haya transcurrido el doble del máximo de la pena prevista en la ley para ' +
                 'dicho delito desde el momento de cumplida la condena;\n' +
@@ -1474,7 +1473,6 @@ const text = [
                 'ARTÍCULO 109.- Sustitúyese el artículo 100 de la Ley N° 22.415 (Código Aduanero) y sus modificatorias, por el ' +
                 'siguiente:\n' +
                 '“ARTÍCULO 100.- El Director General de Aduanas, según la índole de la falta cometida, el perjuicio ocasionado ' +
-                ' ' +
                 'o que hubiera podido ocasionarse y los antecedentes del interesado, podrá aplicarle las siguientes sanciones;\n' +
                 'a) apercibimiento;\n' +
                 'b) suspensión o prohibición para efectuar operaciones de comercio exterior.”\n' +
@@ -1511,7 +1509,6 @@ const text = [
                 '3. En los casos excepcionales y fundamentados, la Dirección General de Aduana podrá autorizar la presentación ' +
                 'de trámites o documentación por medios físicos los cuales deberán ser digitalizados.\n' +
                 '4. La firma digital debidamente certificada o firma electrónica equivalen, para todos los efectos legales, a la firma ' +
-                ' ' +
                 'manuscrita de los funcionarios aduaneros y de las personas que intervienen en el proceso aduanero. A su vez, los ' +
                 'requisitos de firmas manuscritas podrán ser sustituidas por contraseñas o firma digital o electrónica, para ' +
                 'actuaciones de comercio exterior que se realicen por medios informáticos.\n' +
@@ -1880,530 +1877,681 @@ const text = [
             },
         ],
     },
+    {
+        type: 'block',
+        title: 'Título VI – BIOECONOMÍA',
+        articles: [
+            {
+                text: 'ARTÍCULO 154.- Derógase la Ley N° 26.737.',
+                delta: {
+                    title: 'Ley N° 26.737 - Tierras Rurales',
+                    removed: require('./ley26737').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 155.- Derógase la Ley N° 18.600.',
+                delta: {
+                    title: 'Ley N° 18.600 - Vitivinicultura',
+                    removed: require('./ley18600').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 156.- Derógase la Ley N° 18.770.',
+                delta: {
+                    title: 'Ley N° 18.770 - Régimen de entregas de azúcar para consumo en el mercado interno',
+                    removed: require('./ley18770').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 157.- Derógase la Ley N° 18.905.',
+                delta: {
+                    title: 'Ley N° 18.905 - Politíca Nacional Vitivinícola',
+                    removed: require('./ley18905').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 158.- Derógase la Ley N° 21.608.',
+                delta: {
+                    title: 'Ley N° 21.608 - Promoción Industrial',
+                    removed: require('./ley21608').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 159.- Derógase la Ley N° 22.667.',
+                delta: {
+                    title: 'Ley N° 22.667 - Industria vitivinícola',
+                    removed: require('./ley22667').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 160.- Derógase la Ley N° 27.114.',
+                delta: {
+                    title: 'Ley N° 27.114 - ',
+                    removed: require('./ley27114').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 161.- Derógase la Ley N° 12.916.',
+                delta: {
+                    title: 'Ley N° 12.916 - ',
+                    removed: require('./ley12916').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 162.- Derógase la Ley N° 18.859.',
+                delta: {
+                    title: 'Ley N° 18.859 - Sanidad Animal',
+                    removed: require('./ley18859').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 163.- Derógase la Ley N° 19.990.',
+                delta: {
+                    title: 'Ley N° 19.990 - Política integral para el algodón',
+                    removed: require('./ley19990').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo I – Instituto Nacional de la Yerba Mate (Ley N° 25.564)',
+        articles: [
+            {
+                text: 'ARTÍCULO 164.- Sustitúyese el artículo 3° de la Ley N° 25.564, por el siguiente:\n' +
+                '“ARTÍCULO 3º.- Los objetivos del INYM serán promover y fortalecer el desarrollo de la producción, ' +
+                'elaboración, industrialización, comercialización y consumo de la yerba mate y derivados en sus diferentes ' +
+                'modalidades de consumo y usos, procurando proteger el carácter competitivo de la industria.”\n' +
+                'ARTÍCULO 165.- Deróganse los incisos j), n) y r) del artículo 4° de la Ley N° 25.564 y sustitúyese el inciso i) ' +
+                'del referido artículo 4°, por el siguiente:\n' +
+                '“i) Realizar y compilar estadísticas, censos y relevamientos de la producción, elaboración, industrialización, ' +
+                'comercialización y consumo de la yerba mate y derivados.”\n' +
+                'ARTÍCULO 166.- Deróganse los incisos e) y f) del artículo 5° de la Ley N° 25.564.\n' +
+                'ARTÍCULO 167.- Sustitúyese el quinto párrafo del artículo 21 de la Ley N° 25.564, por el siguiente:\n' +
+                '“A las ventas de artículos que se hicieren sin las estampillas referidas le resultarán aplicables las sanciones ' +
+                'establecidas en el artículo 28 de la presente ley en adición a las que la legislación aplique a la figura de evasión ' +
+                'impositiva.”\n' +
+                'ARTÍCULO 168.- Deróganse los artículos 22 y 24 de la Ley N° 25.564.',
+                delta: {
+                    title: 'Ley N° 25.564 - Instituto Nacional de la Yerba Mate',
+                    added: require('./ley25564-new').default,
+                    removed: require('./ley25564').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Título VII – MINERÍA',
+        articles: [
+            {
+                text: 'ARTÍCULO 169.- Derógase la Ley N° 24.523.',
+                delta: {
+                    title: 'Ley N° 24.523 - Sistema Nacional de Comercio Minero',
+                    removed: require('./ley24523').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 170.- Derógase la Ley N° 24.695.',
+                delta: {
+                    title: 'Ley N° 24.695 - Minería - Créase el Banco Nacional de Información',
+                    removed: require('./ley24695').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Título VIII – ENERGÍA',
+        articles: [
+            {
+                text: 'ARTÍCULO 171.- Derógase el Decreto N° 1060/00.',
+                delta: {
+                    title: 'Decreto N° 1060/00 - Combustibles',
+                    removed: require('./decreto-1060-00').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 172.- Derógase el Decreto N° 1491/02.',
+                delta: {
+                    title: 'Decreto N° 1491/02 - Energía Eléctrica',
+                    removed: require('./decreto-1491-02').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 173.- Derógase el Decreto N° 634/03.',
+                delta: {
+                    title: 'Decreto N° 634/03 - Ampliaciones de Transporte de Energía Eléctrica en Alta Tensión y por Distribución Troncal',
+                    removed: require('./decreto-634-03').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 174.- Derógase la Ley N° 25.822.',
+                delta: {
+                    title: 'Ley N° 25.822 - Plan Federal de Transporte Eléctrico',
+                    removed: require('./ley25822').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 175.- Derógase el Decreto N° 311/06.',
+                delta: {
+                    title: 'Decreto N° 311/06 - Energía Eléctrica',
+                    removed: require('./decreto-311-06').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo I - Régimen de Fomento a la generación distribuida de energía renovable integrada a la red eléctrica (Ley N° 27.424)',
+        articles: [
+            {
+                text: 'ARTÍCULO 176.- Deróganse los artículos 16 a 37 de la Ley N° 27.424.',
+                delta: {
+                    title: 'Ley N° 27.424 - Régimen de Fomento a la Generación Distribuida de Energía Renovable Integrada a la Red Eléctrica Pública',
+                    added: require('./ley27424-new').default,
+                    removed: require('./ley27424').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 177.- Facúltase a la SECRETARÍA DE ENERGÍA del MINISTERIO DE ECONOMÍA a ' +
+                'redeterminar la estructura de subsidios vigentes a fin de asegurar a los usuarios finales el acceso al consumo ' +
+                'básico y esencial de:\n' +
+                'i. energía eléctrica bajo las Leyes Nros.15.336 y 24.065, sus complementarias, modificatorias y reglamentarias; y\n' +
+                'ii. de gas natural según las Leyes Nros. 17.319 y 24.076, sus complementarias, modificatorias y reglamentarias, ' +
+                'respectivamente.\n' +
+                'Dicho beneficio deberá considerar principalmente un porcentaje de los ingresos del grupo conviviente, en forma ' +
+                'individual o conjunta para la energía eléctrica y el gas natural, a ser establecido por la reglamentación. A los ' +
+                'efectos de calcular el costo de los consumos básicos, se considerarán las tarifas vigentes en cada punto de ' +
+                'suministro. A los efectos de implementar la segmentación de la asignación de subsidios a los usuarios y las ' +
+                'usuarias de servicios públicos de energía eléctrica y gas natural por red.\n' +
+                'La referida SECRETARÍA DE ENERGÍA tendrá facultades para definir los mecanismos específicos que ' +
+                'materialicen la asignación y efectiva percepción de los subsidios por parte de los usuarios, determinando los roles ' +
+                'y tareas que desempeñarán de manera obligatoria los distintos actores públicos, empresas concesionarias, y otros ' +
+                'actores o agentes que integren los sistemas del servicio público de que se trate, en su carácter de responsables ' +
+                'primarios.',
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'TÍTULO IX - AEROCOMERCIAL',
+        articles: [
+            {
+                text: 'ARTÍCULO 178.- Derógase el Decreto - Ley N° 12.507/56.',
+                delta: {
+                    title: 'Ley N° 12.507/56 - Política Nacional en Materia Aeronáutica',
+                    removed: require('./ley12507').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 179.- Derógase la Ley N° 19.030.',
+                delta: {
+                    title: 'Ley N° 12.507/56 - Política Nacional en Materia Aeronáutica',
+                    removed: require('./ley12507').default,
+                },
+            },
+            {
+                text: 'ARTÍCULO 180.- Derógase el Decreto N° 1654/02.',
+                delta: {
+                    title: 'Decreto N° 1654/02 - Transporte Aerocomercial',
+                    removed: require('./decreto-1654-02').default,
+                },
+            },
+        ],
+    },
+    {
+        type: 'block',
+        title: 'Capítulo I - Código Aeronáutico (Ley N° 17.285)',
+        articles: [
+            {
+                text: 'ARTÍCULO 181.- Sustitúyese el artículo 1° de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 1°.- Este Código rige la aeronáutica civil en el territorio de la República Argentina, su mar ' +
+                'territorial y aguas adyacentes y el espacio aéreo que los cubre.\n' +
+                'El ámbito de aplicación de este Código se extiende asimismo a todos aquellos espacios en los que la República ' +
+                'Argentina ejerza jurisdicción y/o derechos de soberanía, conforme a y en cumplimiento de los tratados ' +
+                'internacionales de los que es parte.\n' +
+                'A reserva de los tratados internacionales vigentes para la República, la Argentina tiene soberanía plena y ' +
+                'exclusiva sobre el espacio aéreo que cubre su territorio, su mar territorial y sus aguas adyacentes. El ámbito ' +
+                'espacial aéreo mencionado en el presente y en los párrafos precedentes se denomina en adelante “espacio aéreo ' +
+                'argentino.”\n' +
+                'ARTÍCULO 182.- Sustitúyese el artículo 2° de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 2°.- La aeronáutica civil aerocomercial es un servicio esencial. A los efectos de este Código, ' +
+                'aeronáutica civil es el conjunto de actividades vinculadas con el empleo de aeronaves privadas y públicas, que ' +
+                'involucran las actividades de navegación aérea y todas aquellas relaciones de derecho derivadas del comercio ' +
+                'aéreo en general.\n' +
+                'Las aeronaves militares y las operadas por las fuerzas de seguridad en ejercicio de las funciones propias de su ' +
+                'competencia, quedan excluidas de la aplicación de esta Ley. Sin embargo, las normas relativas a circulación ' +
+                'aérea, responsabilidad y búsqueda, asistencia y salvamento, le serán aplicables también a las aeronaves militares, ' +
+                'y las operadas por las fuerzas de seguridad.\n' +
+                'La aeronáutica civil en la REPÚBLICA ARGENTINA se rige por los Tratados e Instrumentos Internacionales ' +
+                'ratificados por la Nación Argentina, la presente ley y sus normas reglamentarias, las Regulaciones Aeronáuticas ' +
+                'de Aviación Civil y normas complementarias.\n' +
+                'Si una cuestión no estuviese prevista en esta Ley ni en los tratados internacionales de los que la República ' +
+                'Argentina es parte o en las leyes y reglamentos complementarios, se resolverá por los principios generales del ' +
+                'derecho aeronáutico y por los usos y costumbres de la actividad aérea; y si aún la solución fuese dudosa, por las ' +
+                'leyes análogas o por los principios generales del derecho común.”\n' +
+                'ARTÍCULO 183.- Sustitúyese el artículo 3° de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 3°.- El despegue, la circulación y el aterrizaje de aeronaves es libre en el espacio aéreo argentino, ' +
+                'en cuanto no fueren limitados por la legislación vigente.\n' +
+                'El tránsito será regulado de manera que posibilite el movimiento seguro y ordenado de las aeronaves. A tal efecto, ' +
+                'la autoridad aeronáutica establecerá las normas generales relativas a circulación aérea.\n' +
+                'Las disposiciones relativas al aterrizaje se aplican al acuatizaje.”\n' +
+                'ARTÍCULO 184.- Sustitúyese el artículo 13 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 13.- Los servicios esenciales de navegación aérea serán prestados conforme la reglamentación ' +
+                'vigente. La autoridad regulatoria y de contralor fiscalizará a los prestadores de los servicios de navegación aérea, ' +
+                'bajo los principios de garantía de la seguridad, libre competencia y acceso a los mercados. Los servicios estarán ' +
+                'sujetos al pago de tasas, conforme reglamentación vigente. La defensa del espacio aéreo y su control policial es ' +
+                'potestad exclusiva del Poder Ejecutivo Nacional.”\n' +
+                'ARTÍCULO 185.- Sustitúyese el artículo 18 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 18.- Para realizar actividad aérea en territorio argentino, las aeronaves tripuladas o no tripuladas ' +
+                'extranjeras deben estar provistas de documentación de ley, en el formato que disponga la autoridad aeronáutica y ' +
+                'de los seguros obligatorios establecidos por ley y reglamentación vigente. Cuando existan acuerdos sobre la ' +
+                'materia, regirán las cláusulas de éstos. La República Argentina fomentará el libre acceso reciproco de circulación ' +
+                'y operación de aeronaves de aviación general y comercial.”\n' +
+                'ARTÍCULO 186.- Sustitúyese el artículo 21 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 21.- Las aeronaves privadas que no se destinen a servicios de transporte aéreo, deberán cumplir los ' +
+                'requisitos de fiscalización en el aeródromo o aeropuerto internacional más próximo a la frontera.\n' +
+                'Dichas aeronaves podrán ser dispensadas de esta obligación por la autoridad aeronáutica, la que indicará ruta a ' +
+                'seguir y aeródromo de fiscalización.”\n' +
+                'ARTÍCULO 187.- Incorpórase como segundo párrafo al artículo 29 de la Ley N° 17.825 y sus modificatorias el ' +
+                'siguiente:\n' +
+                '“Los lugares aptos denunciados no son aeródromos. La operación se realizará siempre bajo responsabilidad del ' +
+                'piloto al mando de la aeronave que operen en, desde o hacia ellos.”\n' +
+                'ARTÍCULO 188.- Incorpórase como artículo 29 bis a la Ley Nº 17.285 y sus modificatorias el siguiente:\n' +
+                '“ARTÍCULO 29 bis.- Los servicios aeroportuarios en la República Argentina, serán regulados y fiscalizados por ' +
+                'la autoridad aeronáutica. La autoridad aeronáutica reglamentará la prestación de los servicios esenciales ' +
+                'aeroportuarios, bajo los principios de garantía de la seguridad, libre competencia y acceso a los mercados.\n' +
+                'Se considera como servicio aeroportuario a todo aquel prestado en el ámbito de un aeropuerto, con excepción de ' +
+                'los servicios de navegación aérea tratados en el capítulo respectivo. Se entiende por servicios esenciales ' +
+                'aeroportuarios a los servicios de rampa en general.”\n' +
+                'ARTÍCULO 189.- Sustitúyese el artículo 34 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 34.- Si con posteridad a la aprobación de las superficies de despeje de obstáculos en un aeródromo ' +
+                'se comprobase un delito o una infracción a la norma a que se refieren los artículos 30 y 31 de este código, ' +
+                'violando la seguridad operacional, el propietario del aeródromo, la autoridad o un tercero interesado, intimará al ' +
+                'infractor la eliminación del obstáculo. El intimado deberá, a su exclusivo costo e inmediatamente eliminarlo e ' +
+                'indemnizar todos los daños ocasionados.”\n' +
+                'ARTÍCULO 190.- Sustitúyese el artículo 36 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 36.- Se consideran aeronaves tripuladas y no tripuladas los aparatos o mecanismos que puedan ' +
+                'circular en el espacio aéreo y que sean aptos para transportar personas o cosas.”\n' +
+                'ARTÍCULO 191.- Sustitúyese el artículo 42 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 42.- Podrá inscribirse provisoriamente, a nombre del comprador, toda aeronave adquirida mediante ' +
+                'cualquier tipo de contratos celebrados en el país o en el extranjero, por los cuales el vendedor se reserve el ' +
+                'dominio de la aeronave hasta el pago total del precio de venta, el cumplimiento del plazo o hasta el cumplimiento ' +
+                'de la respectiva condición. Para ello se requiere que: 1) El contrato se ajuste a la legislación del país de ' +
+                'procedencia de la aeronave y se lo inscriba en el Registro Nacional de Aeronaves. 2) El contrato se formalice ' +
+                'mientras la aeronave no posea matrícula argentina; 3) Se llenen los recaudos exigidos por este Código para ser ' +
+                'propietario de una aeronave argentina.”\n' +
+                'ARTÍCULO 192.- Sustitúyese el artículo 45 de la ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 45.- En el Registro de Aeronaves se inscribirán por medios electrónicos o en el formato que ' +
+                'disponga la autoridad aeronáutica: 1) Los actos, contratos o resoluciones que acrediten la propiedad de la ' +
+                'aeronave, la transfieran, modifiquen o extingan. 2) Las hipotecas sobre aeronaves y sobre motores. 3) Los ' +
+                'embargos, medidas precautorias e interdicciones que pesen sobre las aeronaves o se decreten contra ellas. 4) Las ' +
+                'matrículas con las especificaciones adecuadas para individualizar las aeronaves. 5) La cesación de actividades, la ' +
+                'inutilización o la pérdida de las aeronaves y las modificaciones sustanciales que se hagan de ellas. 6) Los ' +
+                'contratos de locación de aeronaves y todos aquellos que resulten oponibles a terceros. 7) En general toda ' +
+                'inscripción o anotación de cualquier hecho o acto jurídico que pueda alterar o se vincule a la situación jurídica de ' +
+                'la aeronave.”\n' +
+                'ARTÍCULO 193.- Sustitúyese el artículo 47 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 47.- El Registro Nacional de Aeronaves es público y estará disponible para su acceso a través de ' +
+                'medios electrónicos.”\n' +
+                'ARTÍCULO 194.- Sustitúyese el artículo 48 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 48.- Para ser propietario de una aeronave argentina se requiere: ' +
+                '1) Si se trata de una persona humana, tener domicilio legal en la República; ' +
+                '2) Si se trata de varios copropietarios, la mayoría cuyos derechos exceden de la mitad del valor de la aeronave, ' +
+                'deben mantener su domicilio legal en la República; ' +
+                '3) Si se trata de una sociedad de personas, de capitales o asociaciones, estar constituida conforme a las leyes ' +
+                'argentinas y tener su domicilio legal en la República.”\n' +
+                'ARTÍCULO 195.- Sustitúyese el artículo 50 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 50.- La transferencia de dominio de las aeronaves, así como todo acto jurídico relacionado con las ' +
+                'mismas previsto en el artículo 45 incisos 1°, 2°, 6° y 7°, no producirán efectos contra terceros si no van seguidos ' +
+                'de la inscripción en el Registro Nacional de Aeronaves.”\n' +
+                'ARTÍCULO 196.- Sustitúyese el artículo 51 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 51.- Los actos y contratos mencionados en el artículo 45 incisos 1°, 2° y 6°, realizados en el ' +
+                'extranjero y destinados a producir efectos en la República, deberán ser formalizadas por instrumento público o ' +
+                'ante la autoridad consular argentina.”\n' +
+                'ARTÍCULO 197.- Sustitúyese el artículo 52 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 52.- Las aeronaves pueden ser hipotecadas y garantizadas en todo o en sus partes indivisas y aun ' +
+                'cuando estén en construcción. También pueden hipotecarse los motores inscritos conforme al artículo 41 de este ' +
+                'código. Ni las aeronaves ni los motores son susceptibles de afectación de prenda con registro. No podrá ser ' +
+                'hipotecada ni afectada como garantía real de ningún crédito, la aeronave inscrita conforme al artículo 42 y ' +
+                'concordantes de este código, hasta tanto se proceda a su inscripción y matriculación definitivas. Cuando los ' +
+                'bienes hipotecados sean motores, el deudor deberá notificar al acreedor en qué aeronaves serán instalados y el uso ' +
+                'que se haga de aquéllos. La hipoteca de motores mantiene sus efectos aun cuando ellos se instalen en una ' +
+                'aeronave hipotecada a distinto acreedor.”\n' +
+                'ARTÍCULO 198.- Sustitúyese el artículo 60 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 60.- Tendrán privilegio sobre la aeronave: 1) Los créditos por gastos causídicos que beneficien al ' +
+                'acreedor hipotecario. 2) Los créditos derivados de tasas y tributos relacionados con la aviación civil limitándose ' +
+                'al período de dos años anteriores a la fecha del reclamo del privilegio. 3) Los créditos provenientes de la ' +
+                'búsqueda, asistencia o salvamento de la aeronave. 4) Los créditos por reparaciones extraordinarias hechas fuera ' +
+                'del punto de destino, para continuar el viaje. 5) Los emolumentos de la tripulación por el último mes de trabajo.”\n' +
+                'ARTÍCULO 199.- Sustitúyese el artículo 63 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 63.- Los privilegios se extinguen: 1) Por la extinción de la obligación principal. 2) Por el ' +
+                'vencimiento del plazo de dos años desde su inscripción si ésta no fuese renovada. 3) Por la venta judicial de la ' +
+                'aeronave, después de satisfechos los créditos privilegiados de mejor grado inscriptos conforme al artículo 58 de ' +
+                'este código.”\n' +
+                'ARTÍCULO 200.- Sustitúyese el nombre del CAPITULO IX del TITULO IV: AERONAVES, de la Ley N° ' +
+                '17.285 y sus modificatorias por el siguiente: CAPITULO IX: CONTRATOS SOBRE AERONAVES.\n' +
+                'ARTÍCULO 201.- Sustitúyese el artículo 68 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 68.- Las formas y tipos de contratos sobre aeronaves se rigen por el principio de la libertad ' +
+                'contractual y serán válidos entre partes. Los contratos en que las partes acuerden, expresamente, transferir la ' +
+                'calidad de explotador deben ser realizados por escrito e inscriptos en el Registro Nacional de Aeronaves, a los ' +
+                'fines de los artículos 66 y 67 de este código.”\n' +
+                'ARTÍCULO 202.- Sustitúyese el artículo 74 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 74.- Las aeronaves de bandera nacional o extranjera, accidentadas o inmovilizadas de hecho en el ' +
+                'espacio aéreo argentino y sus partes o despojos, se reputarán abandonadas a favor del Estado nacional, cuando su ' +
+                'dueño o explotador no se presentase a reclamarlas y retirarlas dentro del término de seis meses de producida la ' +
+                'notificación del accidente o inmovilización.\n' +
+                'El Poder Ejecutivo reglamentará la forma y procedimiento para efectuar la notificación del accidente o ' +
+                'inmovilización al propietario o explotador y la intimación para que remueva la aeronave, sus partes o despojos.”\n' +
+                'ARTÍCULO 203.- Sustitúyese el artículo 79 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 79.- Toda aeronave tripulada debe tener a bordo un piloto habilitado para conducirla, investido de ' +
+                'las funciones de comandante. Su designación corresponde al explotador, de quien será representante. Cuando no ' +
+                'exista persona específicamente designada, se presumirá que el piloto al mando es el comandante de la aeronave.\n' +
+                'En las aeronaves no tripuladas el piloto a distancia será el comandante de aquellas.\n' +
+                'Las aeronaves conducidas por inteligencia artificial serán objeto de una reglamentación especial.”\n' +
+                'ARTÍCULO 204.- Sustitúyese el artículo 91 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 91.- El concepto aeronáutica comercial comprende los servicios esenciales de transporte aéreo y los ' +
+                'de trabajo aéreo.”\n' +
+                'ARTÍCULO 205.- Sustitúyese el artículo 95 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 95.- La explotación de toda actividad comercial aérea requiere autorización previa, conforme a las ' +
+                'prescripciones de este código y su reglamentación. Cuando la autorización fuera a empresas de bandera extranjera ' +
+                'la misma deberá sujetarse a las normas y Acuerdos internacionales de los que la Nación Argentina sea parte. A su ' +
+                'vez el Poder Ejecutivo procurará obtener principios de reciprocidad.”\n' +
+                'ARTÍCULO 206.- Sustitúyese el artículo 97 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 97.- La explotación de servicios de transporte aéreo interno será realizada por personas humanas o ' +
+                'sociedades que se ajusten a las prescripciones de este código.”\n' +
+                'ARTÍCULO 207.- Sustitúyese el artículo 98 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 98.- Las personas humanas que exploten servicios de transporte aéreo interno deben acreditar ' +
+                'domicilio legal en la República.”\n' +
+                'ARTÍCULO 208.- Sustitúyese el artículo 99 de la ley de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 99.- Las sociedades se constituirán en cualquiera de las formas que autoricen las leyes argentinas ' +
+                'aplicables y vigentes, sujetas a la reglamentación aeronáutica y condicionadas en particular a las siguientes ' +
+                'exigencias: 1) Tener domicilio permanente de la empresa en la República, 2) El control y la dirección de la ' +
+                'empresa deben estar en manos de personas humanas con domicilio legal en la República, 3) El presidente del ' +
+                'directorio o consejo de administración, los gerentes y por lo menos dos tercios de los directores o administradores ' +
+                'deberán ser argentinos con domicilio legal en la REPÚBLICA ARGENTINA.”\n' +
+                'ARTÍCULO 209.- Sustitúyese el artículo 102 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 102.- Los servicios de transporte aéreo regular o no regular serán ejecutados por empresas ' +
+                'autorizadas por el Poder Ejecutivo Nacional.\n' +
+                'El procedimiento para la tramitación de las autorizaciones será fijado por la autoridad competente de manera ' +
+                'eficaz y digitalmente y deberá prever la posibilidad de prórroga de los plazos de estas autorizaciones.”\n' +
+                'ARTÍCULO 210.- Sustitúyese el artículo 104 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 104.- La autorización para operar en una ruta no importa exclusividad. Las autoridades ' +
+                'competentes promoverán reglas de sana competencia, conforme los principios de libertad de mercado.”\n' +
+                'ARTÍCULO 211.- Sustitúyese el artículo 105 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 105.- No se otorgará autorización alguna sin la comprobación previa de la capacidad técnica y ' +
+                'económico - financiera del explotador y de la posibilidad de utilizar en forma adecuada los aeropuertos, ' +
+                'aeródromos, y cualquier lugar apto denunciado, servicios auxiliares y material de vuelo a emplear.”\n' +
+                'ARTÍCULO 212.- Sustitúyese el artículo 106 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 106.- En los servicios aerocomerciales el personal que desempeña funciones aeronáuticas deberá ' +
+                'ser argentino. El Poder Ejecutivo Nacional podrá autorizar un porcentaje de personal extranjero, estableciéndose ' +
+                'un procedimiento gradual de reemplazo del personal extranjero por personal argentino.”\n' +
+                'ARTÍCULO 213.- Sustitúyese el artículo 107 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 107.- Las aeronaves afectadas a los servicios aerocomerciales y de aviación general deberán tener ' +
+                'matrícula argentina. Sin embargo, el Poder Ejecutivo Nacional permitirá la utilización de aeronaves de matrícula ' +
+                'extranjera. Cuando esto ocurre el Poder Ejecutivo Nacional procurará obtener principios de reciprocidad y ' +
+                'acuerdos de doble vigilancia de seguridad operacional donde se garantice que dichas aeronaves serán tripuladas, ' +
+                'asistidas y mantenidas por personal argentino, con las autorizaciones de ley.”\n' +
+                'ARTÍCULO 214.- Sustitúyese el artículo 108 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 108.- La autoridad aeronáutica, ejercida por la Administración Nacional de Aviación Civil o el ' +
+                'organismo federal aeroespacial a constituir por el Poder Ejecutivo Nacional que en el futuro la sustituya o ' +
+                'reemplace, será única y establecerá o adoptará todas las normas de seguridad operacional de la aviación civil y su ' +
+                'sistematización. Dicha autoridad entiende y regula la totalidad de los Anexos Técnicos de los Convenios ' +
+                'internacionales sobre la materia.”\n' +
+                'ARTÍCULO 215.- Sustitúyese el artículo 109 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 109.- La aprobación de los itinerarios, frecuencias, capacidad del sistema y horarios ' +
+                'correspondientes a los servicios de transporte aéreo regular interno e internacional en todos los casos, serán ' +
+                'sometidos a autorización previa del poder ejecutivo nacional.\n' +
+                'Las tarifas son libremente dispuestas por las empresas y sin ninguna restricción. Estas deberán ser registradas ante ' +
+                'la autoridad competente al solo efecto de dar a conocer los términos, condiciones, penalidades y restricciones de ' +
+                'cada una de ellas. Se entenderá por tarifa la contraprestación que recibe el transportador a cambio de servicio de ' +
+                'transporte. Se excluye de dicho término, todo impuesto, tasa y/o penalidad que deba abonar el pasajero.”\n' +
+                'ARTÍCULO 216.- Sustitúyese el artículo 110 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 110.- Los acuerdos empresarios de impacto operativo que impliquen compartir códigos de ' +
+                'comercialización, conexión, consolidación o fusión de servicios o negocios, estarán regidos por la Ley de Defensa ' +
+                'de la Competencia.”\n' +
+                'ARTÍCULO 217.- Sustitúyese el artículo 112 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 112.- Toda empresa a la que se hubiese otorgado una autorización deberá depositar, como garantía ' +
+                'del cumplimiento de sus obligaciones y dentro de los quince días de notificada, una suma equivalente al dos por ' +
+                'ciento de su capital social en efectivo, en títulos nacionales de renta o garantía bancaria equivalente. Dicho ' +
+                'depósito se efectuará a la orden de la autoridad aeronáutica.\n' +
+                'La caución se extingue en un cincuenta por ciento cuando haya comenzado la explotación de la totalidad de los ' +
+                'servicios autorizados y el resto una vez transcurrido un año a partir del momento indicado, siempre que la ' +
+                'autorizada haya cumplido eficientemente sus obligaciones.\n' +
+                'El incumplimiento de las obligaciones que establece la autorización dará lugar a la pérdida de la caución a que se ' +
+                'refiere este artículo y su monto a cuenta de la autoridad aeronáutica.”\n' +
+                'ARTÍCULO 218.- Sustitúyese el artículo 113 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 113.- El contrato de transporte de pasajeros debe ser probado por escrito o con formato electrónico.\n' +
+                'Cuando se trate de transporte efectuado por servicios regulares dicho contrato se prueba con el billete de pasaje ' +
+                'escrito o digital.”\n' +
+                'ARTÍCULO 219.- Sustitúyese el artículo 116 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 116.- El transporte de equipajes registrados, se prueba con el talón de equipajes que el ' +
+                'transportador deberá expedir con doble ejemplar por escrito o digitalmente; uno de éstos será entregado al ' +
+                'pasajero y el otro lo conservará el transportador.\n' +
+                'No se incluirán en el talón los objetos personales que el pasajero conserve bajo su custodia.”\n' +
+                'ARTÍCULO 220.- Sustitúyese el artículo 120 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 120.- La carta de porte debe ser extendida en triple ejemplar en formato físico o electrónico; uno ' +
+                'para el transportador, con la firma del remitente; otro para el destinatario, con la del transportador y del remitente; ' +
+                'y otro para el remitente, con la del transportador.”\n' +
+                'ARTÍCULO 221.- Derógase la Sección E: Transporte de Carga Postal en sus artículos 125, 126 y 127.\n' +
+                'ARTÍCULO 222.- Incorpórase como artículo 128 bis a la Ley Nº 17.285 y sus modificatorias el siguiente:\n' +
+                '“ARTÍCULO 128 bis.- El Poder Ejecutivo Nacional reglamentará y llevará adelante una política de aviación civil ' +
+                'que permita su crecimiento, bajo los principios de la seguridad y la libertad de mercado, conforme a los acuerdos ' +
+                'con terceros estados.\n' +
+                'En el marco de los permisos aerocomerciales internos e internacionales, la República Argentina fomentará entre ' +
+                'los operadores aerocomerciales nacionales y extranjeros el libre acceso recíproco a los mercados aerocomerciales ' +
+                'y la conectividad internacional y de cabotaje.”\n' +
+                'ARTÍCULO 223.- Sustitúyese el artículo 129 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 129.- Las empresas extranjeras podrán realizar servicios de transporte aéreo internacional, de ' +
+                'conformidad con las convenciones o acuerdos internacionales en que la Nación sea parte, o mediante autorización ' +
+                'previa del Poder Ejecutivo. El procedimiento para tramitar las solicitudes será fijado por el Poder Ejecutivo quien ' +
+                'establecerá un régimen de autorizaciones donde se analice la conveniencia, necesidad y utilidad general de los ' +
+                'servicios cuando corresponda, conforme a los principios de libertad de mercado y/o los acuerdos bilaterales o ' +
+                'multilaterales suscriptos.\n' +
+                'La autoridad aeronáutica establecerá las normas operativas a las que se ajustarán los servicios de transporte aéreo ' +
+                'internacional que exploten las empresas extranjeras. Los itinerarios, capacidad, frecuencias y horarios ' +
+                'correspondientes a los servicios de transporte aéreo internacional regular, en todos los casos, serán sometidas a la ' +
+                'aprobación operativa previa de la autoridad aeronáutica.”\n' +
+                'ARTÍCULO 224.- Incorporase como artículo 130 bis a la Ley Nº 17.285 y sus modificatorias el siguiente:\n' +
+                '“ARTÍCULO 130 bis.- Atento la integridad y autonomía establecidas para la navegación y comercio aéreo y la ' +
+                'propia operatoria comercial de la industria en el orden interno e internacional, la autoridad aeronáutica deberá ' +
+                'sancionar un reglamento relativo a la protección de los derechos del pasajero.”\n' +
+                'ARTÍCULO 225.- Sustitúyese el artículo 131 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 131.- Para realizar trabajo aéreo en cualquiera de sus especialidades, las personas o empresas ' +
+                'deberán obtener autorización previa de la autoridad aeronáutica sujeta a los siguientes recaudos: 1) Reunir los ' +
+                'requisitos establecidos en el artículo 48 para ser propietario de aeronave; 2) Poseer capacidad técnica y ' +
+                'económica de acuerdo a la especialidad de que se trate; 3) Operar con aeronaves de matrícula argentina o con ' +
+                'aeronaves de matrícula extranjera, sujeto a acuerdos de doble vigilancia de seguridad operacional.”\n' +
+                'ARTÍCULO 226.- Sustitúyese el artículo 133 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 133.- Las actividades aeronáuticas comerciales están sujetas a fiscalización por la autoridad ' +
+                'competente. Al efecto le corresponde: ' +
+                '1) Exigir el cumplimiento de las obligaciones previstas en las autorizaciones otorgadas, así como las contenidas ' +
+                'en el presente código, leyes, reglamentaciones, Tratados e Instrumentos Internacionales ratificados por la Nación ' +
+                'Argentina, y demás normas que en su consecuencia se dicten.\n' +
+                '2) Ejercer la fiscalización técnica-operativa, económica y financiera del explotador.\n' +
+                '3) Suspender las actividades cuando considere que no estén cumplidas las condiciones de seguridad requeridas o ' +
+                'cuando no estén asegurados los riesgos cuya cobertura sea legalmente obligatoria, y autorizar su reanudación, una ' +
+                'vez subsanadas tales deficiencias o requisitos, siempre que no resultaren de ellos causales que traigan aparejada la ' +
+                'caducidad o retiro de la autorización.\n' +
+                '4) Autorizar la interrupción y la reanudación de los servicios solicitados por los prestatarios, cuando a su juicio, ' +
+                'no se consideren afectadas las razones de necesidad o utilidad general que determinaron el otorgamiento de la ' +
+                'autorización, o la continuidad de los servicios.\n' +
+                '5) Prohibir el empleo de material de vuelo que no ofrezca seguridad.\n' +
+                '6) Exigir que el personal aeronáutico llene las condiciones requeridas por las disposiciones vigentes.\n' +
+                '7) Fiscalizar todo tipo de promoción y comercialización de billetes de pasaje, fletes y toda otra venta de ' +
+                'capacidad de transporte aéreo llevado a cabo por los transportadores, sus representantes o agentes y por terceros, ' +
+                'para garantizar el cumplimiento de la sana competencia y la adecuada protección de los derechos de los usuarios.\n' +
+                '8) Autorizar y supervisar el funcionamiento de las representaciones y agencias de las empresas extranjeras de ' +
+                'transporte aéreo internacional que no operen en el territorio nacional y se establezcan en el país, sin perjuicio del ' +
+                'cumplimiento de las obligaciones que imponen las demás normas legales respecto de empresas extranjeras.\n' +
+                '9) Calificar, conforme la ley vigente en materia de policía aérea, la aptitud de las aeronaves destinadas al ' +
+                'transporte comercial de pasajeros y carga en función de los servicios a prestar para determinar la conveniencia de ' +
+                'su incorporación a tales servicios y autorizar la afectación de las aeronaves a la flota de transportadores de ' +
+                'bandera argentina. Intervenir en el trámite de autorización para su ingreso al país.\n' +
+                '10) Desempeñar todas las otras funciones de fiscalización que confiera el Poder Ejecutivo nacional.\n' +
+                '11) La autoridad aeronáutica procurará activamente detectar y someter a fiscalización a los explotadores u ' +
+                'operadores clandestinos, entendiéndose por tales a quienes operen al margen de la normativa aeronáutica vigente.\n' +
+                'A tal fin, podrán afectarse recursos propios o bien requerir el auxilio de las Fuerzas de Seguridad federales o ' +
+                'provinciales, que en todos los casos deberán brindarlo.”\n' +
+                'ARTÍCULO 227.- Sustitúyese el nombre del CAPITULO VI del TITULO VI: AERONAUTICA COMERCIAL ' +
+                'de la Ley N° 17.285 y sus modificatorias por el siguiente: CAPITULO VI: SUSPENSION Y EXTINCION DE ' +
+                'LAS AUTORIZACIONES.\n' +
+                'ARTÍCULO 228.- Sustitúyese el artículo 135 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 135.- Las autorizaciones otorgadas por plazo determinado se extinguirán al vencimiento de éste. No ' +
+                'obstante, haya o no plazo de vencimiento, el Poder Ejecutivo nacional o la autoridad aeronáutica según sea el ' +
+                'caso, en cualquier momento podrá cancelar la autorización conferidas para la explotación de actividades ' +
+                'aeronáuticas comerciales en las siguientes circunstancias: ' +
+                '1) Si el explotador no cumpliese las obligaciones substanciales a su cargo o si faltase, reiteradamente, a ' +
+		        'obligaciones de menor importancia.\n' +
+                '2) Si el servicio no fuese iniciado dentro del término fijado en la autorización.\n' +
+                '3) Si se interrumpiese el servicio, total o parcialmente, sin causas justificadas o permiso de la autoridad ' +
+                'aeronáutica.\n' +
+                '4) Si la empresa fuera declarada en estado de quiebra, liquidación o disolución por resolución judicial o cuando ' +
+                'peticionando su concurso preventivo, no ofrezca a juicio de la autoridad de aplicación garantías que resulten ' +
+                'adecuadas para asegurar la prestación de los servicios.\n' +
+                '5) Si la autorización hubiese sido cedida en contravención a lo dispuesto en el artículo 96 de este Código.\n' +
+                '6) Si no se hubiese dado cumplimiento a la cobertura de riesgos prevista por el título X (Seguros) y en el artículo ' +
+                '112.\n' +
+                '7) Si el explotador se opusiese a la fiscalización o inspecciones establecidas en este Código y su reglamentación.\n' +
+                '8) Si el explotador dejase de reunir cualquiera de los requisitos exigidos para la autorización.\n' +
+                '9) Si mediase renuncia del explotador, previa aceptación de la autoridad aeronáutica.\n' +
+                'Cuando a juicio de la autoridad de aplicación se configure alguna de las causales previstas en los incisos ' +
+                'precedentes que motiven el retiro de la autorización, dicha autoridad podrá disponer la suspensión preventiva de ' +
+                'los servicios hasta tanto se substancien las actuaciones administrativas a las que se refiere el artículo 137.”\n' +
+                'ARTÍCULO 229.- Sustitúyese el artículo 137 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 137.- Antes de la cancelación de la autorización, debe garantizarse la debida participación al ' +
+                'interesado, a fin de que pueda producir la prueba de descargo. El procedimiento a seguir será determinado por la ' +
+                'reglamentación respectiva, la cual deberá garantizar el ejercicio del derecho de defensa y el control judicial ' +
+                'suficiente”\n' +
+                'ARTÍCULO 230.- Sustitúyese el artículo 138 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 138.- El Poder Ejecutivo podrá subvencionar la demanda de servicios de transporte aéreo en ' +
+                'aquellas rutas que resulten de interés general para la Nación. Asimismo, podrá subvencionar la explotación de ' +
+                'servicios de trabajo aéreo que tengan igual carácter.”\n' +
+                'ARTÍCULO 231.- Sustitúyese el artículo 185 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 185.- Todo accidente o incidente de aviación será investigado por la autoridad competente e ' +
+                'independiente de investigación técnica de accidentes de aviación, para determinar sus causas y establecer las ' +
+                'medidas tendientes a evitar su repetición. Dicha investigación no puede asignar responsabilidad oculpa ni es ' +
+                'admisible como prueba judicial.”\n' +
+                'ARTÍCULO 232.- Sustitúyese el artículo 186 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 186.- Toda persona que tomase conocimiento de cualquier accidente o incidente de aviación o de la ' +
+                'existencia de restos o despojos de una aeronave, deberá comunicarlo a la autoridad más próxima por el medio ' +
+                'más rápido y en el tiempo mínimo que las circunstancias permitan. La primera autoridad que tenga conocimiento ' +
+                'del hecho o intervenga en él, lo comunicará de inmediato a la autoridad competente en materia de investigación ' +
+                'técnica de accidentes de aviación, debiendo destacar o gestionar una guardia hasta el arribo de ésta.”\n' +
+                'ARTÍCULO 233.- Sustitúyese el artículo 187 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 187.- La autoridad responsable de la vigilancia de los restos o despojos del accidente, evitará que ' +
+                'en los mismos y en las zonas donde puedan haberse dispersado, intervengan personas no autorizadas. La ' +
+                'remoción o liberación de la aeronave, de los elementos afectados y de los objetos que pudiesen haber concurrido ' +
+                'a producir el accidente sólo podrá practicarse con el consentimiento de la autoridad competente en materia de ' +
+                'investigación de accidentes de aviación. La intervención de aquella autoridad no impide la acción judicial ni la ' +
+                'intervención policial, coordinadas, en los casos de accidentes vinculados con hechos ilícitos, en que habrá de ' +
+                'actuarse conforme a las leyes de procedimiento penal, o cuando deban practicarse operaciones de asistencia o ' +
+                'salvamento.”\n' +
+                'ARTÍCULO 234.- Sustitúyese el artículo 188 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 188.- Toda persona está obligada a ser entrevistada por la autoridad competente en materia de ' +
+                'investigación de accidentes, en todo cuanto se relacione con la investigación de accidentes de aviación.”\n' +
+                'ARTÍCULO 235.- Sustitúyese el artículo 189 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 189.- Las autoridades, personas e instituciones tendrán obligación de producir los informes que les ' +
+                'requiera la autoridad competente en materia de investigación de accidentes de aviación, así como permitir a ésta ' +
+                'el examen de la documentación y de los antecedentes necesarios a los fines de la investigación de accidentes de ' +
+                'aviación.”\n' +
+                'ARTÍCULO 236.- Sustitúyese el artículo 190 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 190.- Las aeronaves privadas extranjeras que sufran accidentes en el espacio aéreo argentino y las ' +
+                'aeronaves privadas argentinas que sufran accidentes en territorio extranjero, quedarán sujetas a la investigación ' +
+                'técnica prevista en los convenios internacionales.”\n' +
+                'ARTÍCULO 237.- Sustitúyese el artículo 199 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 199.- Los hechos ocurridos, los actos realizados y los delitos cometidos en una aeronave privada ' +
+                'argentina sobre el espacio aéreo argentino o donde ningún estado ejerza soberanía, están regidos por las leyes de ' +
+                'la Nación Argentina y serán juzgados por sus tribunales.\n' +
+                'Corresponde igualmente la jurisdicción de los tribunales argentinos y la aplicación de las leyes de la Nación, en el ' +
+                'caso de hechos ocurridos, actos realizados o delitos cometidos a bordo de una aeronave privada argentina, sobre ' +
+                'territorio extranjero, si se hubiese lesionado un interés legítimo del Estado argentino o de personas domiciliadas ' +
+                'en el o se hubiese realizado en la República el primer aterrizaje posterior al hecho, acto o delito.”\n' +
+                'ARTÍCULO 238.- Sustitúyese el artículo 200 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 200.– En los hechos ocurridos, los actos realizados y los delitos cometidos en una aeronave privada ' +
+                'extranjera en vuelo en el espacio aéreo argentino , la jurisdicción de los tribunales argentinos y la aplicación de ' +
+                'las leyes de la Nación sólo corresponde en caso de: ' +
+                '1) Que infrinjan leyes de seguridad pública, militares o fiscales.\n' +
+                '2) Que infrinjan leyes o reglamentos de circulación aérea.\n' +
+                '3) Que comprometan la seguridad o el orden público, o afecten el interés del Estado o de las personas ' +
+                'domiciliadas en él, o se hubiese realizado en la República el primer aterrizaje posterior al hecho, acto o delito si ' +
+                'no mediase, en este último caso, pedido de extradición.”\n' +
+                'ARTÍCULO 239.- Sustitúyese el artículo 201 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 201.- Los hechos ocurridos, los actos realizados y los delitos cometidos en una aeronave pública ' +
+                'extranjera en el espacio aéreo argentino están regidos por la ley del pabellón y serán juzgados por sus tribunales.”\n' +
+                'ARTÍCULO 240.- Sustitúyese el artículo 202 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 202.- La fiscalización del espacio aéreo, infraestructura aeronáutica y demás servicios y lugares ' +
+                'aeronáuticos en el espacio aéreo argentino, será ejercida por la autoridad aeronáutica, con excepción de la que ' +
+                'corresponda a la materia estrictamente policial.”\n' +
+                'ARTÍCULO 241.- Sustitúyese el artículo 208 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 208.- El Poder Ejecutivo Nacional dictará un Reglamento General de Infracciones de la Aviación ' +
+                'Civil. Hasta que ello ocurra estará vigente el actual sistema de infracciones. Este reglamento deberá prever que ' +
+                'las infracciones por inobservancia de este código, las leyes vigentes y sus reglamentaciones, y demás normas que ' +
+                'dicte la autoridad aeronáutica, que no importen delito, serán sancionadas con: ' +
+                'i. Apercibimiento, ' +
+                'ii. Multa, hasta el máximo que determine la reglamentación vigente según el tipo de infracción, ' +
+                'iii. Inhabilitación temporaria con plazos máximos, o definitiva, de certificados de idoneidad otorgados o ' +
+                'convalidados por la autoridad aeronáutica, ' +
+                'iv. Suspensión temporaria de las autorizaciones otorgadas a los operadores aéreos, con determinación de su ' +
+                'plazo máximo, ' +
+                'v. Retiro de las autorizaciones otorgadas para la explotación de servicios aerocomerciales.\n' +
+                'Con relación al monto de las Multas se establece: ' +
+                'a. Para las infracciones en el transporte aéreo comercial de 10 hasta la suma de hasta TRESCIENTOS (300) ' +
+                'ARGENTINOS ORO, apreciando la gravedad de la acción cometida y antecedentes del infractor.\n' +
+                'b. Para los titulares de certificados de idoneidad en el ejercicio de funciones aeronáuticas y aquellos que cuenten ' +
+                'con poder de policía delegado, se establece la suma de hasta TRESCIENTOS (300) ARGENTINOS ORO, ' +
+                'considerando la gravedad de la infracción y antecedentes del infractor.\n' +
+                'c. Para el Prestador de los Servicios de la navegación aérea; y respecto de los titulares explotadores, ' +
+                'concesionarios y/o responsables de la infraestructura de aeropuertos, aeródromos o lugares aptos denunciados, se ' +
+                'establece la suma de hasta TRESCIENTOS (300) ARGENTINOS ORO.\n' +
+                'd. Para las restantes actividades aeronáuticas se establece la suma de hasta Cincuenta (50) ARGENTINOS ORO, ' +
+                'apreciando la gravedad de la acción cometida y antecedentes del infractor. La Autoridad Aeronáutica, se ' +
+                'encontrará facultada para disminuir las sanciones previstas, hasta en un CINCUENTA POR CIENTO (50%) del ' +
+                'monto que resultaría aplicable para la infracción de la cual se trate, previendo por vía reglamentaria un sistema de ' +
+                'pago anticipado o voluntario, de carácter general y con principios de transparencia, por el cual el infractor ' +
+                'reconozca la responsabilidad del hecho infraccional que se le endilgue. Dicha conducta, resultará igualmente ' +
+                'computable como antecedente infraccional, a los efectos de la consideración de su condición de reincidente. Si el ' +
+                'infractor fuese reincidente y la falta cometida se considerase grave, esta reincidencia será considerada como un ' +
+                'agravante.\n' +
+                'Se entiende con poder de policía delegado a aquellas personas humanas u organizaciones que, mediante acto ' +
+                'administrativo, han sido investidos con facultades determinadas por las autoridades competentes. Por ejemplo, los ' +
+                'inspectores de seguridad designados o delegados.”\n' +
+                'ARTÍCULO 242.- Sustitúyese el artículo 209 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 209.- Las faltas previstas en este Código y su reglamentación, serán sancionadas por la autoridad ' +
+                'aeronáutica.”\n' +
+                'ARTÍCULO 243.- Sustitúyese el artículo 210 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 210.- La investigación de las faltas o infracciones previstas en este Código y/o en la reglamentación ' +
+                'vigente estará a cargo de la autoridad aeronáutica. El procedimiento a seguir ante la comprobación de los hechos ' +
+                'será de carácter sumario y escrito, asegurando la existencia de dos instancias y la garantía del debido proceso y ' +
+                'derecho de defensa del supuesto infractor.\n' +
+                'La autoridad aeronáutica establecerá los aspectos del procedimiento a seguir ante la comprobación o ' +
+                'investigación de los hechos, así como la aplicación e imposición de sanciones y sus apelaciones.\n' +
+                'Se deberá garantizar el ejercicio de defensa y la debida participación del supuesto infractor desde el principio de ' +
+                'las actuaciones, ya sea de manera escrita u oral.”\n' +
+                'ARTÍCULO 244.- Sustitúyese el artículo 215 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 215.- Serán recurribles ante la Justicia Federal en lo Contencioso Administrativo, una vez agotada ' +
+                'la vía administrativa ante la autoridad aeronáutica, toda sanción, inhabilitación de certificados de idoneidad y/o ' +
+                'habilitaciones, suspensión o retiro de autorizaciones. Todos estos recursos y acciones que seguirán el trámite de ' +
+                'juicio ordinario. El recurso deberá interponerse dentro de los 15 días de notificado el acto administrativo. En el ' +
+                'caso de hechos ilícitos que puedan importar actos punibles deberá intervenir la Justicia Federal en lo Criminal y ' +
+                'Correccional competente para entender en las acciones penales.”\n' +
+                'ARTÍCULO 245.- Sustitúyese el artículo 231 de la Ley Nº 17.285 y sus modificatorias por el siguiente:\n' +
+                '“ARTÍCULO 231.- En la circulación aérea dentro del espacio aéreo argentino, serán de uso y aplicación las ' +
+                'unidades de medidas adoptadas conforme a las disposiciones de los convenios internacionales de los que la ' +
+                'Nación sea parte.”',
+                delta: {
+                    title: 'Ley N° 12.507/56 - Política Nacional en Materia Aeronáutica',
+                    added: require('./ley17285-new').default,
+                    removed: require('./ley17285').default,
+                },
+            },
+        ],
+    },
 ]
-    /*
-
-
-
-
-Título VI – BIOECONOMÍA
-ARTÍCULO 154.- Derógase la Ley N° 26.737.
-ARTÍCULO 155.- Derógase la Ley N° 18.600.
-ARTÍCULO 156.- Derógase la Ley N° 18.770.
-ARTÍCULO 157.- Derógase la Ley N° 18.905.
-ARTÍCULO 158.- Derógase la Ley N° 21.608.
-ARTÍCULO 159.- Derógase la Ley N° 22.667.
-ARTÍCULO 160.- Derógase la Ley N° 27.114.
-ARTÍCULO 161.- Derógase la Ley N° 12.916.
-ARTÍCULO 162.- Derógase la Ley N° 18.859.
-ARTÍCULO 163.- Derógase la Ley N° 19.990.
-
-Capítulo I – Instituto Nacional de la Yerba Mate (Ley N° 25.564)
-ARTÍCULO 164.- Sustitúyese el artículo 3° de la Ley N° 25.564, por el siguiente:
-“ARTÍCULO 3º.- Los objetivos del INYM serán promover y fortalecer el desarrollo de la producción,
-elaboración, industrialización, comercialización y consumo de la yerba mate y derivados en sus diferentes
-modalidades de consumo y usos, procurando proteger el carácter competitivo de la industria.”
-ARTÍCULO 165.- Deróganse los incisos j), n) y r) del artículo 4° de la Ley N° 25.564 y sustitúyese el inciso i)
-del referido artículo 4°, por el siguiente:
-“i) Realizar y compilar estadísticas, censos y relevamientos de la producción, elaboración, industrialización,
-comercialización y consumo de la yerba mate y derivados.”
-ARTÍCULO 166.- Deróganse los incisos e) y f) del artículo 5° de la Ley N° 25.564.
-ARTÍCULO 167.- Sustitúyese el quinto párrafo del artículo 21 de la Ley N° 25.564, por el siguiente:
-
-“A las ventas de artículos que se hicieren sin las estampillas referidas le resultarán aplicables las sanciones
-establecidas en el artículo 28 de la presente ley en adición a las que la legislación aplique a la figura de evasión
-impositiva.”
-ARTÍCULO 168.- Deróganse los artículos 22 y 24 de la Ley N° 25.564.
-
-Título VII – MINERÍA
-ARTÍCULO 169.- Derógase la Ley N° 24.523.
-ARTÍCULO 170.- Derógase la Ley N° 24.695.
-
-Título VIII – ENERGÍA
-ARTÍCULO 171.- Derógase el Decreto N° 1060/00.
-ARTÍCULO 172.- Derógase el Decreto N° 1491/02.
-ARTÍCULO 173.- Derógase el Decreto N° 634/03.
-ARTÍCULO 174.- Derógase la Ley N° 25.822.
-ARTÍCULO 175.- Derógase el Decreto N° 311/06.
-
-Capítulo I - Régimen de Fomento a la generación distribuida de energía renovable integrada a la red
-eléctrica (Ley N° 27.424)
-ARTÍCULO 176.- Deróganse los artículos 16 a 37 de la Ley N° 27.424.
-ARTÍCULO 177.- Facúltase a la SECRETARÍA DE ENERGÍA del MINISTERIO DE ECONOMÍA a
-redeterminar la estructura de subsidios vigentes a fin de asegurar a los usuarios finales el acceso al consumo
-básico y esencial de:
-i. energía eléctrica bajo las Leyes Nros.15.336 y 24.065, sus complementarias, modificatorias y reglamentarias; y
-ii. de gas natural según las Leyes Nros. 17.319 y 24.076, sus complementarias, modificatorias y reglamentarias,
-respectivamente.
-Dicho beneficio deberá considerar principalmente un porcentaje de los ingresos del grupo conviviente, en forma
-individual o conjunta para la energía eléctrica y el gas natural, a ser establecido por la reglamentación. A los
-efectos de calcular el costo de los consumos básicos, se considerarán las tarifas vigentes en cada punto de
-suministro. A los efectos de implementar la segmentación de la asignación de subsidios a los usuarios y las
-usuarias de servicios públicos de energía eléctrica y gas natural por red.
-
-La referida SECRETARÍA DE ENERGÍA tendrá facultades para definir los mecanismos específicos que
-materialicen la asignación y efectiva percepción de los subsidios por parte de los usuarios, determinando los roles
-y tareas que desempeñarán de manera obligatoria los distintos actores públicos, empresas concesionarias, y otros
-actores o agentes que integren los sistemas del servicio público de que se trate, en su carácter de responsables
-primarios.
-
-TÍTULO IX - AEROCOMERCIAL
-ARTÍCULO 178.- Derógase el Decreto - Ley N° 12.507/56.
-ARTÍCULO 179.- Derógase la Ley N° 19.030.
-ARTÍCULO 180.- Derógase el Decreto N° 1654/02.
-
-Capítulo I - Código Aeronáutico (Ley N° 17.285)
-ARTÍCULO 181.- Sustitúyese el artículo 1° de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 1°.- Este Código rige la aeronáutica civil en el territorio de la República Argentina, su mar
-territorial y aguas adyacentes y el espacio aéreo que los cubre.
-El ámbito de aplicación de este Código se extiende asimismo a todos aquellos espacios en los que la República
-Argentina ejerza jurisdicción y/o derechos de soberanía, conforme a y en cumplimiento de los tratados
-internacionales de los que es parte.
-A reserva de los tratados internacionales vigentes para la República, la Argentina tiene soberanía plena y
-exclusiva sobre el espacio aéreo que cubre su territorio, su mar territorial y sus aguas adyacentes. El ámbito
-espacial aéreo mencionado en el presente y en los párrafos precedentes se denomina en adelante “espacio aéreo
-argentino.”
-ARTÍCULO 182.- Sustitúyese el artículo 2° de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 2°.- La aeronáutica civil aerocomercial es un servicio esencial. A los efectos de este Código,
-aeronáutica civil es el conjunto de actividades vinculadas con el empleo de aeronaves privadas y públicas, que
-involucran las actividades de navegación aérea y todas aquellas relaciones de derecho derivadas del comercio
-aéreo en general.
-Las aeronaves militares y las operadas por las fuerzas de seguridad en ejercicio de las funciones propias de su
-competencia, quedan excluidas de la aplicación de esta Ley. Sin embargo, las normas relativas a circulación
-aérea, responsabilidad y búsqueda, asistencia y salvamento, le serán aplicables también a las aeronaves militares,
-y las operadas por las fuerzas de seguridad.
-La aeronáutica civil en la REPÚBLICA ARGENTINA se rige por los Tratados e Instrumentos Internacionales
-ratificados por la Nación Argentina, la presente ley y sus normas reglamentarias, las Regulaciones Aeronáuticas
-de Aviación Civil y normas complementarias.
-
-Si una cuestión no estuviese prevista en esta Ley ni en los tratados internacionales de los que la República
-Argentina es parte o en las leyes y reglamentos complementarios, se resolverá por los principios generales del
-derecho aeronáutico y por los usos y costumbres de la actividad aérea; y si aún la solución fuese dudosa, por las
-leyes análogas o por los principios generales del derecho común.”
-ARTÍCULO 183.- Sustitúyese el artículo 3° de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 3°.- El despegue, la circulación y el aterrizaje de aeronaves es libre en el espacio aéreo argentino,
-en cuanto no fueren limitados por la legislación vigente.
-El tránsito será regulado de manera que posibilite el movimiento seguro y ordenado de las aeronaves. A tal efecto,
-la autoridad aeronáutica establecerá las normas generales relativas a circulación aérea.
-Las disposiciones relativas al aterrizaje se aplican al acuatizaje.”
-ARTÍCULO 184.- Sustitúyese el artículo 13 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 13.- Los servicios esenciales de navegación aérea serán prestados conforme la reglamentación
-vigente. La autoridad regulatoria y de contralor fiscalizará a los prestadores de los servicios de navegación aérea,
-bajo los principios de garantía de la seguridad, libre competencia y acceso a los mercados. Los servicios estarán
-sujetos al pago de tasas, conforme reglamentación vigente. La defensa del espacio aéreo y su control policial es
-potestad exclusiva del Poder Ejecutivo Nacional.”
-ARTÍCULO 185.- Sustitúyese el artículo 18 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 18.- Para realizar actividad aérea en territorio argentino, las aeronaves tripuladas o no tripuladas
-extranjeras deben estar provistas de documentación de ley, en el formato que disponga la autoridad aeronáutica y
-de los seguros obligatorios establecidos por ley y reglamentación vigente. Cuando existan acuerdos sobre la
-materia, regirán las cláusulas de éstos. La República Argentina fomentará el libre acceso reciproco de circulación
-y operación de aeronaves de aviación general y comercial.”
-ARTÍCULO 186.- Sustitúyese el artículo 21 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 21.- Las aeronaves privadas que no se destinen a servicios de transporte aéreo, deberán cumplir los
-requisitos de fiscalización en el aeródromo o aeropuerto internacional más próximo a la frontera.
-Dichas aeronaves podrán ser dispensadas de esta obligación por la autoridad aeronáutica, la que indicará ruta a
-seguir y aeródromo de fiscalización.”
-ARTÍCULO 187.- Incorpórase como segundo párrafo al artículo 29 de la Ley N° 17.825 y sus modificatorias el
-siguiente:
-“Los lugares aptos denunciados no son aeródromos. La operación se realizará siempre bajo responsabilidad del
-piloto al mando de la aeronave que operen en, desde o hacia ellos.”
-ARTÍCULO 188.- Incorpórase como artículo 29 bis a la Ley Nº 17.285 y sus modificatorias el siguiente:
-“ARTÍCULO 29 bis.- Los servicios aeroportuarios en la República Argentina, serán regulados y fiscalizados por
-la autoridad aeronáutica. La autoridad aeronáutica reglamentará la prestación de los servicios esenciales
-
-aeroportuarios, bajo los principios de garantía de la seguridad, libre competencia y acceso a los mercados.
-Se considera como servicio aeroportuario a todo aquel prestado en el ámbito de un aeropuerto, con excepción de
-los servicios de navegación aérea tratados en el capítulo respectivo. Se entiende por servicios esenciales
-aeroportuarios a los servicios de rampa en general.”
-ARTÍCULO 189.- Sustitúyese el artículo 34 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 34.- Si con posteridad a la aprobación de las superficies de despeje de obstáculos en un aeródromo
-se comprobase un delito o una infracción a la norma a que se refieren los artículos 30 y 31 de este código,
-violando la seguridad operacional, el propietario del aeródromo, la autoridad o un tercero interesado, intimará al
-infractor la eliminación del obstáculo. El intimado deberá, a su exclusivo costo e inmediatamente eliminarlo e
-indemnizar todos los daños ocasionados.”
-ARTÍCULO 190.- Sustitúyese el artículo 36 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 36.- Se consideran aeronaves tripuladas y no tripuladas los aparatos o mecanismos que puedan
-circular en el espacio aéreo y que sean aptos para transportar personas o cosas.”
-ARTÍCULO 191.- Sustitúyese el artículo 42 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 42.- Podrá inscribirse provisoriamente, a nombre del comprador, toda aeronave adquirida mediante
-cualquier tipo de contratos celebrados en el país o en el extranjero, por los cuales el vendedor se reserve el
-dominio de la aeronave hasta el pago total del precio de venta, el cumplimiento del plazo o hasta el cumplimiento
-de la respectiva condición. Para ello se requiere que: 1) El contrato se ajuste a la legislación del país de
-procedencia de la aeronave y se lo inscriba en el Registro Nacional de Aeronaves. 2) El contrato se formalice
-mientras la aeronave no posea matrícula argentina; 3) Se llenen los recaudos exigidos por este Código para ser
-propietario de una aeronave argentina.”
-ARTÍCULO 192.- Sustitúyese el artículo 45 de la ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 45.- En el Registro de Aeronaves se inscribirán por medios electrónicos o en el formato que
-disponga la autoridad aeronáutica: 1) Los actos, contratos o resoluciones que acrediten la propiedad de la
-aeronave, la transfieran, modifiquen o extingan. 2) Las hipotecas sobre aeronaves y sobre motores. 3) Los
-embargos, medidas precautorias e interdicciones que pesen sobre las aeronaves o se decreten contra ellas. 4) Las
-matrículas con las especificaciones adecuadas para individualizar las aeronaves. 5) La cesación de actividades, la
-inutilización o la pérdida de las aeronaves y las modificaciones sustanciales que se hagan de ellas. 6) Los
-contratos de locación de aeronaves y todos aquellos que resulten oponibles a terceros. 7) En general toda
-inscripción o anotación de cualquier hecho o acto jurídico que pueda alterar o se vincule a la situación jurídica de
-la aeronave.”
-ARTÍCULO 193.- Sustitúyese el artículo 47 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 47.- El Registro Nacional de Aeronaves es público y estará disponible para su acceso a través de
-medios electrónicos.”
-ARTÍCULO 194.- Sustitúyese el artículo 48 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 48.- Para ser propietario de una aeronave argentina se requiere:
-
-1) Si se trata de una persona humana, tener domicilio legal en la República;
-2) Si se trata de varios copropietarios, la mayoría cuyos derechos exceden de la mitad del valor de la aeronave,
-deben mantener su domicilio legal en la República;
-3) Si se trata de una sociedad de personas, de capitales o asociaciones, estar constituida conforme a las leyes
-argentinas y tener su domicilio legal en la República.”
-ARTÍCULO 195.- Sustitúyese el artículo 50 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 50.- La transferencia de dominio de las aeronaves, así como todo acto jurídico relacionado con las
-mismas previsto en el artículo 45 incisos 1°, 2°, 6° y 7°, no producirán efectos contra terceros si no van seguidos
-de la inscripción en el Registro Nacional de Aeronaves.”
-ARTÍCULO 196.- Sustitúyese el artículo 51 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 51.- Los actos y contratos mencionados en el artículo 45 incisos 1°, 2° y 6°, realizados en el
-extranjero y destinados a producir efectos en la República, deberán ser formalizadas por instrumento público o
-ante la autoridad consular argentina.”
-ARTÍCULO 197.- Sustitúyese el artículo 52 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 52.- Las aeronaves pueden ser hipotecadas y garantizadas en todo o en sus partes indivisas y aun
-cuando estén en construcción. También pueden hipotecarse los motores inscritos conforme al artículo 41 de este
-código. Ni las aeronaves ni los motores son susceptibles de afectación de prenda con registro. No podrá ser
-hipotecada ni afectada como garantía real de ningún crédito, la aeronave inscrita conforme al artículo 42 y
-concordantes de este código, hasta tanto se proceda a su inscripción y matriculación definitivas. Cuando los
-bienes hipotecados sean motores, el deudor deberá notificar al acreedor en qué aeronaves serán instalados y el uso
-que se haga de aquéllos. La hipoteca de motores mantiene sus efectos aun cuando ellos se instalen en una
-aeronave hipotecada a distinto acreedor.”
-ARTÍCULO 198.- Sustitúyese el artículo 60 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 60.- Tendrán privilegio sobre la aeronave: 1) Los créditos por gastos causídicos que beneficien al
-acreedor hipotecario. 2) Los créditos derivados de tasas y tributos relacionados con la aviación civil limitándose
-al período de dos años anteriores a la fecha del reclamo del privilegio. 3) Los créditos provenientes de la
-búsqueda, asistencia o salvamento de la aeronave. 4) Los créditos por reparaciones extraordinarias hechas fuera
-del punto de destino, para continuar el viaje. 5) Los emolumentos de la tripulación por el último mes de trabajo.”
-ARTÍCULO 199.- Sustitúyese el artículo 63 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 63.- Los privilegios se extinguen: 1) Por la extinción de la obligación principal. 2) Por el
-vencimiento del plazo de dos años desde su inscripción si ésta no fuese renovada. 3) Por la venta judicial de la
-aeronave, después de satisfechos los créditos privilegiados de mejor grado inscriptos conforme al artículo 58 de
-este código.”
-ARTÍCULO 200.- Sustitúyese el nombre del CAPITULO IX del TITULO IV: AERONAVES, de la Ley N°
-17.285 y sus modificatorias por el siguiente: CAPITULO IX: CONTRATOS SOBRE AERONAVES.
-
-ARTÍCULO 201.- Sustitúyese el artículo 68 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 68.- Las formas y tipos de contratos sobre aeronaves se rigen por el principio de la libertad
-contractual y serán válidos entre partes. Los contratos en que las partes acuerden, expresamente, transferir la
-calidad de explotador deben ser realizados por escrito e inscriptos en el Registro Nacional de Aeronaves, a los
-fines de los artículos 66 y 67 de este código.”
-ARTÍCULO 202.- Sustitúyese el artículo 74 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 74.- Las aeronaves de bandera nacional o extranjera, accidentadas o inmovilizadas de hecho en el
-espacio aéreo argentino y sus partes o despojos, se reputarán abandonadas a favor del Estado nacional, cuando su
-dueño o explotador no se presentase a reclamarlas y retirarlas dentro del término de seis meses de producida la
-notificación del accidente o inmovilización.
-El Poder Ejecutivo reglamentará la forma y procedimiento para efectuar la notificación del accidente o
-inmovilización al propietario o explotador y la intimación para que remueva la aeronave, sus partes o despojos.”
-ARTÍCULO 203.- Sustitúyese el artículo 79 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 79.- Toda aeronave tripulada debe tener a bordo un piloto habilitado para conducirla, investido de
-las funciones de comandante. Su designación corresponde al explotador, de quien será representante. Cuando no
-exista persona específicamente designada, se presumirá que el piloto al mando es el comandante de la aeronave.
-En las aeronaves no tripuladas el piloto a distancia será el comandante de aquellas.
-Las aeronaves conducidas por inteligencia artificial serán objeto de una reglamentación especial.”
-ARTÍCULO 204.- Sustitúyese el artículo 91 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 91.- El concepto aeronáutica comercial comprende los servicios esenciales de transporte aéreo y los
-de trabajo aéreo.”
-ARTÍCULO 205.- Sustitúyese el artículo 95 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 95.- La explotación de toda actividad comercial aérea requiere autorización previa, conforme a las
-prescripciones de este código y su reglamentación. Cuando la autorización fuera a empresas de bandera extranjera
-la misma deberá sujetarse a las normas y Acuerdos internacionales de los que la Nación Argentina sea parte. A su
-vez el Poder Ejecutivo procurará obtener principios de reciprocidad.”
-ARTÍCULO 206.- Sustitúyese el artículo 97 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 97.- La explotación de servicios de transporte aéreo interno será realizada por personas humanas o
-sociedades que se ajusten a las prescripciones de este código.”
-ARTÍCULO 207.- Sustitúyese el artículo 98 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 98.- Las personas humanas que exploten servicios de transporte aéreo interno deben acreditar
-domicilio legal en la República.”
-ARTÍCULO 208.- Sustitúyese el artículo 99 de la ley de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-
-“ARTÍCULO 99.- Las sociedades se constituirán en cualquiera de las formas que autoricen las leyes argentinas
-aplicables y vigentes, sujetas a la reglamentación aeronáutica y condicionadas en particular a las siguientes
-exigencias: 1) Tener domicilio permanente de la empresa en la República, 2) El control y la dirección de la
-empresa deben estar en manos de personas humanas con domicilio legal en la República, 3) El presidente del
-directorio o consejo de administración, los gerentes y por lo menos dos tercios de los directores o administradores
-deberán ser argentinos con domicilio legal en la REPÚBLICA ARGENTINA.”
-ARTÍCULO 209.- Sustitúyese el artículo 102 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 102.- Los servicios de transporte aéreo regular o no regular serán ejecutados por empresas
-autorizadas por el Poder Ejecutivo Nacional.
-El procedimiento para la tramitación de las autorizaciones será fijado por la autoridad competente de manera
-eficaz y digitalmente y deberá prever la posibilidad de prórroga de los plazos de estas autorizaciones.”
-ARTÍCULO 210.- Sustitúyese el artículo 104 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 104.- La autorización para operar en una ruta no importa exclusividad. Las autoridades
-competentes promoverán reglas de sana competencia, conforme los principios de libertad de mercado.”
-ARTÍCULO 211.- Sustitúyese el artículo 105 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 105.- No se otorgará autorización alguna sin la comprobación previa de la capacidad técnica y
-económico - financiera del explotador y de la posibilidad de utilizar en forma adecuada los aeropuertos,
-aeródromos, y cualquier lugar apto denunciado, servicios auxiliares y material de vuelo a emplear.”
-ARTÍCULO 212.- Sustitúyese el artículo 106 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 106.- En los servicios aerocomerciales el personal que desempeña funciones aeronáuticas deberá
-ser argentino. El Poder Ejecutivo Nacional podrá autorizar un porcentaje de personal extranjero, estableciéndose
-un procedimiento gradual de reemplazo del personal extranjero por personal argentino.”
-ARTÍCULO 213.- Sustitúyese el artículo 107 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 107.- Las aeronaves afectadas a los servicios aerocomerciales y de aviación general deberán tener
-matrícula argentina. Sin embargo, el Poder Ejecutivo Nacional permitirá la utilización de aeronaves de matrícula
-extranjera. Cuando esto ocurre el Poder Ejecutivo Nacional procurará obtener principios de reciprocidad y
-acuerdos de doble vigilancia de seguridad operacional donde se garantice que dichas aeronaves serán tripuladas,
-asistidas y mantenidas por personal argentino, con las autorizaciones de ley.”
-ARTÍCULO 214.- Sustitúyese el artículo 108 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 108.- La autoridad aeronáutica, ejercida por la Administración Nacional de Aviación Civil o el
-organismo federal aeroespacial a constituir por el Poder Ejecutivo Nacional que en el futuro la sustituya o
-reemplace, será única y establecerá o adoptará todas las normas de seguridad operacional de la aviación civil y su
-sistematización. Dicha autoridad entiende y regula la totalidad de los Anexos Técnicos de los Convenios
-internacionales sobre la materia.”
-ARTÍCULO 215.- Sustitúyese el artículo 109 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-
-“ARTÍCULO 109.- La aprobación de los itinerarios, frecuencias, capacidad del sistema y horarios
-correspondientes a los servicios de transporte aéreo regular interno e internacional en todos los casos, serán
-sometidos a autorización previa del poder ejecutivo nacional.
-Las tarifas son libremente dispuestas por las empresas y sin ninguna restricción. Estas deberán ser registradas ante
-la autoridad competente al solo efecto de dar a conocer los términos, condiciones, penalidades y restricciones de
-cada una de ellas. Se entenderá por tarifa la contraprestación que recibe el transportador a cambio de servicio de
-transporte. Se excluye de dicho término, todo impuesto, tasa y/o penalidad que deba abonar el pasajero.”
-ARTÍCULO 216.- Sustitúyese el artículo 110 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 110.- Los acuerdos empresarios de impacto operativo que impliquen compartir códigos de
-comercialización, conexión, consolidación o fusión de servicios o negocios, estarán regidos por la Ley de Defensa
-de la Competencia.”
-ARTÍCULO 217.- Sustitúyese el artículo 112 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 112.- Toda empresa a la que se hubiese otorgado una autorización deberá depositar, como garantía
-del cumplimiento de sus obligaciones y dentro de los quince días de notificada, una suma equivalente al dos por
-ciento de su capital social en efectivo, en títulos nacionales de renta o garantía bancaria equivalente. Dicho
-depósito se efectuará a la orden de la autoridad aeronáutica.
-La caución se extingue en un cincuenta por ciento cuando haya comenzado la explotación de la totalidad de los
-servicios autorizados y el resto una vez transcurrido un año a partir del momento indicado, siempre que la
-autorizada haya cumplido eficientemente sus obligaciones.
-El incumplimiento de las obligaciones que establece la autorización dará lugar a la pérdida de la caución a que se
-refiere este artículo y su monto a cuenta de la autoridad aeronáutica.”
-ARTÍCULO 218.- Sustitúyese el artículo 113 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 113.- El contrato de transporte de pasajeros debe ser probado por escrito o con formato electrónico.
-Cuando se trate de transporte efectuado por servicios regulares dicho contrato se prueba con el billete de pasaje
-escrito o digital.”
-ARTÍCULO 219.- Sustitúyese el artículo 116 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 116.- El transporte de equipajes registrados, se prueba con el talón de equipajes que el
-transportador deberá expedir con doble ejemplar por escrito o digitalmente; uno de éstos será entregado al
-pasajero y el otro lo conservará el transportador.
-No se incluirán en el talón los objetos personales que el pasajero conserve bajo su custodia.”
-ARTÍCULO 220.- Sustitúyese el artículo 120 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 120.- La carta de porte debe ser extendida en triple ejemplar en formato físico o electrónico; uno
-para el transportador, con la firma del remitente; otro para el destinatario, con la del transportador y del remitente;
-y otro para el remitente, con la del transportador.”
-
-ARTÍCULO 221.- Derógase la Sección E: Transporte de Carga Postal en sus artículos 125, 126 y 127.
-ARTÍCULO 222.- Incorpórase como artículo 128 bis a la Ley Nº 17.285 y sus modificatorias el siguiente:
-“ARTÍCULO 128 bis.- El Poder Ejecutivo Nacional reglamentará y llevará adelante una política de aviación civil
-que permita su crecimiento, bajo los principios de la seguridad y la libertad de mercado, conforme a los acuerdos
-con terceros estados.
-En el marco de los permisos aerocomerciales internos e internacionales, la República Argentina fomentará entre
-los operadores aerocomerciales nacionales y extranjeros el libre acceso recíproco a los mercados aerocomerciales
-y la conectividad internacional y de cabotaje.”
-ARTÍCULO 223.- Sustitúyese el artículo 129 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 129.- Las empresas extranjeras podrán realizar servicios de transporte aéreo internacional, de
-conformidad con las convenciones o acuerdos internacionales en que la Nación sea parte, o mediante autorización
-previa del Poder Ejecutivo. El procedimiento para tramitar las solicitudes será fijado por el Poder Ejecutivo quien
-establecerá un régimen de autorizaciones donde se analice la conveniencia, necesidad y utilidad general de los
-servicios cuando corresponda, conforme a los principios de libertad de mercado y/o los acuerdos bilaterales o
-multilaterales suscriptos.
-La autoridad aeronáutica establecerá las normas operativas a las que se ajustarán los servicios de transporte aéreo
-internacional que exploten las empresas extranjeras. Los itinerarios, capacidad, frecuencias y horarios
-correspondientes a los servicios de transporte aéreo internacional regular, en todos los casos, serán sometidas a la
-aprobación operativa previa de la autoridad aeronáutica.”
-ARTÍCULO 224.- Incorporase como artículo 130 bis a la Ley Nº 17.285 y sus modificatorias el siguiente:
-“ARTÍCULO 130 bis.- Atento la integridad y autonomía establecidas para la navegación y comercio aéreo y la
-propia operatoria comercial de la industria en el orden interno e internacional, la autoridad aeronáutica deberá
-sancionar un reglamento relativo a la protección de los derechos del pasajero.”
-ARTÍCULO 225.- Sustitúyese el artículo 131 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 131.- Para realizar trabajo aéreo en cualquiera de sus especialidades, las personas o empresas
-deberán obtener autorización previa de la autoridad aeronáutica sujeta a los siguientes recaudos: 1) Reunir los
-requisitos establecidos en el artículo 48 para ser propietario de aeronave; 2) Poseer capacidad técnica y
-económica de acuerdo a la especialidad de que se trate; 3) Operar con aeronaves de matrícula argentina o con
-aeronaves de matrícula extranjera, sujeto a acuerdos de doble vigilancia de seguridad operacional.”
-ARTÍCULO 226.- Sustitúyese el artículo 133 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 133.- Las actividades aeronáuticas comerciales están sujetas a fiscalización por la autoridad
-competente. Al efecto le corresponde:
-1) Exigir el cumplimiento de las obligaciones previstas en las autorizaciones otorgadas, así como las contenidas
-en el presente código, leyes, reglamentaciones, Tratados e Instrumentos Internacionales ratificados por la Nación
-Argentina, y demás normas que en su consecuencia se dicten.
-
-2) Ejercer la fiscalización técnica-operativa, económica y financiera del explotador.
-3) Suspender las actividades cuando considere que no estén cumplidas las condiciones de seguridad requeridas o
-cuando no estén asegurados los riesgos cuya cobertura sea legalmente obligatoria, y autorizar su reanudación, una
-vez subsanadas tales deficiencias o requisitos, siempre que no resultaren de ellos causales que traigan aparejada la
-caducidad o retiro de la autorización.
-4) Autorizar la interrupción y la reanudación de los servicios solicitados por los prestatarios, cuando a su juicio,
-no se consideren afectadas las razones de necesidad o utilidad general que determinaron el otorgamiento de la
-autorización, o la continuidad de los servicios.
-5) Prohibir el empleo de material de vuelo que no ofrezca seguridad.
-6) Exigir que el personal aeronáutico llene las condiciones requeridas por las disposiciones vigentes.
-7) Fiscalizar todo tipo de promoción y comercialización de billetes de pasaje, fletes y toda otra venta de
-capacidad de transporte aéreo llevado a cabo por los transportadores, sus representantes o agentes y por terceros,
-para garantizar el cumplimiento de la sana competencia y la adecuada protección de los derechos de los usuarios.
-8) Autorizar y supervisar el funcionamiento de las representaciones y agencias de las empresas extranjeras de
-transporte aéreo internacional que no operen en el territorio nacional y se establezcan en el país, sin perjuicio del
-cumplimiento de las obligaciones que imponen las demás normas legales respecto de empresas extranjeras.
-9) Calificar, conforme la ley vigente en materia de policía aérea, la aptitud de las aeronaves destinadas al
-transporte comercial de pasajeros y carga en función de los servicios a prestar para determinar la conveniencia de
-su incorporación a tales servicios y autorizar la afectación de las aeronaves a la flota de transportadores de
-bandera argentina. Intervenir en el trámite de autorización para su ingreso al país.
-10) Desempeñar todas las otras funciones de fiscalización que confiera el Poder Ejecutivo nacional.
-11) La autoridad aeronáutica procurará activamente detectar y someter a fiscalización a los explotadores u
-operadores clandestinos, entendiéndose por tales a quienes operen al margen de la normativa aeronáutica vigente.
-A tal fin, podrán afectarse recursos propios o bien requerir el auxilio de las Fuerzas de Seguridad federales o
-provinciales, que en todos los casos deberán brindarlo.”
-ARTÍCULO 227.- Sustitúyese el nombre del CAPITULO VI del TITULO VI: AERONAUTICA COMERCIAL
-de la Ley N° 17.285 y sus modificatorias por el siguiente: CAPITULO VI: SUSPENSION Y EXTINCION DE
-LAS AUTORIZACIONES.
-ARTÍCULO 228.- Sustitúyese el artículo 135 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 135.- Las autorizaciones otorgadas por plazo determinado se extinguirán al vencimiento de éste. No
-obstante, haya o no plazo de vencimiento, el Poder Ejecutivo nacional o la autoridad aeronáutica según sea el
-caso, en cualquier momento podrá cancelar la autorización conferidas para la explotación de actividades
-aeronáuticas comerciales en las siguientes circunstancias:
-1) Si el explotador no cumpliese las obligaciones substanciales a su cargo o si faltase, reiteradamente, a
-obligaciones de menor importancia.
-
-2) Si el servicio no fuese iniciado dentro del término fijado en la autorización.
-3) Si se interrumpiese el servicio, total o parcialmente, sin causas justificadas o permiso de la autoridad
-aeronáutica.
-4) Si la empresa fuera declarada en estado de quiebra, liquidación o disolución por resolución judicial o cuando
-peticionando su concurso preventivo, no ofrezca a juicio de la autoridad de aplicación garantías que resulten
-adecuadas para asegurar la prestación de los servicios.
-5) Si la autorización hubiese sido cedida en contravención a lo dispuesto en el artículo 96 de este Código.
-6) Si no se hubiese dado cumplimiento a la cobertura de riesgos prevista por el título X (Seguros) y en el artículo
-112.
-7) Si el explotador se opusiese a la fiscalización o inspecciones establecidas en este Código y su reglamentación.
-8) Si el explotador dejase de reunir cualquiera de los requisitos exigidos para la autorización.
-9) Si mediase renuncia del explotador, previa aceptación de la autoridad aeronáutica.
-Cuando a juicio de la autoridad de aplicación se configure alguna de las causales previstas en los incisos
-precedentes que motiven el retiro de la autorización, dicha autoridad podrá disponer la suspensión preventiva de
-los servicios hasta tanto se substancien las actuaciones administrativas a las que se refiere el artículo 137.”
-ARTÍCULO 229.- Sustitúyese el artículo 137 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 137.- Antes de la cancelación de la autorización, debe garantizarse la debida participación al
-interesado, a fin de que pueda producir la prueba de descargo. El procedimiento a seguir será determinado por la
-reglamentación respectiva, la cual deberá garantizar el ejercicio del derecho de defensa y el control judicial
-suficiente”
-ARTÍCULO 230.- Sustitúyese el artículo 138 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 138.- El Poder Ejecutivo podrá subvencionar la demanda de servicios de transporte aéreo en
-aquellas rutas que resulten de interés general para la Nación. Asimismo, podrá subvencionar la explotación de
-servicios de trabajo aéreo que tengan igual carácter.”
-ARTÍCULO 231.- Sustitúyese el artículo 185 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 185.- Todo accidente o incidente de aviación será investigado por la autoridad competente e
-independiente de investigación técnica de accidentes de aviación, para determinar sus causas y establecer las
-medidas tendientes a evitar su repetición. Dicha investigación no puede asignar responsabilidad oculpa ni es
-admisible como prueba judicial.”
-ARTÍCULO 232.- Sustitúyese el artículo 186 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 186.- Toda persona que tomase conocimiento de cualquier accidente o incidente de aviación o de la
-existencia de restos o despojos de una aeronave, deberá comunicarlo a la autoridad más próxima por el medio
-más rápido y en el tiempo mínimo que las circunstancias permitan. La primera autoridad que tenga conocimiento
-
-del hecho o intervenga en él, lo comunicará de inmediato a la autoridad competente en materia de investigación
-técnica de accidentes de aviación, debiendo destacar o gestionar una guardia hasta el arribo de ésta.”
-ARTÍCULO 233.- Sustitúyese el artículo 187 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 187.- La autoridad responsable de la vigilancia de los restos o despojos del accidente, evitará que
-en los mismos y en las zonas donde puedan haberse dispersado, intervengan personas no autorizadas. La
-remoción o liberación de la aeronave, de los elementos afectados y de los objetos que pudiesen haber concurrido
-a producir el accidente sólo podrá practicarse con el consentimiento de la autoridad competente en materia de
-investigación de accidentes de aviación. La intervención de aquella autoridad no impide la acción judicial ni la
-intervención policial, coordinadas, en los casos de accidentes vinculados con hechos ilícitos, en que habrá de
-actuarse conforme a las leyes de procedimiento penal, o cuando deban practicarse operaciones de asistencia o
-salvamento.”
-ARTÍCULO 234.- Sustitúyese el artículo 188 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 188.- Toda persona está obligada a ser entrevistada por la autoridad competente en materia de
-investigación de accidentes, en todo cuanto se relacione con la investigación de accidentes de aviación.”
-ARTÍCULO 235.- Sustitúyese el artículo 189 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 189.- Las autoridades, personas e instituciones tendrán obligación de producir los informes que les
-requiera la autoridad competente en materia de investigación de accidentes de aviación, así como permitir a ésta
-el examen de la documentación y de los antecedentes necesarios a los fines de la investigación de accidentes de
-aviación.”
-ARTÍCULO 236.- Sustitúyese el artículo 190 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 190.- Las aeronaves privadas extranjeras que sufran accidentes en el espacio aéreo argentino y las
-aeronaves privadas argentinas que sufran accidentes en territorio extranjero, quedarán sujetas a la investigación
-técnica prevista en los convenios internacionales.”
-ARTÍCULO 237.- Sustitúyese el artículo 199 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 199.- Los hechos ocurridos, los actos realizados y los delitos cometidos en una aeronave privada
-argentina sobre el espacio aéreo argentino o donde ningún estado ejerza soberanía, están regidos por las leyes de
-la Nación Argentina y serán juzgados por sus tribunales.
-Corresponde igualmente la jurisdicción de los tribunales argentinos y la aplicación de las leyes de la Nación, en el
-caso de hechos ocurridos, actos realizados o delitos cometidos a bordo de una aeronave privada argentina, sobre
-territorio extranjero, si se hubiese lesionado un interés legítimo del Estado argentino o de personas domiciliadas
-en el o se hubiese realizado en la República el primer aterrizaje posterior al hecho, acto o delito.”
-ARTÍCULO 238.- Sustitúyese el artículo 200 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 200.– En los hechos ocurridos, los actos realizados y los delitos cometidos en una aeronave privada
-extranjera en vuelo en el espacio aéreo argentino , la jurisdicción de los tribunales argentinos y la aplicación de
-las leyes de la Nación sólo corresponde en caso de:
-
-1) Que infrinjan leyes de seguridad pública, militares o fiscales.
-2) Que infrinjan leyes o reglamentos de circulación aérea.
-3) Que comprometan la seguridad o el orden público, o afecten el interés del Estado o de las personas
-domiciliadas en él, o se hubiese realizado en la República el primer aterrizaje posterior al hecho, acto o delito si
-no mediase, en este último caso, pedido de extradición.”
-ARTÍCULO 239.- Sustitúyese el artículo 201 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 201.- Los hechos ocurridos, los actos realizados y los delitos cometidos en una aeronave pública
-extranjera en el espacio aéreo argentino están regidos por la ley del pabellón y serán juzgados por sus tribunales.”
-ARTÍCULO 240.- Sustitúyese el artículo 202 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 202.- La fiscalización del espacio aéreo, infraestructura aeronáutica y demás servicios y lugares
-aeronáuticos en el espacio aéreo argentino, será ejercida por la autoridad aeronáutica, con excepción de la que
-corresponda a la materia estrictamente policial.”
-ARTÍCULO 241.- Sustitúyese el artículo 208 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 208.- El Poder Ejecutivo Nacional dictará un Reglamento General de Infracciones de la Aviación
-Civil. Hasta que ello ocurra estará vigente el actual sistema de infracciones. Este reglamento deberá prever que
-las infracciones por inobservancia de este código, las leyes vigentes y sus reglamentaciones, y demás normas que
-dicte la autoridad aeronáutica, que no importen delito, serán sancionadas con:
-i. Apercibimiento,
-ii. Multa, hasta el máximo que determine la reglamentación vigente según el tipo de infracción,
-iii. Inhabilitación temporaria con plazos máximos, o definitiva, de certificados de idoneidad otorgados o
-convalidados por la autoridad aeronáutica,
-iv. Suspensión temporaria de las autorizaciones otorgadas a los operadores aéreos, con determinación de su
-plazo máximo,
-v. Retiro de las autorizaciones otorgadas para la explotación de servicios aerocomerciales.
-Con relación al monto de las Multas se establece:
-a. Para las infracciones en el transporte aéreo comercial de 10 hasta la suma de hasta TRESCIENTOS (300)
-ARGENTINOS ORO, apreciando la gravedad de la acción cometida y antecedentes del infractor.
-b. Para los titulares de certificados de idoneidad en el ejercicio de funciones aeronáuticas y aquellos que cuenten
-con poder de policía delegado, se establece la suma de hasta TRESCIENTOS (300) ARGENTINOS ORO,
-considerando la gravedad de la infracción y antecedentes del infractor.
-c. Para el Prestador de los Servicios de la navegación aérea; y respecto de los titulares explotadores,
-concesionarios y/o responsables de la infraestructura de aeropuertos, aeródromos o lugares aptos denunciados, se
-establece la suma de hasta TRESCIENTOS (300) ARGENTINOS ORO.
-d. Para las restantes actividades aeronáuticas se establece la suma de hasta Cincuenta (50) ARGENTINOS ORO,
-apreciando la gravedad de la acción cometida y antecedentes del infractor. La Autoridad Aeronáutica, se
-
-encontrará facultada para disminuir las sanciones previstas, hasta en un CINCUENTA POR CIENTO (50%) del
-monto que resultaría aplicable para la infracción de la cual se trate, previendo por vía reglamentaria un sistema de
-pago anticipado o voluntario, de carácter general y con principios de transparencia, por el cual el infractor
-reconozca la responsabilidad del hecho infraccional que se le endilgue. Dicha conducta, resultará igualmente
-computable como antecedente infraccional, a los efectos de la consideración de su condición de reincidente. Si el
-infractor fuese reincidente y la falta cometida se considerase grave, esta reincidencia será considerada como un
-agravante.
-Se entiende con poder de policía delegado a aquellas personas humanas u organizaciones que, mediante acto
-administrativo, han sido investidos con facultades determinadas por las autoridades competentes. Por ejemplo, los
-inspectores de seguridad designados o delegados.”
-ARTÍCULO 242.- Sustitúyese el artículo 209 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 209.- Las faltas previstas en este Código y su reglamentación, serán sancionadas por la autoridad
-aeronáutica.”
-ARTÍCULO 243.- Sustitúyese el artículo 210 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 210.- La investigación de las faltas o infracciones previstas en este Código y/o en la reglamentación
-vigente estará a cargo de la autoridad aeronáutica. El procedimiento a seguir ante la comprobación de los hechos
-será de carácter sumario y escrito, asegurando la existencia de dos instancias y la garantía del debido proceso y
-derecho de defensa del supuesto infractor.
-La autoridad aeronáutica establecerá los aspectos del procedimiento a seguir ante la comprobación o
-investigación de los hechos, así como la aplicación e imposición de sanciones y sus apelaciones.
-Se deberá garantizar el ejercicio de defensa y la debida participación del supuesto infractor desde el principio de
-las actuaciones, ya sea de manera escrita u oral.”
-ARTÍCULO 244.- Sustitúyese el artículo 215 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 215.- Serán recurribles ante la Justicia Federal en lo Contencioso Administrativo, una vez agotada
-la vía administrativa ante la autoridad aeronáutica, toda sanción, inhabilitación de certificados de idoneidad y/o
-habilitaciones, suspensión o retiro de autorizaciones. Todos estos recursos y acciones que seguirán el trámite de
-juicio ordinario. El recurso deberá interponerse dentro de los 15 días de notificado el acto administrativo. En el
-caso de hechos ilícitos que puedan importar actos punibles deberá intervenir la Justicia Federal en lo Criminal y
-Correccional competente para entender en las acciones penales.”
-ARTÍCULO 245.- Sustitúyese el artículo 231 de la Ley Nº 17.285 y sus modificatorias por el siguiente:
-“ARTÍCULO 231.- En la circulación aérea dentro del espacio aéreo argentino, serán de uso y aplicación las
-unidades de medidas adoptadas conforme a las disposiciones de los convenios internacionales de los que la
-Nación sea parte.”
-
+/*
 Capítulo II – Rescate de Aerolíneas Argentinas y Austral Líneas Aéreas por el Estado Nacional (Ley N°
 26.412)
-
 ARTÍCULO 246.- Sustitúyese el artículo 4° de la Ley N° 26.412 y sus normas modificatorias y complementarias.
 “ARTICULO 4º.- Autorízase la cesión, parcial o total, del paquete accionario de Aerolíneas Argentinas S.A. y
 Austral Líneas Aéreas - Cielos del Sur S.A. y de sus empresas controladas, a los empleados de las respectivas

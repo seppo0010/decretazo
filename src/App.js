@@ -15,7 +15,14 @@ function renderDiff(delta) {
         {delta.title}
       </AccordionSummary>
       <AccordionDetails>
-        <ReactDiffViewer oldValue={delta.removed ?? ''} newValue={delta.added ?? ''} splitView={false} compareMethod={DiffMethod.WORDS} />
+        <ReactDiffViewer
+          oldValue={delta.removed ?? ''}
+          newValue={delta.added ?? ''}
+          splitView={false}
+          compareMethod={DiffMethod.WORDS}
+          codeFoldMessageRenderer={(n) => `Mostrar ${n} líneas más...`}
+          hideLineNumbers={true}
+          />
       </AccordionDetails>
     </Accordion>
   )
